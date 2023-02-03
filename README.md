@@ -32,7 +32,7 @@
 26. Solve cant open supply bug
 27. Turn into multiplayer
 28. Solve multiplayer Grenades location non-synchronized bug 
-28. Solve multiplayer Grenades direction non-synchronized bug 
+28. Solve multiplayer Grenades throwing direction non-synchronized bug 
 ### &nbsp;&nbsp;To-do-list :
 1. Synchronize supply boxes spwaning time 
 <br/> - Count number of player in server
