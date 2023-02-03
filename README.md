@@ -1,5 +1,11 @@
 # COMP3329
-
+### &nbsp;&nbsp;What had been done :
+1. Camera movement
+2. Player movement
+3. Camera-Player Synchronization
+4. Throw Grenade 
+5. Grenade explosion
+6. Combine Grenade and movement
 ### &nbsp;&nbsp;To-do-list :
 1. Synchronize supply boxes spwaning time 
 <br/> - count number of player in server
