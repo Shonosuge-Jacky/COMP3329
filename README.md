@@ -26,4 +26,5 @@
 15. complete green grenade (gas)
 16. match result recording system 
 17. turn the game into BO3 mode
-18. 
+18. upadte match result recording system
+19. upadte End scene with match result recording system again 
