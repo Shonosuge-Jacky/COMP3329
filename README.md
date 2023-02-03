@@ -1,6 +1,6 @@
 # COMP3329
 
-To-do-list :
+### To-do-list :
 1. Synchronize supply boxes spwaning time 
 <br /> count number of player in server
 <br /> make a  synchronized timer
