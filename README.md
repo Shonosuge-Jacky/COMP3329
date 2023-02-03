@@ -15,3 +15,9 @@
 7. add Barrier
 8. complete yellow grenade (remote)
 9. complete green grenade (gas)
+10. start scene 
+<br /> - name entering space
+<br /> - start game button
+11. match result recording system 
+12. turn the game into BO3 mode
+13. 
