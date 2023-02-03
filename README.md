@@ -28,9 +28,9 @@
 27. Solve dash fly box bug
 28. Solve dash stick on the sky bug
 29. Improve destroyed wall
-30. Dash cd
-31. Dash cd UI
-32. Dash cd count
+30. Dash coolown
+31. Dash UI
+32. Dash coolown count
 33. Spawn player
 34. Solve cant open supply bug
 35. Turn into multiplayer
