@@ -21,20 +21,20 @@
 19. Create destoryable wall
 20. Turn grenade to Red_Cracker Grenade
 21. Create dash function
-<br/> - Solve dash fly bug
-<br/> - Solve dash penetrate bug
-<br/> - Solve dash fly box bug
-<br/> - Solve dash stick on the sky bug
-21. Improve destroyed wall
-22. Dash cd
-23. Dash cd UI
-24. Dash cd count
-25. Spawn player
-26. Solve cant open supply bug
-27. Turn into multiplayer
-28. Solve multiplayer Grenades non-synchronized bug 
-29. Solve multiplayer Grenades location non-synchronized bug 
-30. Solve multiplayer Grenades throw direction non-synchronized bug 
+22. Solve dash fly bug
+23. Solve dash penetrate bug
+24. Solve dash fly box bug
+25. Solve dash stick on the sky bug
+26. Improve destroyed wall
+27. Dash cd
+28. Dash cd UI
+29. Dash cd count
+30. Spawn player
+31. Solve cant open supply bug
+32. Turn into multiplayer
+33. Solve multiplayer Grenades non-synchronized bug 
+34. Solve multiplayer Grenades location non-synchronized bug 
+35. Solve multiplayer Grenades throw direction non-synchronized bug 
 ### &nbsp;&nbsp;To-do-list :
 1. Synchronize supply boxes spwaning time 
 <br/> - Count number of player in server
