@@ -17,6 +17,7 @@
 <br /> - (training centre button)
 7. match result recording system 
 8. upadte End scene with match result recording system 
+9. Complete the arena
 ### &nbsp;&nbsp;Advance To-do-list :
 1. build training centre
 2. quit training centre
