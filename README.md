@@ -44,7 +44,7 @@
 <br/> - Synchronize supply boxes spwaning time 
 2. Synchronize supply boxes status
 3. Kill player by grenade
-<br /> - Find a dead version player
+<br /> - Find new player model with its dead version 
 <br /> - Kill player by grenade
 4. Solve player-grenade no collision bug
 5. End scene
