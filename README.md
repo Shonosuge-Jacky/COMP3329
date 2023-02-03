@@ -14,7 +14,7 @@
 6. Start scene 
 <br /> - name entering space
 <br /> - start game button
-<br /> - training centre button 
+<br /> - (training centre button)
 7. match result recording system 
 8. upadte End scene with match result recording system 
 ### &nbsp;&nbsp;Advance To-do-list :
