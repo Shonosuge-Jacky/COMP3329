@@ -2,24 +2,25 @@
 ### &nbsp;&nbsp;What had been done :
 1. Throw Grenade 
 2. Grenade explosion
-3. Camera movement
-4. Player movement
-5. Camera-Player Synchronization
-6. Combine Grenade and movement
-7. Solve high speed Grenade ignore collision bug
-8. Grenade UI
-9. Grenade UI count
-10. Pick Grenade
-11. Solve player-grenade collision bug
-12. Solve cant jump on box bug
-13. Supply box interaction
-14. Disable Supply box movement
-15. Solve multi-Supply box bug
-16. Spawn supply box
-17. Supply box spawning effect
-18. Create destoryable wall
-19. Turn grenade to Red_Cracker Grenade
-20. Create dash function
+3. Solve pink Grenade bug
+4. Camera movement
+5. Player movement
+6. Camera-Player Synchronization
+7. Combine Grenade and movement
+8. Solve high speed Grenade ignore collision bug
+9. Grenade UI
+10. Grenade UI count
+11. Pick Grenade
+12. Solve player-grenade collision bug
+13. Solve cant jump on box bug
+14. Supply box interaction
+15. Disable Supply box movement
+16. Solve multi-Supply box bug
+17. Spawn supply box
+18. Supply box spawning effect
+19. Create destoryable wall
+20. Turn grenade to Red_Cracker Grenade
+21. Create dash function
 <br/> - Solve dash fly bug
 <br/> - Solve dash penetrate bug
 <br/> - Solve dash fly box bug
