@@ -16,7 +16,8 @@
 <br /> - start game button
 <br /> - training centre button 
 7. match result recording system 
-8. upadte End scene with match result recording system <br />
+8. upadte End scene with match result recording system 
+<br />
 9. build training centre
 10. quit training centre
 11. activate training centre button 
