@@ -69,5 +69,5 @@
 11. Upadte End scene with match result recording system again 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
-2. Destroyed wall's scrap pass through wall bug 
+2. Destroyed wall's scrap pass through ground bug 
 3. Multiplayer delay(~0.25s) bug
