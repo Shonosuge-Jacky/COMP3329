@@ -1,4 +1,4 @@
-# COMP3329
+# COMP3329 Group Project
 ### &nbsp;&nbsp;What had been done :
 1. Throw Grenade 
 3. Grenade explosion
