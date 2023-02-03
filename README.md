@@ -11,13 +11,19 @@
 <br /> - Kill player by grenade
 4. Solve player-grenade no collision bug
 5. End scene
-6. add Grenade path 
-7. add Barrier
-8. complete yellow grenade (remote)
-9. complete green grenade (gas)
-10. start scene 
+6. Start scene 
 <br /> - name entering space
 <br /> - start game button
-11. match result recording system 
-12. turn the game into BO3 mode
-13. 
+<br /> - training centre button 
+7. match result recording system 
+8. upadte End scene with match result recording system 
+9. build training centre
+10. quit training centre
+11. activate training centre button 
+12. add Grenade path 
+13. add Barrier
+14. complete yellow grenade (remote)
+15. complete green grenade (gas)
+16. match result recording system 
+17. turn the game into BO3 mode
+18. 
