@@ -2,9 +2,9 @@
 
 To-do-list :
 1. Synchronize supply boxes spwaning time 
-` count number of player in server 
-`` make a  synchronized timer 
-``` Synchronize supply boxes spwaning time 
+count number of player in server 
+make a  synchronized timer 
+Synchronize supply boxes spwaning time 
 2. Synchronize supply boxes status
 3. Kill player by grenade
 - find a dead version player
