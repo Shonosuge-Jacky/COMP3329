@@ -20,10 +20,23 @@
 18. Create destoryable wall
 19. Turn grenade to Red_Cracker Grenade
 20. Create dash function
+<br/> - Solve dash fly bug
+<br/> - Solve dash penetrate bug
+<br/> - Solve dash fly box bug
+<br/> - Solve dash stick on the sky bug
+21. Improve destroyed wall
+22. Dash cd
+23. Dash cd UI
+24. Dash cd count
+25. spawn player
+26. Solve cant open supply bug
+27. turn into multiplayer
+28. Solve multiplayer Grenades location non-synchronized bug 
+28. Solve multiplayer Grenades direction non-synchronized bug 
 ### &nbsp;&nbsp;To-do-list :
 1. Synchronize supply boxes spwaning time 
 <br/> - count number of player in server
-<br/> - make a  synchronized timer
+<br/> - make a synchronized timer
 <br/> - Synchronize supply boxes spwaning time 
 2. Synchronize supply boxes status
 3. Kill player by grenade
@@ -50,3 +63,7 @@
 9. turn the game into BO3 mode
 10. upadte match result recording system
 11. upadte End scene with match result recording system again 
+### &nbsp;&nbsp;Temporary unsolvable bug :
+1. explode effect retain bug
+2. wall's scrap pass through wall bug 
+3. multiplayer delay(~0.25s) bug
