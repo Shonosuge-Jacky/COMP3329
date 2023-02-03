@@ -17,14 +17,15 @@
 <br /> - training centre button 
 7. match result recording system 
 8. upadte End scene with match result recording system 
-9. build training centre
-10. quit training centre
-11. activate training centre button 
-12. add Grenade path 
-13. add Barrier
-14. complete yellow grenade (remote)
-15. complete green grenade (gas)
-16. match result recording system 
-17. turn the game into BO3 mode
-18. upadte match result recording system
-19. upadte End scene with match result recording system again 
+### &nbsp;&nbsp;Advance To-do-list :
+1. build training centre
+2. quit training centre
+3. activate training centre button 
+4. add Grenade path 
+5. add Barrier
+6. complete yellow grenade (remote)
+7. complete green grenade (gas)
+8. match result recording system 
+9. turn the game into BO3 mode
+10. upadte match result recording system
+11. upadte End scene with match result recording system again 
