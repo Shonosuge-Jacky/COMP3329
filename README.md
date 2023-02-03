@@ -64,8 +64,9 @@
 7. Complete green grenade (gas)
 8. Match result recording system 
 9. Turn the game into BO3 mode
-10. Upadte match result recording system
-11. Upadte End scene with match result recording system again 
+10. Make BO3 UI
+11. Upadte match result recording system
+12. Upadte End scene with match result recording system again 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
