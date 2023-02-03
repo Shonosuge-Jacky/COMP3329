@@ -34,7 +34,6 @@
 33. Spawn player
 34. Solve cant open supply bug
 35. Turn into multiplayer
-36. Solve multiplayer Grenades non-synchronized bug 
 37. Solve multiplayer Grenades location non-synchronized bug 
 38. Solve multiplayer Grenades throw direction non-synchronized bug 
 ### &nbsp;&nbsp;To-do-list :
