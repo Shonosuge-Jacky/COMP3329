@@ -1,7 +1,6 @@
 # COMP3329
 ### &nbsp;&nbsp;What had been done :
 1. Throw Grenade 
-2. Solve mulit-Grenade color bug
 3. Grenade explosion
 4. Solve pink Grenade bug
 5. Camera movement
