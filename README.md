@@ -28,42 +28,42 @@
 22. Dash cd
 23. Dash cd UI
 24. Dash cd count
-25. spawn player
+25. Spawn player
 26. Solve cant open supply bug
-27. turn into multiplayer
+27. Turn into multiplayer
 28. Solve multiplayer Grenades location non-synchronized bug 
 28. Solve multiplayer Grenades direction non-synchronized bug 
 ### &nbsp;&nbsp;To-do-list :
 1. Synchronize supply boxes spwaning time 
-<br/> - count number of player in server
-<br/> - make a synchronized timer
+<br/> - Count number of player in server
+<br/> - Make a synchronized timer
 <br/> - Synchronize supply boxes spwaning time 
 2. Synchronize supply boxes status
 3. Kill player by grenade
-<br /> - find a dead version player
+<br /> - Find a dead version player
 <br /> - Kill player by grenade
 4. Solve player-grenade no collision bug
 5. End scene
 6. Start scene 
-<br /> - name entering space
-<br /> - start game button
-<br /> - (training centre button)
-7. match result recording system 
-8. upadte End scene with match result recording system 
+<br /> - Name entering space
+<br /> - Start game button
+<br /> - (Training centre button)
+7. Match result recording system 
+8. Upadte End scene with match result recording system 
 9. Complete the arena
 ### &nbsp;&nbsp;Advance To-do-list :
-1. build training centre
-2. quit training centre
-3. activate training centre button 
-4. add Grenade path 
-5. add Barrier
-6. complete yellow grenade (remote)
-7. complete green grenade (gas)
-8. match result recording system 
-9. turn the game into BO3 mode
-10. upadte match result recording system
-11. upadte End scene with match result recording system again 
+1. Build training centre
+2. Quit training centre
+3. Activate training centre button 
+4. Add Grenade path 
+5. Add Barrier
+6. Complete yellow grenade (remote)
+7. Complete green grenade (gas)
+8. Match result recording system 
+9. Turn the game into BO3 mode
+10. Upadte match result recording system
+11. Upadte End scene with match result recording system again 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
-1. explode effect retain bug
-2. wall's scrap pass through wall bug 
-3. multiplayer delay(~0.25s) bug
+1. Explode effect retain bug
+2. Wall's scrap pass through wall bug 
+3. Multiplayer delay(~0.25s) bug
