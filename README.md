@@ -1,43 +1,43 @@
 # COMP3329 Group Project
 ### &nbsp;&nbsp;What had been done :
 1. Throw Grenade 
-3. Grenade explosion
-4. Solve pink Grenade bug
-5. Camera movement
-6. Player movement
-7. Camera-Player Synchronization
-8. Solve sky box bug 
-9. Combine Grenade and movement
-10. Solve high speed Grenade ignore collision bug
-11. Grenade UI
-12. Grenade UI count
-13. Pick Grenade
-14. Solve player-grenade collision bug
-15. Solve cant jump on box bug
-16. Solve supply box cover bug 
-17. Supply box interaction
-18. Disable Supply box movement
-19. Solve multi-Supply box bug
-20. Spawn supply box
-21. Supply box spawning effect
-22. Create destoryable wall
-23. Turn grenade to Red_Cracker Grenade
-24. Create dash function
-25. Solve dash fly bug
-26. Solve dash penetrate bug
-27. Solve dash fly box bug
-28. Solve dash stick on the sky bug
-29. Improve destroyed wall
-30. Dash coolown
-31. Dash UI
-32. Dash coolown count
-33. Spawn player
-34. Solve cant open supply bug
-35. Turn into multiplayer
-37. Solve multiplayer Grenades location non-synchronized bug 
-38. Solve multiplayer Grenades throw direction non-synchronized bug 
-39. Count number of player in the server 
-40. Synchronize supply box spawning time
+2. Grenade explosion
+3. Solve pink Grenade bug
+4. Camera movement
+5. Player movement
+6. Camera-Player Synchronization
+7. Solve sky box bug 
+8. Combine Grenade and movement
+9. Solve high speed Grenade ignore collision bug
+10. Grenade UI
+11. Grenade UI count
+12. Pick Grenade
+13. Solve player-grenade collision bug
+14. Solve cant jump on box bug
+15. Solve supply box cover bug 
+16. Supply box interaction
+17. Disable Supply box movement
+18. Solve multi-Supply box bug
+19. Spawn supply box
+20. Supply box spawning effect
+21. Create destoryable wall
+22. Turn grenade to Red_Cracker Grenade
+23. Create dash function
+24. Solve dash fly bug
+25. Solve dash penetrate bug
+26. Solve dash fly box bug
+27. Solve dash stick on the sky bug
+28. Improve destroyed wall
+29. Dash coolown
+30. Dash UI
+31. Dash coolown count
+32. Spawn player
+33. Solve cant open supply bug
+34. Turn into multiplayer
+35. Solve multiplayer Grenades location non-synchronized bug 
+36. Solve multiplayer Grenades throw direction non-synchronized bug 
+37. Count number of player in the server 
+38. Synchronize supply box spawning time
 ### &nbsp;&nbsp;To-do-list :
 2. Synchronize supply boxes status
 3. Kill player by grenade
