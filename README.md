@@ -38,8 +38,8 @@
 36. Solve multiplayer Grenades throw direction non-synchronized bug 
 37. Count number of player in the server 
 38. Synchronize supply box spawning time
+39. Synchronize supply boxes status
 ### &nbsp;&nbsp;To-do-list :
-2. Synchronize supply boxes status
 3. Kill player by grenade
 <br /> - Find new player model with its dead version 
 <br /> - Kill player by grenade
