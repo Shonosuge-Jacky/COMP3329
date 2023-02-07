@@ -40,18 +40,20 @@
 38. Synchronize supply box spawning time
 39. Synchronize supply box status
 ### &nbsp;&nbsp;To-do-list :
-3. Kill player by grenade
+3. UI for yellow and green grenade
+4. UI for Barrier
+5. Kill player by grenade
 <br /> - Find new player model with its dead version 
 <br /> - Kill player by grenade
-4. Solve player-grenade no collision bug
-5. End scene
-6. Start scene 
+6. Solve player-grenade no collision bug
+7. End scene
+8. Start scene 
 <br /> - Name entering space
 <br /> - Start game button
 <br /> - (Training centre button)
-7. Match result recording system 
-8. Upadte End scene with match result recording system 
-9. Complete the arena
+9. Match result recording system 
+10. Upadte End scene with match result recording system 
+11. Complete the arena
 ### &nbsp;&nbsp;Advance To-do-list :
 1. Build training centre
 2. Quit training centre
