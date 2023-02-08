@@ -40,8 +40,8 @@
 38. Synchronize supply box spawning time
 39. Synchronize supply box status
 40. UI for yellow and green grenade
+41. UI for Barrier
 ### &nbsp;&nbsp;To-do-list :
-4. UI for Barrier
 5. Kill player by grenade
 <br /> - Find new player model with its dead version 
 <br /> - Kill player by grenade
