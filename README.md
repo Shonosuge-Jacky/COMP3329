@@ -54,14 +54,13 @@
 9. Match result recording system 
 10. Upadte End scene with match result recording system 
 11. Complete the arena
+12. sound effect
 ### &nbsp;&nbsp;Advance To-do-list :
 1. Add Grenade path 
 2. Add Barrier
 3. Complete yellow grenade (remote)
 4. Complete green grenade (gas)
 5. Match result recording system 
-6. Turn the game into BO3 mode
-7. Make BO3 UI
 8. Upadte match result recording system
 9. Upadte End scene with match result recording system again 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
