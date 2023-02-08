@@ -39,8 +39,8 @@
 37. Count number of player in the server 
 38. Synchronize supply box spawning time
 39. Synchronize supply box status
+40. UI for yellow and green grenade
 ### &nbsp;&nbsp;To-do-list :
-3. UI for yellow and green grenade
 4. UI for Barrier
 5. Kill player by grenade
 <br /> - Find new player model with its dead version 
