@@ -55,18 +55,15 @@
 10. Upadte End scene with match result recording system 
 11. Complete the arena
 ### &nbsp;&nbsp;Advance To-do-list :
-1. Build training centre
-2. Quit training centre
-3. Activate training centre button 
-4. Add Grenade path 
-5. Add Barrier
-6. Complete yellow grenade (remote)
-7. Complete green grenade (gas)
-8. Match result recording system 
-9. Turn the game into BO3 mode
-10. Make BO3 UI
-11. Upadte match result recording system
-12. Upadte End scene with match result recording system again 
+1. Add Grenade path 
+2. Add Barrier
+3. Complete yellow grenade (remote)
+4. Complete green grenade (gas)
+5. Match result recording system 
+6. Turn the game into BO3 mode
+7. Make BO3 UI
+8. Upadte match result recording system
+9. Upadte End scene with match result recording system again 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
