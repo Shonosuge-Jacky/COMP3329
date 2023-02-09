@@ -50,7 +50,6 @@
 8. Start scene 
 <br /> - Name entering space
 <br /> - Start game button
-<br /> - (Training centre button)
 9. Match result recording system 
 10. Upadte End scene with match result recording system 
 11. Complete the arena
