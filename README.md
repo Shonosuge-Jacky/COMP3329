@@ -56,8 +56,8 @@
 8. Start scene - Start game button
 9. Match result recording system 
 10. Upadte End scene with match result recording system
-11. Add Grenade path
-12. change player skin
+11. ( Add Grenade path )
+12. ( change player skin )
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
