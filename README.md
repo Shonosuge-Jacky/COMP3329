@@ -52,10 +52,9 @@
 2. Add Barrier
 3. Complete yellow grenade (remote)
 4. Complete green grenade (gas) 
-5. Start scene 
-<br /> - Name entering space
-<br /> - Start game button
-6. Match result recording system 
+5. Start scene - Name entering space
+6. Start scene - Start game button
+7. Match result recording system 
 9. Upadte End scene with match result recording system
 10. Add Grenade path
 11. change player skin
