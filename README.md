@@ -43,26 +43,25 @@
 41. UI for Barrier
 ### &nbsp;&nbsp;To-do-list :
 5. Kill player by grenade
-<br /> - Find new player model with its dead version 
-<br /> - Kill player by grenade
 6. Solve player-grenade no collision bug
 7. End scene
-8. Start scene 
-<br /> - Name entering space
-<br /> - Start game button
 9. Match result recording system 
 10. Upadte End scene with match result recording system 
 11. Complete the arena
 12. sound effect
 13. improve Destroyed wall's scrap
 ### &nbsp;&nbsp;Advance To-do-list :
-1. Add Grenade path 
-2. Add Barrier
+1. Add Barrier
 3. Complete yellow grenade (remote)
-4. Complete green grenade (gas)
-5. Match result recording system 
+4. Complete green grenade (gas) 
+5. Start scene 
+<br /> - Name entering space
+<br /> - Start game button
+6. Match result recording system 
 8. Upadte match result recording system
 9. Upadte End scene with match result recording system again 
+10. Add Grenade path
+11. change player skin
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
