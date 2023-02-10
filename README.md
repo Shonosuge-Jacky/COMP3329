@@ -46,15 +46,15 @@
 6. Solve player-grenade no collision bug
 7. End scene
 11. Complete the arena
-12. sound effect
 ### &nbsp;&nbsp;Advance To-do-list :
 1. improve Destroyed wall's scrap
-2. Add Barrier
-3. Complete yellow grenade (remote)
-4. Complete green grenade (gas) 
-5. Start scene - Name entering space
-6. Start scene - Start game button
-7. Match result recording system 
+2. sound effect
+3. Add Barrier
+4. Complete yellow grenade (remote)
+5. Complete green grenade (gas) 
+6. Start scene - Name entering space
+7. Start scene - Start game button
+8. Match result recording system 
 9. Upadte End scene with match result recording system
 10. Add Grenade path
 11. change player skin
