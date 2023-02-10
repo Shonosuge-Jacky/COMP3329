@@ -54,6 +54,7 @@
 10. Upadte End scene with match result recording system 
 11. Complete the arena
 12. sound effect
+13. improve Destroyed wall's scrap
 ### &nbsp;&nbsp;Advance To-do-list :
 1. Add Grenade path 
 2. Add Barrier
