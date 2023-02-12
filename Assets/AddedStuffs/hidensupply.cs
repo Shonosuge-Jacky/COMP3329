@@ -28,7 +28,7 @@ public class hidensupply : MonoBehaviour
     float effectcountdown02b;
     bool closeeffect02 = false;
 
-
+    private int playernumber=0;
     public GameObject Supply01;
     public GameObject Supply02;
     public GameObject effect01;
@@ -45,46 +45,57 @@ public class hidensupply : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        countdown01 -= Time.deltaTime;
-        countdown02 -= Time.deltaTime;
-        effectcountdown -= Time.deltaTime;
-        effectcountdown02b -= Time.deltaTime;
-        effectcountdown02a -= Time.deltaTime;
-        if(effectcountdown01a<=0f && effectdelay01atf==false)
-        // if(countdown<=0f && !hasExploded)
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player");  
+        if(gos.Length == 2)
         {
-            effect01.active = true;
-            effectdelay01atf=true;
-        }
-        if(effectcountdown02a<=0f && effectdelay02atf==false)
-        // if(countdown<=0f && !hasExploded)
+            playernumber=2;
+        }   
+
+        // if(1==1)
+        if(playernumber==2)
         {
-            effect02.active = true;
-            effectdelay02atf=true;
-        }
-        if(countdown01<=0f && hasspawned01==false)
-        // if(countdown<=0f && !hasExploded)
-        {
-            Supply01.active = true;
-            hasspawned01=true;
-        }
-        if(countdown02<=0f && hasspawned02==false)
-        // if(countdown<=0f && !hasExploded)
-        {
-            Supply02.active = true;
-            hasspawned02=true;
-        }
-        if(effectcountdown<=0f && closeeffect==false)
-        // if(countdown<=0f && !hasExploded)
-        {
-            effect01.active = false;
-            closeeffect=true;
-        }
-        if(effectcountdown02b<=0f && closeeffect02==false)
-        // if(countdown<=0f && !hasExploded)
-        {
-            effect02.active = false;
-            closeeffect02=true;
+            countdown01 -= Time.deltaTime;
+            countdown02 -= Time.deltaTime;
+            effectcountdown -= Time.deltaTime;
+            effectcountdown02b -= Time.deltaTime;
+            effectcountdown02a -= Time.deltaTime;
+            if(effectcountdown01a<=0f && effectdelay01atf==false)
+            // if(countdown<=0f && !hasExploded)
+            {
+                effect01.active = true;
+                effectdelay01atf=true;
+            }
+            if(effectcountdown02a<=0f && effectdelay02atf==false)
+            // if(countdown<=0f && !hasExploded)
+            {
+                effect02.active = true;
+                effectdelay02atf=true;
+            }
+            if(countdown01<=0f && hasspawned01==false)
+            // if(countdown<=0f && !hasExploded)
+            {
+                Supply01.active = true;
+                hasspawned01=true;
+            }
+            if(countdown02<=0f && hasspawned02==false)
+            // if(countdown<=0f && !hasExploded)
+            {
+                Supply02.active = true;
+                hasspawned02=true;
+            }
+            if(effectcountdown<=0f && closeeffect==false)
+            // if(countdown<=0f && !hasExploded)
+            {
+                effect01.active = false;
+                closeeffect=true;
+            }
+            if(effectcountdown02b<=0f && closeeffect02==false)
+            // if(countdown<=0f && !hasExploded)
+            {
+                effect02.active = false;
+                closeeffect02=true;
+            }
         }
     }
 }
