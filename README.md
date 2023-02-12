@@ -45,7 +45,6 @@
 5. Kill player by grenade
 6. Solve player-grenade no collision bug
 7. End scene
-1. improve Destroyed wall's scrap
 ### &nbsp;&nbsp;Advance To-do-list :
 1. Complete the arena
 2. sound effect
