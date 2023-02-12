@@ -43,7 +43,6 @@
 41. UI for Barrier
 ### &nbsp;&nbsp;To-do-list :
 5. Kill player by grenade
-</br> test
 7. Solve player-grenade no collision bug
 8. End scene
 ### &nbsp;&nbsp;Advance To-do-list :
