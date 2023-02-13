@@ -45,18 +45,18 @@
 1. Kill player by grenade 
 2. End scene (after point 1)
 3. Solve player-grenade no collision bug
-4. Complete the arena
-5. Add Barrier
-6. Complete yellow/remote grenade
-7. Complete green/gas grenade
-8. choose grenade (after point 6 or 7)
-9. Show choosen grenade (after point 8)
-10. Start scene - Name entering space
-11. Start scene - Start game button
-12. Match result recording system (after point 10 and 11)
-13. Upadte End scene with match result recording system (after point 2 and 12)
-14. Add Grenade path (after point 1-13)
-15. change player skin (after point 1-13)
+4. Add Barrier
+5. Complete yellow/remote grenade
+6. Complete green/gas grenade
+7. choose grenade (after point 5 or 6)
+8. Show choosen grenade (after point 7)
+9. Start scene - Name entering space
+10. Start scene - Start game button
+11. Match result recording system (after point 9 and 10)
+12. Upadte End scene with match result recording system (after point 2 and 11)
+13. Complete the arena (after point 1-12)
+14. Add Grenade path (after point 1-12)
+15. change player skin (after point 1-12)
 16. background music
 17. red,yellow grenade explosion sound effect
 18. green grenade gas emition sound effect (after point 7)
