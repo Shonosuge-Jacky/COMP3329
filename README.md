@@ -50,24 +50,25 @@
 6. Complete green/gas grenade (after point 1)
 7. choose grenade (after point 5 or 6)
 8. Show choosen grenade (after point 7)
-9. Start scene - Name entering space
-10. Start scene - Start game button
-11. Match result recording system (after point 9 and 10)
-12. Upadte End scene with match result recording system (after point 2 and 11)
-13. Complete the arena (after point 1-12)
-14. Add Grenade path (after point 1-12)
-15. change player skin (after point 1-12)
-16. background music
-17. red,yellow grenade explosion sound effect
-18. green grenade gas emition sound effect (after point 7)
-19. Barrier Visual effect (after point 5)
-20. Change sky box (optional)
-21. Player random spawing system (after point 11)
-22. Supply continuously spawing (after point 1-12)
-23. Supply random spawing system (after point 22)  
-24. Change amount of grenade in different supply (after point 23) 
-25. Change different supply's color (after point 24)
-26. hide old supply (after point 22)
+9. Start scene
+10. Start scene - Name entering space (after point 9)
+11. Start scene - Start game button (after point 9)
+12. Match result recording system (after point 10 and 11)
+13. Upadte End scene with match result recording system (after point 2 and 12)
+14. Complete the arena (after point 1-13)
+15. Add Grenade path (after point 1-13)
+16. change player skin (after point 1-13)
+17. background music
+18. red,yellow grenade explosion sound effect
+19. green grenade gas emition sound effect (after point 7)
+20. Barrier Visual effect (after point 5)
+21. Change sky box (optional)
+22. Player random spawing system (after point 12)
+23. Supply continuously spawing (after point 1-13)
+24. Supply random spawing system (after point 22)  
+25. Change amount of grenade in different supply (after point 23) 
+26. Change different supply's color (after point 24)
+27. hide old supply (after point 22)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
