@@ -62,6 +62,11 @@
 18. green grenade gas emition sound effect (after point 7)
 19. Barrier Visual effect (after point 5)
 20. Change sky box 
+21. Player random spawing system
+22. Supply random spawing system 
+23. Change amount of grenade in different supply
+24. Change different supply's color
+25. hide old supply
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
