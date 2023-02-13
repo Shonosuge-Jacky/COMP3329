@@ -55,18 +55,19 @@
 11. Start scene - Start game button
 12. Match result recording system (after point 10 and 11)
 13. Upadte End scene with match result recording system (after point 2 and 12)
-14. Add Grenade path (after point 1-14)
-15. change player skin (after point 1-14)
+14. Add Grenade path (after point 1-13)
+15. change player skin (after point 1-13)
 16. background music
 17. red,yellow grenade explosion sound effect
 18. green grenade gas emition sound effect (after point 7)
 19. Barrier Visual effect (after point 5)
 20. Change sky box 
-21. Player random spawing system
-22. Supply random spawing system 
-23. Change amount of grenade in different supply
-24. Change different supply's color
-25. hide old supply
+21. Player random spawing system (after point 11)
+22. Supply continuously spawing (after point 1-13)
+23. Supply random spawing system (after point 22)  
+24. Change amount of grenade in different supply (after point 23) 
+25. Change different supply's color (after point 24)
+26. hide old supply (after point 22)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
