@@ -69,6 +69,8 @@
 25. Change amount of grenade in different supply (after point 23) 
 26. Change different supply's color (after point 24)
 27. hide old supply (after point 22)
+28. Start scene music (after point 9)
+29. End scene music (after point 2)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
