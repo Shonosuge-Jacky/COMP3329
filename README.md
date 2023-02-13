@@ -46,18 +46,22 @@
 2. End scene (after point 1)
 3. Solve player-grenade no collision bug
 4. Complete the arena
-5. sound effect
-6. Add Barrier
-7. Complete yellow/remote grenade
-8. Complete green/gas grenade
-9. choose grenade (after point 7 or 8)
-10. Show choosen grenade (after point 7 or 8)
-11. Start scene - Name entering space
-12. Start scene - Start game button
-13. Match result recording system (after point 11 and 12)
-14. Upadte End scene with match result recording system (after point 2 and 13)
-15. Add Grenade path (after point 1-14)
-16. change player skin (after point 1-14)
+5. Add Barrier
+6. Complete yellow/remote grenade
+7. Complete green/gas grenade
+8. choose grenade (after point 6 or 7)
+9. Show choosen grenade (after point 8)
+10. Start scene - Name entering space
+11. Start scene - Start game button
+12. Match result recording system (after point 10 and 11)
+13. Upadte End scene with match result recording system (after point 2 and 12)
+14. Add Grenade path (after point 1-14)
+15. change player skin (after point 1-14)
+16. background music
+17. red,yellow grenade explosion sound effect
+18. green grenade gas emition sound effect (after point 7)
+19. Barrier Visual effect (after point 5)
+20. Change sky box 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
