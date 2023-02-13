@@ -51,12 +51,13 @@
 3. Add Barrier
 5. Complete yellow grenade (remote)
 6. Complete green grenade (gas) 
-7. Start scene - Name entering space
-8. Start scene - Start game button
-9. Match result recording system 
-10. Upadte End scene with match result recording system
-11. ( Add Grenade path )
-12. ( change player skin )
+7. Show choosen grenade
+8. Start scene - Name entering space
+9. Start scene - Start game button
+10. Match result recording system 
+11. Upadte End scene with match result recording system
+12. ( Add Grenade path )
+13. ( change player skin )
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
