@@ -42,9 +42,9 @@
 40. UI for yellow and green grenade
 41. UI for Barrier
 ### &nbsp;&nbsp;To-do-list :
-5.1 Kill player by grenade
-</br>5.2 End scene
-</br>6. Solve player-grenade no collision bug
+5. Kill player by grenade
+6. End scene
+7. Solve player-grenade no collision bug
 ### &nbsp;&nbsp;Advance To-do-list :
 1. Complete the arena
 2. sound effect
