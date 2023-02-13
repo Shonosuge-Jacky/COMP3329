@@ -72,6 +72,8 @@
 28. Start scene music (after point 9)
 29. End scene music (after point 2)
 30. Lock player movemonet (after point 1)
+31. supply spawing sound effect 
+32. player death sound effect
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
