@@ -63,7 +63,7 @@
 19. Barrier Visual effect (after point 5)
 20. Change sky box 
 21. Player random spawing system (after point 11)
-22. Supply continuously spawing (after point 1-13)
+22. Supply continuously spawing (after point 1-12)
 23. Supply random spawing system (after point 22)  
 24. Change amount of grenade in different supply (after point 23) 
 25. Change different supply's color (after point 24)
