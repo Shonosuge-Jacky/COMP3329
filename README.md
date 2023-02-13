@@ -56,7 +56,7 @@
 12. Match result recording system (after point 10 and 11)
 13. Upadte End scene with match result recording system (after point 2 and 12)
 14. Complete the arena (after point 1-13)
-15. Add Grenade path (after point 1-13)
+15. Add Grenade path (after point 1-13) (optional)
 16. change player skin (after point 1-13)
 17. background music
 18. red,yellow grenade explosion sound effect
