@@ -42,22 +42,21 @@
 40. UI for yellow and green grenade
 41. UI for Barrier
 ### &nbsp;&nbsp;To-do-list :
-5. Kill player by grenade 
-6. End scene
-7. Solve player-grenade no collision bug
-### &nbsp;&nbsp;Advance To-do-list :
-1. Complete the arena
-2. sound effect
-3. Add Barrier
-5. Complete yellow grenade (remote)
-6. Complete green grenade (gas) 
-7. Show choosen grenade
-8. Start scene - Name entering space
-9. Start scene - Start game button
-10. Match result recording system 
-11. Upadte End scene with match result recording system
-12. ( Add Grenade path )
-13. ( change player skin )
+1. Kill player by grenade 
+2. End scene (after point 1)
+3. Solve player-grenade no collision bug
+4. Complete the arena
+5. sound effect
+6. Add Barrier
+7. Complete yellow/remote grenade
+8. Complete green/gas grenade
+9. Show choosen grenade (after point 7 or 8)
+10. Start scene - Name entering space
+11. Start scene - Start game button
+12. Match result recording system (after point 10 and 11)
+13. Upadte End scene with match result recording system (after point 2 and 12)
+14. Add Grenade path (after point 1-13)
+15. change player skin (after point 1-13)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
