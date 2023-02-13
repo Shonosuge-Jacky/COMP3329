@@ -45,7 +45,7 @@
 1. Kill player by grenade 
 2. End scene (after point 1)
 3. Solve player-grenade no collision bug
-4. Add Barrier
+4. Add Barrier (after point 1)
 5. Complete yellow/remote grenade
 6. Complete green/gas grenade
 7. choose grenade (after point 5 or 6)
