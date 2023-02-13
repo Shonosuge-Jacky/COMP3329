@@ -46,8 +46,8 @@
 2. End scene (after point 1)
 3. Solve player-grenade no collision bug
 4. Add Barrier (after point 1)
-5. Complete yellow/remote grenade
-6. Complete green/gas grenade
+5. Complete yellow/remote grenade (after point 1)
+6. Complete green/gas grenade (after point 1)
 7. choose grenade (after point 5 or 6)
 8. Show choosen grenade (after point 7)
 9. Start scene - Name entering space
