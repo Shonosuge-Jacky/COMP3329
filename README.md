@@ -71,7 +71,7 @@
 ### &nbsp;&nbsp;To-do-store :
 1. [End scene] blur camera after death (after point 30) XXX
 2. [End scene] show win/lose after blur (after point 1) XXX
-3. Solve player-grenade no collision bug
+3. Solve player-grenade no collision bug XXX
 4. Add Barrier XXX
 5. Complete yellow/remote grenade XXX
 6. Complete green/gas grenade XXX
@@ -106,7 +106,7 @@
 34. [End scene] show score board under win/lose (after point 2) XXX
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
-1. ！！　Solve player-grenade no collision bug　！！
+1. Solve player-grenade no collision bug
 2. Explode effect retain bug
 3. Destroyed wall's scrap pass through ground bug 
 4. Multiplayer delay(~0.25s) bug
