@@ -77,41 +77,26 @@
 30. [Matching result recording system] 
 
 ### &nbsp;&nbsp;To-do-store :
-1. [End scene] blur camera after death (after point 30) XXX
-2. [End scene] show win/lose after blur (after point 1) XXX
-3. Solve player-grenade no collision bug XXX
-4. Add Barrier XXX
-5. Complete yellow/remote grenade XXX
-6. Complete green/gas grenade XXX
-7. choose grenade (after point 5 or 6) XXX
-8. Show choosen grenade (after point 7) XXX
-9. Start scene XXX
-10. Start scene - Name entering space (after point 9) XXX
-11. Start scene - Start game button (after point 9) XXX
-12. [SQL] Match result recording system (after point 10 and 11)
-13. [End scene] Upadte End scene with match result recording system (after point 34 and 12)
-14. Complete the arena (after point 1-13)
-15. Add Grenade path (after point 1-13) (optional)
-16. change player skin (after point 1-13)
+1. [SQL] Match result recording system 
+13. [End scene] Upadte End scene with match result recording system 
+14. Complete the arena 
+15. [optional] Add Grenade path 
+16. change player skin 
 17. [sound] background music
 18. [sound] red,yellow grenade explosion sound effect
-19. [sound] green grenade gas emition sound effect (after point 6)
-20. Barrier Visual effect (after point 4) XXX
-21. Change sky box (optional)
-22. Player random spawing system (after point 11)
-23. Supply continuously spawing (after point 1-13)
-24. Supply random spawing system (after point 23)  
-25. Change amount of grenade in different supply (after point 23) 
-26. Change different supply's color (after point 24)
-27. hide old supply (after point 23)
-28. [sound] Start scene music (after point 9)
-29. [sound] End scene music (after point 1)
-30. [End scene] Lock winner movemonet XXX
+19. [sound] green grenade gas emition sound effect 
+21. [optional] Change sky box 
+22. Player random spawing system 
+23. [supply] Supply continuously spawing 
+24. [supply] Supply random spawing system 
+25. [supply] Change amount of grenade in different supply 
+26. [supply] Change different supply's color 
+27. [supply] hide old supply 
+28. [sound] Start scene music 
+29. [sound] End scene music 
 31. [sound] supply spawing sound effect 
 32. [sound] player death sound effect
-33. two hit dead system (optional)
-33. [End scene] dead by what message (after point 5 and 6) XXX
-34. [End scene] show score board under win/lose (after point 2) XXX
+33. [optional] two hit dead system
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve player-grenade no collision bug
