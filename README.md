@@ -49,24 +49,31 @@
 2. [End scene] blur camera after death 
 3. [End scene] show win/lose after blur 
 4. [End scene] show score board under win/lose 
-5. [Remote grenade] choose Remote grenade by number key
-6. [Remote grenade] throw non-explodable grenade
-7. [Remote grenade] press number key to explode
-8. [Remote grenade] make explode time lock
-9. [Remote grenade] create two Remote grenade
-10. [Remote grenade] create three Remote grenade
-11. [Remote grenade] enlarge explodsion radius
-12. [Remote grenade] enlarge explodsion effect
-13. [Gas grenade] choose Gas grenade by number key
-14. [Gas grenade] touch ground explode
-15. [Gas grenade] turn explode to gas area
-16. [Gas grenade] make gas area enlarge as time pass
-17. [Gas grenade] close gas
-18. [Gas grenade] make visable gas 
-19. [End scene] dead by what message (after point 12 or 18)
-20. Show choosen grenade (after point 12 and 18)
-21. [Barrier] Add Barrier 
-22. [Barrier] Barrier Visual effect
+5. [End scene] press button to restart 
+6. [Remote grenade] choose Remote grenade by number key
+7. [Remote grenade] throw non-explodable grenade
+8. [Remote grenade] press number key to explode
+9. [Remote grenade] make explode time lock
+10. [Remote grenade] create two Remote grenade
+11. [Remote grenade] create three Remote grenade
+12. [Remote grenade] enlarge explodsion radius
+13. [Remote grenade] enlarge explodsion effect **
+14. [Gas grenade] choose Gas grenade by number key
+15. [Gas grenade] touch ground explode
+16. [Gas grenade] turn explode to gas area
+17. [Gas grenade] make gas area enlarge as time pass
+18. [Gas grenade] close gas
+19. [Gas grenade] make visable gas **
+20. [End scene] dead by what message (after point 13 or 19)
+21. Show choosen grenade (after point 13 and 19)
+22. [Barrier] Add Barrier 
+23. [Barrier] Barrier Visual effect
+24. [Start scene] a Camera filming the island 
+25. [Start scene] Game title
+26. [Start scene] Player name entering space 
+27. [Start scene] Start button 
+28. [Start scene] Activate start button * 
+29. [End scene] press button to Start scene (after point 28)
 
 ### &nbsp;&nbsp;To-do-store :
 1. [End scene] blur camera after death (after point 30) XXX
