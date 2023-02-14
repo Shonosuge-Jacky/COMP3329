@@ -77,11 +77,12 @@
 30. [Arena] Build water area <===
 31. [Arena] Die if fall into water area ^
 32. [Arena] build a simple island ^
-33. [Supply] All possible Supply spawing in 7 rounds in 3-min (after point 32)
+33. [Supply] All possible Supply spawing in 3 rounds (after point 32)
 34. [Supply] Randomly spawing part of them ^
 35. [Supply] Change amount of grenade in different supply ^
 36. [Supply] Change different supply's color ^
 37. [Supply] hide old supply ^
+38. Spawing Player on different location (after point 32)
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
