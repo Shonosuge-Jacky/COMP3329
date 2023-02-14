@@ -76,26 +76,26 @@
 29. [End scene] press button to Start scene (after point 28)
 
 ### &nbsp;&nbsp;To-do-store :
-1. [SQL] Match result recording system 
-13. [End scene] Upadte End scene with match result recording system 
-14. Complete the arena 
-15. [optional] Add Grenade path 
-16. change player skin 
-17. [sound] background music
-18. [sound] red,yellow grenade explosion sound effect
-19. [sound] green grenade gas emition sound effect 
-21. [optional] Change sky box 
-22. Player random spawing system 
-23. [supply] Supply continuously spawing 
+1. [supply] Supply continuously spawing 
 24. [supply] Supply random spawing system 
 25. [supply] Change amount of grenade in different supply 
 26. [supply] Change different supply's color 
 27. [supply] hide old supply 
+14. Complete the arena 
+22. Player random spawing system 
+23. [Match result recording system]
+24. [End scene] Upadte End scene with match result recording system 
 28. [sound] Start scene music 
 29. [sound] End scene music 
 31. [sound] supply spawing sound effect 
 32. [sound] player death sound effect
+29. [sound] background music
+30. [sound] red,yellow grenade explosion sound effect
+31. [sound] green grenade gas emition sound effect 
 33. [optional] two hit dead system
+33. [optional] Add Grenade path 
+34. [optional] change player skin 
+35. [optional] Change sky box 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve player-grenade no collision bug
