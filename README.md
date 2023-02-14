@@ -77,14 +77,14 @@
 30. [Arena] Build water area <===
 31. [Arena] Die if fall into water area ^
 32. [Arena] build a simple island ^
+33. [Supply] All possible Supply spawing in 7 rounds in 3-min (after point 32)
+34. [Supply] Randomly spawing part of them ^
+35. [Supply] Change amount of grenade in different supply ^
+36. [Supply] Change different supply's color ^
+37. [Supply] hide old supply ^
 
 ### &nbsp;&nbsp;To-do-store :
-1. [supply] Supply continuously spawing 
-24. [supply] Supply random spawing system 
-25. [supply] Change amount of grenade in different supply 
-26. [supply] Change different supply's color 
-27. [supply] hide old supply 
-14. Complete the arena 
+1. Complete the arena 
 22. Player random spawing system 
 23. [Match result recording system] SQL?? i dont know arrrrr
 24. [End scene] Upadte End scene with match result recording system 
