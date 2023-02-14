@@ -44,8 +44,8 @@
 42. Solve Granade explosion dont add froce to player bug
 43. Kill player by grenade
 ### &nbsp;&nbsp;To-do-list :
-1. [End scence] blur camera after death (after point 30)
-2. show win/lose after blur (after point 1)
+1. [End scene] blur camera after death (after point 30)
+2. [End scene] show win/lose after blur (after point 1)
 3. Solve player-grenade no collision bug
 4. Add Barrier 
 5. Complete yellow/remote grenade 
@@ -73,12 +73,12 @@
 27. hide old supply (after point 23)
 28. Start scene music (after point 9)
 29. End scene music (after point 1)
-30. Lock winner movemonet 
+30. [End scene] Lock winner movemonet 
 31. supply spawing sound effect 
 32. player death sound effect
 33. two hit dead system (optional)
-33. dead by message (after point 5 and 6)
-34. show score board under win/lose (after point 2)
+33. [End scene] dead by what message (after point 5 and 6)
+34. [End scene] show score board under win/lose (after point 2)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
