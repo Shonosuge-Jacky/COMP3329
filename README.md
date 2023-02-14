@@ -74,6 +74,7 @@
 27. [Start scene] Start button 
 28. [Start scene] Activate start button * 
 29. [End scene] press button to Start scene (after point 28)
+30. [Matching result recording system] 
 
 ### &nbsp;&nbsp;To-do-store :
 1. [End scene] blur camera after death (after point 30) XXX
