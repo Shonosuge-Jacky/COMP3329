@@ -41,6 +41,7 @@
 39. Synchronize supply box status
 40. UI for yellow and green grenade
 41. UI for Barrier
+42. Solve Granade explosion dont add froce to player bug
 ### &nbsp;&nbsp;To-do-list :
 1. Kill player by grenade (after point 33)
 2. End scene (after point 1)
@@ -74,7 +75,6 @@
 30. Lock player movemonet (after point 1)
 31. supply spawing sound effect 
 32. player death sound effect
-33. Granade explosion dont add froce to player bug
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
