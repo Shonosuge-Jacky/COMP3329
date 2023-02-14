@@ -42,8 +42,9 @@
 40. UI for yellow and green grenade
 41. UI for Barrier
 42. Solve Granade explosion dont add froce to player bug
+43. Kill player by grenade
 ### &nbsp;&nbsp;To-do-list :
-1. Kill player by grenade
+1. //
 2. End scene (after point 1)
 3. Solve player-grenade no collision bug
 4. Add Barrier (after point 1)
