@@ -85,9 +85,9 @@
 14. Complete the arena (after point 1-13)
 15. Add Grenade path (after point 1-13) (optional)
 16. change player skin (after point 1-13)
-17. background music
-18. red,yellow grenade explosion sound effect
-19. green grenade gas emition sound effect (after point 6)
+17. [sound] background music
+18. [sound] red,yellow grenade explosion sound effect
+19. [sound] green grenade gas emition sound effect (after point 6)
 20. Barrier Visual effect (after point 4) XXX
 21. Change sky box (optional)
 22. Player random spawing system (after point 11)
@@ -96,11 +96,11 @@
 25. Change amount of grenade in different supply (after point 23) 
 26. Change different supply's color (after point 24)
 27. hide old supply (after point 23)
-28. Start scene music (after point 9)
-29. End scene music (after point 1)
+28. [sound] Start scene music (after point 9)
+29. [sound] End scene music (after point 1)
 30. [End scene] Lock winner movemonet XXX
-31. supply spawing sound effect 
-32. player death sound effect
+31. [sound] supply spawing sound effect 
+32. [sound] player death sound effect
 33. two hit dead system (optional)
 33. [End scene] dead by what message (after point 5 and 6) XXX
 34. [End scene] show score board under win/lose (after point 2) XXX
