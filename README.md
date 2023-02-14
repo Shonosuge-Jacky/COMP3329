@@ -77,6 +77,7 @@
 31. supply spawing sound effect 
 32. player death sound effect
 33. two hit dead system (after point 2)
+33. dead by message (after point 2)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
