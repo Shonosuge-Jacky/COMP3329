@@ -47,7 +47,7 @@
 1. [End scene] blur camera after death (after point 30) XXX
 2. [End scene] show win/lose after blur (after point 1) XXX
 3. Solve player-grenade no collision bug
-4. Add Barrier 
+4. Add Barrier XXX
 5. Complete yellow/remote grenade XXX
 6. Complete green/gas grenade XXX
 7. choose grenade (after point 5 or 6) XXX
@@ -100,6 +100,8 @@
 18. [Gas grenade] make visable gas 
 19. [End scene] dead by what message (after point 12 or 18)
 20. Show choosen grenade (after point 12 and 18)
+21. [Barrier] Add Barrier 
+22. [Barrier] Barrier Visual effect
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
