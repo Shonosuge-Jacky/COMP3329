@@ -44,7 +44,7 @@
 42. Solve Granade explosion dont add froce to player bug
 43. Kill player by grenade
 ### &nbsp;&nbsp;To-do-list :
-1. blur camera after death (after point 30)
+1. [End scence] blur camera after death (after point 30)
 2. show win/lose after blur (after point 1)
 3. Solve player-grenade no collision bug
 4. Add Barrier 
