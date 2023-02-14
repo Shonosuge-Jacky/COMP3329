@@ -43,6 +43,31 @@
 41. UI for Barrier
 42. Solve Granade explosion dont add froce to player bug
 43. Kill player by grenade
+
+### &nbsp;&nbsp;To-do-list :
+1. [End scene] Lock winner movemonet 
+2. [End scene] blur camera after death 
+3. [End scene] show win/lose after blur 
+4. [End scene] show score board under win/lose 
+5. [Remote grenade] choose Remote grenade by number key
+6. [Remote grenade] throw non-explodable grenade
+7. [Remote grenade] press number key to explode
+8. [Remote grenade] make explode time lock
+9. [Remote grenade] create two Remote grenade
+10. [Remote grenade] create three Remote grenade
+11. [Remote grenade] enlarge explodsion radius
+12. [Remote grenade] enlarge explodsion effect
+13. [Gas grenade] choose Gas grenade by number key
+14. [Gas grenade] touch ground explode
+15. [Gas grenade] turn explode to gas area
+16. [Gas grenade] make gas area enlarge as time pass
+17. [Gas grenade] close gas
+18. [Gas grenade] make visable gas 
+19. [End scene] dead by what message (after point 12 or 18)
+20. Show choosen grenade (after point 12 and 18)
+21. [Barrier] Add Barrier 
+22. [Barrier] Barrier Visual effect
+
 ### &nbsp;&nbsp;To-do-store :
 1. [End scene] blur camera after death (after point 30) XXX
 2. [End scene] show win/lose after blur (after point 1) XXX
@@ -79,29 +104,7 @@
 33. two hit dead system (optional)
 33. [End scene] dead by what message (after point 5 and 6) XXX
 34. [End scene] show score board under win/lose (after point 2) XXX
-### &nbsp;&nbsp;To-do-list :
-1. [End scene] Lock winner movemonet 
-2. [End scene] blur camera after death 
-3. [End scene] show win/lose after blur 
-4. [End scene] show score board under win/lose 
-5. [Remote grenade] choose Remote grenade by number key
-6. [Remote grenade] throw non-explodable grenade
-7. [Remote grenade] press number key to explode
-8. [Remote grenade] make explode time lock
-9. [Remote grenade] create two Remote grenade
-10. [Remote grenade] create three Remote grenade
-11. [Remote grenade] enlarge explodsion radius
-12. [Remote grenade] enlarge explodsion effect
-13. [Gas grenade] choose Gas grenade by number key
-14. [Gas grenade] touch ground explode
-15. [Gas grenade] turn explode to gas area
-16. [Gas grenade] make gas area enlarge as time pass
-17. [Gas grenade] close gas
-18. [Gas grenade] make visable gas 
-19. [End scene] dead by what message (after point 12 or 18)
-20. Show choosen grenade (after point 12 and 18)
-21. [Barrier] Add Barrier 
-22. [Barrier] Barrier Visual effect
+
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
