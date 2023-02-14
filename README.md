@@ -45,34 +45,34 @@
 43. Kill player by grenade
 
 ### &nbsp;&nbsp;To-do-list :
-1. [End scene] Lock winner movemonet <=
-2. [End scene] blur camera after death (after the above one)
-3. [End scene] show win/lose after blur (after the above one)
-4. [End scene] show empty score board under win/lose (after the above one)
-5. [End scene] press button to restart (after the above one)
-6. [Remote grenade] choose Remote grenade by number key <=
-7. [Remote grenade] throw non-explodable grenade (after the above one)
-8. [Remote grenade] press number key to explode (after the above one)
-9. [Remote grenade] make explode time lock (after the above one)
-10. [Remote grenade] create two Remote grenade (after the above one)
-11. [Remote grenade] create three Remote grenade (after the above one)
-12. [Remote grenade] enlarge explodsion radius (after the above one)
-13. [Remote grenade] enlarge explodsion effect (after the above one) **
-14. [Gas grenade] choose Gas grenade by number key <=
-15. [Gas grenade] touch ground explode (after the above one)
-16. [Gas grenade] turn explode to gas area (after the above one)
-17. [Gas grenade] make gas area enlarge as time pass (after the above one)
-18. [Gas grenade] close gas (after the above one)
-19. [Gas grenade] make visable gas (after the above one) **
+1. [End scene] Lock winner movemonet <===
+2. [End scene] blur camera after death ^
+3. [End scene] show win/lose after blur ^
+4. [End scene] show empty score board under win/lose ^
+5. [End scene] press button to restart ^
+6. [Remote grenade] choose Remote grenade by number key <===
+7. [Remote grenade] throw non-explodable grenade ^
+8. [Remote grenade] press number key to explode ^
+9. [Remote grenade] make explode time lock ^
+10. [Remote grenade] create two Remote grenade ^
+11. [Remote grenade] create three Remote grenade ^
+12. [Remote grenade] enlarge explodsion radius ^
+13. [Remote grenade] enlarge explodsion effect ^ **
+14. [Gas grenade] choose Gas grenade by number key <===
+15. [Gas grenade] touch ground explode ^
+16. [Gas grenade] turn explode to gas area ^
+17. [Gas grenade] make gas area enlarge as time pass ^
+18. [Gas grenade] close gas ^
+19. [Gas grenade] make visable gas ^ **
 20. [End scene] dead by what message (after point 13 or 19)
 21. Show choosen grenade (after point 13 and 19)
-22. [Barrier] Add Barrier <=
-23. [Barrier] Barrier Visual effect (after the above one)
-24. [Start scene] a Camera filming the island <=
-25. [Start scene] Game title (after the above one)
-26. [Start scene] Player name entering space (after the above one)
-27. [Start scene] Start button (after the above one)
-28. [Start scene] Activate start button (after the above one) * 
+22. [Barrier] Add Barrier <===
+23. [Barrier] Barrier Visual effect ^
+24. [Start scene] a Camera filming the island <===
+25. [Start scene] Game title ^
+26. [Start scene] Player name entering space ^
+27. [Start scene] Start button ^
+28. [Start scene] Activate start button ^ * 
 29. [End scene] press button to Start scene (after point 28)
 
 ### &nbsp;&nbsp;To-do-store :
