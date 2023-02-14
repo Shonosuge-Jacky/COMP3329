@@ -106,6 +106,7 @@
 34. [End scene] show score board under win/lose (after point 2) XXX
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
-1. Explode effect retain bug
-2. Destroyed wall's scrap pass through ground bug 
-3. Multiplayer delay(~0.25s) bug
+1. ！！　Solve player-grenade no collision bug　！！
+2. Explode effect retain bug
+3. Destroyed wall's scrap pass through ground bug 
+4. Multiplayer delay(~0.25s) bug
