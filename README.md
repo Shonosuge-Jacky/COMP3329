@@ -44,19 +44,19 @@
 42. Solve Granade explosion dont add froce to player bug
 43. Kill player by grenade
 ### &nbsp;&nbsp;To-do-list :
-1. // (after point 34)
-2. End scene (after point 35)
+1. blur camera after death 
+2. show win/lose after blur (after point 1)
 3. Solve player-grenade no collision bug
-4. Add Barrier (after point 1)
-5. Complete yellow/remote grenade (after point 1)
-6. Complete green/gas grenade (after point 1)
+4. Add Barrier 
+5. Complete yellow/remote grenade 
+6. Complete green/gas grenade 
 7. choose grenade (after point 5 or 6)
 8. Show choosen grenade (after point 7)
 9. Start scene
 10. Start scene - Name entering space (after point 9)
 11. Start scene - Start game button (after point 9)
 12. Match result recording system (after point 10 and 11)
-13. Upadte End scene with match result recording system (after point 2 and 12)
+13. Upadte End scene with match result recording system (after point 34 and 12)
 14. Complete the arena (after point 1-13)
 15. Add Grenade path (after point 1-13) (optional)
 16. change player skin (after point 1-13)
@@ -76,10 +76,9 @@
 30. Lock player movemonet (after point 1)
 31. supply spawing sound effect 
 32. player death sound effect
-33. two hit dead system (after point 2)
-33. dead by message (after point 2)
-34. //
-35. blur camera after death (after point 1)
+33. two hit dead system (optional)
+33. dead by message (after point 5 and 6)
+34. show score board under win/lose (after point 2)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
