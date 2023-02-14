@@ -43,15 +43,15 @@
 41. UI for Barrier
 42. Solve Granade explosion dont add froce to player bug
 43. Kill player by grenade
-### &nbsp;&nbsp;To-do-list :
+### &nbsp;&nbsp;To-do-store :
 1. [End scene] blur camera after death (after point 30) XXX
 2. [End scene] show win/lose after blur (after point 1) XXX
 3. Solve player-grenade no collision bug
 4. Add Barrier 
 5. Complete yellow/remote grenade XXX
 6. Complete green/gas grenade XXX
-7. choose grenade (after point 5 or 6)
-8. Show choosen grenade (after point 7)
+7. choose grenade (after point 5 or 6) XXX
+8. Show choosen grenade (after point 7) XXX
 9. Start scene
 10. Start scene - Name entering space (after point 9)
 11. Start scene - Start game button (after point 9)
@@ -81,9 +81,9 @@
 34. [End scene] show score board under win/lose (after point 2) XXX
 ### &nbsp;&nbsp;To-do-list :
 1. [End scene] Lock winner movemonet 
-2. [End scene] blur camera after death (after point 1)
-3. [End scene] show win/lose after blur (after point 2)
-4. [End scene] show score board under win/lose (after point 3)
+2. [End scene] blur camera after death 
+3. [End scene] show win/lose after blur 
+4. [End scene] show score board under win/lose 
 5. [Remote grenade] choose Remote grenade by number key
 6. [Remote grenade] throw non-explodable grenade
 7. [Remote grenade] press number key to explode
@@ -99,6 +99,7 @@
 17. [Gas grenade] close gas
 18. [Gas grenade] make visable gas 
 19. [End scene] dead by what message (after point 12 or 18)
+20. Show choosen grenade (after point 12 and 18)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
