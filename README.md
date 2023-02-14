@@ -86,7 +86,7 @@
 27. [supply] hide old supply 
 14. Complete the arena 
 22. Player random spawing system 
-23. [Match result recording system]
+23. [Match result recording system] SQL?? i dont know arrrrr
 24. [End scene] Upadte End scene with match result recording system 
 28. [sound] Start scene music 
 29. [sound] End scene music 
