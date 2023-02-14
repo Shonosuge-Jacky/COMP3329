@@ -79,6 +79,12 @@
 33. two hit dead system (optional)
 33. [End scene] dead by what message (after point 5 and 6)
 34. [End scene] show score board under win/lose (after point 2)
+### &nbsp;&nbsp;To-do-list :
+1. [End scene] Lock winner movemonet 
+2. [End scene] blur camera after death (after point 1)
+3. [End scene] show win/lose after blur (after point 2)
+4. [End scene] show score board under win/lose (after point 3)
+5. 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
