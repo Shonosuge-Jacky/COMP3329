@@ -63,7 +63,7 @@
 17. background music
 18. red,yellow grenade explosion sound effect
 19. green grenade gas emition sound effect (after point 6)
-20. Barrier Visual effect (after point 4)
+20. Barrier Visual effect (after point 4) XXX
 21. Change sky box (optional)
 22. Player random spawing system (after point 11)
 23. Supply continuously spawing (after point 1-13)
