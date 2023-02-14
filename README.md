@@ -48,7 +48,7 @@
 1. [End scene] Lock winner movemonet 
 2. [End scene] blur camera after death 
 3. [End scene] show win/lose after blur 
-4. [End scene] show score board under win/lose 
+4. [End scene] show empty score board under win/lose 
 5. [End scene] press button to restart 
 6. [Remote grenade] choose Remote grenade by number key
 7. [Remote grenade] throw non-explodable grenade
@@ -87,8 +87,8 @@
 9. Start scene XXX
 10. Start scene - Name entering space (after point 9) XXX
 11. Start scene - Start game button (after point 9) XXX
-12. Match result recording system (after point 10 and 11)
-13. Upadte End scene with match result recording system (after point 34 and 12)
+12. [SQL] Match result recording system (after point 10 and 11)
+13. [End scene] Upadte End scene with match result recording system (after point 34 and 12)
 14. Complete the arena (after point 1-13)
 15. Add Grenade path (after point 1-13) (optional)
 16. change player skin (after point 1-13)
