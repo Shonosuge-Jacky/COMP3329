@@ -44,7 +44,7 @@
 42. Solve Granade explosion dont add froce to player bug
 43. Kill player by grenade
 ### &nbsp;&nbsp;To-do-list :
-1. //
+1. // (after point 34)
 2. End scene (after point 35)
 3. Solve player-grenade no collision bug
 4. Add Barrier (after point 1)
@@ -79,7 +79,7 @@
 33. two hit dead system (after point 2)
 33. dead by message (after point 2)
 34. //
-35. blur camera after death
+35. blur camera after death (after point 1)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
