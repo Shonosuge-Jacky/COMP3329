@@ -45,7 +45,7 @@
 43. Kill player by grenade
 ### &nbsp;&nbsp;To-do-list :
 1. //
-2. End scene (after point 1)
+2. End scene (after point 35)
 3. Solve player-grenade no collision bug
 4. Add Barrier (after point 1)
 5. Complete yellow/remote grenade (after point 1)
@@ -78,6 +78,8 @@
 32. player death sound effect
 33. two hit dead system (after point 2)
 33. dead by message (after point 2)
+34. //
+35. blur camera after death
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
