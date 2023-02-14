@@ -49,7 +49,7 @@
 3. Solve player-grenade no collision bug
 4. Add Barrier 
 5. Complete yellow/remote grenade XXX
-6. Complete green/gas grenade 
+6. Complete green/gas grenade XXX
 7. choose grenade (after point 5 or 6)
 8. Show choosen grenade (after point 7)
 9. Start scene
@@ -87,11 +87,18 @@
 5. [Remote grenade] choose Remote grenade by number key
 6. [Remote grenade] throw non-explodable grenade
 7. [Remote grenade] press number key to explode
-8. [Remote grenade] create two Remote grenade
-8. [Remote grenade] create three Remote grenade
-9. [Remote grenade] enlarge explodsion radius
-10. [Remote grenade] enlarge explodsion effect
-12. [End scene] dead by what message (after point 10 or y)
+8. [Remote grenade] make explode time lock
+9. [Remote grenade] create two Remote grenade
+10. [Remote grenade] create three Remote grenade
+11. [Remote grenade] enlarge explodsion radius
+12. [Remote grenade] enlarge explodsion effect
+13. [Gas grenade] choose Gas grenade by number key
+14. [Gas grenade] touch ground explode
+15. [Gas grenade] turn explode to gas area
+16. [Gas grenade] make gas area enlarge as time pass
+17. [Gas grenade] close gas
+18. [Gas grenade] make visable gas 
+19. [End scene] dead by what message (after point 12 or 18)
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 2. Destroyed wall's scrap pass through ground bug 
