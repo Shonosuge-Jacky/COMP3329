@@ -44,7 +44,7 @@
 42. Solve Granade explosion dont add froce to player bug
 43. Kill player by grenade
 ### &nbsp;&nbsp;To-do-list :
-1. blur camera after death 
+1. blur camera after death (after point 30)
 2. show win/lose after blur (after point 1)
 3. Solve player-grenade no collision bug
 4. Add Barrier 
@@ -72,8 +72,8 @@
 26. Change different supply's color (after point 24)
 27. hide old supply (after point 23)
 28. Start scene music (after point 9)
-29. End scene music (after point 2)
-30. Lock player movemonet (after point 1)
+29. End scene music (after point 1)
+30. Lock winner movemonet 
 31. supply spawing sound effect 
 32. player death sound effect
 33. two hit dead system (optional)
