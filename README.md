@@ -84,9 +84,9 @@
 6. Complete green/gas grenade XXX
 7. choose grenade (after point 5 or 6) XXX
 8. Show choosen grenade (after point 7) XXX
-9. Start scene
-10. Start scene - Name entering space (after point 9)
-11. Start scene - Start game button (after point 9)
+9. Start scene XXX
+10. Start scene - Name entering space (after point 9) XXX
+11. Start scene - Start game button (after point 9) XXX
 12. Match result recording system (after point 10 and 11)
 13. Upadte End scene with match result recording system (after point 34 and 12)
 14. Complete the arena (after point 1-13)
