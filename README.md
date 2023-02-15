@@ -41,6 +41,8 @@
 43. [BUG] Barrier effect non-synchronized bug <===
 44. [BUG] Barrier false lock bug <===
 45. [BUG] Supply re-open bug <===
+46. [BUG] Player residual bug <===
+45. [BUG] cant open Supply bug <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
