@@ -38,8 +38,9 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. Spawing Player on different location (after point 31)
-43. Barrier effect non-synchronized bug
-44. Barrier false lock bug
+43. [BUG] Barrier effect non-synchronized bug <===
+44. [BUG] Barrier false lock bug <===
+45. [BUG] Supply re-open bug <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
