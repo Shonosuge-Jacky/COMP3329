@@ -19,6 +19,7 @@ public class Granade : MonoBehaviourPunCallbacks
     //     countdown = delay;
     // }
 
+
     private void OnCollisionEnter(Collision collision){
         Explode();
         hasExploded=true;
@@ -77,18 +78,21 @@ public class Granade : MonoBehaviourPunCallbacks
         Collider[] collidersToMove = Physics.OverlapSphere(transform.position, radius);
         foreach(Collider nearbyObject in collidersToMove)
         {
+            
             // Add force
             Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
             if(rb!=null)    
             {
                 rb.AddExplosionForce(explosionForce, transform.position, radius);
+                if(rb.ToString()=="Player (UnityEngine.Rigidbody)")
+                {
+                    DestructibleP destP = nearbyObject.GetComponent<DestructibleP>();
+                    if(destP!=null)
+                    {
+                        destP.Destroy();
+                    }
+                }
             }
-            // Damage
-            // Destructible dest = nearbyObject.GetComponent<Destructible>();
-            // if(dest!=null)
-            // {
-            //     dest.Destroy();
-            // }
         }
         
         // Remove grenade
