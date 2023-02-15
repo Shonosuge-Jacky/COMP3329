@@ -70,22 +70,23 @@
 22. [End scene] dead by what message (after point 14 or 21)
 23. Show choosen grenade (after point 14 and 21)
 24. [Barrier] Add Barrier <===
-25. [Barrier] Barrier Visual effect ^
-26. [Start scene] a Camera filming the island <===
-27. [Start scene] Game title ^
-28. [Start scene] Player name entering space ^
-29. [Start scene] Start button ^
-30. [Start scene] Activate start button ^ * 
-31. [End scene] press button to Start scene (after point 30)
-32. [Arena] Build water area <===
-33. [Arena] Die if fall into water area ^
-34. [Arena] build a simple island ^ **
-35. [Supply] All possible Supply spawing in 3 rounds (after point 34)
-36. [Supply] Randomly spawing part of them ^
-37. [Supply] Change amount of grenade in different supply ^
-38. [Supply] Change different supply's color ^
-39. [Supply] hide old supply ^
-40. Spawing Player on different location (after point 34)
+17. [Barrier] synchronize ui icon ^
+26. [Barrier] Barrier Visual effect ^
+27. [Start scene] a Camera filming the island <===
+28. [Start scene] Game title ^
+29. [Start scene] Player name entering space ^
+30. [Start scene] Start button ^
+31. [Start scene] Activate start button ^ * 
+32. [End scene] press button to Start scene (after point 31)
+33. [Arena] Build water area <===
+34. [Arena] Die if fall into water area ^
+35. [Arena] build a simple island ^ **
+36. [Supply] All possible Supply spawing in 3 rounds (after point 35)
+37. [Supply] Randomly spawing part of them ^
+38. [Supply] Change amount of grenade in different supply ^
+39. [Supply] Change different supply's color ^
+40. [Supply] hide old supply ^
+41. Spawing Player on different location (after point 35)
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
