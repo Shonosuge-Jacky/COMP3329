@@ -43,9 +43,10 @@
 41. UI for Barrier
 42. Solve Granade explosion dont add froce to player bug
 43. Kill player by grenade
+44. Lock winner movemonet
 
 ### &nbsp;&nbsp;To-do-list :
-1. [End scene] Lock winner movemonet <===
+1. [End scene] Lock winner movemonet (Done)
 2. [End scene] blur camera after death ^
 3. [End scene] show win/lose after blur ^
 4. [End scene] show empty score board under win/lose ^
