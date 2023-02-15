@@ -122,3 +122,4 @@
 46. synchronize Barrier icon
 47. block throw grenade when using barrier
 48. Change grenade icon color when using barrier
+49. Close error box
