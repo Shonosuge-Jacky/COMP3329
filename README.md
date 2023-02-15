@@ -23,7 +23,7 @@
 21. [Gas grenade] make visable gas ^ **
 22. [End scene] dead by what message (after point 13 or 20)
 23. Show choosen grenade (after point 13 and 20)
-26. [Barrier] Barrier Visual effect <===
+26. (Done)
 28. [Start scene] a Camera filming the island <===
 29. [Start scene] Game title ^
 30. [Start scene] Player name entering space ^
@@ -118,3 +118,4 @@
 47. block throw grenade when using barrier
 48. Change grenade icon color when using barrier
 49. Close error box
+50. Barrier Visual effect
