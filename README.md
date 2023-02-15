@@ -30,16 +30,16 @@
 30. [Start scene] Player name entering space ^
 31. [Start scene] Start button ^
 32. [Start scene] Activate start button ^ * 
-33. [End scene] press button to Start scene (after point 31)
+33. [End scene] press button to Start scene (after point 29)
 34. [Arena] Build water area <===
 35. [Arena] Die if fall into water area ^
 36. [Arena] build a simple island ^ **
-37. [Supply] All possible Supply spawing in 3 rounds (after point 35)
+37. [Supply] All possible Supply spawing in 3 rounds (after point 33)
 38. [Supply] Randomly spawing part of them ^
 39. [Supply] Change amount of grenade in different supply ^
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
-42. Spawing Player on different location (after point 35)
+42. Spawing Player on different location (after point 33)
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
