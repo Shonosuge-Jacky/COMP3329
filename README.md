@@ -105,8 +105,11 @@
 34. [optional] Add Grenade path 
 35. [optional] change player skin 
 36. [optional] Change sky box 
+37. [optional] Change ground skin 
+37. [optional] Change wall skin 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
 3. Destroyed wall's scrap pass through ground bug 
 4. Multiplayer delay(~0.25s) bug
+5. Ground transparent when view from underground bug
