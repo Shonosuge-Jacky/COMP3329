@@ -47,7 +47,7 @@
 
 ### &nbsp;&nbsp;To-do-list :
 1. [End scene] Lock winner movemonet (Done)
-2. [End scene] blur camera after death ^
+2. [End scene] blur camera after death <===
 3. [End scene] show win/lose after blur ^
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
