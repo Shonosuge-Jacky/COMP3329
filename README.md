@@ -48,20 +48,21 @@
 22. Player random spawing system 
 23. [BUG] Solve player-grenade no collision bug
 24. [Match result recording system] SQL?? i dont know arrrrr
-25. [End scene] Upadte End scene with match result recording system 
+<\br> need : winner/loser name, dead reason, date, battle-duration
+26. [End scene] Upadte End scene with match result recording system 
 28. [sound] Start scene music 
 29. [sound] End scene music 
 31. [sound] supply spawing sound effect 
 32. [sound] player death sound effect
-30. [sound] background music
-31. [sound] red,yellow grenade explosion sound effect
-32. [sound] green grenade gas emition sound effect 
-33. [optional] two hit dead system
-34. [optional] Add Grenade path 
-35. [optional] change player skin 
-36. [optional] Change sky box 
-37. [optional] Change ground skin 
-37. [optional] Change wall skin 
+31. [sound] background music
+32. [sound] red,yellow grenade explosion sound effect
+33. [sound] green grenade gas emition sound effect 
+34. [optional] two hit dead system
+35. [optional] Add Grenade path 
+36. [optional] change player skin 
+37. [optional] Change sky box 
+38. [optional] Change ground skin 
+39. [optional] Change wall skin 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Explode effect retain bug
