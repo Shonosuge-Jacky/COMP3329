@@ -48,7 +48,7 @@
 22. Player random spawing system 
 23. [BUG] Solve player-grenade no collision bug
 24. [Match result recording system] SQL?? i dont know arrrrr
-<\br> need : winner/loser name, dead reason, date, battle-duration
+</br> need : winner/loser name, dead reason, date, battle-duration
 26. [End scene] Upadte End scene with match result recording system 
 28. [sound] Start scene music 
 29. [sound] End scene music 
