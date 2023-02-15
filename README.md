@@ -42,7 +42,7 @@
 39. [Supply] Change different supply's color ^
 40. [Supply] hide old supply ^
 41. Spawing Player on different location (after point 35)
-42. [barrier] block through grenade when using barrier <===
+42. [Barrier] block through grenade when using barrier <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
