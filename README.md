@@ -24,8 +24,8 @@
 21. [Gas grenade] make visable gas ^ **
 22. [End scene] dead by what message (after point 14 or 21)
 23. Show choosen grenade (after point 14 and 21)
-24. [Barrier] Add Barrier <===
-17. [Barrier] synchronize ui icon ^
+24. (Done)
+17. [Barrier] synchronize ui icon <===
 26. [Barrier] Barrier Visual effect ^
 27. [Start scene] a Camera filming the island <===
 28. [Start scene] Game title ^
@@ -115,3 +115,4 @@
 42. Solve Granade explosion dont add froce to player bug
 43. Kill player by grenade
 44. Lock winner movemonet
+45. Add Barrier
