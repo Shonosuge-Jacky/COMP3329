@@ -23,22 +23,21 @@
 21. [Gas grenade] make visable gas ^ **
 22. [End scene] dead by what message (after point 13 or 20)
 23. Show choosen grenade (after point 13 and 20)
-26. (Done)
 28. [Start scene] a Camera filming the island <===
 29. [Start scene] Game title ^
 30. [Start scene] Player name entering space ^
 31. [Start scene] Start button ^
 32. [Start scene] Activate start button ^ * 
-33. [End scene] press button to Start scene (after point 28)
+33. [End scene] press button to Start scene (after point 27)
 34. [Arena] Build water area <===
 35. [Arena] Die if fall into water area ^
 36. [Arena] build a simple island ^ **
-37. [Supply] All possible Supply spawing in 3 rounds (after point 32)
+37. [Supply] All possible Supply spawing in 3 rounds (after point 31)
 38. [Supply] Randomly spawing part of them ^
 39. [Supply] Change amount of grenade in different supply ^
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
-42. Spawing Player on different location (after point 32)
+42. Spawing Player on different location (after point 31)
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
