@@ -43,6 +43,7 @@
 40. [Supply] hide old supply ^
 41. Spawing Player on different location (after point 35)
 42. (Done)
+43. [Barrier] Change grenade icon color when using barrier
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
