@@ -54,55 +54,57 @@
 7. [Remote grenade] throw non-explodable grenade ^
 8. [Remote grenade] press number key to explode ^
 9. [Remote grenade] make explode time lock ^
-10. [Remote grenade] create two Remote grenade ^
-11. [Remote grenade] create three Remote grenade ^
-12. [Remote grenade] enlarge explodsion radius ^
-13. [Remote grenade] enlarge explodsion effect ^ **
-14. [Gas grenade] choose Gas grenade by number key <===
-15. [Gas grenade] touch ground explode ^
-16. [Gas grenade] turn explode to gas area ^
-17. [Gas grenade] make gas area enlarge as time pass ^
-18. [Gas grenade] close gas ^
-19. [Gas grenade] make visable gas ^ **
-20. [End scene] dead by what message (after point 13 or 19)
-21. Show choosen grenade (after point 13 and 19)
-22. [Barrier] Add Barrier <===
-23. [Barrier] Barrier Visual effect ^
-24. [Start scene] a Camera filming the island <===
-25. [Start scene] Game title ^
-26. [Start scene] Player name entering space ^
-27. [Start scene] Start button ^
-28. [Start scene] Activate start button ^ * 
-29. [End scene] press button to Start scene (after point 28)
-30. [Arena] Build water area <===
-31. [Arena] Die if fall into water area ^
-32. [Arena] build a simple island ^
-33. [Supply] All possible Supply spawing in 3 rounds (after point 32)
-34. [Supply] Randomly spawing part of them ^
-35. [Supply] Change amount of grenade in different supply ^
-36. [Supply] Change different supply's color ^
-37. [Supply] hide old supply ^
-38. Spawing Player on different location (after point 32)
+10. [Remote grenade] synchronize ui counting ^
+11. [Remote grenade] create two Remote grenade ^
+12. [Remote grenade] create three Remote grenade ^
+13. [Remote grenade] enlarge explodsion radius ^
+14. [Remote grenade] enlarge explodsion effect ^ **
+15. [Gas grenade] choose Gas grenade by number key <===
+16. [Gas grenade] touch ground explode ^
+17. [Gas grenade] synchronize ui counting ^
+18. [Gas grenade] turn explode to gas area ^
+19. [Gas grenade] make gas area enlarge as time pass ^
+20. [Gas grenade] close gas ^
+21. [Gas grenade] make visable gas ^ **
+22. [End scene] dead by what message (after point 14 or 21)
+23. Show choosen grenade (after point 14 and 21)
+24. [Barrier] Add Barrier <===
+25. [Barrier] Barrier Visual effect ^
+26. [Start scene] a Camera filming the island <===
+27. [Start scene] Game title ^
+28. [Start scene] Player name entering space ^
+29. [Start scene] Start button ^
+30. [Start scene] Activate start button ^ * 
+31. [End scene] press button to Start scene (after point 30)
+32. [Arena] Build water area <===
+33. [Arena] Die if fall into water area ^
+34. [Arena] build a simple island ^ **
+35. [Supply] All possible Supply spawing in 3 rounds (after point 34)
+36. [Supply] Randomly spawing part of them ^
+37. [Supply] Change amount of grenade in different supply ^
+38. [Supply] Change different supply's color ^
+39. [Supply] hide old supply ^
+40. Spawing Player on different location (after point 34)
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
 22. Player random spawing system 
-23. [Match result recording system] SQL?? i dont know arrrrr
-24. [End scene] Upadte End scene with match result recording system 
+23. [BUG] Solve player-grenade no collision bug
+24. [Match result recording system] SQL?? i dont know arrrrr
+25. [End scene] Upadte End scene with match result recording system 
 28. [sound] Start scene music 
 29. [sound] End scene music 
 31. [sound] supply spawing sound effect 
 32. [sound] player death sound effect
-29. [sound] background music
-30. [sound] red,yellow grenade explosion sound effect
-31. [sound] green grenade gas emition sound effect 
+30. [sound] background music
+31. [sound] red,yellow grenade explosion sound effect
+32. [sound] green grenade gas emition sound effect 
 33. [optional] two hit dead system
-33. [optional] Add Grenade path 
-34. [optional] change player skin 
-35. [optional] Change sky box 
+34. [optional] Add Grenade path 
+35. [optional] change player skin 
+36. [optional] Change sky box 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
-1. Solve player-grenade no collision bug
-2. Explode effect retain bug
+1. Explode effect retain bug
 3. Destroyed wall's scrap pass through ground bug 
 4. Multiplayer delay(~0.25s) bug
