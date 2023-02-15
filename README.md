@@ -25,8 +25,8 @@
 22. [End scene] dead by what message (after point 14 or 21)
 23. Show choosen grenade (after point 14 and 21)
 24. (Done)
-17. [Barrier] synchronize ui icon <===
-26. [Barrier] Barrier Visual effect ^
+17. (Done) 
+26. [Barrier] Barrier Visual effect <===
 27. [Start scene] a Camera filming the island <===
 28. [Start scene] Game title ^
 29. [Start scene] Player name entering space ^
@@ -69,6 +69,7 @@
 3. Destroyed wall's scrap pass through ground bug 
 4. Multiplayer delay(~0.25s) bug
 5. Ground transparent when view from underground bug
+6. have error message when explode with barrier
 
 ### &nbsp;&nbsp;What had been done :
 1. Throw Grenade 
@@ -116,3 +117,4 @@
 43. Kill player by grenade
 44. Lock winner movemonet
 45. Add Barrier
+46. synchronize Barrier icon
