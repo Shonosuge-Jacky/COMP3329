@@ -107,21 +107,21 @@
 30. [Dash] Dash UI
 31. [Dash] Dash coolown count
 32. Spawn player
-33. Solve cant open supply bug
+33. [Supply] Solve cant open supply bug
 34. Turn into multiplayer
-35. Solve multiplayer Grenades location non-synchronized bug 
-36. Solve multiplayer Grenades throw direction non-synchronized bug 
-37. Count number of player in the server 
-38. Synchronize supply box spawning time
-39. Synchronize supply box status
+35. [Cracker Grenade] Solve multiplayer Grenades location non-synchronized bug 
+36. [Cracker Grenade] Solve multiplayer Grenades throw direction non-synchronized bug 
+37. [Supply] Count number of player in the server 
+38. [Supply] Synchronize supply box spawning time
+39. [Supply] Synchronize supply box status
 40. UI for yellow and green grenade
-41. UI for Barrier
-42. Solve Granade explosion dont add froce to player bug
-43. Kill player by grenade
-44. Lock winner movemonet
-45. Add Barrier
-46. synchronize Barrier icon
-47. block throw grenade when using barrier
-48. Change grenade icon color when using barrier
+41. [Barrier] UI for Barrier
+42. [Cracker Grenade] Solve Granade explosion dont add froce to player bug
+43. [Cracker Grenade] Kill player by grenade
+44. [End scene] Lock winner movemonet
+45. [Barrier] Add Barrier
+46. [Barrier] synchronize Barrier icon
+47. [Barrier] block throw grenade when using barrier
+48. [Barrier] Change grenade icon color when using barrier
 49. Close error box
-50. Barrier Visual effect
+50. [Barrier] Barrier Visual effect
