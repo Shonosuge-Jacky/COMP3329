@@ -43,6 +43,7 @@
 45. [BUG] Supply re-open bug <===
 46. [BUG] Player residual bug <===
 45. [BUG] cant open Supply bug <===
+47. [Barrier] camera effect <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
