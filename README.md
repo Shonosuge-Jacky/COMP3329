@@ -44,6 +44,7 @@
 46. [BUG] Player residual bug <===
 45. [BUG] cant open Supply bug <===
 47. [Barrier] camera effect <===
+48. camera effect when get hitted
 
 ### &nbsp;&nbsp;To-do-store :
 1. Complete the arena 
