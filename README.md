@@ -47,7 +47,7 @@
 48. camera effect when get hitted
 
 ### &nbsp;&nbsp;To-do-store :
-1. Complete the arena 
+1. [Arena] Complete the arena 
 22. Player random spawing system 
 23. [BUG] Solve player-grenade no collision bug
 24. [Match result recording system] SQL?? i dont know arrrrr
@@ -98,14 +98,14 @@
 21. [Arena] Create destoryable wall
 22. [Cracker Grenade] Turn grenade to Red_Cracker Grenade
 23. [Dash] Create dash function
-24. Solve dash fly bug
-25. Solve dash penetrate bug
-26. Solve dash fly box bug
-27. Solve dash stick on the sky bug
-28. Improve destroyed wall
-29. Dash coolown
-30. Dash UI
-31. Dash coolown count
+24. [Dash] Solve dash fly bug
+25. [Dash] Solve dash penetrate bug
+26. [Dash] Solve dash fly box bug
+27. [Dash] Solve dash stick on the sky bug
+28. [Arena] Improve destroyed wall
+29. [Dash] Dash coolown
+30. [Dash] Dash UI
+31. [Dash] Dash coolown count
 32. Spawn player
 33. Solve cant open supply bug
 34. Turn into multiplayer
