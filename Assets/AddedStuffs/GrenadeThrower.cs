@@ -10,11 +10,23 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     public grenadeNumber redcount;
     public Transform originTransform;
     public Transform originTransformf;
+ 	private bool barriered=false;
+ 	private bool barriering=false;
 
     // Update is called once per frame
     void Update()
     {
         if (photonView.IsMine)
+        {
+            if (Input.GetKey("r") && barriered==false)
+            {
+				barriered=true;
+				barriering=true;
+                Invoke("barrierend",5);
+            }
+		}
+
+        if (photonView.IsMine && barriering==false)
         {
             if(Input.GetMouseButtonDown(0) && redcount.GetComponent<grenadeNumber>().count>0)
             {
@@ -24,6 +36,14 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
             }
         }
     }
+
+	private void barrierend()
+	{
+        if (photonView.IsMine)
+        {
+			barriering=false;
+		}
+	}
 
     [PunRPC] 
     public void ThrowGrenade()

@@ -42,6 +42,12 @@ MonoBehaviour:
   - ThrowGrenade
   - opensupplynow
   - Lock
+  - barrier
+  - barrierend2
+  - SupplyState01f
+  - SupplyState02f
+  - borns1
+  - borns2
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

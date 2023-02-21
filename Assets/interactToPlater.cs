@@ -13,15 +13,18 @@ public class interactToPlater : MonoBehaviourPunCallbacks
     {
         if(Input.GetKeyDown(KeyCode.F))
         {
-            float interactRange = 1f;
-            Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
-            foreach(Collider collider in colliderArray)
+            if (photonView.IsMine)
             {
-                if (collider.TryGetComponent(out openSupply openSupply) && SupplyState==1)
+                float interactRange = 1f;
+                Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
+                foreach(Collider collider in colliderArray)
                 {
-                    SupplyState=0;
-                    photonView.RPC("opensupplynow",RpcTarget.All);
-                }        
+                    if (collider.TryGetComponent(out openSupply openSupply) && SupplyState==1)
+                    {
+                        // SupplyState=0;
+                        photonView.RPC("opensupplynow",RpcTarget.All);
+                    }        
+                }
             }
         }
     }
@@ -29,6 +32,7 @@ public class interactToPlater : MonoBehaviourPunCallbacks
     [PunRPC] 
     public void opensupplynow()
     {
+        SupplyState=0;
         Object001test.GetComponent<MeshCollider>().enabled=true;
         theSupplytest.GetComponent<Animation>().Play("Crate_Open");
     }

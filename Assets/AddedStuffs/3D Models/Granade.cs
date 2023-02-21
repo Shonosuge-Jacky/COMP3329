@@ -6,7 +6,7 @@ using Photon.Pun;
 public class Granade : MonoBehaviourPunCallbacks
 {
     // public float delay = 3f;
-    public float radius =  5f;
+    public float radius =  3f;
     public float explosionForce = 700f ;
 
     public GameObject explosionEffect;
