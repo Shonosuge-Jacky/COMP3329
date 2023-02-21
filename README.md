@@ -39,7 +39,6 @@
 41. [Supply] hide old supply ^
 42. [ // ] Spawing Player on different location (after point 31)
 46. [ // ] Solve Player residual **Bug** <===
-45. [Supply] Solve player2 cant open Supply **Bug** <===
 51. [Supply] Solve player1 open supply box through player2 **Bug** <===
 47. [Barrier] Barrier camera effect <===
 48. [Dash] Dash camera effect <===
@@ -134,3 +133,4 @@
 54. [Supply] Solve Supply re-open **Bug** 
 55. [Supply] Solve Pick grenade through other player **Bug**
 56. [Supply] Solve Supply re-pick **Bug**
+57. [Supply] Solve player2 cant open Supply **Bug** <===
