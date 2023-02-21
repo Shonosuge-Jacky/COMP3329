@@ -40,7 +40,7 @@
 42. [ // ] Spawing Player on different location (after point 31)
 46. [ // ] Solve Player residual **Bug** <===
 45. [Supply] Solve player2 cant open Supply **Bug** <===
-51. [Supply] Solve open supply box through other player **Bug** <===
+51. [Supply] Solve player1 open supply box through player2 **Bug** <===
 47. [Barrier] Barrier camera effect <===
 48. [Dash] Dash camera effect <===
 49. [ // ] Camera effect when get hitted <===
