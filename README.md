@@ -136,6 +136,7 @@
 54. [Supply] Solve Supply re-open **Bug** 
 55. [Supply] Solve Pick grenade through other player **Bug**
 56. [Supply] Solve Supply re-pick **Bug**
-57. [ // ] Solve run into different server **Bug** <===
-58. [Supply] Solve player2 cant open Supply **Bug** <===
-59. [Supply] Solve player1 open supply box through player2 **Bug** <===
+57. [ // ] Solve run into different server **Bug** 
+58. [Supply] Solve player2 cant open Supply **Bug** 
+59. [Supply] Solve player1 open supply box through player2 **Bug**
+60. [Supply] Optimalize supplyInteraction's script
