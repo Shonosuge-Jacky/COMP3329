@@ -38,9 +38,9 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. [ // ] Spawing Player on different location (after point 31)
-45. [Supply] Supply re-pick **Bug** <===
-46. [ // ] Player residual **Bug** <===
-45. [Supply] cant open Supply **Bug** <===
+45. [Supply] Solve Supply re-pick **Bug** <===
+46. [ // ] Solve Player residual **Bug** <===
+45. [Supply] Solve cant open Supply **Bug** <===
 47. [Barrier] Barrier camera effect <===
 48. [Dash] Dash camera effect <===
 49. [ // ] Camera effect when get hitted <===
@@ -68,11 +68,11 @@
 39. [optional] Change wall skin 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
-1. Explode effect retain **Bug**
-3. Destroyed wall's scrap pass through ground **Bug** 
-4. Multiplayer delay(~0.25s) **Bug**
-5. Ground transparent when view from underground **Bug**
-6. have error message when explode with barrier **Bug**
+1. Solve Explode effect retain **Bug**
+3. Solve Destroyed wall's scrap pass through ground **Bug** 
+4. Solve Multiplayer delay(~0.25s) **Bug**
+5. Solve Ground transparent when view from underground **Bug**
+6. Solve have error message when explode with barrier **Bug**
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
