@@ -28,8 +28,8 @@
 21. [Gas grenade] make visable gas ^ **
 22. [End scene] dead by what message (after point 13 or 20)
 23. [ // ] Show choosen grenade (after point 13 and 20)
-28. [Start scene] a Camera filming the island <===
-29. [Start scene] Game title ^
+28. (Done)
+29. [Start scene] Game title Font Asset <===
 30. [Start scene] Player name entering space ^
 31. [Start scene] Start button ^
 32. [Start scene] Activate start button ^ * 
@@ -141,3 +141,5 @@
 59. [Supply] Solve player1 open supply box through player2 **Bug**
 60. [Supply] Optimalize supplyInteraction's script
 61. [Supply] Solve Supply box2 animation **Bug**
+62. [Start scene] a Camera filming the island 
+63. [Start scene] Game title
