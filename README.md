@@ -46,6 +46,7 @@
 45. [BUG] cant open Supply bug <===
 47. [Barrier] camera effect <===
 48. Camera effect when get hitted
+49. cant do anything before all player arrive
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
