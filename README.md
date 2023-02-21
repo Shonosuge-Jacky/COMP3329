@@ -37,7 +37,7 @@
 39. [Supply] Change amount of grenade in different supply ^
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
-42. Spawing Player on different location (after point 31)
+42. [ // ]Spawing Player on different location (after point 31)
 45. [Supply] Supply re-pick bug <===
 46. Player residual bug <===
 45. [Supply] cant open Supply bug <===
