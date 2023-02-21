@@ -38,7 +38,6 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. Spawing Player on different location (after point 31)
-44. [Barrier] Barrier false lock bug <===
 45. [Supply] Supply re-open bug <===
 46. Player residual bug <===
 45. [Supply] cant open Supply bug <===
