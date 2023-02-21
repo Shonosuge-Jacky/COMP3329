@@ -40,13 +40,13 @@
 42. [ // ] Spawing Player on different location (after point 31)
 46. [ // ] Solve Player residual **Bug** <===
 45. [Supply] Solve cant open Supply **Bug** <===
-51. [Supply] Solve open supply box through other player **Bug**
+51. [Supply] Solve open supply box through other player **Bug** <===
 47. [Barrier] Barrier camera effect <===
 48. [Dash] Dash camera effect <===
 49. [ // ] Camera effect when get hitted <===
 50. [ // ] cant do anything before all player arrive <===
 50. [ // ] stand up by 2 successive hit **Bug** <===
-51. [Supply] Solve open supply box through other player **Bug**
+51. [Supply] Solve open supply box through other player **Bug** <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
