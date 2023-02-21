@@ -140,3 +140,4 @@
 58. [Supply] Solve player2 cant open Supply **Bug** 
 59. [Supply] Solve player1 open supply box through player2 **Bug**
 60. [Supply] Optimalize supplyInteraction's script
+61. [Supply] Supply box2 animation **Bug**
