@@ -39,7 +39,6 @@
 41. [Supply] hide old supply ^
 42. Spawing Player on different location (after point 31)
 45. [Supply] Supply re-pick bug <===
-45. [Supply] Pick grenade by other player <===
 46. Player residual bug <===
 45. [Supply] cant open Supply bug <===
 47. [Barrier] Barrier camera effect <===
@@ -130,3 +129,4 @@
 52. [Barrier] Barrier effect non-synchronized bug
 53. [Barrier] win by attacking barrier bug 
 54. [Supply] Supply re-open bug 
+55. [Supply] Pick grenade through other player
