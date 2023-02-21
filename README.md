@@ -77,22 +77,22 @@
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
 2. [Cracker Grenade] Grenade explosion
-3. [Cracker Grenade] [Bug] Solve pink Grenade bug
+3. [Cracker Grenade] Solve pink Grenade **bug
 4. [Movement] Camera movement
 5. [Movement] Player movement
 6. [Movement] Camera-Player Synchronization
-7. [ // ] [Bug] Solve sky box bug 
+7. [ // ] Solve sky box bug 
 8. [ // ] Combine Grenade and movement
 9. [Cracker Grenade] [Bug] Solve high speed Grenade ignore collision bug
 10. [Cracker Grenade] Grenade UI
 11. [Cracker Grenade] Grenade UI count
 12. [Supply] Pick Grenade
-13. [Cracker Grenade] [Bug] Solve player-grenade collision bug
-14. [Movement] [Bug] Solve cant jump on box bug
-15. [Supply] [Bug] Solve supply box cover bug 
+13. [Cracker Grenade] Solve player-grenade collision bug
+14. [Movement] Solve cant jump on box bug
+15. [Supply] Solve supply box cover bug 
 16. [Supply] Supply box interaction
 17. [Supply] Disable Supply box movement
-18. [Supply] [Bug] Solve multi-Supply box bug
+18. [Supply] Solve multi-Supply box bug
 19. [Supply] Spawn supply box
 20. [Supply] Supply box spawning effect
 21. [Arena] Create destoryable wall
