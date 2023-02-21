@@ -48,7 +48,6 @@
 48. [Dash] Dash camera effect <===
 49. [ // ] Camera effect when get hitted <===
 50. [ // ] cant do anything before all player arrive <===
-50. [ // ] stand up by 2 successive hit **Bug** <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
