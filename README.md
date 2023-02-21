@@ -38,15 +38,16 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. Spawing Player on different location (after point 31)
-43. [BUG] end game still can use Barrier bug <===
-43. [BUG] Barrier effect non-synchronized bug <===
-44. [BUG] Barrier false lock bug <===
-45. [BUG] Supply re-open bug <===
-46. [BUG] Player residual bug <===
-45. [BUG] cant open Supply bug <===
-47. [Barrier] camera effect <===
-48. Camera effect when get hitted
-49. cant do anything before all player arrive
+43. [Barrier] end game still can use Barrier bug <===
+43. [Barrier] Barrier effect non-synchronized bug <===
+44. [Barrier] Barrier false lock bug <===
+45. [Supply] Supply re-open bug <===
+46. Player residual bug <===
+45. [Supply] cant open Supply bug <===
+47. [Barrier] Barrier camera effect <===
+47. [Dash] Dash camera effect <===
+48. Camera effect when get hitted <===
+49. cant do anything before all player arrive <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
