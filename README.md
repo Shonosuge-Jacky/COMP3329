@@ -125,8 +125,8 @@
 48. [Barrier] Change grenade icon color when using barrier
 49. [ // ] Close error box
 50. [Barrier] Barrier Visual effect
-51. [Barrier] end game still can use Barrier **Bug**
-52. [Barrier] Barrier effect non-synchronized **Bug**
-53. [Barrier] win by attacking barrier **Bug** 
-54. [Supply] Supply re-open **Bug** 
-55. [Supply] Pick grenade through other player **Bug**
+51. [Barrier] Solve end game still can use Barrier **Bug**
+52. [Barrier] Solve Barrier effect non-synchronized **Bug**
+53. [Barrier] Solve win by attacking barrier **Bug** 
+54. [Supply] Solve Supply re-open **Bug** 
+55. [Supply] Solve Pick grenade through other player **Bug**
