@@ -38,6 +38,7 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. Spawing Player on different location (after point 31)
+43. [BUG] end game still can use Barrier bug <===
 43. [BUG] Barrier effect non-synchronized bug <===
 44. [BUG] Barrier false lock bug <===
 45. [BUG] Supply re-open bug <===
