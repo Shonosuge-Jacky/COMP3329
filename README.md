@@ -47,6 +47,7 @@
 50. [ // ] cant do anything before all player arrive <===
 50. [ // ] stand up by 2 successive hit **Bug** <===
 51. [Supply] Solve open supply box through other player **Bug** <===
+50. [ // ] run into different server **Bug** <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
