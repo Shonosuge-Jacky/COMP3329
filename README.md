@@ -49,8 +49,6 @@
 49. [ // ] Camera effect when get hitted <===
 50. [ // ] cant do anything before all player arrive <===
 50. [ // ] stand up by 2 successive hit **Bug** <===
-51. [Supply] Solve player1 open supply box through player2 **Bug** <===
-51. [Supply] Solve player2 cant open Supply **Bug** <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -139,3 +137,5 @@
 55. [Supply] Solve Pick grenade through other player **Bug**
 56. [Supply] Solve Supply re-pick **Bug**
 57. [ // ] Solve run into different server **Bug** <===
+58. [Supply] Solve player2 cant open Supply **Bug** <===
+59. [Supply] Solve player1 open supply box through player2 **Bug** <===
