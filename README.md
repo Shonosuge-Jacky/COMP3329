@@ -38,7 +38,7 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. Spawing Player on different location (after point 31)
-45. [Supply] Supply re-open bug <===
+45. [Supply] Supply re-pick bug <===
 46. Player residual bug <===
 45. [Supply] cant open Supply bug <===
 47. [Barrier] Barrier camera effect <===
@@ -127,4 +127,5 @@
 50. [Barrier] Barrier Visual effect
 51. [Barrier] end game still can use Barrier bug
 52. [Barrier] Barrier effect non-synchronized bug
-53. [Barrier] win by attacking barrier bug <===
+53. [Barrier] win by attacking barrier bug 
+54. [Supply] Supply re-open bug 
