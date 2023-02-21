@@ -77,7 +77,7 @@
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
 2. [Cracker Grenade] Grenade explosion
-3. [Cracker Grenade] Solve pink Grenade **bug
+3. [Cracker Grenade] Solve pink Grenade **bug**
 4. [Movement] Camera movement
 5. [Movement] Player movement
 6. [Movement] Camera-Player Synchronization
