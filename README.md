@@ -38,7 +38,6 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. Spawing Player on different location (after point 31)
-43. [Barrier] end game still can use Barrier bug <===
 43. [Barrier] Barrier effect non-synchronized bug <===
 44. [Barrier] Barrier false lock bug <===
 45. [Supply] Supply re-open bug <===
@@ -128,3 +127,4 @@
 48. [Barrier] Change grenade icon color when using barrier
 49. Close error box
 50. [Barrier] Barrier Visual effect
+51. [Barrier] end game still can use Barrier bug
