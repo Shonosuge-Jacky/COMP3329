@@ -1,7 +1,7 @@
 # COMP3329 Group Project
 
 ### &nbsp;&nbsp;Common bugs :
-1. Should show in all players view => only show to players who do it
+1. Should show in all players' view => only show to player who do it
 2. Should only happen on Player A => happen on all Player 
 3. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition
 
