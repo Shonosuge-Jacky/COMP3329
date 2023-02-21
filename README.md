@@ -43,7 +43,7 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. [ // ] Spawing Player on different location (after point 31)
-46. [ // ] Solve Player residual **Bug** <===
+46. [ // ] Solve Player residual **Bug** (after point 28)
 </br> - detoryAllPlayer before game restart
 47. [Barrier] Barrier camera effect <===
 48. [Dash] Dash camera effect <===
