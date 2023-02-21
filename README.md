@@ -38,7 +38,6 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. [ // ] Spawing Player on different location (after point 31)
-45. [Supply] Solve Supply re-pick **Bug** <===
 46. [ // ] Solve Player residual **Bug** <===
 45. [Supply] Solve cant open Supply **Bug** <===
 51. [Supply] Solve open supply box through other player **Bug**
@@ -133,3 +132,4 @@
 53. [Barrier] Solve win by attacking barrier **Bug** 
 54. [Supply] Solve Supply re-open **Bug** 
 55. [Supply] Solve Pick grenade through other player **Bug**
+56. [Supply] Solve Supply re-pick **Bug**
