@@ -38,9 +38,9 @@
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
 42. [ // ] Spawing Player on different location (after point 31)
-45. [Supply] Supply re-pick bug <===
-46. [ // ] Player residual bug <===
-45. [Supply] cant open Supply bug <===
+45. [Supply] Supply re-pick **Bug** <===
+46. [ // ] Player residual **Bug** <===
+45. [Supply] cant open Supply **Bug** <===
 47. [Barrier] Barrier camera effect <===
 48. [Dash] Dash camera effect <===
 49. [ // ] Camera effect when get hitted <===
@@ -49,7 +49,7 @@
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
 22. [ // ] Player random spawing system 
-23. [BUG] Solve player-grenade no collision bug
+23. [BUG] Solve player-grenade no collision **Bug**
 24. [Match result recording system] SQL?? i dont know arrrrr
 </br> - need : winner/loser name, dead reason, date, battle-duration
 26. [End scene] Upadte End scene with match result recording system 
@@ -68,11 +68,11 @@
 39. [optional] Change wall skin 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
-1. Explode effect retain bug
-3. Destroyed wall's scrap pass through ground bug 
-4. Multiplayer delay(~0.25s) bug
-5. Ground transparent when view from underground bug
-6. have error message when explode with barrier
+1. Explode effect retain **Bug**
+3. Destroyed wall's scrap pass through ground **Bug** 
+4. Multiplayer delay(~0.25s) **Bug**
+5. Ground transparent when view from underground **Bug**
+6. have error message when explode with barrier **Bug**
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
@@ -83,7 +83,7 @@
 6. [Movement] Camera-Player Synchronization
 7. [ // ] Solve sky box **Bug** 
 8. [ // ] Combine Grenade and movement
-9. [Cracker Grenade] [Bug] Solve high speed Grenade ignore collision **Bug**
+9. [Cracker Grenade] Solve high speed Grenade ignore collision **Bug**
 10. [Cracker Grenade] Grenade UI
 11. [Cracker Grenade] Grenade UI count
 12. [Supply] Pick Grenade
