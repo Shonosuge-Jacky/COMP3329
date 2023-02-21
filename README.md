@@ -44,6 +44,7 @@
 41. [Supply] hide old supply ^
 42. [ // ] Spawing Player on different location (after point 31)
 46. [ // ] Solve Player residual **Bug** <===
+</br> - detoryAllPlayer before game restart
 47. [Barrier] Barrier camera effect <===
 48. [Dash] Dash camera effect <===
 49. [ // ] Camera effect when get hitted <===
