@@ -77,46 +77,46 @@
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
 2. [Cracker Grenade] Grenade explosion
-3. [Cracker Grenade] Solve pink Grenade **bug**
+3. [Cracker Grenade] Solve pink Grenade **Bug**
 4. [Movement] Camera movement
 5. [Movement] Player movement
 6. [Movement] Camera-Player Synchronization
-7. [ // ] Solve sky box bug 
+7. [ // ] Solve sky box **Bug** 
 8. [ // ] Combine Grenade and movement
-9. [Cracker Grenade] [Bug] Solve high speed Grenade ignore collision bug
+9. [Cracker Grenade] [Bug] Solve high speed Grenade ignore collision **Bug**
 10. [Cracker Grenade] Grenade UI
 11. [Cracker Grenade] Grenade UI count
 12. [Supply] Pick Grenade
-13. [Cracker Grenade] Solve player-grenade collision bug
-14. [Movement] Solve cant jump on box bug
-15. [Supply] Solve supply box cover bug 
+13. [Cracker Grenade] Solve player-grenade collision **Bug**
+14. [Movement] Solve cant jump on box **Bug**
+15. [Supply] Solve supply box cover **Bug** 
 16. [Supply] Supply box interaction
 17. [Supply] Disable Supply box movement
-18. [Supply] Solve multi-Supply box bug
+18. [Supply] Solve multi-Supply box **Bug**
 19. [Supply] Spawn supply box
 20. [Supply] Supply box spawning effect
 21. [Arena] Create destoryable wall
 22. [Cracker Grenade] Turn grenade to Red_Cracker Grenade
 23. [Dash] Create dash function
-24. [Dash] Solve dash fly bug
-25. [Dash] Solve dash penetrate bug
-26. [Dash] Solve dash fly box bug
-27. [Dash] Solve dash stick on the sky bug
+24. [Dash] Solve dash fly **Bug**
+25. [Dash] Solve dash penetrate **Bug**
+26. [Dash] Solve dash fly box **Bug**
+27. [Dash] Solve dash stick on the sky **Bug**
 28. [Arena] Improve destroyed wall
 29. [Dash] Dash coolown
 30. [Dash] Dash UI
 31. [Dash] Dash coolown count
 32. [ // ] Spawn player
-33. [Supply] Solve cant open supply bug
+33. [Supply] Solve cant open supply **Bug**
 34. [ // ] Turn into multiplayer
-35. [Cracker Grenade] Solve multiplayer Grenades location non-synchronized bug 
-36. [Cracker Grenade] Solve multiplayer Grenades throw direction non-synchronized bug 
+35. [Cracker Grenade] Solve multiplayer Grenades location non-synchronized **Bug** 
+36. [Cracker Grenade] Solve multiplayer Grenades throw direction non-synchronized **Bug**
 37. [Supply] Count number of player in the server 
 38. [Supply] Synchronize supply box spawning time
 39. [Supply] Synchronize supply box status
 40. [ // ] UI for yellow and green grenade
 41. [Barrier] UI for Barrier
-42. [Cracker Grenade] Solve Granade explosion dont add froce to player bug
+42. [Cracker Grenade] Solve Granade explosion dont add froce to player **Bug**
 43. [Cracker Grenade] Kill player by grenade
 44. [End scene] Lock winner movemonet
 45. [Barrier] Add Barrier
@@ -125,8 +125,8 @@
 48. [Barrier] Change grenade icon color when using barrier
 49. [ // ] Close error box
 50. [Barrier] Barrier Visual effect
-51. [Barrier] end game still can use Barrier bug
-52. [Barrier] Barrier effect non-synchronized bug
-53. [Barrier] win by attacking barrier bug 
-54. [Supply] Supply re-open bug 
-55. [Supply] Pick grenade through other player
+51. [Barrier] end game still can use Barrier **Bug**
+52. [Barrier] Barrier effect non-synchronized **Bug**
+53. [Barrier] win by attacking barrier **Bug** 
+54. [Supply] Supply re-open **Bug** 
+55. [Supply] Pick grenade through other player **Bug**
