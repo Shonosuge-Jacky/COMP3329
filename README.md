@@ -32,7 +32,7 @@
 28. (Done)
 30. (Done)
 29. (Done)
-32. (Done)
+32. [Start scene] Start only when name!=null <=== *
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
 35. [Arena] Die if fall into water area ^
