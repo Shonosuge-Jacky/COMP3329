@@ -7,7 +7,8 @@
 
 ### &nbsp;&nbsp;To-do-list :
 1. [End scene] blur camera after death <===
-2. [End scene] show win/lose after blur ^
+2. [End scene] hide camera reticle ^
+3. [End scene] show win/lose after blur ^
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
 6. [Remote grenade] choose Remote grenade by number key <===
@@ -26,10 +27,9 @@
 19. [Gas grenade] make gas area enlarge as time pass ^
 20. [Gas grenade] close gas ^
 21. [Gas grenade] make visable gas ^ **
-22. [End scene] dead by what message (after point 13 or 20)
-23. [ // ] Show choosen grenade (after point 13 and 20)
+22. [End scene] dead by what message (after point 14 or 21)
+23. [ // ] Show choosen grenade (after point 14 and 21)
 28. (Done)
-30. [Start scene] Remove camera reticle <===
 30. [Start scene] Disable start button after press <===
 29. [Start scene] Player name entering space <===
 32. [Start scene] Save player name ^ *
@@ -148,3 +148,4 @@
 65. [Start scene] Create Start button 
 66. [Start scene] Activate start button
 67. [Start scene] Start button press effect
+68. [Start scene] Remove camera reticle 
