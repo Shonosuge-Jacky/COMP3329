@@ -30,6 +30,7 @@
 23. [ // ] Show choosen grenade (after point 13 and 20)
 28. (Done)
 29. (Done)
+30. [Start scene] Remove camera reticle <===
 30. [Start scene] Disable start button after press <===
 29. [Start scene] Player name entering space <===
 32. [Start scene] Save player name ^ *
