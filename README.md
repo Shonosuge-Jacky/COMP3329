@@ -30,8 +30,8 @@
 23. [ // ] Show choosen grenade (after point 13 and 20)
 28. (Done)
 29. (Done)
-30. [Start scene] Start button ^
-31. [Start scene] Activate start button ^ 
+30. (Done)
+29. (Done)
 32. [Start scene] Player name entering space ^ *
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
@@ -145,3 +145,5 @@
 63. [Start scene] Game title
 64. [Start scene] Start scene Font Asset
 64. [Start scene] Start scene Color Gradient
+65. [Start scene] Start button 
+66. [Start scene] Activate start button 
