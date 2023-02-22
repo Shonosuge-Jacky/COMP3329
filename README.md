@@ -32,7 +32,7 @@
 28. (Done)
 30. (Done)
 29. (Done)
-32. [Start scene] Start only when name!=null <=== *
+29. (Done)
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
 35. [Arena] Die if fall into water area ^
@@ -153,3 +153,4 @@
 70. [Start scene] Get player name
 71. [Start scene] change caret color
 72. [Start scene] remove placeholder when kick
+73. [Start scene] Start only when name!=null
