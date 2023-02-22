@@ -31,7 +31,7 @@
 28. (Done)
 29. (Done)
 30. (Done)
-29. (Done)
+29. [Start scene] Start button press effect <===
 32. [Start scene] Player name entering space ^ *
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
