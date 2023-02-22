@@ -18,7 +18,6 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
         sfind = GameObject.FindGameObjectsWithTag("supply");  
         for (int i=0; i<sfind.Length; i++)
         {
-            print(sfind[i]);
             if(sfind[i].ToString()=="s1(Clone) (UnityEngine.GameObject)")
             {
                 SupplyState01=0;
