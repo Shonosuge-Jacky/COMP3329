@@ -145,5 +145,5 @@
 63. [Start scene] Game title
 64. [Start scene] Start scene Font Asset
 64. [Start scene] Start scene Color Gradient
-65. [Start scene] Start button 
+65. [Start scene] Create Start button 
 66. [Start scene] Activate start button 
