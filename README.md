@@ -78,6 +78,7 @@
 5. Solve Ground transparent when view from underground **Bug**
 6. Solve have error message when explode with barrier **Bug**
 7. Some time player killed by enemy but player still alive in its own view
+8. change caret color will also change text color
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
