@@ -30,9 +30,9 @@
 22. [End scene] dead by what message (after point 14 or 21)
 23. [ // ] Show choosen grenade (after point 14 and 21)
 28. (Done)
-30. [Start scene] Disable start button after press <===
-29. [Start scene] Player name entering space <===
-32. [Start scene] Save player name ^ *
+30. (Done)
+29. (Done)
+32. [Start scene] Save player name <=== *
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
 35. [Arena] Die if fall into water area ^
@@ -149,3 +149,4 @@
 66. [Start scene] Activate start button
 67. [Start scene] Start button press effect
 68. [Start scene] Remove camera reticle 
+69. [Start scene] Player name entering space
