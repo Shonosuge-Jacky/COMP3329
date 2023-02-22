@@ -31,7 +31,7 @@
 23. [ // ] Show choosen grenade (after point 14 and 21)
 28. (Done)
 30. (Done)
-29. (Done)
+29. [Start scene] change caret color <=== 
 32. [Start scene] Save player name <=== *
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
