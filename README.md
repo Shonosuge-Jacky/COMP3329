@@ -143,4 +143,5 @@
 61. [Supply] Solve Supply box2 animation **Bug**
 62. [Start scene] a Camera filming the island 
 63. [Start scene] Game title
-64. [Start scene] Game title Font Asset
+64. [Start scene] Start scene Font Asset
+64. [Start scene] Start scene Color Gradient
