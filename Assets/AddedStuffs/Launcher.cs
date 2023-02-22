@@ -8,6 +8,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public PhotonView playerPrefab;
     private int stopconnect=0;
     public startButton startButton;
+    public GameObject Crosshir;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.ConnectUsingSettings(); 
             stopconnect=1;
-        }
-        
+        }        
     }
 
     public override void OnConnectedToMaster()
@@ -36,6 +36,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("Joined a room successfully!");
+        Crosshir.active = true;
         PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,2,31), Quaternion.identity);
     }
 }
