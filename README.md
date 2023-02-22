@@ -76,7 +76,7 @@
 3. Solve Destroyed wall's scrap pass through ground **Bug** 
 4. Solve Multiplayer delay(~0.25s) **Bug**
 5. Solve Ground transparent when view from underground **Bug**
-<\br> - because it is a plane
+</br> - because it is a plane
 6. Solve have error message when explode with barrier **Bug**
 7. Some time player killed by enemy but player still alive in its own view
 8. change caret color will also change text color
