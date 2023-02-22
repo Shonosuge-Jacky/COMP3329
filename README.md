@@ -29,7 +29,6 @@
 22. [End scene] dead by what message (after point 13 or 20)
 23. [ // ] Show choosen grenade (after point 13 and 20)
 28. (Done)
-29. (Done)
 30. [Start scene] Remove camera reticle <===
 30. [Start scene] Disable start button after press <===
 29. [Start scene] Player name entering space <===
