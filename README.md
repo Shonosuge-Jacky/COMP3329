@@ -30,8 +30,8 @@
 23. [ // ] Show choosen grenade (after point 13 and 20)
 28. (Done)
 29. (Done)
-30. [Start scene] Player name entering space ^
-31. [Start scene] Start button ^
+30. [Start scene] Start button ^
+31. [Start scene] Player name entering space ^
 32. [Start scene] Activate start button ^ * 
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
