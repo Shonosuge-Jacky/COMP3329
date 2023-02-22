@@ -31,8 +31,8 @@
 28. (Done)
 29. (Done)
 30. [Start scene] Start button ^
-31. [Start scene] Player name entering space ^
-32. [Start scene] Activate start button ^ * 
+31. [Start scene] Activate start button ^ 
+32. [Start scene] Player name entering space ^ *
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
 35. [Arena] Die if fall into water area ^
