@@ -31,7 +31,7 @@
 28. (Done)
 29. (Done)
 30. (Done)
-29. [Start scene] Start button press effect <===
+29. (Done)
 32. [Start scene] Player name entering space ^ *
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
@@ -146,4 +146,5 @@
 64. [Start scene] Start scene Font Asset
 64. [Start scene] Start scene Color Gradient
 65. [Start scene] Create Start button 
-66. [Start scene] Activate start button 
+66. [Start scene] Activate start button
+67. [Start scene] Start button press effect
