@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using System;
 
 public class SupplyInteraction : MonoBehaviourPunCallbacks
 {
-    public int SupplyState01=1;
-    public int SupplyState02=1;
+    private int SupplyState01=1;
+    private int SupplyState02=1;
     public grenadeNumber redcount;
 	public GameObject s1;
 	public GameObject s2;
@@ -17,16 +18,15 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
         sfind = GameObject.FindGameObjectsWithTag("supply");  
         for (int i=0; i<sfind.Length; i++)
         {
-            // print(sfind[i]);
+            print(sfind[i]);
             if(sfind[i].ToString()=="s1(Clone) (UnityEngine.GameObject)")
             {
                 SupplyState01=0;
             }
-            else if(sfind[i].ToString()=="s2(Clone) (UnityEngine.GameObject)")
+            if(sfind[i].ToString()=="s2(Clone) (UnityEngine.GameObject)")
             {
                 SupplyState02=0;
             }
-        //  remove from list ***
         }
 
         if (photonView.IsMine)
@@ -41,12 +41,14 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
                     {
                         // SupplyState01=0;
                         photonView.RPC("borns1",RpcTarget.All);
+                        Interactable01.active();
                         redcount.GetComponent<grenadeNumber>().count=redcount.GetComponent<grenadeNumber>().count+10;
                     }        
                     else if (collider.TryGetComponent(out Interactable02 Interactable02) && SupplyState02==1)
                     {
                         // SupplyState02=0;
                         photonView.RPC("borns2",RpcTarget.All);
+                        Interactable02.active2();
                         redcount.GetComponent<grenadeNumber>().count=redcount.GetComponent<grenadeNumber>().count+10;
                     }        
                 }

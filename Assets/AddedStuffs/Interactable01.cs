@@ -5,15 +5,17 @@ using Photon.Pun;
 
 public class Interactable01 : MonoBehaviourPunCallbacks
 {
-    // public GameObject theSupply;
-    // public GameObject Object001;
-    public int theSupply=0;
-    public int Object001=0;
+    public GameObject theSupply;
+    public GameObject Object001;
     public void active()
     {   
-        theSupply=1;
-        Object001=1;
-        // Object001.GetComponent<MeshCollider>().enabled=true;
-        // theSupply.GetComponent<Animation>().Play("Crate_Open");
+        photonView.RPC("activerpc",RpcTarget.All);
+    }
+
+    [PunRPC] 
+    public void activerpc()
+    {   
+        Object001.GetComponent<MeshCollider>().enabled=true;
+        theSupply.GetComponent<Animation>().Play("Crate_Open");
     }
 }

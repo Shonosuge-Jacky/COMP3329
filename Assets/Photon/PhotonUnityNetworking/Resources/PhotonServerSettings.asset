@@ -48,6 +48,8 @@ MonoBehaviour:
   - SupplyState02f
   - borns1
   - borns2
+  - active2rpc
+  - activerpc
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
