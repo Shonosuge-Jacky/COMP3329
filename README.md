@@ -30,9 +30,9 @@
 23. [ // ] Show choosen grenade (after point 13 and 20)
 28. (Done)
 29. (Done)
-30. (Done)
-29. [Start scene] Disable start button after press <===
-32. [Start scene] Player name entering space ^ *
+30. [Start scene] Disable start button after press <===
+29. [Start scene] Player name entering space <===
+32. [Start scene] Save player name ^ *
 33. [End scene] press button to Start scene (after point 27) *
 34. [Arena] Build water area <===
 35. [Arena] Die if fall into water area ^
