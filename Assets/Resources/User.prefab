@@ -437,6 +437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPosition: {fileID: 1376347666267538603}
+  DestructibleP: {fileID: 5365758230954687280}
+  cameraSpeed: 5
 --- !u!114 &3005227648400744820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4379,6 +4381,7 @@ MonoBehaviour:
   Grey2: {fileID: 6306186220053050293}
   Grey3: {fileID: 7077467211963699994}
   barrierV: {fileID: 1577367130443697918}
+  dead: 0
 --- !u!114 &3005227648084900146
 MonoBehaviour:
   m_ObjectHideFlags: 0

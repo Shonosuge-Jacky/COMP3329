@@ -21,6 +21,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
     public GameObject Grey3;
     public GameObject barrierV;
 	private int gameended=0;
+	public int dead=0;
 
 	// If the player clicks on the object
 	public void Destroy ()
@@ -43,6 +44,16 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	
 	void Update()
 	{
+		if (transform.position.y<-3)
+		{
+			Rigidbody rb = GetComponent<Rigidbody>();
+			rb.useGravity = false;
+			float customGravity = 0.5f;
+			rb.AddForce(Vector3.down * customGravity, ForceMode.Acceleration);
+			rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+			dead=1;
+			Destroy();
+		}
 		if (Input.GetKey("r") && barriered==false && gameended==0)
 		{
 			if (photonView.IsMine)
