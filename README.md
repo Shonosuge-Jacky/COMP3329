@@ -172,5 +172,5 @@
 53. [Cracker Grenade] choose Cracker Grenade by number key 
 53. [Cracker Grenade] Solve mid-air explodion **bug** 
 54. [Remote grenade] choose Remote grenade by number key 
-54. [Remote grenade] throw Remote grenade by number key
+54. [Remote grenade] throw Remote grenade
 55. [Remote grenade] Remote grenade pink **bug**
