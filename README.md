@@ -53,8 +53,7 @@
 48. [Dash] Dash camera effect <===
 49. [ // ] Camera effect when get hitted <===
 50. [ // ] cant do anything before all player arrive <===
-50. [Arena] keep the camera above the ocean (after point 30)
-50. [End scene] death camera effect (after point 14 or 21)
+50. [End scene] death camera effect <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -165,3 +164,4 @@
 73. [Start scene] Start only when name!=null
 74. [Arena] Build water area 
 75. [Arena] Die if fall into water area 
+50. [Arena] keep the camera above the ocean
