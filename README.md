@@ -166,3 +166,4 @@
 75. [Arena] Die if fall into water area 
 50. [Arena] keep the camera above the ocean
 51. [Arena] fall slower under water 
+51. [Arena] edit ocean wave
