@@ -49,13 +49,12 @@
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
 
-
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
 2. [Arena] make the edge more obvious
 22. [ // ] Player random spawing system 
 23. [BUG] Solve player-grenade no collision **Bug**
-24. [Match result recording system] SQL?? i dont know arrrrr
+24. [End scene] Match result recording system
 </br> - need : winner/loser name, dead reason, date, battle-duration
 26. [End scene] Upadte End scene with match result recording system 
 28. [sound] Start scene music 
