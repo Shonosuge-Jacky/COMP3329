@@ -53,6 +53,7 @@
 48. [Camera effect] Dash camera effect <===
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
+49. [Camera effect] Camera effect when under water <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -75,7 +76,8 @@
 38. [optional] Change ground skin 
 39. [optional] Change wall skin 
 39. [optional] Change ocean skin 
-40. [ // ] cant do anything before all player arrive 
+39. [optional] Change oceanFloor skin  
+41. [ // ] cant do anything before all player arrive 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**
