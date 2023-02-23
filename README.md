@@ -53,6 +53,8 @@
 48. [Dash] Dash camera effect <===
 49. [ // ] Camera effect when get hitted <===
 50. [ // ] cant do anything before all player arrive <===
+50. [End scene] End game notice <===
+50. [Arena] keep the camera above the ocean <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -74,6 +76,7 @@
 37. [optional] Change sky box 
 38. [optional] Change ground skin 
 39. [optional] Change wall skin 
+39. [optional] Change ocean skin 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**
