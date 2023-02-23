@@ -40,7 +40,7 @@
 33. [End scene] press button to Start scene (after point 27) *
 34. (Done)
 35. (Done)
-36. [Arena] build a simple island ^ **
+36. [Arena] build a simple island <===
 37. [Supply] All possible Supply spawing in 3 rounds (after point 31)
 38. [Supply] Randomly spawing part of them ^
 39. [Supply] Change amount of grenade in different supply ^
