@@ -1,8 +1,8 @@
 # COMP3329 Group Project
 
 ### &nbsp;&nbsp;Instruction :
-1. **Open the Scene by "Assets\Scenes\Movement"**
-2. **If "Player Prefab" in Launcher is missing, put "Assets\Resources\User" in it**
+1. Open the Scene by "Assets\Scenes\Movement"
+2. If "Player Prefab" in Launcher is missing, put "Assets\Resources\User" in it
 
 ### &nbsp;&nbsp;Common bugs :
 1. Should show in all players' view => only show to player who do it
