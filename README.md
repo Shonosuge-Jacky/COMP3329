@@ -16,7 +16,7 @@
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
 6. [End scene] press button to Start scene ^
-7. [Remote grenade] choose Remote grenade by number key <===
+7. (DONE)
 8. [Remote grenade] throw non-explodable grenade ^
 9. [Remote grenade] press number key to explode ^
 10. [Remote grenade] make explode time lock ^
@@ -48,6 +48,8 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
+50. [Remote grenade] Remote grenade pink **bug** <===
+51. [Remote grenade] Remote grenade mid-air **bug** <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -170,3 +172,5 @@
 52. [ // ] change gas grenade icon position
 53. [Cracker Grenade] choose Cracker Grenade by number key 
 53. [Cracker Grenade] Solve mid-air explodion **bug** 
+54. [Remote grenade] choose Remote grenade by number key 
+54. [Remote grenade] throw Remote grenade by number key
