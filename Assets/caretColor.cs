@@ -11,10 +11,10 @@ public class caretColor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TMP_Text textMeshPro = inputField.textComponent;
-        if (textMeshPro != null) {
-            textMeshPro.color = Color.grey;
-        }
+        // TMP_Text textMeshPro = inputField.textComponent;
+        // if (textMeshPro != null) {
+        //     textMeshPro.color = Color.grey;
+        // }
     }
     public void ClearP()
     {
