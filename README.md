@@ -169,3 +169,4 @@
 51. [Arena] edit ocean wave
 52. [ // ] change gas grenade icon position
 53. [Cracker Grenade] choose Cracker Grenade by number key 
+53. [Cracker Grenade] Solve mid-air explodion **bug** 
