@@ -54,8 +54,7 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
-50. [Arena] fall slower under water <===
-50. 
+
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -173,3 +172,4 @@
 74. [Arena] Build water area 
 75. [Arena] Die if fall into water area 
 50. [Arena] keep the camera above the ocean
+51. [Arena] fall slower under water 
