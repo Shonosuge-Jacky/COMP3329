@@ -4,7 +4,7 @@
 1. Open the Scene at "Assets\Scenes\Movement"
 2. If "Player Prefab" in Launcher is missing, put "Assets\Resources\User" in it
 
-### &nbsp;&nbsp;Common bugs :
+### &nbsp;&nbsp;Common potential bugs :
 1. Should show in all players' view => only show to player who do it
 3. Should only happen on Player A => happen on all Player 
 4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition
