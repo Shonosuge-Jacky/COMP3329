@@ -72,15 +72,18 @@
 31. [sound] background music
 32. [sound] red,yellow grenade explosion sound effect
 33. [sound] green grenade gas emition sound effect 
-34. [optional] two hit dead system
-35. [optional] Add Grenade path 
-36. [optional] change player skin 
-37. [optional] Change sky box 
-38. [optional] Change ground skin 
-39. [optional] Change wall skin 
-39. [optional] Change ocean skin 
-39. [optional] Change oceanFloor skin  
-41. [ // ] cant do anything before all player arrive 
+33. [sound] drop in water sound effect 
+33. [sound] inside water sound effect 
+33. [sound] ocean sound effect 
+35. [optional] two hit dead system
+36. [optional] Add Grenade path 
+37. [optional] change player skin 
+38. [optional] Change sky box 
+39. [optional] Change ground skin 
+40. [optional] Change wall skin 
+41. [optional] Change ocean skin 
+42. [optional] Change oceanFloor skin  
+43. [ // ] cant do anything before all player arrive 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**
