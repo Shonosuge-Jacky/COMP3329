@@ -49,11 +49,10 @@
 42. [ // ] Spawing Player on different location (after point 31)
 46. [ // ] Solve Player residual **Bug** (after point 28)
 </br> - detoryAllPlayer before game restart
-47. [Barrier] Barrier camera effect <===
-48. [Dash] Dash camera effect <===
-50. [End scene] death camera effect <===
-49. [ // ] Camera effect when get hitted <===
-50. [ // ] cant do anything before all player arrive <===
+47. [Camera effect] Barrier camera effect <===
+48. [Camera effect] Dash camera effect <===
+50. [Camera effect] Death camera effect <===
+49. [Camera effect] Camera effect when get hitted <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -76,6 +75,7 @@
 38. [optional] Change ground skin 
 39. [optional] Change wall skin 
 39. [optional] Change ocean skin 
+40. [ // ] cant do anything before all player arrive 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**
