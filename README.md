@@ -48,6 +48,8 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
+50. [Cracker Grenade] choose Cracker Grenade by number key <===
+50. [Cracker Grenade] change gas grenade icon position <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
