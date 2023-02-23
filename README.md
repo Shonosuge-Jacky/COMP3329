@@ -1,7 +1,7 @@
 # COMP3329 Group Project
 
 ### &nbsp;&nbsp;Instruction :
-1. Open the Scene by "Assets\Scenes\Movement"
+1. Open the Scene at "Assets\Scenes\Movement"
 2. If "Player Prefab" in Launcher is missing, put "Assets\Resources\User" in it
 
 ### &nbsp;&nbsp;Common bugs :
