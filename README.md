@@ -15,39 +15,33 @@
 3. [End scene] show win/lose after blur ^
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
-6. [Remote grenade] choose Remote grenade by number key <===
-7. [Remote grenade] throw non-explodable grenade ^
-8. [Remote grenade] press number key to explode ^
-9. [Remote grenade] make explode time lock ^
-10. [Remote grenade] synchronize ui counting ^
-11. [Remote grenade] create two Remote grenade ^
-12. [Remote grenade] create three Remote grenade ^
-13. [Remote grenade] enlarge explodsion radius ^
-14. [Remote grenade] enlarge explodsion effect ^ **
-15. [Gas grenade] choose Gas grenade by number key <===
-16. [Gas grenade] touch ground explode ^
-17. [Gas grenade] synchronize ui counting ^
-18. [Gas grenade] turn explode to gas area ^
-19. [Gas grenade] make gas area enlarge as time pass ^
-20. [Gas grenade] close gas ^
-21. [Gas grenade] make visable gas ^ **
-22. [End scene] dead by what message (after point 14 or 21)
-23. [ // ] Show choosen grenade (after point 14 and 21)
-28. (Done)
-30. (Done)
-29. (Done)
-29. (Done)
-33. [End scene] press button to Start scene (after point 27) *
-34. (Done)
-35. (Done)
+6. [End scene] press button to Start scene ^
+7. [Remote grenade] choose Remote grenade by number key <===
+8. [Remote grenade] throw non-explodable grenade ^
+9. [Remote grenade] press number key to explode ^
+10. [Remote grenade] make explode time lock ^
+11. [Remote grenade] synchronize ui counting ^
+12. [Remote grenade] create two Remote grenade ^
+13. [Remote grenade] create three Remote grenade ^
+14. [Remote grenade] enlarge explodsion radius ^
+15. [Remote grenade] enlarge explodsion effect ^ **
+16. [Gas grenade] choose Gas grenade by number key <===
+17. [Gas grenade] touch ground explode ^
+18. [Gas grenade] synchronize ui counting ^
+19. [Gas grenade] turn explode to gas area ^
+20. [Gas grenade] make gas area enlarge as time pass ^
+21. [Gas grenade] close gas ^
+22. [Gas grenade] make visable gas ^ **
+23. [End scene] dead by what message (after point 15 or 22)
+24. [ // ] Show choosen grenade (after point 15 and 22)
 36. [Arena] build a simple island <===
-37. [Supply] All possible Supply spawing in 3 rounds (after point 31)
+37. [Supply] All possible Supply spawing in 3 rounds (after point 25)
 38. [Supply] Randomly spawing part of them ^
 39. [Supply] Change amount of grenade in different supply ^
 40. [Supply] Change different supply's color ^
 41. [Supply] hide old supply ^
-42. [ // ] Spawing Player on different location (after point 31)
-46. [ // ] Solve Player residual **Bug** (after point 28)
+42. [ // ] Spawing Player on different location (after point 25)
+46. [ // ] Solve Player residual **Bug** (after point 6)
 </br> - detoryAllPlayer before game restart
 47. [Camera effect] Barrier camera effect <===
 48. [Camera effect] Dash camera effect <===
