@@ -54,6 +54,7 @@
 49. [ // ] Camera effect when get hitted <===
 50. [ // ] cant do anything before all player arrive <===
 50. [Arena] keep the camera above the ocean (after point 30)
+50. [End scene] death camera effect (after point 14 or 21)
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
