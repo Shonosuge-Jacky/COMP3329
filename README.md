@@ -48,7 +48,6 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
-50. [Remote grenade] Remote grenade mid-air **bug** <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -174,3 +173,5 @@
 54. [Remote grenade] choose Remote grenade by number key 
 54. [Remote grenade] throw Remote grenade
 55. [Remote grenade] Remote grenade pink **bug**
+56. [Remote grenade] Remote grenade mid-air **bug** 
+57. [Remote grenade] Remote grenade self-explodion **bug**
