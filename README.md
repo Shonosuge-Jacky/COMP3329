@@ -55,9 +55,11 @@
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
 50. [Arena] fall slower under water <===
+50. 
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
+2. [Arena] make the edge more obvious
 22. [ // ] Player random spawing system 
 23. [BUG] Solve player-grenade no collision **Bug**
 24. [Match result recording system] SQL?? i dont know arrrrr
