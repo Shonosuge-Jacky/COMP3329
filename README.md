@@ -177,7 +177,7 @@
 56. [Remote grenade] Remote grenade mid-air **bug** 
 57. [Remote grenade] Remote grenade self-explodion **bug**
 45. [Remote grenade] Cant throw again **bug**
-34.[Remote grenade] throw non-explodable grenade 
+34. [Remote grenade] throw non-explodable grenade 
 9. [Remote grenade] press number key to explode 
 10. [Remote grenade] make explode time lock 
 11. [Remote grenade] synchronize ui counting 
