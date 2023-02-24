@@ -198,5 +198,6 @@
 23. [Remote grenade] Test multiplayer with multi-Remote grenade 
 56. [Remote grenade] refill multi-Remote grenade 
 56. [Remote grenade] Test multiplayer with refill multi-Remote grenade 
+57. [Remote grenade] Remote grenade pass through ground **Bug**
 
 
