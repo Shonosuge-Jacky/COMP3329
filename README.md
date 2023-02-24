@@ -42,7 +42,7 @@
 29. [Camera effect] Death camera effect <===
 30. [Camera effect] Camera effect when get hitted <===
 31. [Camera effect] Camera effect when under water <===
-13. [Remote grenade] Remote grenade explodsion effect non-Synchronized **Bug**
+13. 
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -198,5 +198,6 @@
 62. [Remote grenade] Round 2 Remote grenade setup fail **Bug**
 63. [Remote grenade] enlarge explodsion radius 
 64. [Remote grenade] enlarge explodsion effect 
+65. [Remote grenade] Remote grenade explodsion effect non-Synchronized **Bug**
 
 
