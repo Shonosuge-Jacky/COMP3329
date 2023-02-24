@@ -48,7 +48,6 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
-57. [Remote grenade] Remote grenade press 1 icon **Bug**
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -88,7 +87,7 @@
 7. Some time player killed by enemy but player still alive in its own view
 8. change caret color will also change text color
 9. dahs to other player **Bug**
-10. Explode Remote grenade after death error message **Bug**
+10. 
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
@@ -199,5 +198,7 @@
 57. [Remote grenade] Remote grenade pass through ground **Bug**
 58. [Remote grenade] Remote grenade cant kill **Bug**
 59. [Remote grenade] Explode Remote grenade after death **Bug**
+60. [Remote grenade] Explode Remote grenade after death error message **Bug**
+61. [Remote grenade] Remote grenade press 1 icon **Bug**
 
 
