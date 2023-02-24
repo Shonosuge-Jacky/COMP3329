@@ -42,7 +42,7 @@
 29. [Camera effect] Death camera effect <===
 30. [Camera effect] Camera effect when get hitted <===
 31. [Camera effect] Camera effect when under water <===
-13. 
+13. [Remote grenade] Round 3 Remote grenade icon **Bug**
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
