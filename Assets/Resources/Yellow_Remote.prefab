@@ -10,7 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 215641587456625463}
   - component: {fileID: 215641587439105279}
-  m_Layer: 27
+  - component: {fileID: 1401228596729585436}
+  - component: {fileID: -8295022622460817304}
+  - component: {fileID: 6958563394968816803}
+  - component: {fileID: 2395441029266143338}
+  - component: {fileID: -1610412267964011602}
+  m_Layer: 31
   m_Name: Yellow_Remote
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,6 +66,109 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &1401228596729585436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215641587456148065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: -8295022622460817304}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &-8295022622460817304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215641587456148065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PositionModel:
+    SynchronizeEnabled: 0
+    TeleportEnabled: 1
+    TeleportIfDistanceGreaterThan: 3
+    InterpolateOption: 2
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 1
+    ExtrapolateOption: 0
+    ExtrapolateSpeed: 1
+    ExtrapolateIncludingRoundTripTime: 1
+    ExtrapolateNumberOfStoredPositions: 1
+  m_RotationModel:
+    SynchronizeEnabled: 0
+    InterpolateOption: 1
+    InterpolateRotateTowardsSpeed: 180
+    InterpolateLerpSpeed: 5
+  m_ScaleModel:
+    SynchronizeEnabled: 0
+    InterpolateOption: 0
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 0
+--- !u!54 &6958563394968816803
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215641587456148065}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &2395441029266143338
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215641587456148065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.03
+  m_Height: 0.12
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1610412267964011602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215641587456148065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865625d9b7ad26743a277319638ffb78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  explosionForce: 700
+  explosionEffect: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  yellowcount: {fileID: 0}
 --- !u!1 &215641587456162497
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 215641587456620385}
   - component: {fileID: 215641587465828271}
-  m_Layer: 27
+  m_Layer: 31
   m_Name: Grenade_Zaria(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +233,7 @@ GameObject:
   - component: {fileID: 215641587456603889}
   - component: {fileID: 215641587455288355}
   - component: {fileID: 215641587454212447}
-  m_Layer: 27
+  m_Layer: 31
   m_Name: Grenade_Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +314,7 @@ GameObject:
   - component: {fileID: 215641587456565261}
   - component: {fileID: 215641587455285007}
   - component: {fileID: 215641587454184907}
-  m_Layer: 27
+  m_Layer: 31
   m_Name: Grenade_Ring_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 215641587456618975}
   - component: {fileID: 215641587465597755}
-  m_Layer: 27
+  m_Layer: 31
   m_Name: Grenade_ZariaLOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +448,7 @@ GameObject:
   - component: {fileID: 215641587456576589}
   - component: {fileID: 215641587455244823}
   - component: {fileID: 215641587454195323}
-  m_Layer: 27
+  m_Layer: 31
   m_Name: Grenade_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +529,7 @@ GameObject:
   - component: {fileID: 215641587456612141}
   - component: {fileID: 215641587455300301}
   - component: {fileID: 215641587454403791}
-  m_Layer: 27
+  m_Layer: 31
   m_Name: Grenade_Body_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +577,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff4bb08c306fb4f45bde97fc4f6c4d70, type: 2}
+  - {fileID: 2100000, guid: a38191a1a7d93e745a6699abb3efdead, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -44,7 +44,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	
 	void Update()
 	{
-		if (transform.position.y<-3)
+		if (transform.position.y<-3 && dead==0)
 		{
 			Rigidbody rb = GetComponent<Rigidbody>();
 			rb.useGravity = false;

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1221957532147156947}
   - component: {fileID: 1221957532143752449}
   - component: {fileID: 1221957532144765053}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Grenade_Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221957532147205699}
   - component: {fileID: 1221957532154316429}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Grenade_Zaria(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221957532147202581}
   - component: {fileID: 1221957532160067037}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Green_Gas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 1221957532147213839}
   - component: {fileID: 1221957532143805423}
   - component: {fileID: 1221957532144965101}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Grenade_Body_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 1221957532147187055}
   - component: {fileID: 1221957532143733557}
   - component: {fileID: 1221957532144781145}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Grenade_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 1221957532147126575}
   - component: {fileID: 1221957532143756845}
   - component: {fileID: 1221957532144794857}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Grenade_Ring_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221957532147204349}
   - component: {fileID: 1221957532154085913}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Grenade_ZariaLOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

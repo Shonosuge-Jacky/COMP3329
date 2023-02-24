@@ -69,6 +69,7 @@ public class Granade : MonoBehaviourPunCallbacks
             // }
             // Damage
             Destructible dest = nearbyObject.GetComponent<Destructible>();
+            // print(nearbyObject);
             if(dest!=null)
             {
                 dest.Destroy();

@@ -9,6 +9,7 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
     private int SupplyState01=1;
     private int SupplyState02=1;
     public grenadeNumber redcount;
+    public grenadeNumber yellowcount;
 	public GameObject s1;
 	public GameObject s2;
     //==================================
@@ -42,6 +43,10 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
                         photonView.RPC("borns1",RpcTarget.All);
                         Interactable01.active();
                         redcount.GetComponent<grenadeNumber>().count=redcount.GetComponent<grenadeNumber>().count+10;
+                        if(yellowcount.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            yellowcount.GetComponent<grenadeNumberY>().count=" 1";
+                        }
                     }        
                     else if (collider.TryGetComponent(out Interactable02 Interactable02) && SupplyState02==1)
                     {
@@ -49,6 +54,10 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
                         photonView.RPC("borns2",RpcTarget.All);
                         Interactable02.active2();
                         redcount.GetComponent<grenadeNumber>().count=redcount.GetComponent<grenadeNumber>().count+10;
+                        if(yellowcount.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            yellowcount.GetComponent<grenadeNumberY>().count=" 1";
+                        }
                     }        
                 }
                 

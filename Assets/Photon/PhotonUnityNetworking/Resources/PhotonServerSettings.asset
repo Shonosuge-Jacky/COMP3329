@@ -50,6 +50,8 @@ MonoBehaviour:
   - borns2
   - active2rpc
   - activerpc
+  - ThrowGrenadeY
+  - HideRG
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
