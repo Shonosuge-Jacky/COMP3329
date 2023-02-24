@@ -20,7 +20,7 @@
 8. (DONE)
 9. (DONE)
 10. (DONE)
-11. [Remote grenade] refill Remote grenade ^
+11. (DONE)
 12. [Remote grenade] create two Remote grenade ^
 13. [Remote grenade] create three Remote grenade ^
 14. [Remote grenade] enlarge explodsion radius ^
@@ -188,5 +188,6 @@
 42. [ // ] end game loop **Bug**
 43. [Remote grenade] Remote grenade press 1 icon **Bug**
 50. [Remote grenade] Test multiplayer Remote grenade icon function
+56. [Remote grenade] refill Remote grenade 
 
 
