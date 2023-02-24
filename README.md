@@ -62,6 +62,7 @@
 33. [sound] drop in water sound effect 
 33. [sound] inside water sound effect 
 33. [sound] ocean sound effect 
+33. [sound] remote grenade setting sound effect 
 35. [optional] two hit dead system
 36. [optional] Add Grenade path 
 37. [optional] change player skin 
