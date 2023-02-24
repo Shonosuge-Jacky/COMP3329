@@ -37,10 +37,11 @@
 25. [ // ] Solve Player residual **Bug** (after point 6)
 </br> - detoryAllPlayer before game restart
 26. [Camera effect] Barrier camera effect <===
-27. [Camera effect] Dash camera effect <===
-28. [Camera effect] Death camera effect <===
-29. [Camera effect] Camera effect when get hitted <===
-30. [Camera effect] Camera effect when under water <===
+26. [Camera effect] Barrier decay camera effect <===
+28. [Camera effect] Dash camera effect <===
+29. [Camera effect] Death camera effect <===
+30. [Camera effect] Camera effect when get hitted <===
+31. [Camera effect] Camera effect when under water <===
 
 
 ### &nbsp;&nbsp;To-do-store :
