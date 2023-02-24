@@ -193,6 +193,6 @@
 59. [Remote grenade] Explode Remote grenade after death **Bug**
 60. [Remote grenade] Explode Remote grenade after death error message **Bug**
 61. [Remote grenade] Remote grenade press 1 icon **Bug**
-62. [Remote grenade] Turn 2 Remote grenade setup fail **Bug**
+62. [Remote grenade] Round 2 Remote grenade setup fail **Bug**
 
 
