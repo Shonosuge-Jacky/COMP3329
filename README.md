@@ -51,6 +51,7 @@
 57. [Remote grenade] Remote grenade multiplayer **bug** <===
 </br> - Instantiated object cant control by photonIsMine
 </br> - did it by hide and tp the object 
+57. [Remote grenade] Remote grenade timer icon <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
