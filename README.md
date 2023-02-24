@@ -5,9 +5,9 @@
 2. If "Player Prefab" in Launcher is missing, put "Assets\Resources\User" in it
 
 ### &nbsp;&nbsp;Common potential bugs :
-1. Should show in all players' view => only show to player who do it
-3. Should only happen on Player A => happen on all Player 
-4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition
+1. Should show in all players' view => only show to player who do it (use PunRPC)
+3. Should only happen on Player A => happen on all Player (use photoView.IsMine)
+4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition (use photoView.IsMine)
 
 ### &nbsp;&nbsp;To-do-list :
 1. [End scene] blur camera after death <===
