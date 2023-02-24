@@ -194,5 +194,6 @@
 23. [Remote grenade] create multi-Remote grenade 
 23. [Remote grenade] Test multiplayer with multi-Remote grenade 
 56. [Remote grenade] refill multi-Remote grenade 
+56. [Remote grenade] Test multiplayer with refill multi-Remote grenade 
 
 
