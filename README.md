@@ -50,6 +50,8 @@
 49. [Camera effect] Camera effect when under water <===
 56. [Remote grenade] Remote grenade killing **bug**
 57. [Remote grenade] Remote grenade press 1 icon **Bug**
+57. [Remote grenade] Explode Remote grenade when after death **Bug**
+57. [Remote grenade] Remote grenade pass through ground **Bug**
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
