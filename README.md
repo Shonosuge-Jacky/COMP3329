@@ -48,7 +48,6 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
-57. [Remote grenade] Remote grenade time icon <===
 57. [Remote grenade] Remote grenade time icon function <===
 
 ### &nbsp;&nbsp;To-do-store :
@@ -184,5 +183,6 @@
 11. [Remote grenade] Change remote grenade from detory to hide+tp
 12. [Remote grenade] Remote grenade multiplayer **Bug**
 13. [Remote grenade] Remote grenade hide non-Synchronized **Bug**
+57. [Remote grenade] Remote grenade time icon
 
 
