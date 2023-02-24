@@ -48,7 +48,7 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
-56. [Remote grenade] Remote grenade killing **bug**
+56. [Remote grenade] Remote grenade cant kill **bug**
 57. [Remote grenade] Remote grenade press 1 icon **Bug**
 57. [Remote grenade] Explode Remote grenade when after death **Bug**
 
