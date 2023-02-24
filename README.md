@@ -48,7 +48,9 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
-57. [Remote grenade] Cant throw again **bug** <===
+57. [Remote grenade] Remote grenade multiplayer **bug** <===
+</br> - Instantiated object cant control by photonIsMine
+</br> - did it by hide and tp the object 
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
