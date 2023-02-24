@@ -16,8 +16,8 @@
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
 6. [End scene] press button to Start scene ^
-7. [Remote grenade] enlarge explodsion radius ^
-8. [Remote grenade] enlarge explodsion effect ^ **
+7. (DONE)
+8. (DONE)
 9. [Gas grenade] choose Gas grenade by number key <===
 10. [Gas grenade] touch ground explode ^
 11. [Gas grenade] synchronize ui counting ^
@@ -194,5 +194,7 @@
 60. [Remote grenade] Explode Remote grenade after death error message **Bug**
 61. [Remote grenade] Remote grenade press 1 icon **Bug**
 62. [Remote grenade] Round 2 Remote grenade setup fail **Bug**
+63. [Remote grenade] enlarge explodsion radius 
+64. [Remote grenade] enlarge explodsion effect 
 
 
