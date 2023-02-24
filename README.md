@@ -21,7 +21,7 @@
 9. (DONE)
 10. (DONE)
 11. (DONE)
-12. [Remote grenade] create two Remote grenade ^
+12. [Remote grenade] create the second Remote grenade ^
 13. [Remote grenade] create three Remote grenade ^
 14. [Remote grenade] enlarge explodsion radius ^
 15. [Remote grenade] enlarge explodsion effect ^ **
