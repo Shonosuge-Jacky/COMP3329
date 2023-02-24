@@ -41,6 +41,7 @@
 28. [Camera effect] Death camera effect <===
 29. [Camera effect] Camera effect when get hitted <===
 30. [Camera effect] Camera effect when under water <===
+31. [Remote grenade] Turn 2 Remote grenade setup fail **Bug**
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
