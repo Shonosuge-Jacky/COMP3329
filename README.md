@@ -20,7 +20,7 @@
 8. (DONE)
 9. (DONE)
 10. (DONE)
-11. (DONE)
+11. [Remote grenade] refill Remote grenade ^
 12. [Remote grenade] create two Remote grenade ^
 13. [Remote grenade] create three Remote grenade ^
 14. [Remote grenade] enlarge explodsion radius ^
@@ -51,7 +51,6 @@
 57. [Remote grenade] Remote grenade multiplayer **bug** <===
 </br> - Instantiated object cant control by photonIsMine
 </br> - did it by hide and tp the object 
-57. [Remote grenade] Check if tp hiden Remote grenade will also tp the explosion <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
