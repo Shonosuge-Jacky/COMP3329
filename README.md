@@ -48,7 +48,8 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
-57. [Remote grenade] Remote grenade time icon function <===
+50. [Remote grenade] Remote grenade press one icon **Bug**
+42. [ // ] end game loop **Bug**
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -185,5 +186,6 @@
 13. [Remote grenade] Remote grenade hide non-Synchronized **Bug**
 57. [Remote grenade] Remote grenade time icon
 57. [Remote grenade] Remote grenade time icon v2
+57. [Remote grenade] Remote grenade time icon function
 
 
