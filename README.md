@@ -183,5 +183,6 @@
 34. [Remote grenade] activate Remote grenade
 10. [Remote grenade] make explode time lock 
 11. [Remote grenade] Synchronize Remote grenade count
+11. [Remote grenade] Change remote grenade from detory to hide+tp
 
 
