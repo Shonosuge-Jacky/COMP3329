@@ -16,38 +16,31 @@
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
 6. [End scene] press button to Start scene ^
-7. (DONE)
-8. (DONE)
-9. (DONE)
-10. (DONE)
-11. (DONE)
-12. (DONE)
-13. (DONE)
-14. [Remote grenade] enlarge explodsion radius ^
-15. [Remote grenade] enlarge explodsion effect ^ **
-16. [Gas grenade] choose Gas grenade by number key <===
-17. [Gas grenade] touch ground explode ^
-18. [Gas grenade] synchronize ui counting ^
-19. [Gas grenade] turn explode to gas area ^
-20. [Gas grenade] make gas area enlarge as time pass ^
-21. [Gas grenade] close gas ^
-22. [Gas grenade] make visable gas ^ **
-23. [End scene] dead by what message (after point 15 or 22)
-24. [ // ] Show choosen grenade (after point 15 and 22)
-36. [Arena] build a simple island <===
-37. [Supply] All possible Supply spawing in 3 rounds (after point 25)
-38. [Supply] Randomly spawing part of them ^
-39. [Supply] Change amount of grenade in different supply ^
-40. [Supply] Change different supply's color ^
-41. [Supply] hide old supply ^
-42. [ // ] Spawing Player on different location (after point 25)
-46. [ // ] Solve Player residual **Bug** (after point 6)
+7. [Remote grenade] enlarge explodsion radius ^
+8. [Remote grenade] enlarge explodsion effect ^ **
+9. [Gas grenade] choose Gas grenade by number key <===
+10. [Gas grenade] touch ground explode ^
+11. [Gas grenade] synchronize ui counting ^
+12. [Gas grenade] turn explode to gas area ^
+13. [Gas grenade] make gas area enlarge as time pass ^
+14. [Gas grenade] close gas ^
+15. [Gas grenade] make visable gas ^ **
+16. [End scene] dead by what message (after point 8 or 15)
+17. [ // ] Show choosen grenade (after point 8 or 15)
+18. [Arena] build a simple island <===
+19. [Supply] All possible Supply spawing in 3 rounds (after point 18)
+20. [Supply] Randomly spawing part of them ^
+21. [Supply] Change amount of grenade in different supply ^
+22. [Supply] Change different supply's color ^
+23. [Supply] hide old supply ^
+24. [ // ] Spawing Player on different location (after point 18)
+25. [ // ] Solve Player residual **Bug** (after point 6)
 </br> - detoryAllPlayer before game restart
-47. [Camera effect] Barrier camera effect <===
-48. [Camera effect] Dash camera effect <===
-50. [Camera effect] Death camera effect <===
-49. [Camera effect] Camera effect when get hitted <===
-49. [Camera effect] Camera effect when under water <===
+26. [Camera effect] Barrier camera effect <===
+27. [Camera effect] Dash camera effect <===
+28. [Camera effect] Death camera effect <===
+29. [Camera effect] Camera effect when get hitted <===
+30. [Camera effect] Camera effect when under water <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
