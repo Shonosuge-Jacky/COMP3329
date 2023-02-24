@@ -25,9 +25,14 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 
 	// If the player clicks on the object
 	public void Destroy ()
-	// void OnMouseDown ()
 	{
-		if (barriering==false)
+		photonView.RPC("Destroy2",RpcTarget.All); 
+	}
+
+    [PunRPC] 
+    public void Destroy2()
+    {
+		if (barriering==false && dead==0)
 		{
 			var rotationVector = transform.rotation.eulerAngles;
 			rotationVector.x = 90;
@@ -39,9 +44,10 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			// Stop SupplyInteraction
 			SupplyInteractionx.GetComponent<SupplyInteraction>().enabled = false;
 			Rigidbody rb = Instantiate(endGame, transform.position, transform.rotation).GetComponent<Rigidbody>();
+			dead=1;
 		}
-	}
-	
+    }
+
 	void Update()
 	{
 		if (transform.position.y<-3 && dead==0)
@@ -51,7 +57,6 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			float customGravity = 0.5f;
 			rb.AddForce(Vector3.down * customGravity, ForceMode.Acceleration);
 			rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-			dead=1;
 			Destroy();
 		}
 		if (Input.GetKey("r") && barriered==false && gameended==0)

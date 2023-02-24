@@ -8,8 +8,12 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     public float throwForce = 40f;
     public GameObject grenadePrefab;
     public GameObject RemoteGrenade;
+    public GameObject RemoteGrenade2;
+    public GameObject RemoteGrenade3;
     public grenadeNumber redcount;
-    public grenadeNumberY yellowcount;    
+    public grenadeNumberY yellowcount; 
+    public grenadeNumberY yellowcount2;
+    public grenadeNumberY yellowcount3;   
     public Transform originTransform;
     public Transform originTransformf;
  	private bool barriered=false;
@@ -18,6 +22,12 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     public GameObject setting1;
     public GameObject setting2;
     public GameObject setting3;
+    public GameObject setting12;
+    public GameObject setting22;
+    public GameObject setting32;
+    public GameObject setting13;
+    public GameObject setting23;
+    public GameObject setting33;
 
     // Update is called once per frame
     void Update()
@@ -69,6 +79,24 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
                 photonView.RPC("ThrowGrenadeY",RpcTarget.All);
                 // ThrowGrenade();
             }
+            if(Input.GetMouseButtonDown(0) && yellowcount2.GetComponent<grenadeNumberY>().count==" 1" && currentGrenade==2)
+            {
+                setting12.active=true;
+                setting22.active=true;
+                setting32.active=true;
+                yellowcount2.GetComponent<grenadeNumberY>().count=" R";
+                photonView.RPC("ThrowGrenadeY2",RpcTarget.All);
+                // ThrowGrenade();
+            }
+            if(Input.GetMouseButtonDown(0) && yellowcount3.GetComponent<grenadeNumberY>().count==" 1" && currentGrenade==3)
+            {
+                setting13.active=true;
+                setting23.active=true;
+                setting33.active=true;
+                yellowcount3.GetComponent<grenadeNumberY>().count=" R";
+                photonView.RPC("ThrowGrenadeY3",RpcTarget.All);
+                // ThrowGrenade();
+            }
         }
     }
 
@@ -99,6 +127,42 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     {
         RemoteGrenade.active=true;
         Rigidbody rb = RemoteGrenade.GetComponent<Rigidbody>(); 
+        rb.position= originTransform.position;
+        rb.rotation= originTransform.rotation; 
+        // RemoteGrenade.active=false;
+        if (photonView.IsMine)
+        {
+            rb.GetComponent<Rigidbody>().AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
+        }
+        else
+        {
+            rb.GetComponent<Rigidbody>().AddForce(originTransform.forward * throwForce, ForceMode.VelocityChange);
+        }
+    }
+
+    [PunRPC] 
+    public void ThrowGrenadeY2()
+    {
+        RemoteGrenade2.active=true;
+        Rigidbody rb = RemoteGrenade2.GetComponent<Rigidbody>(); 
+        rb.position= originTransform.position;
+        rb.rotation= originTransform.rotation; 
+        // RemoteGrenade.active=false;
+        if (photonView.IsMine)
+        {
+            rb.GetComponent<Rigidbody>().AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
+        }
+        else
+        {
+            rb.GetComponent<Rigidbody>().AddForce(originTransform.forward * throwForce, ForceMode.VelocityChange);
+        }
+    }
+
+    [PunRPC] 
+    public void ThrowGrenadeY3()
+    {
+        RemoteGrenade3.active=true;
+        Rigidbody rb = RemoteGrenade3.GetComponent<Rigidbody>(); 
         rb.position= originTransform.position;
         rb.rotation= originTransform.rotation; 
         // RemoteGrenade.active=false;

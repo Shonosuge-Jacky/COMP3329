@@ -10,6 +10,8 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
     private int SupplyState02=1;
     public grenadeNumber redcount;
     public grenadeNumber yellowcount;
+    public grenadeNumber yellowcount2;
+    public grenadeNumber yellowcount3;
 	public GameObject s1;
 	public GameObject s2;
     //==================================
@@ -47,6 +49,14 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
                         {
                             yellowcount.GetComponent<grenadeNumberY>().count=" 1";
                         }
+                        if(yellowcount2.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            yellowcount2.GetComponent<grenadeNumberY>().count=" 1";
+                        }
+                        if(yellowcount3.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            yellowcount3.GetComponent<grenadeNumberY>().count=" 1";
+                        }
                     }        
                     else if (collider.TryGetComponent(out Interactable02 Interactable02) && SupplyState02==1)
                     {
@@ -57,6 +67,14 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
                         if(yellowcount.GetComponent<grenadeNumberY>().count==" 0")
                         {
                             yellowcount.GetComponent<grenadeNumberY>().count=" 1";
+                        }
+                        if(yellowcount2.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            yellowcount2.GetComponent<grenadeNumberY>().count=" 1";
+                        }
+                        if(yellowcount3.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            yellowcount3.GetComponent<grenadeNumberY>().count=" 1";
                         }
                     }        
                 }

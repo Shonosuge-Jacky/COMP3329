@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class GrenadeY : MonoBehaviourPunCallbacks
+public class GrenadeY2 : MonoBehaviourPunCallbacks
 {
     // public float delay = 3f;
     public float radius =  3f;
@@ -70,7 +70,7 @@ public class GrenadeY : MonoBehaviourPunCallbacks
     {
         // bug1
         Invoke("ce3",12);
-        if (Input.GetKey("1") && CanExplode==1 && DestructibleP.dead==0)
+        if (Input.GetKey("2") && CanExplode==1 && DestructibleP.dead==0)
         {
             if(photonView.IsMine)
             {
