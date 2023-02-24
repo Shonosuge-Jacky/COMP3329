@@ -49,6 +49,7 @@
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
 56. [Remote grenade] Remote grenade killing **bug**
+57. [Remote grenade] Remote grenade press 1 icon **Bug**
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
