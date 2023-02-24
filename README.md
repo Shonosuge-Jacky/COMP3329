@@ -27,7 +27,7 @@
 15. [Gas grenade] make visable gas ^ **
 16. [End scene] dead by what message (after point 8 or 15)
 17. [ // ] Show choosen grenade (after point 8 or 15)
-18. [Arena] build a simple island <===
+18. [Arena] build a simple island <=== **
 19. [Supply] All possible Supply spawing in 3 rounds (after point 18)
 20. [Supply] Randomly spawing part of them ^
 21. [Supply] Change amount of grenade in different supply ^
@@ -80,7 +80,6 @@
 7. Some time player killed by enemy but player still alive in its own view
 8. change caret color will also change text color
 9. dahs to other player **Bug**
-10. 
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
