@@ -21,8 +21,8 @@
 9. (DONE)
 10. (DONE)
 11. (DONE)
-12. [Remote grenade] create the second Remote grenade ^
-13. [Remote grenade] create three Remote grenade ^
+12. (DONE)
+13. (DONE)
 14. [Remote grenade] enlarge explodsion radius ^
 15. [Remote grenade] enlarge explodsion effect ^ **
 16. [Gas grenade] choose Gas grenade by number key <===
@@ -189,5 +189,6 @@
 43. [Remote grenade] Remote grenade press 1 icon **Bug**
 50. [Remote grenade] Test multiplayer Remote grenade icon function
 56. [Remote grenade] refill Remote grenade 
+23. [Remote grenade] create multi-Remote grenade 
 
 
