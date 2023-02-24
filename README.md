@@ -17,7 +17,7 @@
 5. [End scene] press button to restart ^
 6. [End scene] press button to Start scene ^
 7. (DONE)
-8. (DONE)
+8. [Remote grenade] lock x,z.posiiton after collision <===
 9. [Gas grenade] choose Gas grenade by number key <===
 10. [Gas grenade] touch ground explode ^
 11. [Gas grenade] synchronize ui counting ^
