@@ -17,10 +17,10 @@
 5. [End scene] press button to restart ^
 6. [End scene] press button to Start scene ^
 7. (DONE)
-8. [Remote grenade] throw non-explodable grenade ^
-9. [Remote grenade] press number key to explode ^
-10. [Remote grenade] make explode time lock ^
-11. [Remote grenade] synchronize ui counting ^
+8. (DONE)
+9. (DONE)
+10. (DONE)
+11. (DONE)
 12. [Remote grenade] create two Remote grenade ^
 13. [Remote grenade] create three Remote grenade ^
 14. [Remote grenade] enlarge explodsion radius ^
@@ -176,3 +176,10 @@
 55. [Remote grenade] Remote grenade pink **bug**
 56. [Remote grenade] Remote grenade mid-air **bug** 
 57. [Remote grenade] Remote grenade self-explodion **bug**
+45. [Remote grenade] Cant throw again **bug**
+34.[Remote grenade] throw non-explodable grenade 
+9. [Remote grenade] press number key to explode 
+10. [Remote grenade] make explode time lock 
+11. [Remote grenade] synchronize ui counting 
+
+
