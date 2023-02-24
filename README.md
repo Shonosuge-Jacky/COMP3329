@@ -48,9 +48,7 @@
 50. [Camera effect] Death camera effect <===
 49. [Camera effect] Camera effect when get hitted <===
 49. [Camera effect] Camera effect when under water <===
-57. [Remote grenade] Remote grenade multiplayer **bug** <===
-</br> - Instantiated object cant control by photonIsMine
-</br> - did it by hide and tp the object 
+57. [Remote grenade] Remote grenade hide non-Synchronized **Bug**
 57. [Remote grenade] Remote grenade timer icon <===
 
 ### &nbsp;&nbsp;To-do-store :
@@ -173,16 +171,17 @@
 51. [Arena] edit ocean wave
 52. [ // ] change gas grenade icon position
 53. [Cracker Grenade] choose Cracker Grenade by number key 
-53. [Cracker Grenade] Solve mid-air explodion **bug** 
+53. [Cracker Grenade] Solve mid-air explodion **Bug** 
 54. [Remote grenade] choose Remote grenade by number key 
 54. [Remote grenade] throw Remote grenade
-55. [Remote grenade] Remote grenade pink **bug**
-56. [Remote grenade] Remote grenade mid-air **bug** 
-57. [Remote grenade] Remote grenade self-explodion **bug**
-45. [Remote grenade] Cant throw again **bug**
+55. [Remote grenade] Remote grenade pink **Bug**
+56. [Remote grenade] Remote grenade mid-air **Bug** 
+57. [Remote grenade] Remote grenade self-explodion **Bug**
+45. [Remote grenade] Cant throw again **Bug**
 34. [Remote grenade] activate Remote grenade
 10. [Remote grenade] make explode time lock 
 11. [Remote grenade] Synchronize Remote grenade count
 11. [Remote grenade] Change remote grenade from detory to hide+tp
+12. [Remote grenade] Remote grenade multiplayer **Bug**
 
 
