@@ -83,6 +83,7 @@
 7. Some time player killed by enemy but player still alive in its own view
 8. change caret color will also change text color
 9. dahs to other player **Bug**
+10. Too lag when with many Wooden chips
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
