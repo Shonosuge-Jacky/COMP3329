@@ -18,7 +18,7 @@
 6. [End scene] press button to Start scene ^
 7. (DONE)
 8. (DONE)
-9.  <===
+9. (DONE)
 10. [Gas grenade] touch ground explode ^
 11. [Gas grenade] synchronize ui counting ^
 12. [Gas grenade] turn explode to gas area ^
