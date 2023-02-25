@@ -32,7 +32,9 @@
 31. [Camera effect] Camera effect when get hitted <===
 32. [Camera effect] Camera effect when under water <===
 14. [Gas grenade] change how first gas effect disappaer <===
-14. [Gas grenade] change how first gas effect disappaer ^
+14. [Gas grenade] change how second gas effect appaer ^
+14. [Gas grenade] edit size of gas effects ^
+14. [Gas grenade] add damage area ^
 17. [End scene] dead by what message ^
 18. [ // ] Show choosen grenade ^^
 
