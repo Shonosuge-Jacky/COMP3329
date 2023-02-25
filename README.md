@@ -21,7 +21,7 @@
 9. (DONE)
 10. (DONE)
 11. (DONE)
-12. [Gas grenade] find gas effect v2
+12. (DONE)
 13. [Gas grenade] make 2 stage gas effect ^
 14. [Gas grenade] close gas ^
 15. [Gas grenade] make visable gas ^ **
@@ -208,6 +208,9 @@
 71. [Gas grenade] create gas effect for Gas grenade
 72. [Gas grenade] edit gas effect
 73. [Gas grenade] gas loop explosion **Bug**
+73. [Gas grenade] find gas effect v2 
+73. [Gas grenade] edit gas effect v2 
+73. [Gas grenade] put gas effects to the Gas grenade 
 
 
 
