@@ -20,8 +20,8 @@
 8. (DONE)
 9. (DONE)
 10. (DONE)
-11. [Gas grenade] close explode effect ^
-12. [Gas grenade] create gas area ^
+11.
+12.
 13. [Gas grenade] make gas area enlarge as time pass ^
 14. [Gas grenade] close gas ^
 15. [Gas grenade] make visable gas ^ **
@@ -204,6 +204,8 @@
 67. [Gas grenade] choose Gas grenade by number key
 68. [Gas grenade] copy stuffs from Cracker Grenade for Gas grenade 
 69. [Gas grenade] find gas effect 
+70. [Gas grenade] close explodion effect for Gas grenade
+71. [Gas grenade] create gas effect for Gas grenade
 
 
 
