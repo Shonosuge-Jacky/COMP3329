@@ -18,11 +18,6 @@
 6. [End scene] press button to Start scene ^ 
 7. [ // ] Solve Player residual **Bug** ^
 </br> - detoryAllPlayer before game restart
-14. [Gas grenade] change how first gas effect disappaer  ^
-15. [Gas grenade] close gas ^
-16. [Gas grenade] make visable gas ^ *
-17. [End scene] dead by what message ^
-18. [ // ] Show choosen grenade ^^
 19. [Arena] build a simple island <=== *
 20. [ // ] Spawing Player on different location ^
 21. [Supply] All possible Supply spawing in 3 rounds ^^
@@ -37,7 +32,12 @@
 31. [Camera effect] Camera effect when get hitted <===
 32. [Camera effect] Camera effect when under water <===
 33. [Remote grenade] Round 3 Remote grenade icon **Bug** <===
-
+14. [Gas grenade] change how first gas effect disappaer  ^
+15. [Gas grenade] close gas ^
+16. [Gas grenade] make visable gas ^ *
+17. [End scene] dead by what message ^
+18. [ // ] Show choosen grenade ^^
+19. 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
 2. [Arena] make the edge more obvious
