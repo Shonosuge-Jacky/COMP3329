@@ -10,7 +10,7 @@
 4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition (try photoView.IsMine)
 
 ### &nbsp;&nbsp;To-do-list :
-1. [End scene] blur camera after death <===
+1. [End scene] blur camera after death 
 2. [End scene] hide camera reticle ^
 3. [End scene] show win/lose after blur ^
 4. [End scene] show empty score board under win/lose ^
@@ -18,22 +18,22 @@
 6. [End scene] press button to Start scene ^ 
 7. [ // ] Solve Player residual **Bug** ^
 </br> - detoryAllPlayer before game restart
-19. [Arena] build a simple island <=== *
+19. [Arena] build a simple island *
 20. [ // ] Spawing Player on different location ^
 21. [Supply] All possible Supply spawing in 3 rounds ^^
 22. [Supply] Randomly spawing part of them ^
 23. [Supply] Change amount of grenade in different supply ^
 24. [Supply] Change different supply's color ^
 25. [Supply] hide old supply ^
-27. [Camera effect] Barrier camera effect <===
+27. [Camera effect] Barrier camera effect 
 28. [Camera effect] Barrier decay camera effect ^
-29. [Camera effect] Dash camera effect <===
-30. [Camera effect] Death camera effect <===
-31. [Camera effect] Camera effect when get hitted <===
-32. [Camera effect] Camera effect when under water <===
+29. [Camera effect] Dash camera effect 
+30. [Camera effect] Death camera effect
+31. [Camera effect] Camera effect when get hitted 
+32. [Camera effect] Camera effect when under water 
 14. [Gas grenade] change how first gas effect disappaer <===
 </br> - slowly become transparent in last second
-14. [Gas grenade] change how second gas effect appaer ^<===
+14. [Gas grenade] change how second gas effect appaer ^
 </br> - enlarge from zero in 5 second
 14. [Gas grenade] edit size of gas effects ^
 14. [Gas grenade] add damage area ^
