@@ -20,7 +20,7 @@
 8. (DONE)
 9. (DONE)
 10. (DONE)
-11. [Gas grenade] find gas effect ^
+11. (DONE)
 12. [Gas grenade] turn explode to gas area ^
 13. [Gas grenade] make gas area enlarge as time pass ^
 14. [Gas grenade] close gas ^
@@ -203,6 +203,7 @@
 66. [Remote grenade] lock x,z.posiiton after collision 
 67. [Gas grenade] choose Gas grenade by number key
 68. [Gas grenade] copy stuffs from Cracker Grenade for Gas grenade 
+69. [Gas grenade] find gas effect ^\
 
 
 
