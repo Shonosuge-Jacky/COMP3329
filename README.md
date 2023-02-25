@@ -214,6 +214,8 @@
 73. [Gas grenade] put gas effects to the Gas grenade 
 73. [Gas grenade] emit gas when gas grenade stop
 73. [Gas grenade] gas effect extrem lag **Bug**
+73. [Gas grenade] disable first gas effect
+
 
 
 
