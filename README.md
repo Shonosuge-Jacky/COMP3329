@@ -26,12 +26,11 @@
 24. [Supply] Change different supply's color ^
 25. [Supply] hide old supply ^
 27. [Camera effect] Barrier camera effect <===
-28. [Camera effect] Barrier decay camera effect <===
+28. [Camera effect] Barrier decay camera effect ^
 29. [Camera effect] Dash camera effect <===
 30. [Camera effect] Death camera effect <===
 31. [Camera effect] Camera effect when get hitted <===
 32. [Camera effect] Camera effect when under water <===
-33. [Remote grenade] Round 3 Remote grenade icon **Bug** <===
 14. [Gas grenade] change how first gas effect disappaer <===
 14. [Gas grenade] change how first gas effect disappaer ^
 17. [End scene] dead by what message ^
@@ -78,6 +77,7 @@
 8. change caret color will also change text color
 9. dahs to other player **Bug**
 10. Too lag when with many Wooden chips
+11. Round 3 Remote grenade icon **Bug** 
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
