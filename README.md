@@ -203,7 +203,7 @@
 66. [Remote grenade] lock x,z.posiiton after collision 
 67. [Gas grenade] choose Gas grenade by number key
 68. [Gas grenade] copy stuffs from Cracker Grenade for Gas grenade 
-69. [Gas grenade] find gas effect ^\
+69. [Gas grenade] find gas effect 
 
 
 
