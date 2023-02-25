@@ -32,7 +32,7 @@
 31. [Camera effect] Camera effect when get hitted <===
 32. [Camera effect] Camera effect when under water <===
 33. [Remote grenade] Round 3 Remote grenade icon **Bug** <===
-14. [Gas grenade] change how first gas effect disappaer  ^
+14. [Gas grenade] change how first gas effect disappaer <===
 15. [Gas grenade] close gas ^
 16. [Gas grenade] make visable gas ^ *
 17. [End scene] dead by what message ^
