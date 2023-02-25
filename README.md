@@ -29,19 +29,20 @@
 17. [End scene] dead by what message ^
 18. [ // ] Show choosen grenade ^^
 19. [Arena] build a simple island <=== *
-20. [Supply] All possible Supply spawing in 3 rounds ^
-21. [Supply] Randomly spawing part of them ^
-22. [Supply] Change amount of grenade in different supply ^
-23. [Supply] Change different supply's color ^
-24. [Supply] hide old supply ^
-25. [ // ] Spawing Player on different location ^^^^^^
-26. [Camera effect] Barrier camera effect <===
-26. [Camera effect] Barrier decay camera effect <===
-28. [Camera effect] Dash camera effect <===
-29. [Camera effect] Death camera effect <===
-30. [Camera effect] Camera effect when get hitted <===
-31. [Camera effect] Camera effect when under water <===
-13. [Remote grenade] Round 3 Remote grenade icon **Bug**
+20. [ // ] Spawing Player on different location ^
+21. [Supply] All possible Supply spawing in 3 rounds ^^
+22. [Supply] Randomly spawing part of them ^
+23. [Supply] Change amount of grenade in different supply ^
+24. [Supply] Change different supply's color ^
+25. [Supply] hide old supply ^
+26. 
+27. [Camera effect] Barrier camera effect <===
+28. [Camera effect] Barrier decay camera effect <===
+29. [Camera effect] Dash camera effect <===
+30. [Camera effect] Death camera effect <===
+31. [Camera effect] Camera effect when get hitted <===
+32. [Camera effect] Camera effect when under water <===
+33. [Remote grenade] Round 3 Remote grenade icon **Bug**
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
