@@ -20,9 +20,9 @@
 8. (DONE)
 9. (DONE)
 10. (DONE)
-11.
-12.
-13. [Gas grenade] make gas area enlarge as time pass ^
+11. [Gas grenade] edit gas effect
+12. [Gas grenade] find gas effect v2
+13. [Gas grenade] make 2 stage gas effect ^
 14. [Gas grenade] close gas ^
 15. [Gas grenade] make visable gas ^ **
 16. [End scene] dead by what message (after point 8 or 15)
