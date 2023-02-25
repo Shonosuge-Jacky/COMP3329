@@ -211,6 +211,9 @@
 73. [Gas grenade] find gas effect v2 
 73. [Gas grenade] edit gas effect v2 
 73. [Gas grenade] put gas effects to the Gas grenade 
+73. [Gas grenade] emit gas when gas grenade stop
+73. [Gas grenade] gas effect extrem lag **Bug**
+
 
 
 
