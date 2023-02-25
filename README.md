@@ -19,8 +19,8 @@
 7. (DONE)
 8. (DONE)
 9. (DONE)
-10. [Gas grenade] touch ground explode ^
-11. [Gas grenade] synchronize ui counting ^
+10. (DONE)
+11. [Gas grenade] find gas effect ^
 12. [Gas grenade] turn explode to gas area ^
 13. [Gas grenade] make gas area enlarge as time pass ^
 14. [Gas grenade] close gas ^
@@ -202,6 +202,7 @@
 65. [Remote grenade] Remote grenade explodsion effect non-Synchronized **Bug**
 66. [Remote grenade] lock x,z.posiiton after collision 
 67. [Gas grenade] choose Gas grenade by number key
-68. [Gas grenade] throw Gas grenade 
+68. [Gas grenade] copy stuffs from Cracker Grenade for Gas grenade 
+
 
 
