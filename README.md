@@ -75,6 +75,7 @@
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**
+</br> - destory function should put inside the effect
 3. Solve Destroyed wall's scrap pass through ground **Bug** 
 4. Solve Multiplayer delay(~0.25s) **Bug**
 5. Solve Ground transparent when view from underground **Bug**
