@@ -33,6 +33,7 @@
 32. [Camera effect] Camera effect when under water 
 14. [Gas grenade] change how first gas effect disappaer <===
 </br> - slowly become transparent in last second
+</br> - TRY ON WALL FIRST
 14. [Gas grenade] change how second gas effect appaer ^
 </br> - enlarge from zero in 5 second
 14. [Gas grenade] edit size of gas effects ^
