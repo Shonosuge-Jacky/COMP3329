@@ -20,7 +20,7 @@
 8. (DONE)
 9. (DONE)
 10. (DONE)
-11. [Gas grenade] edit gas effect
+11. [Gas grenade] gas loop explosion **Bug**
 12. [Gas grenade] find gas effect v2
 13. [Gas grenade] make 2 stage gas effect ^
 14. [Gas grenade] close gas ^
@@ -206,6 +206,7 @@
 69. [Gas grenade] find gas effect 
 70. [Gas grenade] close explodion effect for Gas grenade
 71. [Gas grenade] create gas effect for Gas grenade
+72. [Gas grenade] edit gas effect
 
 
 
