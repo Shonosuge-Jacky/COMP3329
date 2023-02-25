@@ -15,18 +15,18 @@
 3. [End scene] show win/lose after blur ^
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
-6. [End scene] press button to Start scene ^
+6. [End scene] press button to Start scene ^ *
 7. (DONE)
 8. (DONE)
 9. (DONE)
 10. (DONE)
 11. (DONE)
 12. (DONE)
-13. [Gas grenade] make 2 stage gas effect ^
+13. [Gas grenade] change how first gas effect disappaer  ^
 14. [Gas grenade] close gas ^
 15. [Gas grenade] make visable gas ^ **
-16. [End scene] dead by what message (after point 8 or 15)
-17. [ // ] Show choosen grenade (after point 8 or 15)
+16. [End scene] dead by what message (after point 15)
+17. [ // ] Show choosen grenade (after point 15)
 18. [Arena] build a simple island <=== **
 19. [Supply] All possible Supply spawing in 3 rounds (after point 18)
 20. [Supply] Randomly spawing part of them ^
