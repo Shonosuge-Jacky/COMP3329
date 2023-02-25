@@ -15,27 +15,26 @@
 3. [End scene] show win/lose after blur ^
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
-6. [End scene] press button to Start scene ^ *
-7. (DONE)
-8. (DONE)
+6. [End scene] press button to Start scene ^ 
+7. [ // ] Solve Player residual **Bug** ^
+</br> - detoryAllPlayer before game restart
 9. (DONE)
 10. (DONE)
 11. (DONE)
 12. (DONE)
-13. [Gas grenade] change how first gas effect disappaer  ^
-14. [Gas grenade] close gas ^
-15. [Gas grenade] make visable gas ^ **
-16. [End scene] dead by what message (after point 15)
-17. [ // ] Show choosen grenade (after point 15)
-18. [Arena] build a simple island <=== **
-19. [Supply] All possible Supply spawing in 3 rounds (after point 18)
-20. [Supply] Randomly spawing part of them ^
-21. [Supply] Change amount of grenade in different supply ^
-22. [Supply] Change different supply's color ^
-23. [Supply] hide old supply ^
-24. [ // ] Spawing Player on different location (after point 18)
-25. [ // ] Solve Player residual **Bug** (after point 6)
-</br> - detoryAllPlayer before game restart
+13. (DONE)
+14. [Gas grenade] change how first gas effect disappaer  ^
+15. [Gas grenade] close gas ^
+16. [Gas grenade] make visable gas ^ *
+17. [End scene] dead by what message ^
+18. [ // ] Show choosen grenade ^^
+19. [Arena] build a simple island <=== *
+20. [Supply] All possible Supply spawing in 3 rounds ^
+21. [Supply] Randomly spawing part of them ^
+22. [Supply] Change amount of grenade in different supply ^
+23. [Supply] Change different supply's color ^
+24. [Supply] hide old supply ^
+25. [ // ] Spawing Player on different location ^^^^^^
 26. [Camera effect] Barrier camera effect <===
 26. [Camera effect] Barrier decay camera effect <===
 28. [Camera effect] Dash camera effect <===
