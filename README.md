@@ -20,8 +20,8 @@
 8. (DONE)
 9. (DONE)
 10. (DONE)
-11. (DONE)
-12. [Gas grenade] turn explode to gas area ^
+11. [Gas grenade] close explode effect ^
+12. [Gas grenade] create gas area ^
 13. [Gas grenade] make gas area enlarge as time pass ^
 14. [Gas grenade] close gas ^
 15. [Gas grenade] make visable gas ^ **
