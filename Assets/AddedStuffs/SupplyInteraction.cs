@@ -14,6 +14,9 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
     public grenadeNumber yellowcount3;
 	public GameObject s1;
 	public GameObject s2;
+    public GrenadeY GrenadeY;
+    public GrenadeY2 GrenadeY2;
+    public GrenadeY3 GrenadeY3;
     //==================================
     private void Update()
     {
@@ -47,14 +50,17 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
                         redcount.GetComponent<grenadeNumber>().count=redcount.GetComponent<grenadeNumber>().count+10;
                         if(yellowcount.GetComponent<grenadeNumberY>().count==" 0")
                         {
+                            GrenadeY.upthrowed();
                             yellowcount.GetComponent<grenadeNumberY>().count=" 1";
                         }
                         if(yellowcount2.GetComponent<grenadeNumberY>().count==" 0")
                         {
+                            GrenadeY2.upthrowed();
                             yellowcount2.GetComponent<grenadeNumberY>().count=" 1";
                         }
                         if(yellowcount3.GetComponent<grenadeNumberY>().count==" 0")
                         {
+                            GrenadeY3.upthrowed();
                             yellowcount3.GetComponent<grenadeNumberY>().count=" 1";
                         }
                     }        
@@ -66,14 +72,17 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
                         redcount.GetComponent<grenadeNumber>().count=redcount.GetComponent<grenadeNumber>().count+10;
                         if(yellowcount.GetComponent<grenadeNumberY>().count==" 0")
                         {
+                            GrenadeY.upthrowed();
                             yellowcount.GetComponent<grenadeNumberY>().count=" 1";
                         }
                         if(yellowcount2.GetComponent<grenadeNumberY>().count==" 0")
                         {
+                            GrenadeY2.upthrowed();
                             yellowcount2.GetComponent<grenadeNumberY>().count=" 1";
                         }
                         if(yellowcount3.GetComponent<grenadeNumberY>().count==" 0")
                         {
+                            GrenadeY3.upthrowed();
                             yellowcount3.GetComponent<grenadeNumberY>().count=" 1";
                         }
                     }        

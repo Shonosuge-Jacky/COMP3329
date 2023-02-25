@@ -5,15 +5,18 @@ using Photon.Pun;
 
 public class GrenadeThrower : MonoBehaviourPunCallbacks
 {
-    public float throwForce = 40f;
+    public float throwForce = 20f;
+    public float throwForceY = 10f;
     public GameObject grenadePrefab;
+    public GameObject grenadePrefabG;
     public GameObject RemoteGrenade;
     public GameObject RemoteGrenade2;
     public GameObject RemoteGrenade3;
     public grenadeNumber redcount;
     public grenadeNumberY yellowcount; 
     public grenadeNumberY yellowcount2;
-    public grenadeNumberY yellowcount3;   
+    public grenadeNumberY yellowcount3;
+    public grenadeNumber greencount;   
     public Transform originTransform;
     public Transform originTransformf;
  	private bool barriered=false;
@@ -70,7 +73,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
                 photonView.RPC("ThrowGrenade",RpcTarget.All);
                 // ThrowGrenade();
             }
-            if(Input.GetMouseButtonDown(0) && yellowcount.GetComponent<grenadeNumberY>().count==" 1" && currentGrenade==1)
+            else if(Input.GetMouseButtonDown(0) && yellowcount.GetComponent<grenadeNumberY>().count==" 1" && currentGrenade==1)
             {
                 setting1.active=true;
                 setting2.active=true;
@@ -79,7 +82,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
                 photonView.RPC("ThrowGrenadeY",RpcTarget.All);
                 // ThrowGrenade();
             }
-            if(Input.GetMouseButtonDown(0) && yellowcount2.GetComponent<grenadeNumberY>().count==" 1" && currentGrenade==2)
+            else if(Input.GetMouseButtonDown(0) && yellowcount2.GetComponent<grenadeNumberY>().count==" 1" && currentGrenade==2)
             {
                 setting12.active=true;
                 setting22.active=true;
@@ -88,13 +91,19 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
                 photonView.RPC("ThrowGrenadeY2",RpcTarget.All);
                 // ThrowGrenade();
             }
-            if(Input.GetMouseButtonDown(0) && yellowcount3.GetComponent<grenadeNumberY>().count==" 1" && currentGrenade==3)
+            else if(Input.GetMouseButtonDown(0) && yellowcount3.GetComponent<grenadeNumberY>().count==" 1" && currentGrenade==3)
             {
                 setting13.active=true;
                 setting23.active=true;
                 setting33.active=true;
                 yellowcount3.GetComponent<grenadeNumberY>().count=" R";
                 photonView.RPC("ThrowGrenadeY3",RpcTarget.All);
+                // ThrowGrenade();
+            }
+            else if(Input.GetMouseButtonDown(0) && greencount.GetComponent<grenadeNumber>().count>0 && currentGrenade==4)
+            {
+                greencount.GetComponent<grenadeNumber>().count=greencount.GetComponent<grenadeNumber>().count-1;
+                photonView.RPC("ThrowGrenadeG",RpcTarget.All);
                 // ThrowGrenade();
             }
         }
@@ -112,6 +121,20 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     public void ThrowGrenade()
     {
         Rigidbody rb = Instantiate(grenadePrefab, originTransform.position, originTransform.rotation).GetComponent<Rigidbody>(); 
+        if (photonView.IsMine)
+        {
+            rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
+        }
+        else
+        {
+            rb.AddForce(originTransform.forward * throwForce, ForceMode.VelocityChange);
+        }
+    }
+
+    [PunRPC] 
+    public void ThrowGrenadeG()
+    {
+        Rigidbody rb = Instantiate(grenadePrefabG, originTransform.position, originTransform.rotation).GetComponent<Rigidbody>(); 
         if (photonView.IsMine)
         {
             rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);

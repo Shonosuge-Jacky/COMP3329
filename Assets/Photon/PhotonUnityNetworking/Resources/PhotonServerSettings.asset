@@ -55,6 +55,8 @@ MonoBehaviour:
   - ThrowGrenadeY2
   - ThrowGrenadeY3
   - Destroy2
+  - explosionEf
+  - ThrowGrenadeG
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

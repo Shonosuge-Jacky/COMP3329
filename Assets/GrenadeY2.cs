@@ -6,7 +6,7 @@ using Photon.Pun;
 public class GrenadeY2 : MonoBehaviourPunCallbacks
 {
     // public float delay = 3f;
-    public float radius =  3f;
+    public float radius =  9f;
     public float explosionForce = 700f ;
 
     private int CanExplode=0;
@@ -26,8 +26,16 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
     // float countdown;
     bool hasExploded = false;
 
+    public void upthrowed()
+    {
+        throwed=0;
+    }
+    
     private void OnCollisionEnter(Collision collision)
     {
+        // Rigidbody rb = GetComponent<Rigidbody>();
+        // rb.constraints = RigidbodyConstraints.FreezeRotation;
+        // rb.constraints |= RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
         if(throwed==0)
         {
             throwed=1;
@@ -88,7 +96,7 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
 
     void ExplodeY()
     {
-        Instantiate(explosionEffect, transform.position, transform.rotation);
+        photonView.RPC("explosionEf",RpcTarget.All);
         // Get nearby ojects
         Collider[] collidersToDestroy = Physics.OverlapSphere(transform.position, radius);
         foreach(Collider nearbyObject in collidersToDestroy)
@@ -129,5 +137,10 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
     public void HideRG()
     {
         RemoteGrenade.active=false;
+    }
+    [PunRPC] 
+    public void explosionEf()
+    {
+        Instantiate(explosionEffect, transform.position, transform.rotation);
     }
 }

@@ -65,7 +65,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			{
 				barriered=true;
 				// barriering=true;
-				Invoke("barrierend",5);
+				Invoke("barrierend",10);
 				barrierA.active = false;
 				barrierB.active = true;
 				Grey1.active = true;
