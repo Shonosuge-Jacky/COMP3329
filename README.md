@@ -18,11 +18,6 @@
 6. [End scene] press button to Start scene ^ 
 7. [ // ] Solve Player residual **Bug** ^
 </br> - detoryAllPlayer before game restart
-9. (DONE)
-10. (DONE)
-11. (DONE)
-12. (DONE)
-13. (DONE)
 14. [Gas grenade] change how first gas effect disappaer  ^
 15. [Gas grenade] close gas ^
 16. [Gas grenade] make visable gas ^ *
@@ -35,14 +30,13 @@
 23. [Supply] Change amount of grenade in different supply ^
 24. [Supply] Change different supply's color ^
 25. [Supply] hide old supply ^
-26. 
 27. [Camera effect] Barrier camera effect <===
 28. [Camera effect] Barrier decay camera effect <===
 29. [Camera effect] Dash camera effect <===
 30. [Camera effect] Death camera effect <===
 31. [Camera effect] Camera effect when get hitted <===
 32. [Camera effect] Camera effect when under water <===
-33. [Remote grenade] Round 3 Remote grenade icon **Bug**
+33. [Remote grenade] Round 3 Remote grenade icon **Bug** <===
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
