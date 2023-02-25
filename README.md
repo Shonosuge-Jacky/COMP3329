@@ -37,7 +37,7 @@
 16. [Gas grenade] make visable gas ^ *
 17. [End scene] dead by what message ^
 18. [ // ] Show choosen grenade ^^
-19. 
+
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
 2. [Arena] make the edge more obvious
