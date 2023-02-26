@@ -36,6 +36,7 @@
 </br> - TRY ON WALL FIRST
 14. [Gas grenade] change how second gas effect appaer ^
 </br> - enlarge from zero in 5 second
+14. [Gas grenade] Gas grenade dont stop **Bug** ^
 14. [Gas grenade] edit size of gas effects ^
 14. [Gas grenade] add damage area ^
 17. [End scene] dead by what message ^
