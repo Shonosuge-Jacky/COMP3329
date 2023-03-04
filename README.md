@@ -69,7 +69,7 @@
 41. [optional] Change ocean skin 
 42. [optional] Change oceanFloor skin  
 43. [ // ] cant do anything before all player arrive 
-43. [ // ] close camera before all player arrive 
+43. [ // ] add wait player sence before all player arrive 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**
