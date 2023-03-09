@@ -70,6 +70,8 @@
 42. [optional] Change oceanFloor skin  
 43. [ // ] cant do anything before all player arrive 
 43. [ // ] add wait player sence before all player arrive 
+44. icon effect when button is pressed 
+45. button no respond reason message 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**
