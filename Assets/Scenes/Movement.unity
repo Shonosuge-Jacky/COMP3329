@@ -26045,7 +26045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd14452fbb2285c49bbe79d7ca6a5e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1376347667877692439, guid: 49b7961e62a034f4591834055f7f4c6a,
+  playerPrefab: {fileID: 1376347667877692439, guid: 6b8264c63a36db243b4f63c786ff0dab,
     type: 3}
   startButton: {fileID: 885071238}
   Crosshir: {fileID: 574922488}
