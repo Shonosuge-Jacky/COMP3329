@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Photon.Pun;
+using UnityEngine.Rendering.PostProcessing;
 
 // public class PlayerMovement : MonoBehaviour
 public class PlayerMovement : MonoBehaviourPunCallbacks
@@ -16,6 +17,10 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     public float airMultiplier;
     public float dashforce = 2000f;
     bool readyToJump;
+    public PostProcessVolume volume;
+    private LensDistortion lens = null;
+    private ColorGrading colorGrading;
+	private DepthOfField dof;
 
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
@@ -45,7 +50,12 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             rb = GetComponent<Rigidbody>();
             rb.freezeRotation = true;
             readyToJump = true;
+            volume.profile.TryGetSettings(out colorGrading);
+            volume.profile.TryGetSettings(out dof);
+            colorGrading.active = false;
+            dof.active = false;
         }
+        volume.profile.TryGetSettings(out lens);
     }
     // << 2 >>
     public GameObject dash;
@@ -68,12 +78,15 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             if (Input.GetKey("v") && dashed==false)
             {
                 moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+                StartCoroutine("DashEffect");
                 rb.AddForce(moveDirection.normalized * moveSpeed * dashforce, ForceMode.Force);
                 dashed=true;
                 Invoke("dashcding",5);
                 dash.active = false;
                 dashcd.active = true;
                 dashcount.active = true;
+
+
             }
             // << dash >>
             // if (Input.GetKey("b"))
@@ -97,6 +110,15 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
         {        
             MovePlayer();
         }
+    }
+
+    IEnumerator DashEffect(){
+        lens.active = true;
+        yield return new WaitForSeconds(0.1f);
+        rb.AddForce(moveDirection.normalized * moveSpeed * dashforce, ForceMode.Force);
+        yield return new WaitForSeconds(0.1f);
+        lens.active = false;
+        // lens.enabled.value = false;
     }
     private void dashcding()
     {

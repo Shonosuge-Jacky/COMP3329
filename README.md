@@ -25,12 +25,12 @@
 23. [Supply] Change amount of grenade in different supply ^
 24. [Supply] Change different supply's color ^
 25. [Supply] hide old supply ^
-27. [Camera effect] Barrier camera effect 
-28. [Camera effect] Barrier decay camera effect ^
-29. [Camera effect] Dash camera effect 
-30. [Camera effect] Death camera effect
-31. [Camera effect] Camera effect when get hitted 
-32. [Camera effect] Camera effect when under water 
+27. [Camera effect] Barrier camera effect       <-can be done soon, not sure what meaning
+28. [Camera effect] Barrier decay camera effect ^       <-can be done soon
+29. [Camera effect] Dash camera effect          <-DONE
+30. [Camera effect] Death camera effect         <-DONE
+31. [Camera effect] Camera effect when get hitted       <-can be done soon
+32. [Camera effect] Camera effect when under water      <-can be done soon
 14. [Gas grenade] change how first gas effect disappaer <===
 </br> - slowly become transparent in last second
 14. [Gas grenade] change how second gas effect appaer ^
@@ -74,7 +74,7 @@
 45. button no respond reason message 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
-1. Solve Explode effect retain **Bug**
+1. Solve Explode effect retain **Bug**                <-solved 
 </br> - destory function should put inside the effect
 3. Solve Destroyed wall's scrap pass through ground **Bug** 
 4. Solve Multiplayer delay(~0.25s) **Bug**

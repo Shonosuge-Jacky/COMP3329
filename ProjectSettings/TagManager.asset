@@ -6,6 +6,7 @@ TagManager:
   tags:
   - endGame
   - supply
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Start
   - 
   - 
-  - postProcessing
+  - 
   - 
   - 
   - 
@@ -35,10 +36,10 @@ TagManager:
   - 
   - 
   - 3DUI
-  - 
   - Player
   - Ground
   - Grenade
+  - postProcessing
   m_SortingLayers:
   - name: Default
     uniqueID: 0

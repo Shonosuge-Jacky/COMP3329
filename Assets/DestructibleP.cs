@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.Rendering.PostProcessing;
 
 public class DestructibleP : MonoBehaviourPunCallbacks
 {
@@ -22,7 +23,16 @@ public class DestructibleP : MonoBehaviourPunCallbacks
     public GameObject barrierV;
 	private int gameended=0;
 	public int dead=0;
+	private bool doDeadEffect = false;
 
+	public PostProcessVolume volume;
+    private ColorGrading colorGrading;
+	private DepthOfField dof;
+
+	private void Start() {
+		volume.profile.TryGetSettings(out colorGrading);
+		volume.profile.TryGetSettings(out dof);
+	}
 	// If the player clicks on the object
 	public void Destroy ()
 	{
@@ -76,10 +86,17 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			}
 		}
 
+		//player dead
+
         GameObject[] gos2;
         gos2 = GameObject.FindGameObjectsWithTag("endGame");  
         if(gos2.Length >= 1)
         {
+			if(doDeadEffect == false){
+				doDeadEffect = true;
+				StartCoroutine("DeathEffect");
+			}
+
 			// print(gos2[0]); ** endGame(Clone) (UnityEngine.GameObject)
 			gameended=1;
 			// Stop Player Movement 
@@ -91,6 +108,17 @@ public class DestructibleP : MonoBehaviourPunCallbacks
         }   
 	}
 	
+	IEnumerator DeathEffect(){
+		Debug.Log("DEAD");
+		colorGrading.active = true;
+		dof.active = true;
+		while (dof.focusDistance > 0.2f){
+			yield return new WaitForSeconds(0.1f);
+			dof.focusDistance.value -= 0.2f;
+		}
+		yield return null;
+	}
+
     [PunRPC] 
     public void barrier()
     {

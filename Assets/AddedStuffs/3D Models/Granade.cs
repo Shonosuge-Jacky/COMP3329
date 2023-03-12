@@ -11,6 +11,8 @@ public class Granade : MonoBehaviourPunCallbacks
 
     public GameObject explosionEffect;
 
+    private GameObject toDestroyObject;
+
     // float countdown;
     bool hasExploded = false;
     // Start is called before the first frame update
@@ -50,13 +52,23 @@ public class Granade : MonoBehaviourPunCallbacks
         Destroy(explosionEffect);
     }
 
+    IEnumerator ExplosionEffectRemove(){
+        Debug.Log("Destroy " + toDestroyObject.name + "time: " + Time.timeScale);
+        GameObject Temp = toDestroyObject;
+        yield return new WaitForSeconds(5);
+        Debug.Log("Des");
+        Destroy(Temp);
+        // Destroy(gameObject);
+    }
+
     void Explode()
     {
         // bug – explode effect retain
-        Invoke("EffectRemove",5);
-        // Debug.Log("BOOM!");
+        // Invoke("EffectRemove",5);
+        Debug.Log("BOOM!");
         // Show effect
-        Instantiate(explosionEffect, transform.position, transform.rotation);
+        toDestroyObject = Instantiate(explosionEffect, transform.position, transform.rotation);
+        toDestroyObject.GetComponent<ExplosionEffectDestroy>().EffectDestroy();
         // Get nearby ojects
         Collider[] collidersToDestroy = Physics.OverlapSphere(transform.position, radius);
         foreach(Collider nearbyObject in collidersToDestroy)
