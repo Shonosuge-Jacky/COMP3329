@@ -12,6 +12,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	public GameObject GrenadeThrowerx;
 	public GameObject SupplyInteractionx;
 	public GameObject endGame;
+	public GameObject PostProcessHandlerx;
  	private bool barriered=false;
  	private bool barriering=false;
     public GameObject barrierA;
@@ -25,14 +26,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	public int dead=0;
 	private bool doDeadEffect = false;
 
-	public PostProcessVolume volume;
-    private ColorGrading colorGrading;
-	private DepthOfField dof;
 
-	private void Start() {
-		volume.profile.TryGetSettings(out colorGrading);
-		volume.profile.TryGetSettings(out dof);
-	}
 	// If the player clicks on the object
 	public void Destroy ()
 	{
@@ -92,10 +86,13 @@ public class DestructibleP : MonoBehaviourPunCallbacks
         gos2 = GameObject.FindGameObjectsWithTag("endGame");  
         if(gos2.Length >= 1)
         {
-			if(doDeadEffect == false){
-				doDeadEffect = true;
-				StartCoroutine("DeathEffect");
+			if(photonView.IsMine){
+				if(doDeadEffect == false ){
+					PostProcessHandlerx.GetComponent<PostProcessHandler>().doDead = true;
+					doDeadEffect = true;
+				}
 			}
+			
 
 			// print(gos2[0]); ** endGame(Clone) (UnityEngine.GameObject)
 			gameended=1;
@@ -108,16 +105,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
         }   
 	}
 	
-	IEnumerator DeathEffect(){
-		Debug.Log("DEAD");
-		colorGrading.active = true;
-		dof.active = true;
-		while (dof.focusDistance > 0.2f){
-			yield return new WaitForSeconds(0.1f);
-			dof.focusDistance.value -= 0.2f;
-		}
-		yield return null;
-	}
+
 
     [PunRPC] 
     public void barrier()

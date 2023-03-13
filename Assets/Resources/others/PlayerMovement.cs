@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     public PostProcessVolume volume;
     private LensDistortion lens = null;
     private ColorGrading colorGrading;
-	private DepthOfField dof;
 
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
@@ -50,10 +49,6 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             rb = GetComponent<Rigidbody>();
             rb.freezeRotation = true;
             readyToJump = true;
-            volume.profile.TryGetSettings(out colorGrading);
-            volume.profile.TryGetSettings(out dof);
-            colorGrading.active = false;
-            dof.active = false;
         }
         volume.profile.TryGetSettings(out lens);
     }
