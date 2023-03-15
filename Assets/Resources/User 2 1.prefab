@@ -307,6 +307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPosition: {fileID: 1376347666267538603}
+  DestructibleP: {fileID: 0}
+  cameraSpeed: 3
 --- !u!114 &3005227648400744820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,11 +1163,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwForce: 20
+  throwForceY: 10
   grenadePrefab: {fileID: 6325178751849272872, guid: 72d2235e3245b7d489c07aac76e75869,
     type: 3}
+  grenadePrefabG: {fileID: 0}
+  RemoteGrenade: {fileID: 0}
+  RemoteGrenade2: {fileID: 0}
+  RemoteGrenade3: {fileID: 0}
   redcount: {fileID: 1376347666964777637}
+  yellowcount: {fileID: 0}
+  yellowcount2: {fileID: 0}
+  yellowcount3: {fileID: 0}
+  greencount: {fileID: 0}
   originTransform: {fileID: 1376347666267538603}
   originTransformf: {fileID: 1376347666267538603}
+  setting1: {fileID: 0}
+  setting2: {fileID: 0}
+  setting3: {fileID: 0}
+  setting12: {fileID: 0}
+  setting22: {fileID: 0}
+  setting32: {fileID: 0}
+  setting13: {fileID: 0}
+  setting23: {fileID: 0}
+  setting33: {fileID: 0}
 --- !u!1 &1376347668041882524
 GameObject:
   m_ObjectHideFlags: 0
@@ -3628,6 +3648,15 @@ MonoBehaviour:
   GrenadeThrowerx: {fileID: 1376347668011219018}
   SupplyInteractionx: {fileID: 1376347667060728038}
   endGame: {fileID: 604720007426191894, guid: b2861d16effb5ec41b17c41c50b938d4, type: 3}
+  PostProcessHandlerx: {fileID: 0}
+  barrierA: {fileID: 0}
+  barrierB: {fileID: 0}
+  barrierC: {fileID: 0}
+  Grey1: {fileID: 0}
+  Grey2: {fileID: 0}
+  Grey3: {fileID: 0}
+  barrierV: {fileID: 0}
+  dead: 0
 --- !u!114 &3005227648084900146
 MonoBehaviour:
   m_ObjectHideFlags: 0

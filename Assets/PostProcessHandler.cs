@@ -10,12 +10,14 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
     public DestructibleP desP;
     [SerializeField] private ColorGrading colorGrading;
 	[SerializeField] private DepthOfField dof;
+    [SerializeField] private Vignette vignette;
     public bool doDead = false;
     // Start is called before the first frame update
     void Start()
     {
         volume.profile.TryGetSettings(out colorGrading);
         volume.profile.TryGetSettings(out dof);
+        volume.profile.TryGetSettings(out vignette);
     }
 
     // Update is called once per frame
@@ -29,20 +31,39 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
                     StartCoroutine("BlackEffect");
                 }
             }
-
         }
+    }
+
+    public void DoGetHitEffect(){
+        StartCoroutine(GetHitEffect());
+    }
+    public void DoWaterEffect(){
+        StartCoroutine(WaterEffect());
     }
     IEnumerator BlackEffect(){
         colorGrading.active = true;
         yield return null;
     }
     IEnumerator BlurEffect(){
-            dof.active = true;
-            while (dof.focusDistance > 0.2f){
-                yield return new WaitForSeconds(0.1f);
-                dof.focusDistance.value -= 0.2f;
-            }
-            yield return null;
+        dof.active = true;
+        while (dof.focusDistance > 0.2f){
+            yield return new WaitForSeconds(0.1f);
+            dof.focusDistance.value -= 0.2f;
+        }
+        yield return null;
 
 	}
+
+    IEnumerator GetHitEffect(){
+        vignette.active = true;
+        yield return new WaitForSeconds(0.7f);
+        vignette.active = false;
+    }
+
+    IEnumerator WaterEffect(){
+        colorGrading.active = true;
+        colorGrading.colorFilter.overrideState = true;
+        colorGrading.saturation.overrideState = true;
+        yield return null;
+    }
 }

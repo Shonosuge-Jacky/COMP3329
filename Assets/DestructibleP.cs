@@ -49,6 +49,8 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			SupplyInteractionx.GetComponent<SupplyInteraction>().enabled = false;
 			Rigidbody rb = Instantiate(endGame, transform.position, transform.rotation).GetComponent<Rigidbody>();
 			dead=1;
+		}else if(barriering == true){
+			PostProcessHandlerx.GetComponent<PostProcessHandler>().DoGetHitEffect();
 		}
     }
 

@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     public float airMultiplier;
     public float dashforce = 2000f;
     bool readyToJump;
-    public PostProcessVolume volume;
+    public GameObject PostProcessHandlerx;
     private LensDistortion lens = null;
     private ColorGrading colorGrading;
 
@@ -50,7 +50,6 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             rb.freezeRotation = true;
             readyToJump = true;
         }
-        volume.profile.TryGetSettings(out lens);
     }
     // << 2 >>
     public GameObject dash;
@@ -96,6 +95,10 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             {
                 rb.AddForce(Vector3.down * 12f* rb.velocity.y, ForceMode.Force);
             }   
+
+            // if(rb.transform.position.y < 0){
+            //     PostProcessHandlerx.GetComponent<PostProcessHandler>().DoWaterEffect();
+            // }
         }
     }
     // << 3 >>
