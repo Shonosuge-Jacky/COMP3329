@@ -38,7 +38,7 @@
 14. [Gas grenade] Gas grenade dont stop **Bug** ^
 14. [Gas grenade] edit size of gas effects ^
 14. [Gas grenade] add damage area ^
-14. [Gas grenade] sometime didnt explode **Bug** ^
+14. [Gas grenade] move too slow never stop **Bug** ^
 17. [End scene] dead by what message ^
 18. [ // ] Show choosen grenade ^^
 
