@@ -40,6 +40,7 @@
 14. [Gas grenade] add damage area ^
 14. [Gas grenade] sometime first gas too short **Bug** ^
 14. [Gas grenade] sometime didnt explode **Bug** ^
+14. [Gas grenade] when explode on large y first gas will under the grenade **Bug** ^
 17. [End scene] dead by what message ^
 18. [ // ] Show choosen grenade ^^
 
