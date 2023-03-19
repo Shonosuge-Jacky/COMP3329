@@ -214,9 +214,9 @@
 73. [Gas grenade] emit gas when gas grenade stop
 73. [Gas grenade] gas effect extrem lag **Bug**
 73. [Gas grenade] disable first gas effect
-74. [Gas grenade] move too slow never stop **Bug** 
-14. [Gas grenade] downward emit gas bug **Bug** 
-15. [Gas grenade] change how first gas effect disappaer
+75. [Gas grenade] move too slow never stop **Bug** 
+76. [Gas grenade] downward emit gas bug **Bug** 
+77. [Gas grenade] change how first gas effect disappaer
 
 
 
