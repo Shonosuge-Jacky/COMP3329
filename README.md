@@ -31,7 +31,8 @@
 30. [Camera effect] Death camera effect         <-DONE
 31. [Camera effect] Camera effect when get hitted       <-can be done soon
 32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
-14. [Gas grenade] change how second gas effect appaer <====
+33. 14. [Gas grenade] change how second gas effect disappaer <====
+34. [Gas grenade] change how second gas effect appaer <====
 </br> - enlarge from zero in 5 second
 14. [Gas grenade] Gas grenade dont stop **Bug** ^
 14. [Gas grenade] edit size of gas effects ^
