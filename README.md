@@ -33,6 +33,7 @@
 32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
 17. [End scene] dead by what message <====
 18. [ // ] Show choosen grenade ^^
+17. [Barrier] barrier vs ocean alive **Bug** <====
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
