@@ -8,10 +8,12 @@ public class granadeG : MonoBehaviourPunCallbacks
     // public float delay = 3f;
     public float radius =  3f;
     public float explosionForce = 700f ;
+    private float testvx = 0f ;
+    private float testvz = 0f ;
 
     public GameObject explosionEffect0;
     public GameObject explosionEffect;
-    public GameObject Grenade;
+    public GameObject damageball;
     Rigidbody rb;
 
     // float countdown;
@@ -32,10 +34,63 @@ public class granadeG : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
+        // print(transform.position);
         if(hasExploded==true && rb.velocity.x==0 && rb.velocity.y==0 && rb.velocity.z==0 && hasExploded2==false)
         {
             Explode();
             hasExploded2=true;
+        }
+        if(hasExploded==true && rb.velocity.x>0f && hasExploded2==false)
+        {
+            testvx=rb.velocity.x-0.1f;
+            if(testvx<=0f)
+            {
+                rb.velocity = new Vector3(0f, rb.velocity.y, rb.velocity.z);
+            }
+            else
+            {
+                rb.velocity = new Vector3(testvx, rb.velocity.y, rb.velocity.z);       
+            }
+        }
+        if(hasExploded==true && rb.velocity.z>0f && hasExploded2==false)
+        {
+            testvz=rb.velocity.z-0.1f;
+            if(testvz<=0f)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0f);
+            }
+            else
+            {
+                rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, testvz);       
+            }
+        }
+        if(hasExploded==true && rb.velocity.x<0f && hasExploded2==false)
+        {
+            testvx=rb.velocity.x+0.1f;
+            if(testvx>=0f)
+            {
+                rb.velocity = new Vector3(0f, rb.velocity.y, rb.velocity.z);
+            }
+            else
+            {
+                rb.velocity = new Vector3(testvx, rb.velocity.y, rb.velocity.z);       
+            }
+        }
+        if(hasExploded==true && rb.velocity.z<0f && hasExploded2==false)
+        {
+            testvz=rb.velocity.z+0.1f;
+            if(testvz>=0f)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0f);
+            }
+            else
+            {
+                rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, testvz);       
+            }
+        }
+        if(hasExploded==true && rb.velocity.y<0.01f && rb.velocity.y>-0.01f && hasExploded2==false)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         }
     }
 
@@ -47,30 +102,9 @@ public class granadeG : MonoBehaviourPunCallbacks
 
     void Explode()
     {
-        // bug – explode effect retain
-        // Invoke("EffectRemove",5);
-        Instantiate(explosionEffect0, transform.position, transform.rotation);
-        // Debug.Log("BOOM!");
-        // Show effect
+        // Instantiate(explosionEffect0, transform.position+ Vector3.up * 2f, Quaternion.Euler(0f, 0f, 0f));
+        Instantiate(explosionEffect0, new Vector3(transform.position.x, transform.position.y + 2f, transform.position.z + 0.4f), Quaternion.Euler(0f, 0f, 0f));
         Invoke("gas",5);
-        // Get nearby ojects
-        // Collider[] collidersToDestroy = Physics.OverlapSphere(transform.position, radius);
-        // foreach(Collider nearbyObject in collidersToDestroy)
-        // {
-        //     // Add force
-        //     // Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-        //     // if(rb!=null)
-        //     // {
-        //     //     rb.AddExplosionForce(explosionForce, transform.position, radius);
-        //     // }
-        //     // Damage
-        //     Destructible dest = nearbyObject.GetComponent<Destructible>();
-        //     // print(nearbyObject);
-        //     if(dest!=null)
-        //     {
-        //         // dest.Destroy();
-        //     }
-        // }
 
         Collider[] collidersToMove = Physics.OverlapSphere(transform.position, radius);
         foreach(Collider nearbyObject in collidersToMove)
@@ -108,6 +142,7 @@ public class granadeG : MonoBehaviourPunCallbacks
         Instantiate(explosionEffect, newPosition2, newRotation2);
         Instantiate(explosionEffect, newPosition3, newRotation3);
         Instantiate(explosionEffect, newPosition4, newRotation4);
+        Instantiate(damageball, transform.position+ new Vector3(0f, 3f, 0f), transform.rotation);
         Destroy(gameObject);
     }
 }
