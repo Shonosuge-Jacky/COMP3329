@@ -25,19 +25,12 @@
 23. [Supply] Change amount of grenade in different supply ^
 24. [Supply] Change different supply's color ^
 25. [Supply] hide old supply ^
-27. [Camera effect] Barrier camera effect 
-28. [Camera effect] Barrier decay camera effect ^
-29. [Camera effect] Dash camera effect 
-30. [Camera effect] Death camera effect
-31. [Camera effect] Camera effect when get hitted 
-32. [Camera effect] Camera effect when under water 
-14. [Gas grenade] change how first gas effect disappaer <===
-</br> - slowly become transparent in last second
-14. [Gas grenade] change how second gas effect appaer ^
-</br> - enlarge from zero in 5 second
-14. [Gas grenade] Gas grenade dont stop **Bug** ^
-14. [Gas grenade] edit size of gas effects ^
-14. [Gas grenade] add damage area ^
+27. [Camera effect] Barrier camera effect     //yellow it  
+28. [Camera effect] Barrier decay camera effect ^       //crack it (decay per second, wont break,  when hit get red screen)
+29. [Camera effect] Dash camera effect          <-DONE
+30. [Camera effect] Death camera effect         <-DONE
+31. [Camera effect] Camera effect when get hitted       <-can be done soon
+32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
 17. [End scene] dead by what message ^
 18. [ // ] Show choosen grenade ^^
 
@@ -74,7 +67,7 @@
 45. button no respond reason message 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
-1. Solve Explode effect retain **Bug**
+1. Solve Explode effect retain **Bug**                <-solved 
 </br> - destory function should put inside the effect
 3. Solve Destroyed wall's scrap pass through ground **Bug** 
 4. Solve Multiplayer delay(~0.25s) **Bug**
@@ -216,6 +209,11 @@
 73. [Gas grenade] emit gas when gas grenade stop
 73. [Gas grenade] gas effect extrem lag **Bug**
 73. [Gas grenade] disable first gas effect
+75. [Gas grenade] move too slow never stop **Bug** 
+76. [Gas grenade] downward emit gas bug **Bug** 
+77. [Gas grenade] change how first gas effect disappaer
+78. [Gas grenade] change how second gas effect disappaer
+14. [Gas grenade] add damage area 
 
 
 
