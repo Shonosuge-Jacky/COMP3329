@@ -216,6 +216,7 @@
 14. [Gas grenade] add damage area 
 15. [Barrier] barrier vs ocean alive **Bug** 
 16. [End scene] dead by what message 
+17. [End scene] Costumize player id
 
 
 
