@@ -31,7 +31,7 @@
 30. [Camera effect] Death camera effect         <-DONE
 31. [Camera effect] Camera effect when get hitted       <-can be done soon
 32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
-17. [End scene] dead by what message <====
+17. [End scene] identify killer <====
 18. [ // ] Show choosen grenade ^^
 
 ### &nbsp;&nbsp;To-do-store :
@@ -215,6 +215,7 @@
 78. [Gas grenade] change how second gas effect disappaer
 14. [Gas grenade] add damage area 
 15. [Barrier] barrier vs ocean alive **Bug** 
+16. [End scene] dead by what message 
 
 
 
