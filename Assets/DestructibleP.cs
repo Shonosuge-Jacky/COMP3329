@@ -11,13 +11,10 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	public GameObject GrenadeThrowerx;
 	public GameObject SupplyInteractionx;
 	public GameObject endGame;
-<<<<<<< Updated upstream
-=======
 	public GameObject killbyRin;
 	public GameObject killbyYin;
 	public GameObject killbyGin;
 	public GameObject killbyOin;
->>>>>>> Stashed changes
  	private bool barriered=false;
  	private bool barriering=false;
     public GameObject barrierA;
@@ -29,15 +26,12 @@ public class DestructibleP : MonoBehaviourPunCallbacks
     public GameObject barrierV;
 	private int gameended=0;
 	public int dead=0;
-<<<<<<< Updated upstream
-=======
     public GameObject user;
 
     public void killbyR()
     {
         photonView.RPC("killbyR2",RpcTarget.All);
 	}
->>>>>>> Stashed changes
 
 	[PunRPC]
     public void killbyR2()
@@ -92,9 +86,6 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			// Stop SupplyInteraction
 			SupplyInteractionx.GetComponent<SupplyInteraction>().enabled = false;
 			Rigidbody rb = Instantiate(endGame, transform.position, transform.rotation).GetComponent<Rigidbody>();
-<<<<<<< Updated upstream
-			dead=1;
-=======
 			if(user.name=="User(Clone)")
 			{
                 print("2.1");
@@ -149,7 +140,6 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 				// print(user.name+" is dead");
 				// print("is killed by other");
 			}
->>>>>>> Stashed changes
 		}
     }
 

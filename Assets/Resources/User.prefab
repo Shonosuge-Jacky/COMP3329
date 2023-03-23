@@ -1513,10 +1513,7 @@ Transform:
   - {fileID: 4276742165412729740}
   - {fileID: 5209828673880754164}
   - {fileID: 5209828673439047598}
-<<<<<<< Updated upstream
-=======
   - {fileID: 6390859062528261263}
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2054,10 +2051,7 @@ MonoBehaviour:
   setting13: {fileID: 2545457803343406398}
   setting23: {fileID: 699359953653079206}
   setting33: {fileID: 124995749088374891}
-<<<<<<< HEAD
   user: {fileID: 1376347667877692433}
-=======
->>>>>>> eee4c3eed8923678f21c86497e503f91195ea628
 --- !u!114 &7781403927169796537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,11 +2064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d3f7b5f423c8e4e97623c0986652e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   destP: {fileID: 5365758230954687280}
-=======
-  player: {fileID: 5365758230954687280}
->>>>>>> eee4c3eed8923678f21c86497e503f91195ea628
 --- !u!1 &1376347668041882524
 GameObject:
   m_ObjectHideFlags: 0
@@ -6339,15 +6329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 6459298618296726149}
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  count: 3
-=======
   count: 30
->>>>>>> Stashed changes
-=======
-  count: 30
->>>>>>> eee4c3eed8923678f21c86497e503f91195ea628
 --- !u!1 &8411389957008628208
 GameObject:
   m_ObjectHideFlags: 0
@@ -7476,15 +7458,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 683c86073ae185049a7e5329dc2645d3, type: 3}
---- !u!4 &7077467211963914828 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2350815243244725422, guid: 683c86073ae185049a7e5329dc2645d3,
-    type: 3}
-  m_PrefabInstance: {fileID: 4803072425438330594}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7077467211963699994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2350815243244645880, guid: 683c86073ae185049a7e5329dc2645d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4803072425438330594}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7077467211963914828 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2350815243244725422, guid: 683c86073ae185049a7e5329dc2645d3,
     type: 3}
   m_PrefabInstance: {fileID: 4803072425438330594}
   m_PrefabAsset: {fileID: 0}
@@ -8390,42 +8372,39 @@ PrefabInstance:
     - {fileID: 7140484083255089791, guid: 1cb251938a0565a4a97a14b7c5568892, type: 3}
     - {fileID: 7140484083255089790, guid: 1cb251938a0565a4a97a14b7c5568892, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1cb251938a0565a4a97a14b7c5568892, type: 3}
-<<<<<<< HEAD
-<<<<<<< Updated upstream
---- !u!4 &1376347667060728037 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7140484083255089730, guid: 1cb251938a0565a4a97a14b7c5568892,
-    type: 3}
-  m_PrefabInstance: {fileID: 8070974553361726119}
-  m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> Stashed changes
 --- !u!1 &1376347667865088290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7140484084062391173, guid: 1cb251938a0565a4a97a14b7c5568892,
     type: 3}
   m_PrefabInstance: {fileID: 8070974553361726119}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!4 &1376347666267538603 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7140484083528187404, guid: 1cb251938a0565a4a97a14b7c5568892,
     type: 3}
   m_PrefabInstance: {fileID: 8070974553361726119}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &1376347666267538612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7140484083528187411, guid: 1cb251938a0565a4a97a14b7c5568892,
     type: 3}
   m_PrefabInstance: {fileID: 8070974553361726119}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> eee4c3eed8923678f21c86497e503f91195ea628
 --- !u!4 &1376347666668548736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7140484083668273191, guid: 1cb251938a0565a4a97a14b7c5568892,
+    type: 3}
+  m_PrefabInstance: {fileID: 8070974553361726119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1376347666668548737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140484083668273190, guid: 1cb251938a0565a4a97a14b7c5568892,
+    type: 3}
+  m_PrefabInstance: {fileID: 8070974553361726119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1376347667389630333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140484084524252634, guid: 1cb251938a0565a4a97a14b7c5568892,
     type: 3}
   m_PrefabInstance: {fileID: 8070974553361726119}
   m_PrefabAsset: {fileID: 0}
@@ -8441,55 +8420,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8070974553361726119}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1376347666668548737 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7140484083668273190, guid: 1cb251938a0565a4a97a14b7c5568892,
-    type: 3}
-  m_PrefabInstance: {fileID: 8070974553361726119}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
---- !u!1 &1376347666267538612 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7140484083528187411, guid: 1cb251938a0565a4a97a14b7c5568892,
-    type: 3}
-  m_PrefabInstance: {fileID: 8070974553361726119}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> eee4c3eed8923678f21c86497e503f91195ea628
---- !u!4 &1376347666267538603 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7140484083528187404, guid: 1cb251938a0565a4a97a14b7c5568892,
-    type: 3}
-  m_PrefabInstance: {fileID: 8070974553361726119}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
---- !u!1 &1376347667389630333 stripped
-=======
---- !u!1 &1376347667865088290 stripped
->>>>>>> eee4c3eed8923678f21c86497e503f91195ea628
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7140484084062391173, guid: 1cb251938a0565a4a97a14b7c5568892,
-    type: 3}
-  m_PrefabInstance: {fileID: 8070974553361726119}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1376347667389630333 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7140484084524252634, guid: 1cb251938a0565a4a97a14b7c5568892,
-    type: 3}
-  m_PrefabInstance: {fileID: 8070974553361726119}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
---- !u!4 &1376347667060728037 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7140484083255089730, guid: 1cb251938a0565a4a97a14b7c5568892,
-    type: 3}
-  m_PrefabInstance: {fileID: 8070974553361726119}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!114 &3005227648656443506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8703,8 +8633,6 @@ MonoBehaviour:
   GrenadeThrowerx: {fileID: 1376347668011219018}
   SupplyInteractionx: {fileID: 1376347667060728038}
   endGame: {fileID: 604720007426191894, guid: b2861d16effb5ec41b17c41c50b938d4, type: 3}
-<<<<<<< Updated upstream
-=======
   killbyRin: {fileID: 8292172479641825643, guid: c56811f282ab7f949bdae619d9481505,
     type: 3}
   killbyYin: {fileID: 8373516861198863018, guid: e65c6b62d60dac3429d8493ff0865452,
@@ -8713,7 +8641,6 @@ MonoBehaviour:
     type: 3}
   killbyOin: {fileID: 7625793139143069685, guid: 3ae16c8caa820c64698b4fb9d2faeb56,
     type: 3}
->>>>>>> Stashed changes
   barrierA: {fileID: 9147077764789505282}
   barrierB: {fileID: 2897745064938936712}
   barrierC: {fileID: 1155729391557976487}

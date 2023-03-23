@@ -10,10 +10,7 @@ public class Granade : MonoBehaviourPunCallbacks
     public float explosionForce = 700f ;
 
     public GameObject explosionEffect;
-<<<<<<< Updated upstream
-=======
     // public startButton startButton;
->>>>>>> Stashed changes
 
     // float countdown;
     bool hasExploded = false;

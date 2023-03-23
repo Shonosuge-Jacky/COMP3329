@@ -49,11 +49,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4709619775666382948}
-<<<<<<< HEAD
   m_Enabled: 0
-=======
-  m_Enabled: 1
->>>>>>> eee4c3eed8923678f21c86497e503f91195ea628
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
