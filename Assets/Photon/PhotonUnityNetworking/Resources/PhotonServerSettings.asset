@@ -57,6 +57,12 @@ MonoBehaviour:
   - Destroy2
   - explosionEf
   - ThrowGrenadeG
+  - selfDestroy2
+  - InstantiatePlayerName
+  - ReceiveJsonData
+  - killbyG2
+  - killbyR2
+  - killbyY2
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

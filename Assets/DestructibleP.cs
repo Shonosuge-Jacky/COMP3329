@@ -11,6 +11,13 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	public GameObject GrenadeThrowerx;
 	public GameObject SupplyInteractionx;
 	public GameObject endGame;
+<<<<<<< Updated upstream
+=======
+	public GameObject killbyRin;
+	public GameObject killbyYin;
+	public GameObject killbyGin;
+	public GameObject killbyOin;
+>>>>>>> Stashed changes
  	private bool barriered=false;
  	private bool barriering=false;
     public GameObject barrierA;
@@ -22,17 +29,58 @@ public class DestructibleP : MonoBehaviourPunCallbacks
     public GameObject barrierV;
 	private int gameended=0;
 	public int dead=0;
+<<<<<<< Updated upstream
+=======
+    public GameObject user;
 
-	// If the player clicks on the object
-	public void Destroy ()
+    public void killbyR()
+    {
+        photonView.RPC("killbyR2",RpcTarget.All);
+	}
+>>>>>>> Stashed changes
+
+	[PunRPC]
+    public void killbyR2()
+    {
+        Rigidbody rb = Instantiate(killbyRin, transform.position, transform.rotation).GetComponent<Rigidbody>();
+    }
+
+    public void killbyY()
+    {
+        photonView.RPC("killbyY2",RpcTarget.All);
+	}
+
+	[PunRPC]
+    public void killbyY2()
+    {
+        Rigidbody rb = Instantiate(killbyYin, transform.position, transform.rotation).GetComponent<Rigidbody>();
+    }
+
+    public void killbyG()
+    {
+        photonView.RPC("killbyG2",RpcTarget.All); 
+    }
+	
+	[PunRPC]
+    public void killbyG2()
+    {
+        Rigidbody rb = Instantiate(killbyGin, transform.position, transform.rotation).GetComponent<Rigidbody>();
+    }
+
+	public void selfDestroy () // throw by camman
+	{
+		photonView.RPC("selfDestroy2",RpcTarget.All); 
+	}
+
+	public void Destroy () // not throw by camman
 	{
 		photonView.RPC("Destroy2",RpcTarget.All); 
 	}
 
     [PunRPC] 
-    public void Destroy2()
+    public void selfDestroy2() // throw by camman
     {
-		if (barriering==false && dead==0)
+		if ((barriering==false && dead==0)||(barriering==true && dead==0 && transform.position.y<-3))
 		{
 			var rotationVector = transform.rotation.eulerAngles;
 			rotationVector.x = 90;
@@ -44,7 +92,64 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			// Stop SupplyInteraction
 			SupplyInteractionx.GetComponent<SupplyInteraction>().enabled = false;
 			Rigidbody rb = Instantiate(endGame, transform.position, transform.rotation).GetComponent<Rigidbody>();
+<<<<<<< Updated upstream
 			dead=1;
+=======
+			if(user.name=="User(Clone)")
+			{
+                print("2.1");
+				rb.name=user.name+"1";
+				dead=1;
+				// print(rb.name);
+				// print(user.name+" is dead");
+				// print("is killed by other");
+			}
+			else
+			{
+                print("2.2");
+				rb.name=user.name+"2";
+				dead=1;
+				// print(rb.name);
+				// print(user.name+" is dead");
+				// print("is self kill");
+			}
+		}
+    }
+
+    [PunRPC] 
+    public void Destroy2() // not throw by camman
+    {
+		if ((barriering==false && dead==0)||(barriering==true && dead==0 && transform.position.y<-3))
+		{
+			var rotationVector = transform.rotation.eulerAngles;
+			rotationVector.x = 90;
+			transform.rotation = Quaternion.Euler(rotationVector);
+			// Stop Player Movement 
+			PlayerMovementx.GetComponent<PlayerMovement>().enabled = false;
+			// Stop Grenade Thrower
+			GrenadeThrowerx.GetComponent<GrenadeThrower>().enabled = false;
+			// Stop SupplyInteraction
+			SupplyInteractionx.GetComponent<SupplyInteraction>().enabled = false;
+			Rigidbody rb = Instantiate(endGame, transform.position, transform.rotation).GetComponent<Rigidbody>();
+			if(user.name=="User(Clone)")
+			{
+                print("2.3");
+				rb.name=user.name+"2";
+				dead=1;
+				// print(rb.name);
+				// print(user.name+" is dead");
+				// print("is self kill");
+			}
+			else
+			{
+                print("2.4");
+				rb.name=user.name+"1";
+				dead=1;
+				// print(rb.name);
+				// print(user.name+" is dead");
+				// print("is killed by other");
+			}
+>>>>>>> Stashed changes
 		}
     }
 
@@ -58,6 +163,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			rb.AddForce(Vector3.down * customGravity, ForceMode.Acceleration);
 			rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
 			Destroy();
+        	Rigidbody rb2 = Instantiate(killbyOin, transform.position, transform.rotation).GetComponent<Rigidbody>();
 		}
 		if (Input.GetKey("r") && barriered==false && gameended==0)
 		{

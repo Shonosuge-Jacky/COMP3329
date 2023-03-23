@@ -8,6 +8,7 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
 {
     private int SupplyState01=1;
     private int SupplyState02=1;
+    private int dead=0;
     public grenadeNumber redcount;
     public grenadeNumber yellowcount;
     public grenadeNumber yellowcount2;

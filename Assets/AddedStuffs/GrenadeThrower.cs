@@ -31,6 +31,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     public GameObject setting13;
     public GameObject setting23;
     public GameObject setting33;
+    public GameObject user;
 
     // Update is called once per frame
     void Update()
@@ -121,6 +122,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     public void ThrowGrenade()
     {
         Rigidbody rb = Instantiate(grenadePrefab, originTransform.position, originTransform.rotation).GetComponent<Rigidbody>(); 
+        rb.name=user.name;
         if (photonView.IsMine)
         {
             rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
@@ -135,6 +137,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     public void ThrowGrenadeG()
     {
         Rigidbody rb = Instantiate(grenadePrefabG, originTransform.position, originTransform.rotation).GetComponent<Rigidbody>(); 
+        rb.name=user.name;
         if (photonView.IsMine)
         {
             rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);

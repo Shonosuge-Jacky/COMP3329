@@ -10,14 +10,18 @@ public class Granade : MonoBehaviourPunCallbacks
     public float explosionForce = 700f ;
 
     public GameObject explosionEffect;
+<<<<<<< Updated upstream
+=======
+    // public startButton startButton;
+>>>>>>> Stashed changes
 
     // float countdown;
     bool hasExploded = false;
     // Start is called before the first frame update
-    // void Start()
-    // {
-    //     countdown = delay;
-    // }
+    void Start()
+    {
+        // print(gameObject.name);
+    }
 
 
     private void OnCollisionEnter(Collision collision){
@@ -79,7 +83,6 @@ public class Granade : MonoBehaviourPunCallbacks
         Collider[] collidersToMove = Physics.OverlapSphere(transform.position, radius);
         foreach(Collider nearbyObject in collidersToMove)
         {
-            
             // Add force
             Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
             if(rb!=null)    
@@ -87,10 +90,20 @@ public class Granade : MonoBehaviourPunCallbacks
                 rb.AddExplosionForce(explosionForce, transform.position, radius);
                 if(rb.ToString()=="Player (UnityEngine.Rigidbody)")
                 {
+                    print("gameObject.name");
+                    print(gameObject.name);
                     DestructibleP destP = nearbyObject.GetComponent<DestructibleP>();
-                    if(destP!=null)
+                    if(destP!=null && gameObject.name=="User(Clone)") // not throw by camman
                     {
+                        print("1.1");
+                        destP.killbyR();
                         destP.Destroy();
+                    }
+                    else if(destP!=null && gameObject.name!="User(Clone)") // throw by camman
+                    {
+                        print("1.2");
+                        destP.killbyR();
+                        destP.selfDestroy();
                     }
                 }
             }

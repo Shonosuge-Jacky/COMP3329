@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     public GameObject dashcount;
     private void Update()
     {
+        // print(transform.position);
         if (photonView.IsMine)
         {
             // ground check

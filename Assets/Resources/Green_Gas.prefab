@@ -304,7 +304,8 @@ MonoBehaviour:
     type: 3}
   explosionEffect: {fileID: 5832808532253106637, guid: 1688e9da74676ed4f9399b9d44764cb2,
     type: 3}
-  Grenade: {fileID: 1221957532146758467}
+  damageball: {fileID: 4709619775666382948, guid: 33d632034228eca4ea3e6bd067c1bcda,
+    type: 3}
 --- !u!1 &1221957532146928799
 GameObject:
   m_ObjectHideFlags: 0

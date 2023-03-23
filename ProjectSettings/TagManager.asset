@@ -6,6 +6,12 @@ TagManager:
   tags:
   - endGame
   - supply
+<<<<<<< Updated upstream
+=======
+  - Undefined
+  - DieReason
+  - PlayerName
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

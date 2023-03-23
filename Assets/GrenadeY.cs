@@ -22,6 +22,7 @@ public class GrenadeY : MonoBehaviourPunCallbacks
     public GameObject boxnum;
     private int throwed=0;
     public DestructibleP DestructibleP;
+    // public startButton startButton;
 
     // float countdown;
     bool hasExploded = false;
@@ -123,6 +124,8 @@ public class GrenadeY : MonoBehaviourPunCallbacks
                     DestructibleP destP = nearbyObject.GetComponent<DestructibleP>();
                     if(destP!=null)
                     {
+                        // startButton.killbyY();
+                        destP.killbyY();
                         destP.Destroy();
                     }
                 }
