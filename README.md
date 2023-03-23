@@ -216,7 +216,7 @@
 14. [Gas grenade] add damage area 
 15. [Barrier] barrier vs ocean alive **Bug** 
 16. [End scene] dead by what message 
-18. 
+16. [End scene] complete death message from cracker grenade
 
 
 
