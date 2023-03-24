@@ -63,6 +63,11 @@ MonoBehaviour:
   - killbyG2
   - killbyR2
   - killbyY2
+  - Dy
+  - SDy
+  - killbyG
+  - killbyR
+  - killbyY
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

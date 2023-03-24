@@ -8,6 +8,7 @@ public class Granade : MonoBehaviourPunCallbacks
     // public float delay = 3f;
     public float radius =  3f;
     public float explosionForce = 700f ;
+    public int done=0;
 
     public GameObject explosionEffect;
     // public startButton startButton;
@@ -20,7 +21,6 @@ public class Granade : MonoBehaviourPunCallbacks
         // print(gameObject.name);
     }
 
-
     private void OnCollisionEnter(Collision collision){
         Explode();
         hasExploded=true;
@@ -29,17 +29,7 @@ public class Granade : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        // countdown -= Time.deltaTime;
-        // Debug.Log(hasExploded);
-        // Debug.Log(countdown);
-        // if(countdown<=0f && hasExploded==false)
-        // // if(countdown<=0f && !hasExploded)
-        // {
-        //     Explode();
-        //     hasExploded=true;
-        // }
         if(hasExploded==true)
-        // if(countdown<=0f && !hasExploded)
         {
             Destroy(gameObject);            
         }
@@ -53,60 +43,45 @@ public class Granade : MonoBehaviourPunCallbacks
 
     void Explode()
     {
-        // bug – explode effect retain
         Invoke("EffectRemove",5);
-        // Debug.Log("BOOM!");
-        // Show effect
         Instantiate(explosionEffect, transform.position, transform.rotation);
-        // Get nearby ojects
-        Collider[] collidersToDestroy = Physics.OverlapSphere(transform.position, radius);
-        foreach(Collider nearbyObject in collidersToDestroy)
-        {
-            // Add force
-            // Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-            // if(rb!=null)
-            // {
-            //     rb.AddExplosionForce(explosionForce, transform.position, radius);
-            // }
-            // Damage
-            Destructible dest = nearbyObject.GetComponent<Destructible>();
-            // print(nearbyObject);
-            if(dest!=null)
-            {
-                dest.Destroy();
-            }
-        }
 
         Collider[] collidersToMove = Physics.OverlapSphere(transform.position, radius);
         foreach(Collider nearbyObject in collidersToMove)
         {
-            // Add force
             Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
             if(rb!=null)    
             {
                 rb.AddExplosionForce(explosionForce, transform.position, radius);
                 if(rb.ToString()=="Player (UnityEngine.Rigidbody)")
                 {
-                    print("gameObject.name");
-                    print(gameObject.name);
                     DestructibleP destP = nearbyObject.GetComponent<DestructibleP>();
-                    if(destP!=null && gameObject.name=="User(Clone)") // not throw by camman
+                    if(destP!=null && gameObject.name=="player1" && done==0) // not throw by camman
                     {
-                        print("1.1");
-                        destP.killbyR();
-                        destP.Destroy();
+                        destP.killbyR1();
+                        done=1;
                     }
-                    else if(destP!=null && gameObject.name!="User(Clone)") // throw by camman
+                    if(destP!=null && gameObject.name=="player2" && done==0) // not throw by camman
                     {
-                        print("1.2");
-                        destP.killbyR();
-                        destP.selfDestroy();
+                        destP.killbyR2();
+                        done=1;
                     }
                 }
             }
         }
-        
+
+        Collider[] collidersToDestroy = Physics.OverlapSphere(transform.position, radius);
+        foreach(Collider nearbyObject in collidersToDestroy)
+        {
+            Destructible dest = nearbyObject.GetComponent<Destructible>();
+            if(dest!=null)
+            {
+                print("0");
+                dest.Destroy();
+            }
+        }
+
         // Remove grenade
         Destroy(gameObject);
-    }
+    }    
 }

@@ -11,6 +11,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	public GameObject GrenadeThrowerx;
 	public GameObject SupplyInteractionx;
 	public GameObject endGame;
+	public GameObject killer;
 	public GameObject killbyRin;
 	public GameObject killbyYin;
 	public GameObject killbyGin;
@@ -28,84 +29,66 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	public int dead=0;
     public GameObject user;
 
-    public void killbyR()
+    public void killbyR1()
     {
-        photonView.RPC("killbyR2",RpcTarget.All);
+        photonView.RPC("killbyR",RpcTarget.All);
+		photonView.RPC("Destroy2",RpcTarget.All);
+	}
+    public void killbyR2()
+    {
+        photonView.RPC("killbyR",RpcTarget.All);
+		photonView.RPC("selfDestroy2",RpcTarget.All); 
 	}
 
 	[PunRPC]
-    public void killbyR2()
+    public void killbyR()
     {
         Rigidbody rb = Instantiate(killbyRin, transform.position, transform.rotation).GetComponent<Rigidbody>();
     }
 
-    public void killbyY()
+    public void killbyY1()
     {
-        photonView.RPC("killbyY2",RpcTarget.All);
+        photonView.RPC("killbyY",RpcTarget.All);
+		photonView.RPC("Destroy2",RpcTarget.All);
+	}
+    public void killbyY2()
+    {
+        photonView.RPC("killbyY",RpcTarget.All);
+		photonView.RPC("selfDestroy2",RpcTarget.All); 
 	}
 
 	[PunRPC]
-    public void killbyY2()
+    public void killbyY()
     {
         Rigidbody rb = Instantiate(killbyYin, transform.position, transform.rotation).GetComponent<Rigidbody>();
     }
 
-    public void killbyG()
+    public void killbyG1()
     {
-        photonView.RPC("killbyG2",RpcTarget.All); 
+        photonView.RPC("killbyG",RpcTarget.All); 
+		photonView.RPC("Destroy2",RpcTarget.All);
+    }
+    public void killbyG2()
+    {
+        photonView.RPC("killbyG",RpcTarget.All); 
+		photonView.RPC("selfDestroy2",RpcTarget.All); 
     }
 	
 	[PunRPC]
-    public void killbyG2()
+    public void killbyG()
     {
         Rigidbody rb = Instantiate(killbyGin, transform.position, transform.rotation).GetComponent<Rigidbody>();
     }
 
-	public void selfDestroy () // throw by camman
-	{
-		photonView.RPC("selfDestroy2",RpcTarget.All); 
-	}
+	// public void selfDestroy () // throw by camman
+	// {
+	// 	photonView.RPC("selfDestroy2",RpcTarget.All); 
+	// }
 
 	public void Destroy () // not throw by camman
 	{
 		photonView.RPC("Destroy2",RpcTarget.All); 
 	}
-
-    [PunRPC] 
-    public void selfDestroy2() // throw by camman
-    {
-		if ((barriering==false && dead==0)||(barriering==true && dead==0 && transform.position.y<-3))
-		{
-			var rotationVector = transform.rotation.eulerAngles;
-			rotationVector.x = 90;
-			transform.rotation = Quaternion.Euler(rotationVector);
-			// Stop Player Movement 
-			PlayerMovementx.GetComponent<PlayerMovement>().enabled = false;
-			// Stop Grenade Thrower
-			GrenadeThrowerx.GetComponent<GrenadeThrower>().enabled = false;
-			// Stop SupplyInteraction
-			SupplyInteractionx.GetComponent<SupplyInteraction>().enabled = false;
-			Rigidbody rb = Instantiate(endGame, transform.position, transform.rotation).GetComponent<Rigidbody>();
-			if(user.name=="User(Clone)")
-			{
-                print("2.1");
-				rb.name=user.name+"1";
-				dead=1;
-				// print(rb.name);
-				// print(user.name+" is dead");
-				// print("is killed by other");
-			}
-			else
-			{
-                print("2.2");
-				rb.name=user.name+"2";
-				dead=1;
-				// print(rb.name);
-				// print(user.name+" is dead");
-				// print("is self kill");
-			}
-		}
-    }
 
     [PunRPC] 
     public void Destroy2() // not throw by camman
@@ -121,25 +104,79 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			GrenadeThrowerx.GetComponent<GrenadeThrower>().enabled = false;
 			// Stop SupplyInteraction
 			SupplyInteractionx.GetComponent<SupplyInteraction>().enabled = false;
+			GameObject[] gos;
+			gos = GameObject.FindGameObjectsWithTag("Player");
 			Rigidbody rb = Instantiate(endGame, transform.position, transform.rotation).GetComponent<Rigidbody>();
-			if(user.name=="User(Clone)")
+			if(gos[0].name=="player1"||gos[1].name=="player1" )
 			{
-                print("2.3");
-				rb.name=user.name+"2";
-				dead=1;
-				// print(rb.name);
-				// print(user.name+" is dead");
-				// print("is self kill");
+				if(user.name=="player1")
+				{
+					rb.name=user.name;
+				}            
+				else
+				{
+					rb.name="player2";
+				} 
 			}
-			else
+			if(gos[0].name=="player2"||gos[1].name=="player2")
 			{
-                print("2.4");
-				rb.name=user.name+"1";
-				dead=1;
-				// print(rb.name);
-				// print(user.name+" is dead");
-				// print("is killed by other");
+				if(user.name=="player2")
+				{
+					rb.name=user.name;
+				}            
+				else
+				{
+					rb.name="player1";
+				} 
 			}
+			Rigidbody rb2 = Instantiate(killer, transform.position, transform.rotation).GetComponent<Rigidbody>();
+			rb2.name="player1";
+		}
+    }
+
+    [PunRPC] 
+    public void selfDestroy2() // not throw by camman
+    {
+		if ((barriering==false && dead==0)||(barriering==true && dead==0 && transform.position.y<-3))
+		{
+			var rotationVector = transform.rotation.eulerAngles;
+			rotationVector.x = 90;
+			transform.rotation = Quaternion.Euler(rotationVector);
+			// Stop Player Movement 
+			PlayerMovementx.GetComponent<PlayerMovement>().enabled = false;
+			// Stop Grenade Thrower
+			GrenadeThrowerx.GetComponent<GrenadeThrower>().enabled = false;
+			// Stop SupplyInteraction
+			SupplyInteractionx.GetComponent<SupplyInteraction>().enabled = false;
+			GameObject[] gos;
+			gos = GameObject.FindGameObjectsWithTag("Player");
+			Rigidbody rb = Instantiate(endGame, transform.position, transform.rotation).GetComponent<Rigidbody>();
+			print(gos[0].name); // <- User(Clone)
+			print(gos[1].name); // player2
+			if(gos[0].name=="player2"||gos[1].name=="player2")
+			{
+				if(user.name=="player2")
+				{
+					rb.name=user.name;
+				}            
+				else
+				{
+					rb.name="player1";
+				} 
+			}
+			if(gos[0].name=="player1"||gos[1].name=="player1" )
+			{
+				if(user.name=="player1")
+				{
+					rb.name=user.name;
+				}            
+				else
+				{
+					rb.name="player2";
+				} 
+			}
+			Rigidbody rb2 = Instantiate(killer, transform.position, transform.rotation).GetComponent<Rigidbody>();
+			rb2.name="player2";
 		}
     }
 
@@ -152,7 +189,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			float customGravity = 0.5f;
 			rb.AddForce(Vector3.down * customGravity, ForceMode.Acceleration);
 			rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-			Destroy();
+			Destroy2();
         	Rigidbody rb2 = Instantiate(killbyOin, transform.position, transform.rotation).GetComponent<Rigidbody>();
 		}
 		if (Input.GetKey("r") && barriered==false && gameended==0)

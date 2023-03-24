@@ -12,21 +12,56 @@ public class gasdamage0 : MonoBehaviourPunCallbacks
     public DestructibleP destP;
     // public startButton startButton;
 
-    // Update is called once per frame
     void Update()
     {
         // Gas damage
         Collider[] colliderArray2 = Physics.OverlapSphere(transform.position, interactRange);
         foreach(Collider collider2 in colliderArray2)
         {
-            if (collider2.TryGetComponent(out gasdamage gasdamage) && dead==0)
+            if (collider2.TryGetComponent(out gasdamage gasdamage) )
             {
-                // Destory this player in all player's view
-                dead=1;
-                // startButton.killbyG();
-                destP.killbyG();
-                destP.Destroy();
+                if (dead==0 && collider2.name=="player1")
+                {
+                    dead=1;
+                    destP.killbyG1();
+                }
+                else if (dead==0 && collider2.name=="player2")
+                {
+                    dead=1;
+                    destP.killbyG2();
+                }
             }
         }    
     }
+
+    // [PunRPC]
+    // void Dy()
+    // {
+    //     // print(collider2.name);
+    //     print("1.1");
+    //     // dead=1;
+    //     destP.killbyG();
+    //     destP.Destroy();
+    // }
+
+    // [PunRPC]
+    // void SDy()
+    // {
+    //     // print(collider2.name);
+    //     print("1.2");
+    //     // dead=1;
+    //     destP.killbyG();
+    //     destP.selfDestroy();
+    // }
+
+	// void OnTriggerExit(Collider other) 
+    // {
+	// 	if(other.transform.name=="Sphere8" && dead==0)
+    //     {
+    //         dead=1;
+    //         // startButton.killbyG();
+    //         destP.killbyG();
+    //         destP.Destroy();
+	// 	}
+    // }
 }

@@ -11,6 +11,7 @@ public class IsMine : MonoBehaviourPunCallbacks
     public GameObject ui;
     private int done=0;
     private int done2=0;
+    private int UC=0;
 
     // player1 vs User(Clone)
     // player2 vs User(Clone)
@@ -23,10 +24,15 @@ public class IsMine : MonoBehaviourPunCallbacks
             if(gos.Length == 1)
             {
                 gameObject.name="player1";
+                UC=1;
             }   
             else if(gos.Length == 2)
             {
                 gameObject.name="player2";
+            }   
+            else if(gos.Length == 2 && gameObject.name=="User(Clone)")
+            {
+                gameObject.name="player1";
             }   
         }
     }

@@ -142,7 +142,8 @@ public class granadeG : MonoBehaviourPunCallbacks
         Instantiate(explosionEffect, newPosition2, newRotation2);
         Instantiate(explosionEffect, newPosition3, newRotation3);
         Instantiate(explosionEffect, newPosition4, newRotation4);
-        Instantiate(damageball, transform.position+ new Vector3(0f, 3f, 0f), transform.rotation);
+        Rigidbody rbg = Instantiate(damageball, transform.position+ new Vector3(0f, 3f, 0f), transform.rotation).GetComponent<Rigidbody>();
+        rbg.name=gameObject.name;
         Destroy(gameObject);
     }
 }

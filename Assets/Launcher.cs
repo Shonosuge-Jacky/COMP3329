@@ -29,7 +29,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
         else
         {
-            Debug.LogError("File1 does not exist");
+            Debug.Log("File1 does not exist");
         }
         if (File.Exists(filePath2))
         {
@@ -39,7 +39,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
         else
         {
-            Debug.LogError("File2 does not exist");
+            Debug.Log("File2 does not exist");
         }
         //try to connect
         // PhotonNetwork.ConnectUsingSettings();

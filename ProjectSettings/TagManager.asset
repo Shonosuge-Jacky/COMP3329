@@ -9,6 +9,7 @@ TagManager:
   - Undefined
   - DieReason
   - PlayerName
+  - killer
   layers:
   - Default
   - TransparentFX

@@ -121,8 +121,31 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     [PunRPC] 
     public void ThrowGrenade()
     {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player");
         Rigidbody rb = Instantiate(grenadePrefab, originTransform.position, originTransform.rotation).GetComponent<Rigidbody>(); 
-        rb.name=user.name;
+        if(gos[0].name=="player1"||gos[1].name=="player1" )
+        {
+            if(user.name=="player1")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player2";
+            } 
+        }
+        if(gos[0].name=="player2"||gos[1].name=="player2" )
+        {
+            if(user.name=="player2")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player1";
+            } 
+        }  
         if (photonView.IsMine)
         {
             rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
@@ -136,8 +159,31 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     [PunRPC] 
     public void ThrowGrenadeG()
     {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player");
         Rigidbody rb = Instantiate(grenadePrefabG, originTransform.position, originTransform.rotation).GetComponent<Rigidbody>(); 
-        rb.name=user.name;
+        if(gos[0].name=="player1"||gos[1].name=="player1" )
+        {
+            if(user.name=="player1")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player2";
+            } 
+        }
+        if(gos[0].name=="player2"||gos[1].name=="player2" )
+        {
+            if(user.name=="player2")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player1";
+            } 
+        }
         if (photonView.IsMine)
         {
             rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
@@ -151,8 +197,32 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     [PunRPC] 
     public void ThrowGrenadeY()
     {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player");
         RemoteGrenade.active=true;
         Rigidbody rb = RemoteGrenade.GetComponent<Rigidbody>(); 
+        if(gos[0].name=="player1"||gos[1].name=="player1" )
+        {
+            if(user.name=="player1")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player2";
+            } 
+        }
+        if(gos[0].name=="player2"||gos[1].name=="player2" )
+        {
+            if(user.name=="player2")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player1";
+            } 
+        }
         rb.position= originTransform.position;
         rb.rotation= originTransform.rotation; 
         // RemoteGrenade.active=false;
@@ -169,8 +239,32 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     [PunRPC] 
     public void ThrowGrenadeY2()
     {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player");
         RemoteGrenade2.active=true;
-        Rigidbody rb = RemoteGrenade2.GetComponent<Rigidbody>(); 
+        Rigidbody rb = RemoteGrenade2.GetComponent<Rigidbody>();
+        if(gos[0].name=="player1"||gos[1].name=="player1" )
+        {
+            if(user.name=="player1")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player2";
+            } 
+        }
+        if(gos[0].name=="player2"||gos[1].name=="player2" )
+        {
+            if(user.name=="player2")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player1";
+            } 
+        }
         rb.position= originTransform.position;
         rb.rotation= originTransform.rotation; 
         // RemoteGrenade.active=false;
@@ -187,8 +281,32 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     [PunRPC] 
     public void ThrowGrenadeY3()
     {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player");
         RemoteGrenade3.active=true;
-        Rigidbody rb = RemoteGrenade3.GetComponent<Rigidbody>(); 
+        Rigidbody rb = RemoteGrenade3.GetComponent<Rigidbody>();
+        if(gos[0].name=="player1"||gos[1].name=="player1" )
+        {
+            if(user.name=="player1")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player2";
+            } 
+        }
+        if(gos[0].name=="player2"||gos[1].name=="player2" )
+        {
+            if(user.name=="player2")
+            {
+                rb.name=user.name;
+            }            
+            else
+            {
+                rb.name="player1";
+            } 
+        }
         rb.position= originTransform.position;
         rb.rotation= originTransform.rotation; 
         // RemoteGrenade.active=false;

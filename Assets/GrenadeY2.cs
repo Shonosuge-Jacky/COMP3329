@@ -122,11 +122,13 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
                 if(rb.ToString()=="Player (UnityEngine.Rigidbody)")
                 {
                     DestructibleP destP = nearbyObject.GetComponent<DestructibleP>();
-                    if(destP!=null)
+                    if(destP!=null && gameObject.name=="player1") // not throw by camman
                     {
-                        // startButton.killbyY();
-                        destP.killbyY();
-                        destP.Destroy();
+                        destP.killbyY1();
+                    }
+                    else if(destP!=null && gameObject.name=="player2") // throw by camman
+                    {
+                        destP.killbyY2();
                     }
                 }
             }

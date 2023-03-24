@@ -20,6 +20,7 @@ public class deadReason : MonoBehaviourPunCallbacks
     private int f2=0;
     private string dieby;
     private string player1;
+    private int player;
     private string player2;
     private string myname;
     private string hisname;
@@ -48,6 +49,8 @@ public class deadReason : MonoBehaviourPunCallbacks
         gos2 = GameObject.FindGameObjectsWithTag("DieReason"); 
         GameObject[] gos3;
         gos3 = GameObject.FindGameObjectsWithTag("endGame");
+        GameObject[] gos4;
+        gos4 = GameObject.FindGameObjectsWithTag("killer");
         string filePath1 = Application.dataPath+"/Player1name.json";
         string filePath2 = Application.dataPath+"/Player2name.json";
         if (File.Exists(filePath1))
@@ -68,72 +71,127 @@ public class deadReason : MonoBehaviourPunCallbacks
         }
         if(gos.Length == 2 && done4==0)
         {
-            if(user.name=="player1" && f1==1 && f2==1)
+            if(gos[0].name=="player1"||gos[1].name=="player1" )
+            {
+                if(user.name=="player1")
+                {
+                    player=1;
+                }            
+                else
+                {
+                    player=2;
+                } 
+            }
+            if(gos[0].name=="player2"||gos[1].name=="player2")
+            {
+                if(user.name=="player2")
+                {
+                    player=2;
+                }            
+                else
+                {
+                    player=1;
+                } 
+            }
+            if(player==1 && f1==1 && f2==1)
             {
                 myname=LoadFromJson1();
                 hisname=LoadFromJson2();
                 done4=1;
             }
-            else if(user.name=="player2" && f1==1 && f2==1)
+            else if(player==2 && f1==1 && f2==1)
             {
                 myname=LoadFromJson2();
                 hisname=LoadFromJson1();
                 done4=1;
             }
         }  
-        if(photonView.IsMine && gos3.Length == 1 && done==0)
+        if(photonView.IsMine && gos3.Length == 1 && gos4.Length == 1 && done==0)
         {
             ScoreText.enabled=true;
             if((gos2[0].name).ToString()=="RIN(Clone)")
             {
-                dieby = "'s Craker Grenade";
+                dieby = "Craker Grenade";
             }
             else if((gos2[0].name).ToString()=="YIN(Clone)")
             {
-                dieby = "'s Remote Grenade";
+                dieby = "Remote Grenade";
             }
             else if((gos2[0].name).ToString()=="GIN(Clone)")
             {
-                dieby = "'s Gas Grenade";
+                dieby = "Gas Grenade";
             }
             else if((gos2[0].name).ToString()=="OIN(Clone)")
             {
-                dieby = "was drowned";
+                dieby = " was drowned";
             }
             done=1;
         } 
         if(photonView.IsMine && done==1 && done2==0)
         {
-            if((gos3[0].name).ToString()=="player11" || (gos3[0].name).ToString()=="player21")
+            print("gos2[0].name = "+gos2[0].name);
+            print("gos3[0].name = "+gos3[0].name);
+            print("gos4[0].name = "+gos4[0].name);
+            if(dieby == " was drowned" && (gos3[0].name).ToString()=="player1" && player==1)
             {
-                ScoreText.text = myname+" is killed by "+hisname+dieby;
+                ScoreText.text = myname+dieby;
                 done2=1;
-                print("3.1");
             }
-            if((gos3[0].name).ToString()=="player12" || (gos3[0].name).ToString()=="player22")
+            else if(dieby == " was drowned" && (gos3[0].name).ToString()=="player1" && player==2)
+            {
+                ScoreText.text = hisname+dieby;
+                done2=1;
+            }
+            else if(dieby == " was drowned" && (gos3[0].name).ToString()=="player2" && player==2)
+            {
+                ScoreText.text = myname+dieby;
+                done2=1;
+            }
+            else if(dieby == " was drowned" && (gos3[0].name).ToString()=="player2" && player==1)
+            {
+                ScoreText.text = hisname+dieby;
+                done2=1;
+            }
+            else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player1" && player==1)
             {
                 ScoreText.text = myname+" is killed by it's own "+dieby;
                 done2=1;
-                print("3.2");
             }
-            if((gos3[0].name).ToString()=="User(Clone)1")
-            {
-                ScoreText.text = hisname+" is killed by "+myname+dieby;
-                done2=1;
-                print("3.3");
-            }
-            if((gos3[0].name).ToString()=="User(Clone)2")
+            else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player2" && player==1)
             {
                 ScoreText.text = hisname+" is killed by it's own "+dieby;
                 done2=1;
-                print("3.4");
-            }           
+            }
+            else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player2" && player==2)
+            {
+                ScoreText.text = myname+" is killed by it's own "+dieby;
+                done2=1;
+            }
+            else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player1" && player==2)
+            {
+                ScoreText.text = hisname+" is killed by it's own "+dieby;
+                done2=1;
+            }
+            else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player2" && player==1)
+            {
+                ScoreText.text = myname+" is killed by "+hisname+"'s "+dieby;
+                done2=1;
+            }   
+            else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player1" && player==1)
+            {
+                ScoreText.text = hisname+" is killed by "+myname+"'s "+dieby;
+                done2=1;
+            }   
+            else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player2" && player==2)
+            {
+                ScoreText.text = hisname+" is killed by "+myname+"'s "+dieby;
+                done2=1;
+            }   
+            else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player1" && player==2)
+            {
+                ScoreText.text = myname+" is killed by "+hisname+"'s "+dieby;
+                done2=1;
+            }         
         }  
-
-        // GameObject[] gos;
-        // gos = GameObject.FindGameObjectsWithTag("PlayerName"); 
-        // print("test");
-        // print(gos.Length);
-        // if(photonView.IsMine && gos.Length == 2 && done3==0)
     }
 }
