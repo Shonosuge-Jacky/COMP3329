@@ -31,7 +31,6 @@
 30. [Camera effect] Death camera effect         <-DONE
 31. [Camera effect] Camera effect when get hitted       <-can be done soon
 32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
-33. [Start scene] block input before all player open the game ( // )
 23. [Start scene] block move before all player generated ( // )
 34. [ // ] Show choosen grenade ^^
 
