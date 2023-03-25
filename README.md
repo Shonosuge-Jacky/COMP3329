@@ -78,6 +78,7 @@
 9. dahs to other player **Bug**
 10. Too lag when with many Wooden chips
 11. Round 3 Remote grenade icon **Bug** 
+11. mulit-death **Bug** 
 11. player1 entered name will show on player2 screen **Bug** (have extrem high chance to broke the death message system when you try to fix it) (related script : jsonrw, deadReason)
 
 ### &nbsp;&nbsp;What had been done :
