@@ -226,6 +226,9 @@
 15. [Start scene] Same name error message
 15. [Start scene] wait player message
 15. [Start scene] wait player gif
+15. [Start scene] block input before all player open the game 
+15. [Start scene] block input before all player open the game error 
+
 
 
 
