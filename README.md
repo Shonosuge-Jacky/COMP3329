@@ -219,7 +219,8 @@
 16. [End scene] dead by what message 
 16. [End scene] complete death message from cracker grenade
 16. [End scene] complete all death message
-
+16. [Start scene] player cant have same name
+15. [Start scene] Solve name input defected **Bug** (by text cleaning)
 
 
 
