@@ -41,8 +41,6 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             Debug.Log("File2 does not exist");
         }
-        //try to connect
-        // PhotonNetwork.ConnectUsingSettings();
         PhotonNetwork.ConnectUsingSettings(); 
         player=0;       
     }
@@ -87,36 +85,4 @@ public class Launcher : MonoBehaviourPunCallbacks
         Debug.Log("Joined a room successfully!");  
         joined=1; 
     }
-
-//===================================================================================
-    
-    // // Start is called before the first frame update
-    // void Start()
-    // {
-    //     //try to connect
-    //     // PhotonNetwork.ConnectUsingSettings();        
-    // }
-
-    // private void Update()
-    // {
-    //     if(stopconnect==0 && startButton.startGame==1)
-    //     {
-    //         PhotonNetwork.ConnectUsingSettings(); 
-    //         stopconnect=1;
-    //     }        
-    // }
-
-    // public override void OnConnectedToMaster()
-    // {
-    //     //we connected
-    //     Debug.Log("Connected to Master");
-    //     PhotonNetwork.JoinRandomOrCreateRoom();
-    // }
-
-    // public override void OnJoinedRoom()
-    // {
-    //     Debug.Log("Joined a room successfully!");
-    //     Crosshir.active = true;
-    //     PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,2,31), Quaternion.identity);
-    // }
 }
