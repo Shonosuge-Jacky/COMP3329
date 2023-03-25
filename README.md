@@ -30,8 +30,7 @@
 29. [Camera effect] Dash camera effect          <-DONE
 30. [Camera effect] Death camera effect         <-DONE
 31. [Camera effect] Camera effect when get hitted       <-can be done soon
-32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
-17. [End scene] identify killer <====
+32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航 (唔整都得 反正一落水就死)
 18. [ // ] Show choosen grenade ^^
 
 ### &nbsp;&nbsp;To-do-store :
