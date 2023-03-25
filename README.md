@@ -31,7 +31,9 @@
 30. [Camera effect] Death camera effect         <-DONE
 31. [Camera effect] Camera effect when get hitted       <-can be done soon
 32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
-18. [ // ] Show choosen grenade ^^
+33. [Start scene] block input before all player open the game ( // )
+23. [Start scene] block move before all player generated ( // )
+34. [ // ] Show choosen grenade ^^
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
@@ -222,6 +224,8 @@
 16. [Start scene] player cant have same name
 15. [Start scene] Solve name input defected **Bug** (by text cleaning)
 15. [Start scene] Same name error message
+15. [Start scene] wait player message
+15. [Start scene] wait player gif
 
 
 
