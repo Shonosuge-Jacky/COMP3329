@@ -36,6 +36,7 @@
 23. [Start scene] block dash before all player generated ( // )
 23. [Start scene] block barrier before all player generated ( // )
 34. [ // ] Show choosen grenade ^^
+34. [ // ] Control menu ^^
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Complete the arena 
