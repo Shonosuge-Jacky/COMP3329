@@ -37,6 +37,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined a room successfully!");
         Crosshir.active = true;
-        PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,2,31), Quaternion.identity);
+        PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,30,31), Quaternion.identity);
     }
 }
