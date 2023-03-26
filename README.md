@@ -232,7 +232,8 @@
 15. [Start scene] block attack before all player generated 
 15. [Start scene] block dash before all player generated
 15. [Start scene] block barrier before all player generated^^
-34. [ // ] Control menu 
+34. [Control menu] Control menu 
+35. [Control menu] block control menu when end game ( // )
 
 
 
