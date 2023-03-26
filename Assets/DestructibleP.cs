@@ -192,7 +192,9 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			Destroy2();
         	Rigidbody rb2 = Instantiate(killbyOin, transform.position, transform.rotation).GetComponent<Rigidbody>();
 		}
-		if (Input.GetKey("r") && barriered==false && gameended==0)
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player"); 
+		if (Input.GetKey("r") && barriered==false && gameended==0 && gos.Length == 2)
 		{
 			if (photonView.IsMine)
 			{

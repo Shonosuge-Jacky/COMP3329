@@ -66,7 +66,9 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
             }
 		}
 
-        if (photonView.IsMine && barriering==false)
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player"); 
+        if (photonView.IsMine && barriering==false && gos.Length == 2)
         {
             if(Input.GetMouseButtonDown(0) && redcount.GetComponent<grenadeNumber>().count>0 && currentGrenade==0)
             {

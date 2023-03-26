@@ -12,6 +12,8 @@ public class startButton : MonoBehaviourPunCallbacks
 {
     public GameObject startScene; 
     public GameObject AL;
+    public GameObject errortext;
+    public GameObject waitplayer;
     public TMP_InputField playername;
     public int killby=0;
     public int startGame=0;
@@ -30,6 +32,10 @@ public class startButton : MonoBehaviourPunCallbacks
                 clean=1;
             }
         }
+        if(PhotonNetwork.PlayerList.Length==2)
+        {
+            waitplayer.active=false;
+        }
     }
     [PunRPC]
     private void ReceiveJsonData()
@@ -40,7 +46,7 @@ public class startButton : MonoBehaviourPunCallbacks
     public void StartGame()
     {
         // print(playername.text);
-        if(playername.text!="")
+        if(playername.text!="" && PhotonNetwork.PlayerList.Length==2)
         {
             GameObject[] gos;
             gos = GameObject.FindGameObjectsWithTag("Player"); 
@@ -49,8 +55,13 @@ public class startButton : MonoBehaviourPunCallbacks
                 string filePath1 = Application.dataPath+"/Player1name.json";
                 if(File.Exists(filePath1))
                 {
-                    if(playername.text!=LoadFromJson1())
+                    if(playername.text==LoadFromJson1())
                     {
+                        errortext.active=true;
+                    }
+                    else if(playername.text!=LoadFromJson1())
+                    {
+                        errortext.active=false;
                         AL.GetComponent<AudioListener>().enabled = false;
                         Invoke("closestart",2);
                         startGame=1;
@@ -59,11 +70,16 @@ public class startButton : MonoBehaviourPunCallbacks
             }
             else
             {
+                errortext.active=false;
                 AL.GetComponent<AudioListener>().enabled = false;
                 Invoke("closestart",2);
                 startGame=1;
             }
         }   
+        else if(PhotonNetwork.PlayerList.Length<2)
+        {
+            waitplayer.active=true;
+        }
     }
     public string LoadFromJson1()
     {

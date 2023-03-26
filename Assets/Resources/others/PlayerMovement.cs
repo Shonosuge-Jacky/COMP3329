@@ -66,7 +66,9 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             else
                 rb.drag = 0;
             // << dash >>
-            if (Input.GetKey("v") && dashed==false)
+            GameObject[] gos;
+            gos = GameObject.FindGameObjectsWithTag("Player"); 
+            if (Input.GetKey("v") && dashed==false && gos.Length == 2)
             {
                 moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
                 rb.AddForce(moveDirection.normalized * moveSpeed * dashforce, ForceMode.Force);
@@ -115,7 +117,9 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     // << 4 >>
     private void MyInput()
     {
-        if (photonView.IsMine)
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player"); 
+        if (photonView.IsMine && gos.Length == 2)
         {
             horizontalInput = Input.GetAxisRaw("Horizontal");
             verticalInput = Input.GetAxisRaw("Vertical");

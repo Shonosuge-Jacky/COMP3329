@@ -70,7 +70,8 @@ public class Launcher : MonoBehaviourPunCallbacks
             PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,2,31), Quaternion.identity);
             player=1;
             Crosshir.active = true; 
-        }      
+        }    
+        // print(PhotonNetwork.PlayerList.Length);  
     }
 
     public override void OnConnectedToMaster()
