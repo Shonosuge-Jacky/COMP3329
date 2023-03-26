@@ -4,6 +4,7 @@
 1. Open the Scene at "Assets\Scenes\Movement"
 2. If "Player Prefab" in Launcher is missing, put "Assets\Resources\User" in it
 3. Hold "Tab" to open the control menu 
+4. InnoShow : change photon verser code
 
 ### &nbsp;&nbsp;Common potential bugs :
 1. Should show in all players' view => only show to player who do it (try PunRPC)
