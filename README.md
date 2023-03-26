@@ -18,9 +18,8 @@
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
 6. [End scene] press button to Start scene ^ 
-7. [ // ] Solve Player residual **Bug** ^
 </br> - detoryAllPlayer before game restart
-19. [Arena] build a simple island *
+19. [Arena] build a simple island <-DONE
 20. [ // ] Spawing Player on different location ^
 21. [Supply] All possible Supply spawing in 3 rounds ^^
 22. [Supply] Randomly spawing part of them ^
@@ -83,6 +82,7 @@
 11. mulit-death **Bug** 
 11. control menu click effect **Bug** 
 11. player1 entered name will show on player2 screen **Bug** (have extrem high chance to broke the death message system when you try to fix it) (related script : jsonrw, deadReason)
+7. [ // ] Solve Player residual **Bug** ^
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
@@ -235,6 +235,8 @@
 15. [Start scene] block barrier before all player generated^^
 34. [Control menu] Control menu 
 35. [Control menu] block control menu when end game ( // )
+16. [End scene] restart and rename icon ( // )
+
 
 
 
