@@ -19,7 +19,7 @@
 5. [End scene] press button to restart ^
 6. [End scene] press button to Start scene ^ 
 </br> - detoryAllPlayer before game restart
-19. [Arena] build a simple island <-DONE
+19. [Arena] build a simple island ( DONE )
 20. [ // ] Spawing Player on different location ^
 21. [Supply] All possible Supply spawing in 3 rounds ^^
 22. [Supply] Randomly spawing part of them ^
@@ -28,8 +28,8 @@
 25. [Supply] hide old supply ^
 27. [Camera effect] Barrier camera effect               //yellow it  
 28. [Camera effect] Barrier decay camera effect ^       //crack it (decay per second, wont break,  when hit get red screen)
-29. [Camera effect] Dash camera effect                  <-DONE
-30. [Camera effect] Death camera effect                 <-DONE
+29. [Camera effect] Dash camera effect ( DONE )
+30. [Camera effect] Death camera effect ( DONE )
 31. [Camera effect] Camera effect when get hitted       <-can be done soon
 32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
 34. [ // ] Show choosen grenade 
