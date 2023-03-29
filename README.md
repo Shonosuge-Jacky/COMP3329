@@ -53,18 +53,11 @@
 33. [sound] inside water sound effect 
 33. [sound] ocean sound effect 
 33. [sound] remote grenade setting sound effect 
-35. [optional] two hit dead system
-36. [optional] Add Grenade path 
 37. [optional] change player skin 
 38. [optional] Change sky box 
-39. [optional] Change ground skin 
-40. [optional] Change wall skin 
-41. [optional] Change ocean skin 
-42. [optional] Change oceanFloor skin  
-43. [ // ] cant do anything before all player arrive 
-43. [ // ] add wait player sence before all player arrive 
-44. icon effect when button is pressed 
-45. button no respond reason message 
+
+
+
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**                <-solved 
