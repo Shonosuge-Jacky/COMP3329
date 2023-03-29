@@ -18,7 +18,7 @@
 4. [End scene] show empty score board under win/lose ^
 5. [End scene] press button to restart ^
 6. [End scene] press button to Start scene ^ 
-</br> - detoryAllPlayer before game restart
+6. [End scene] detoryAllPlayer before game restart ^
 19. [Arena] build a simple island ( DONE )
 20. [ // ] Spawing Player on different location ^
 21. [Supply] All possible Supply spawing in 3 rounds ^^
@@ -26,12 +26,12 @@
 23. [Supply] Change amount of grenade in different supply ^
 24. [Supply] Change different supply's color ^
 25. [Supply] hide old supply ^
-27. [Camera effect] Barrier camera effect               //yellow it  
-28. [Camera effect] Barrier decay camera effect ^       //crack it (decay per second, wont break,  when hit get red screen)
+27. [Camera effect] Barrier camera effect ( yellow it )
+28. [Camera effect] Barrier decay camera effect ^ ( crack it (decay per second, wont break,  when hit get red screen) )
 29. [Camera effect] Dash camera effect ( DONE )
 30. [Camera effect] Death camera effect ( DONE )
-31. [Camera effect] Camera effect when get hitted       <-can be done soon
-32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
+31. [Camera effect] Camera effect when get hitted ( can be done soon )
+32. [Camera effect] Camera effect when under water ( can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games Subnautica )
 34. [ // ] Show choosen grenade 
 
 ### &nbsp;&nbsp;To-do-store :
