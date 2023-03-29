@@ -26,21 +26,18 @@
 23. [Supply] Change amount of grenade in different supply ^
 24. [Supply] Change different supply's color ^
 25. [Supply] hide old supply ^
-27. [Camera effect] Barrier camera effect     //yellow it  
+27. [Camera effect] Barrier camera effect               //yellow it  
 28. [Camera effect] Barrier decay camera effect ^       //crack it (decay per second, wont break,  when hit get red screen)
-29. [Camera effect] Dash camera effect          <-DONE
-30. [Camera effect] Death camera effect         <-DONE
+29. [Camera effect] Dash camera effect                  <-DONE
+30. [Camera effect] Death camera effect                 <-DONE
 31. [Camera effect] Camera effect when get hitted       <-can be done soon
 32. [Camera effect] Camera effect when under water      <-can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games 深海迷航
 34. [ // ] Show choosen grenade 
 
 ### &nbsp;&nbsp;To-do-store :
-1. [Arena] Complete the arena 
-2. [Arena] make the edge more obvious
+1. [Arena] Check if arean have bug
 22. [ // ] Player random spawing system 
-23. [BUG] Solve player-grenade no collision **Bug**
 24. [End scene] Match result recording system
-</br> - need : winner/loser name, dead reason, date, battle-duration
 26. [End scene] Upadte End scene with match result recording system 
 28. [sound] Start scene music 
 29. [sound] End scene music 
@@ -55,9 +52,6 @@
 33. [sound] remote grenade setting sound effect 
 37. [optional] change player skin 
 38. [optional] Change sky box 
-
-
-
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**                <-solved 
@@ -76,6 +70,7 @@
 11. control menu click effect **Bug** 
 11. player1 entered name will show on player2 screen **Bug** (have extrem high chance to broke the death message system when you try to fix it) (related script : jsonrw, deadReason)
 7. [ // ] Solve Player residual **Bug** ^
+8. Solve player-grenade no collision **Bug**
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
