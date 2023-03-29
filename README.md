@@ -5,6 +5,9 @@
 2. If "Player Prefab" in Launcher is missing, put "Assets\Resources\User" in it
 3. Hold "Tab" to open the control menu 
 4. InnoShow : change photon verser code
+5. MainVersion : 1-128 + Camera effect 
+5. GasVersion : 1-151
+5. subVersion : 1-128 + Arean 
 
 ### &nbsp;&nbsp;Common potential bugs :
 1. Should show in all players' view => only show to player who do it (try PunRPC)
