@@ -1,5 +1,13 @@
 # COMP3329 Group Project
 
+*1. Remade prefab for supply crates ("Assets/Resources/Supply")*
+
+*2. Used imported shader "Ocias/Standard" for materials "CreateCap_0_7" & "Crate_0_7" (for fading out)*
+
+*3. Changed scripts to accomodate for spawning logic*
+
+---
+
 ### &nbsp;&nbsp;Instruction :
 
 1. Open the Scene at "Assets\Scenes\Movement"
