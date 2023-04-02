@@ -25,10 +25,9 @@
 19. [Arena] build a simple island ( DONE )
 20. [ // ] Spawing Player on different location ^
 21. [Supply] All possible Supply spawing in 3 rounds ^^
-22. [Supply] Randomly spawing part of them ^
+22. [Supply] Randomly ~~spawing part of them~~ (Spawning logic done, need to determine spawn points)^
 23. [Supply] Change amount of grenade in different supply ^
 24. [Supply] Change different supply's color ^
-25. [Supply] hide old supply ^
 27. [Camera effect] Barrier camera effect ( yellow it )
 28. [Camera effect] Barrier decay camera effect ^ ( crack it (decay per second, wont break,  when hit get red screen) )
 29. [Camera effect] Dash camera effect ( DONE )
@@ -227,9 +226,8 @@
 34. [Control menu] Control menu 
 35. [Control menu] block control menu when end game ( // )
 16. [End scene] restart and rename icon ( // )
-
-
-
+17. [Supply] fade out and destroy supply crate when it's interacted with
+18. [Supply] SupplySpawner will spawn supply with respect to coordinates given
 
 
 
