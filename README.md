@@ -27,6 +27,8 @@
 20. [ // ] Spawing Player on different location ^
 21. [Supply] All possible Supply spawing in 3 rounds ^^
 22. [Supply] Randomly ~~spawing part of them~~ (Spawning logic done, need to determine spawn points)^
+23. [Supply] Supply box detail lose **bug** ^
+34. [Supply] Keep the opened supply box on the arean ^
 23. [Supply] Change amount of grenade in different supply ^
 24. [Supply] Change different supply's color ^
 27. [Camera effect] Barrier camera effect ( yellow it )
