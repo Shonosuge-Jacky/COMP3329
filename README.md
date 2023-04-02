@@ -34,6 +34,7 @@
 10. [Supply] All possible Supply spawing in 3 rounds ^^
 11. [Supply] Randomly ~~spawing part of them~~ (Spawning logic done, need to determine spawn points)^
 13. [Supply] Supply box detail lose **bug** ^
+13. [Supply] Keep the opened supply box on the arean ^
 12. [Supply] Change amount of grenade in different supply ^
 13. [Supply] Change different supply's color ^
 14. [Camera effect] Barrier camera effect //yellow it
