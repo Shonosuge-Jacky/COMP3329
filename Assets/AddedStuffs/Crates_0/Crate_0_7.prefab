@@ -207,7 +207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 250695891b2b6b14f91ff6fa548d01e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redcount: {fileID: 0}
+  theSupply: {fileID: 0}
+  Object001: {fileID: 0}
+  effect001: {fileID: 0}
 --- !u!114 &4579254970437713752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbb779e02fc3f14388848a7f585d24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
   ScoreText: {fileID: 0}
   count: 10
 --- !u!1 &7429864259489004705
@@ -307,7 +308,7 @@ MeshRenderer:
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!95 &7371568370471947007
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -320,7 +321,8 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
