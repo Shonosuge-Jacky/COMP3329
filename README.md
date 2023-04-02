@@ -39,6 +39,7 @@
 31. [Camera effect] Camera effect when get hitted ( can be done soon )
 32. [Camera effect] Camera effect when under water ( can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games Subnautica )
 34. [ // ] Show choosen grenade 
+34. [Gas Grenade] grenade drag
 
 ### &nbsp;&nbsp;To-do-store :
 1. [Arena] Check if arean have bug
