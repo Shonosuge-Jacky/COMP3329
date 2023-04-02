@@ -8,6 +8,7 @@
 5. Github MainVersion : 1-128 + Camera effect 
 5. Github GasVersion : 1-151
 5. Github subVersion : 1-128 + Arean 
+5. Github supplySpawnVersion : 1-151 + Supply logic rewrite 
 
 ### &nbsp;&nbsp;Common potential bugs :
 1. Should show in all players' view => only show to player who do it (try PunRPC)
