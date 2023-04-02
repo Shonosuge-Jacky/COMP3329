@@ -16,12 +16,12 @@
 
 ### &nbsp;&nbsp;To-do-list :
 1. [End scene] blur camera after death 
-2. [End scene] hide camera reticle ^
-3. [End scene] show win/lose after blur ^
+2. [End scene] hide camera reticle ( WORKING ON )
+3. [End scene] show win/lose after blur ( WORKING ON )
 4. [End scene] show empty score board under win/lose ^
-5. [End scene] press button to restart ^
-6. [End scene] press button to Start scene ^ 
-6. [End scene] detoryAllPlayer before game restart ^
+5. [End scene] press button to restart ( WORKING ON )
+6. [End scene] press button to Start scene ( WORKING ON )
+6. [End scene] detoryAllPlayer before game restart ( WORKING ON )
 19. [Arena] build a simple island ( DONE )
 20. [ // ] Spawing Player on different location ^
 21. [Supply] All possible Supply spawing in 3 rounds ^^
