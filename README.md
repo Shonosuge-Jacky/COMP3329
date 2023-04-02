@@ -29,6 +29,7 @@
 22. [Supply] Randomly ~~spawing part of them~~ (Spawning logic done, need to determine spawn points)^
 23. [Supply] Supply box detail lose **bug** ^
 34. [Supply] Keep the opened supply box on the arean ^
+34. [Supply] destroy/close/reset all supply related stuffs after 3 second  ^
 23. [Supply] Change amount of grenade in different supply ^
 24. [Supply] Change different supply's color ^
 27. [Camera effect] Barrier camera effect ( yellow it )
