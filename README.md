@@ -2,7 +2,7 @@
 
 *1. Remade prefab for supply crates ("Assets/Resources/Supply")*
 
-*2. Used imported shader "Ocias/Standard" for materials "CreateCap_0_7" & "Crate_0_7" (for fading out)*
+*2. ~~Used imported shader "Ocias/Standard" for materials "CreateCap_0_7" & "Crate_0_7" (for fading out)~~ Back to Autodesk Interactive*
 
 *3. Changed scripts to accomodate for spawning logic*
 
@@ -33,7 +33,6 @@
 9. [ // ] Spawing Player on different location ^
 10. [Supply] All possible Supply spawing in 3 rounds ^^
 11. [Supply] Randomly ~~spawing part of them~~ (Spawning logic done, need to determine spawn points)^
-13. [Supply] Supply box detail lose **bug** ^
 13. [Supply] Keep the opened supply box on the arean ^
 12. [Supply] Change amount of grenade in different supply ^
 13. [Supply] Change different supply's color ^
@@ -229,5 +228,4 @@
 131. [Gas grenade] change how first gas effect disappaer
 132. [Gas grenade] change how second gas effect disappaer
 133. [Gas grenade] add damage area
-134. [Supply] fade out and destroy supply crate when it's interacted with
 135. [Supply] SupplySpawner will spawn supply with respect to coordinates given
