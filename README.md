@@ -59,6 +59,7 @@
 33. [sound] remote grenade setting sound effect 
 37. [optional] change player skin 
 38. [optional] Change sky box 
+39. [Supply] Fade out effect when supply crate is interacted with
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**                <-solved 
@@ -231,7 +232,6 @@
 34. [Control menu] Control menu 
 35. [Control menu] block control menu when end game ( // )
 16. [End scene] restart and rename icon ( // )
-17. [Supply] fade out and destroy supply crate when it's interacted with
 18. [Supply] SupplySpawner will spawn supply with respect to coordinates given
 
 
