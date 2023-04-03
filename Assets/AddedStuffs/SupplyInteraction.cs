@@ -30,7 +30,7 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
     {
         // if F is pressed and supply crate is within range
         // Update grenade count for current player, fade and destroy done in Interactable01.cs
-        
+
         if (Input.GetKeyDown(KeyCode.F) && (photonView.IsMine))
         {
             float interactRange = 1f;

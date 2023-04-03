@@ -241,6 +241,7 @@ MonoBehaviour:
   theSupply: {fileID: 7072150121442237242}
   Object001: {fileID: 7071550638551094604}
   effect001: {fileID: 8705640618672965007}
+  opened: 0
 --- !u!1 &7072162098521983738
 GameObject:
   m_ObjectHideFlags: 0

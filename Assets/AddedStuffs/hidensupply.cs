@@ -24,13 +24,15 @@ public class hidensupply : MonoBehaviourPunCallbacks
         {
             GameObject[] gos;
             gos = GameObject.FindGameObjectsWithTag("Player");
-            if (gos.Length == 2 && spawnCount < spawnLimit) // Spawn control
+            if (PhotonNetwork.IsMasterClient && gos.Length == 2 && spawnCount < spawnLimit) // Only if master client: Spawn control
             {
                 PhotonNetwork.Instantiate(
                     "supply",
                     new Vector3(spawnPointX, 0, 60),
-                    Quaternion.identity
+                    Quaternion.identity,
+                    0
                 );
+                // Debug.Log("Spawned supply");
                 spawnCount++;
                 spawnPointX += 8;
             }
