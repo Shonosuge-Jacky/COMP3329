@@ -30,22 +30,20 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
     {
         // if F is pressed and supply crate is within range
         // Update grenade count for current player, fade and destroy done in Interactable01.cs
-
-        if (Input.GetKeyDown(KeyCode.F))
+        
+        if (Input.GetKeyDown(KeyCode.F) && (photonView.IsMine))
         {
-            GameObject supplyCrateOpened = null;
-            if (photonView.IsMine)
-            {
-                float interactRange = 1f;
-                Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
+            float interactRange = 1f;
+            Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
 
-                // Check with supply crate (Interactable) is interacted with, and record as supplyCrateOpened
-                // Currently, will always be Interactable01, because that's the script used for every crate
-                foreach (Collider collider in colliderArray) // Assume impossible to interact w/ >1 crate
+            // Check which supply crate (Interactable) is interacted with
+            // Currently, will always be Interactable01, because that's the script used for every crate
+            foreach (Collider collider in colliderArray) // Assume impossible to interact w/ >1 crate
+            {
+                if (collider.TryGetComponent(out Interactable01 Interactable01))
                 {
-                    if (collider.TryGetComponent(out Interactable01 Interactable01))
+                    if (Interactable01.opened == false) // First time accessing this crate
                     {
-                        supplyCrateOpened = Interactable01.gameObject;
                         Debug.Log("crate opened");
 
                         Interactable01.active();
