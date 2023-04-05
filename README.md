@@ -78,6 +78,7 @@
 11. player1 entered name will show on player2 screen **Bug** (have extrem high chance to broke the death message system when you try to fix it) (related script : jsonrw, deadReason)
 7. [ // ] Solve Player residual **Bug** ^
 8. Solve player-grenade no collision **Bug**
+8. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug""
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
