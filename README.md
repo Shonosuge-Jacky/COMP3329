@@ -227,11 +227,30 @@
 15. [Start scene] block move before all player generated
 15. [Start scene] block attack before all player generated 
 15. [Start scene] block dash before all player generated
-15. [Start scene] block barrier before all player generated^^
+15. [Start scene] block barrier before all player generated
 34. [Control menu] Control menu 
-35. [Control menu] block control menu when end game ( // )
-16. [End scene] restart and rename icon ( // )
+35. [Control menu] block control menu when end game 
+16. [End scene] restart and rename icon 
 18. [Supply] SupplySpawner will spawn supply with respect to coordinates given
+16. [Restart System] destroy all empty object with special tag after 3 second 
+16. [Restart System] destroy all gas efffect related stuffs after 3 second
+16. [Restart System] show win/lose 
+16. [Restart System] cut and insert cutscene 
+16. [Restart System] change color of restart button when press d 
+16. [Restart System] show wait for enemy message when press d
+16. [Restart System] detect if all player pressed d
+16. [Restart System] activate cut scene
+16. [Restart System] end game close remote grenade
+16. [Restart System] hide all ui during cut scene  
+16. [Restart System] reset user parameter
+16. [Restart System] solve cut scene not always showup **Bug** 
+16. [Restart System] close crosshair in cutscene 
+16. [Restart System] solve ui not showup after cutscene **Bug**
+16. [Restart System] solve restart twice no win/lose **Bug**
+16. [Restart System] solve restart twice no death message **Bug**
+16. [Restart System] solve restart twice no cut scene **Bug**
+16. [Restart System] transpot player when restart
+
 
 
 
