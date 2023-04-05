@@ -10,11 +10,12 @@ TagManager:
   - DieReason
   - PlayerName
   - killer
+  - cutscene
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - mp4
   - Water
   - UI
   - whatIsPlayer
@@ -22,7 +23,7 @@ TagManager:
   - 
   - whatIsWall
   - whatIsGround
-  - 
+  - cutscene
   - 
   - 
   - whatIsKnife
@@ -52,4 +53,7 @@ TagManager:
     locked: 0
   - name: Start
     uniqueID: 94645357
+    locked: 0
+  - name: mp4
+    uniqueID: 1053224511
     locked: 0

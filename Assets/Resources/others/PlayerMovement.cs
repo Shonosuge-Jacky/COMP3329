@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
                 moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
                 rb.AddForce(moveDirection.normalized * moveSpeed * dashforce, ForceMode.Force);
                 dashed=true;
-                Invoke("dashcding",5);
+                Invoke("dashcding",10);
                 dash.active = false;
                 dashcd.active = true;
                 dashcount.active = true;

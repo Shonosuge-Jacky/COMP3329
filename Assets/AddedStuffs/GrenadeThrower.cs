@@ -2,26 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-
+// User -> CameraHolder -> PlayerCam
 public class GrenadeThrower : MonoBehaviourPunCallbacks
 {
     public float throwForce = 20f;
     public float throwForceY = 10f;
+    //======================================
     public GameObject grenadePrefab;
     public GameObject grenadePrefabG;
     public GameObject RemoteGrenade;
     public GameObject RemoteGrenade2;
     public GameObject RemoteGrenade3;
+    //======================================
     public grenadeNumber redcount;
     public grenadeNumberY yellowcount; 
     public grenadeNumberY yellowcount2;
     public grenadeNumberY yellowcount3;
-    public grenadeNumber greencount;   
+    public grenadeNumber greencount;  
+    private int currentGrenade=0;
+    //====================================== 
     public Transform originTransform;
     public Transform originTransformf;
+    //======================================
  	private bool barriered=false;
  	private bool barriering=false;
-    private int currentGrenade=0;
+    //======================================
     public GameObject setting1;
     public GameObject setting2;
     public GameObject setting3;
@@ -31,11 +36,12 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     public GameObject setting13;
     public GameObject setting23;
     public GameObject setting33;
+    //======================================
     public GameObject user;
-
-    // Update is called once per frame
+    private int stage=0;
+//================================================================================
     void Update()
-    {
+    {     
         if (photonView.IsMine)
         {
             if (Input.GetKey("r") && barriered==false)
@@ -65,7 +71,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
 				currentGrenade=4;
             }
 		}
-
+        //===================================================
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag("Player"); 
         if (photonView.IsMine && barriering==false && gos.Length == 2)
@@ -110,8 +116,25 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
                 // ThrowGrenade();
             }
         }
+        //===================================================
+        GameObject[] gosc;
+        gosc = GameObject.FindGameObjectsWithTag("cutscene");
+        if(gosc.Length == 2 && stage==0)
+        {  
+			currentGrenade=0;
+            redcount.GetComponent<grenadeNumber>().count=5;
+            yellowcount.GetComponent<grenadeNumberY>().count=" 1";
+            yellowcount2.GetComponent<grenadeNumberY>().count=" 1";
+            yellowcount3.GetComponent<grenadeNumberY>().count=" 1";
+            greencount.GetComponent<grenadeNumber>().count=2;
+			stage=1;
+		}
+        if(gosc.Length == 0 && stage==1)
+        {  
+			stage=0;
+		}
     }
-
+//================================================================================
 	private void barrierend()
 	{
         if (photonView.IsMine)
@@ -119,7 +142,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
 			barriering=false;
 		}
 	}
-
+//================================================================================
     [PunRPC] 
     public void ThrowGrenade()
     {
@@ -157,7 +180,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
             rb.AddForce(originTransform.forward * throwForce, ForceMode.VelocityChange);
         }
     }
-
+//================================================================================
     [PunRPC] 
     public void ThrowGrenadeG()
     {
@@ -195,7 +218,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
             rb.AddForce(originTransform.forward * throwForce, ForceMode.VelocityChange);
         }
     }
-
+//================================================================================
     [PunRPC] 
     public void ThrowGrenadeY()
     {
@@ -237,7 +260,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
             rb.GetComponent<Rigidbody>().AddForce(originTransform.forward * throwForce, ForceMode.VelocityChange);
         }
     }
-
+//================================================================================
     [PunRPC] 
     public void ThrowGrenadeY2()
     {
@@ -279,7 +302,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
             rb.GetComponent<Rigidbody>().AddForce(originTransform.forward * throwForce, ForceMode.VelocityChange);
         }
     }
-
+//================================================================================
     [PunRPC] 
     public void ThrowGrenadeY3()
     {
@@ -311,7 +334,6 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
         }
         rb.position= originTransform.position;
         rb.rotation= originTransform.rotation; 
-        // RemoteGrenade.active=false;
         if (photonView.IsMine)
         {
             rb.GetComponent<Rigidbody>().AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
@@ -321,39 +343,4 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
             rb.GetComponent<Rigidbody>().AddForce(originTransform.forward * throwForce, ForceMode.VelocityChange);
         }
     }
-
-    // [PunRPC] 
-    // public void ThrowGrenade()
-    // {
-    //     if (photonView.IsMine) // Missing -> throw grenade from all cam 
-    //     {
-    //         Rigidbody rb = Instantiate(grenadePrefab, transform.position, transform.rotation).GetComponent<Rigidbody>();
-    //         rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
-    //     }    
-    // }
-
-    // Ignore Collisions (time)
-    // private IEnumerator ChangeLayerToIgnoreCollisions(GameObject grenadePrefab)
-    // {
-    //     grenadePrefab.gameObject.layer=LayerMask.NameToLayer("IgnoreCollisions");
-    //     yield return new WaitForSeconds(0.2f);
-    //     grenadePrefab.gameObject.layer=LayerMask.NameToLayer("Default");
-    // }
-
-    // Ignore Collisions (first)
-    // Collisions only active after first Collisions
-
-    // public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    // {
-    //     if (stream.IsWriting)
-    //     {
-    //         //this is the local client
-    //         stream.SendNext(pitch);
-    //     }
-    //     else
-    //     {
-    //         //this is the clone
-    //         pitch = (float)stream.ReceiveNext();
-    //     }
-    // }
 }

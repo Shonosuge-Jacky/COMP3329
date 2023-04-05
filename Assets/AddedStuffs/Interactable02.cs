@@ -17,7 +17,5 @@ public class Interactable02 : MonoBehaviourPunCallbacks
     {   
         Object002.GetComponent<MeshCollider>().enabled=true;
         theSupply2.GetComponent<Animation>().Play("Crate_Open");
-    }
-
-    
+    }    
 }

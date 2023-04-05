@@ -8,7 +8,7 @@ using Photon.Pun;
 public class DashCount : MonoBehaviourPunCallbacks
 {
     public Text dashCountText;
-    public float dashCount = 5f;
+    public float dashCount = 10f;
 
     // Update is called once per frame
     void Update()
@@ -25,7 +25,7 @@ public class DashCount : MonoBehaviourPunCallbacks
             }
             else
             {
-                dashCount = 5f;
+                dashCount = 10f;
             }
         }
     }

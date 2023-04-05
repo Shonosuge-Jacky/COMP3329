@@ -9,10 +9,12 @@ public class Launcher : MonoBehaviourPunCallbacks
     public PhotonView playerPrefab;
     private int stopconnect=0;
     private int player=0;
+    private int player2=0;
     private int joined=0;
     private int stage=0;
     private int f1=0;
     private int f2=0;
+    public int canend=0;
     public startButton startButton;
     public GameObject Crosshir;
 
@@ -61,7 +63,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
         if(joined==1 && player==0 && startButton.startGame==1 && gos1.Length == 0)
         {
-            PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,2,31), Quaternion.identity);
+            PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,2,61), Quaternion.identity);
             player=1;
             Crosshir.active = true; 
         }  
@@ -70,8 +72,7 @@ public class Launcher : MonoBehaviourPunCallbacks
             PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,2,31), Quaternion.identity);
             player=1;
             Crosshir.active = true; 
-        }    
-        // print(PhotonNetwork.PlayerList.Length);  
+        }   
     }
 
     public override void OnConnectedToMaster()
@@ -85,5 +86,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     { 
         Debug.Log("Joined a room successfully!");  
         joined=1; 
+        Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
     }
 }

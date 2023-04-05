@@ -16,6 +16,7 @@ public class deadReason : MonoBehaviourPunCallbacks
     private int done2=0;
     private int done3=0;
     private int done4=0;
+    private int stagec=0;
     private int f1=0;
     private int f2=0;
     private string dieby;
@@ -25,6 +26,7 @@ public class deadReason : MonoBehaviourPunCallbacks
     private string myname;
     private string hisname;
     public GameObject user;
+    public ArrowMovement ArrowMovement;
     
     // Update is called once per frame
         
@@ -40,9 +42,29 @@ public class deadReason : MonoBehaviourPunCallbacks
         jsond data = JsonUtility.FromJson<jsond>(json);
         return data.playername;
     }
+    public int replayer()
+    {
+        return player;
+    }
 
     void Update()
-    {
+    {	       
+        GameObject[] gosc;
+        gosc = GameObject.FindGameObjectsWithTag("cutscene");
+        if(gosc.Length == 2 && stagec==0)
+        {  
+            done=0;
+            done2=0;
+            done3=0;
+            done4=0;
+            ScoreText.enabled=false;
+			stagec=1;
+		}
+        if(gosc.Length == 0 && stagec==1)
+        {  
+			stagec=0;
+		}
+
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag("Player"); 
         GameObject[] gos2;
@@ -129,66 +151,75 @@ public class deadReason : MonoBehaviourPunCallbacks
         } 
         if(photonView.IsMine && done==1 && done2==0)
         {
-            print("gos2[0].name = "+gos2[0].name);
-            print("gos3[0].name = "+gos3[0].name);
-            print("gos4[0].name = "+gos4[0].name);
             if(dieby == " was drowned" && (gos3[0].name).ToString()=="player1" && player==1)
             {
+                ArrowMovement.lose();
                 ScoreText.text = myname+dieby;
                 done2=1;
             }
             else if(dieby == " was drowned" && (gos3[0].name).ToString()=="player1" && player==2)
             {
+                ArrowMovement.win();
                 ScoreText.text = hisname+dieby;
                 done2=1;
             }
             else if(dieby == " was drowned" && (gos3[0].name).ToString()=="player2" && player==2)
             {
+                ArrowMovement.lose();
                 ScoreText.text = myname+dieby;
                 done2=1;
             }
             else if(dieby == " was drowned" && (gos3[0].name).ToString()=="player2" && player==1)
             {
+                ArrowMovement.win();
                 ScoreText.text = hisname+dieby;
                 done2=1;
             }
             else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player1" && player==1)
             {
+                ArrowMovement.lose();
                 ScoreText.text = myname+" is killed by it's own "+dieby;
                 done2=1;
             }
             else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player2" && player==1)
             {
+                ArrowMovement.win();
                 ScoreText.text = hisname+" is killed by it's own "+dieby;
                 done2=1;
             }
             else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player2" && player==2)
             {
+                ArrowMovement.lose();
                 ScoreText.text = myname+" is killed by it's own "+dieby;
                 done2=1;
             }
             else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player1" && player==2)
             {
+                ArrowMovement.win();
                 ScoreText.text = hisname+" is killed by it's own "+dieby;
                 done2=1;
             }
             else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player2" && player==1)
             {
+                ArrowMovement.lose();
                 ScoreText.text = myname+" is killed by "+hisname+"'s "+dieby;
                 done2=1;
             }   
             else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player1" && player==1)
             {
+                ArrowMovement.win();
                 ScoreText.text = hisname+" is killed by "+myname+"'s "+dieby;
                 done2=1;
             }   
             else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player2" && player==2)
             {
+                ArrowMovement.win();
                 ScoreText.text = hisname+" is killed by "+myname+"'s "+dieby;
                 done2=1;
             }   
             else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player1" && player==2)
             {
+                ArrowMovement.lose();
                 ScoreText.text = myname+" is killed by "+hisname+"'s "+dieby;
                 done2=1;
             }         

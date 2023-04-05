@@ -21,6 +21,7 @@ public class GrenadeY : MonoBehaviourPunCallbacks
     public GameObject box3;
     public GameObject boxnum;
     private int throwed=0;
+    private int stagec=0;
     public DestructibleP DestructibleP;
     // public startButton startButton;
 
@@ -76,7 +77,20 @@ public class GrenadeY : MonoBehaviourPunCallbacks
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        GameObject[] gosc;
+        gosc = GameObject.FindGameObjectsWithTag("cutscene");
+        if(gosc.Length == 2 && stagec==0)
+        {  
+            CanExplode=0;
+            throwed=0;
+			stagec=1;
+		}
+        if(gosc.Length == 0 && stagec==1)
+        {  
+			stagec=0;
+		}
+
         // bug1
         Invoke("ce3",12);
         if (Input.GetKey("1") && CanExplode==1 && DestructibleP.dead==0)
@@ -93,6 +107,13 @@ public class GrenadeY : MonoBehaviourPunCallbacks
         // {
         //     Destroy(gameObject);            
         // }
+
+        GameObject[] gos2;
+        gos2 = GameObject.FindGameObjectsWithTag("endGame");  
+        if(gos2.Length >= 1)
+        {
+            Invoke("des",3);
+        }
     }
 
     void ExplodeY()
@@ -147,5 +168,10 @@ public class GrenadeY : MonoBehaviourPunCallbacks
     public void explosionEf()
     {
         Instantiate(explosionEffect, transform.position, transform.rotation);
+    }
+    
+    void des()
+    {
+        photonView.RPC("HideRG",RpcTarget.All); 
     }
 }

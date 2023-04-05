@@ -8,6 +8,8 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
 {
     private int SupplyState01=1;
     private int SupplyState02=1;
+    private int SupplyState03=1;
+    private int SupplyState04=1;
     private int dead=0;
     public grenadeNumber redcount;
     public grenadeNumber yellowcount;
@@ -15,6 +17,8 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
     public grenadeNumber yellowcount3;
 	public GameObject s1;
 	public GameObject s2;
+	public GameObject s3;
+	public GameObject s4;
     public GrenadeY GrenadeY;
     public GrenadeY2 GrenadeY2;
     public GrenadeY3 GrenadeY3;
@@ -32,6 +36,14 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
             if(sfind[i].ToString()=="s2(Clone) (UnityEngine.GameObject)")
             {
                 SupplyState02=0;
+            }
+            if(sfind[i].ToString()=="s3(Clone) (UnityEngine.GameObject)")
+            {
+                SupplyState03=0;
+            }
+            if(sfind[i].ToString()=="s4(Clone) (UnityEngine.GameObject)")
+            {
+                SupplyState04=0;
             }
         }
 
@@ -86,7 +98,51 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
                             GrenadeY3.upthrowed();
                             yellowcount3.GetComponent<grenadeNumberY>().count=" 1";
                         }
-                    }        
+                    }     
+                    else if (collider.TryGetComponent(out Interactable03 Interactable03) && SupplyState03==1)
+                    {
+                        // SupplyState02=0;
+                        photonView.RPC("borns3",RpcTarget.All);
+                        Interactable03.active3();
+                        redcount.GetComponent<grenadeNumber>().count=redcount.GetComponent<grenadeNumber>().count+10;
+                        if(yellowcount.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            GrenadeY.upthrowed();
+                            yellowcount.GetComponent<grenadeNumberY>().count=" 1";
+                        }
+                        if(yellowcount2.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            GrenadeY2.upthrowed();
+                            yellowcount2.GetComponent<grenadeNumberY>().count=" 1";
+                        }
+                        if(yellowcount3.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            GrenadeY3.upthrowed();
+                            yellowcount3.GetComponent<grenadeNumberY>().count=" 1";
+                        }
+                    } 
+                    else if (collider.TryGetComponent(out Interactable04 Interactable04) && SupplyState04==1)
+                    {
+                        // SupplyState02=0;
+                        photonView.RPC("borns4",RpcTarget.All);
+                        Interactable04.active4();
+                        redcount.GetComponent<grenadeNumber>().count=redcount.GetComponent<grenadeNumber>().count+10;
+                        if(yellowcount.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            GrenadeY.upthrowed();
+                            yellowcount.GetComponent<grenadeNumberY>().count=" 1";
+                        }
+                        if(yellowcount2.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            GrenadeY2.upthrowed();
+                            yellowcount2.GetComponent<grenadeNumberY>().count=" 1";
+                        }
+                        if(yellowcount3.GetComponent<grenadeNumberY>().count==" 0")
+                        {
+                            GrenadeY3.upthrowed();
+                            yellowcount3.GetComponent<grenadeNumberY>().count=" 1";
+                        }
+                    }       
                 }
                 
             }
@@ -101,5 +157,15 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
     public void borns2()
     {
         Rigidbody rb2 = Instantiate(s2, transform.position, transform.rotation).GetComponent<Rigidbody>();
+    }
+    [PunRPC] 
+    public void borns3()
+    {
+        Rigidbody rb3 = Instantiate(s3, transform.position, transform.rotation).GetComponent<Rigidbody>();
+    }
+    [PunRPC] 
+    public void borns4()
+    {
+        Rigidbody rb4 = Instantiate(s4, transform.position, transform.rotation).GetComponent<Rigidbody>();
     }
 }

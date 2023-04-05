@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5895058701562159880}
   - component: {fileID: 5007050750206208442}
   - component: {fileID: 8299143187038523984}
+  - component: {fileID: -5074353804684785118}
   m_Layer: 0
   m_Name: GIN
   m_TagString: DieReason
@@ -105,3 +106,15 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &-5074353804684785118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5147461863818543515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc37860c0630c7141baddeeff130dcde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -68,6 +68,15 @@ MonoBehaviour:
   - killbyG
   - killbyR
   - killbyY
+  - changeD
+  - inchangeD
+  - ReDestory
+  - tran1
+  - tran2
+  - active3rpc
+  - active4rpc
+  - borns3
+  - borns4
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

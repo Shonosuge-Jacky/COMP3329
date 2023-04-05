@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5863333877814669389}
   - component: {fileID: 5846566880808606173}
   - component: {fileID: -3081240658085078403}
+  - component: {fileID: 3208193242621017740}
   m_Layer: 0
   m_Name: SmokeEffect 1
   m_TagString: Untagged
@@ -4598,3 +4599,15 @@ MonoBehaviour:
   self: {fileID: 6044496382018771721}
   particles: {fileID: 5863333877814669389}
   duration: 2
+--- !u!114 &3208193242621017740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6044496382018771721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc37860c0630c7141baddeeff130dcde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

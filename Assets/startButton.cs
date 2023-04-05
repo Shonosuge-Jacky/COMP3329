@@ -64,6 +64,7 @@ public class startButton : MonoBehaviourPunCallbacks
                         errortext.active=false;
                         AL.GetComponent<AudioListener>().enabled = false;
                         Invoke("closestart",2);
+                        // closestart();
                         startGame=1;
                     }
                 }
@@ -73,6 +74,7 @@ public class startButton : MonoBehaviourPunCallbacks
                 errortext.active=false;
                 AL.GetComponent<AudioListener>().enabled = false;
                 Invoke("closestart",2);
+                // closestart();
                 startGame=1;
             }
         }   
