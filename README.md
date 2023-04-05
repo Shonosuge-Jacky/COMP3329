@@ -6,7 +6,7 @@
 3. Hold "Tab" to open the control menu 
 4. InnoShow : change photon verser code
 5. Github MainVersion : 1-128 + Camera effect 
-5. Github GasVersion : 1-151
+5. Github GasVersion : 1-152 + 154-170
 5. Github subVersion : 1-128 + Arean 
 5. Github supplySpawnVersion : 1-151 + Supply logic rewrite 
 
