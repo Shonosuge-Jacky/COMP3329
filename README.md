@@ -63,22 +63,14 @@
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**                <-solved 
 </br> - destory function should put inside the effect
-3. Solve Destroyed wall's scrap pass through ground **Bug** 
 4. Solve Multiplayer delay(~0.25s) **Bug**
-5. Solve Ground transparent when view from underground **Bug**
-</br> - because it is a plane
 6. Solve have error message when explode with barrier **Bug**
-7. Some time player killed by enemy but player still alive in its own view
-8. change caret color will also change text color
-9. dahs to other player **Bug**
-10. Too lag when with many Wooden chips
-11. Round 3 Remote grenade icon **Bug** 
-11. mulit-death **Bug** 
-11. control menu click effect **Bug** 
+9. dahs to other player **Bug** 
 11. player1 entered name will show on player2 screen **Bug** (have extrem high chance to broke the death message system when you try to fix it) (related script : jsonrw, deadReason)
 7. [ // ] Solve Player residual **Bug** ^
 8. Solve player-grenade no collision **Bug**
-8. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug""
+8. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
+9. win/lose message sometime not showup **BUG**
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
