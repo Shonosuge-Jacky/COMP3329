@@ -12,6 +12,7 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
 	[SerializeField] private DepthOfField dof;
     [SerializeField] private Vignette vignette;
     public bool doDead = false;
+    public GameObject EndSceneUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +51,7 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
             yield return new WaitForSeconds(0.1f);
             dof.focusDistance.value -= 0.2f;
         }
+        EndSceneUI.SetActive(true);
         yield return null;
 
 	}
@@ -61,6 +63,13 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
     }
 
     IEnumerator WaterEffect(){
+        colorGrading.active = true;
+        colorGrading.colorFilter.overrideState = true;
+        colorGrading.saturation.overrideState = true;
+        yield return null;
+    }
+
+    IEnumerator DashEffect(){
         colorGrading.active = true;
         colorGrading.colorFilter.overrideState = true;
         colorGrading.saturation.overrideState = true;

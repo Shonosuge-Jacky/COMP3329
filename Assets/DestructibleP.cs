@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.UI;
 
 public class DestructibleP : MonoBehaviourPunCallbacks
 {
@@ -22,6 +23,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
     public GameObject Grey2;
     public GameObject Grey3;
     public GameObject barrierV;
+	public GameObject barrierEffect;
 	private int gameended=0;
 	public int dead=0;
 	private bool doDeadEffect = false;
@@ -69,6 +71,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 		{
 			if (photonView.IsMine)
 			{
+				StartCoroutine("BarrierEffect");
 				barriered=true;
 				// barriering=true;
 				Invoke("barrierend",10);
@@ -137,4 +140,18 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 		barriering=false;
 		barrierV.active = false;
     }
+
+	IEnumerator BarrierEffect(){
+		barrierEffect.SetActive(true);
+		yield return new WaitForSeconds(3.5f);
+		Color temp = barrierEffect.GetComponent<Image>().color;
+ 		temp.a=0.5f;
+		barrierEffect.GetComponent<Image>().color = temp;
+		yield return new WaitForSeconds(1.5f);
+		temp = barrierEffect.GetComponent<Image>().color;
+		temp.a=1f;
+		barrierEffect.GetComponent<Image>().color = temp;
+		barrierEffect.SetActive(false);
+
+	}
 }
