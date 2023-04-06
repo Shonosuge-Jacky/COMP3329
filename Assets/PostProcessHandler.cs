@@ -7,7 +7,7 @@ using UnityEngine.Rendering.PostProcessing;
 public class PostProcessHandler : MonoBehaviourPunCallbacks
 {
     public PostProcessVolume volume;
-    public DestructibleP desP;
+    public GameObject LoseSign;
     [SerializeField] private ColorGrading colorGrading;
 	[SerializeField] private DepthOfField dof;
     [SerializeField] private Vignette vignette;
@@ -30,10 +30,14 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
             if(doDead == true){
                 StartCoroutine("BlurEffect");
                 doDead = false;
-                Debug.Log(desP.dead);
-                if(desP.dead > 0){
-                    StartCoroutine("BlackEffect");
-                }
+                
+            }
+
+            if(LoseSign.activeSelf == true){
+                StartCoroutine(BlackEffect());
+            }
+            else{
+                colorGrading.active = false;
             }
         }
     }
@@ -56,7 +60,7 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
         dof.active = true;
         Debug.Log(dof.active);
         while (dof.focusDistance > 0.2f){
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.06f);
             dof.focusDistance.value -= 0.2f;
         }
         // EndSceneUI.SetActive(true);
