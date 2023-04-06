@@ -9,6 +9,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	public GameObject PlayerMovementx;
 	public GameObject GrenadeThrowerx;
 	public GameObject SupplyInteractionx;
+	public GameObject PostProcessHandlerx;
 	//====================================
 	public GameObject endGame;
 	public GameObject killer;
@@ -32,6 +33,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	private int gameended=0;
 	public int dead=0;
 	public int stage=0;
+	private bool doDeadEffect = false;
 // ==================================================================================================
     public void killbyR1()
     {
@@ -101,6 +103,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			GameObject[] gos;
 			gos = GameObject.FindGameObjectsWithTag("Player");	
 			Rigidbody rb = Instantiate(endGame, transform.position, transform.rotation).GetComponent<Rigidbody>();		
+			PostProcessHandlerx.GetComponent<PostProcessHandler>().DoGetHitEffect();
 			if(gos[0].name=="player1"||gos[1].name=="player1" )
 			{
 				if(user.name=="player1")
@@ -206,6 +209,14 @@ public class DestructibleP : MonoBehaviourPunCallbacks
         gos2 = GameObject.FindGameObjectsWithTag("endGame");  
         if(gos2.Length >= 1)
         {
+			
+			if(photonView.IsMine){
+				if(doDeadEffect == false){
+					Debug.Log("DeadScene");
+					PostProcessHandlerx.GetComponent<PostProcessHandler>().doDead = true;
+					doDeadEffect = true;
+				}
+			}
 			gameended=1;
 			PlayerMovementx.GetComponent<PlayerMovement>().enabled = false;
 			GrenadeThrowerx.GetComponent<GrenadeThrower>().enabled = false;
