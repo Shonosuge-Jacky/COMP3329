@@ -11,6 +11,7 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
     [SerializeField] private ColorGrading colorGrading;
 	[SerializeField] private DepthOfField dof;
     [SerializeField] private Vignette vignette;
+    [SerializeField] private ChromaticAberration cha;
     public bool doDead = false;
     // public GameObject EndSceneUI;
     // Start is called before the first frame update
@@ -19,6 +20,7 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
         volume.profile.TryGetSettings(out colorGrading);
         volume.profile.TryGetSettings(out dof);
         volume.profile.TryGetSettings(out vignette);
+        volume.profile.TryGetSettings(out cha);
     }
 
     // Update is called once per frame
@@ -26,9 +28,9 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
     {
         if(photonView.IsMine){
             if(doDead == true){
-                Debug.Log("!!!!!!!!!");
                 StartCoroutine("BlurEffect");
                 doDead = false;
+                Debug.Log(desP.dead);
                 if(desP.dead > 0){
                     StartCoroutine("BlackEffect");
                 }
@@ -42,12 +44,17 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
     public void DoWaterEffect(){
         StartCoroutine(WaterEffect());
     }
+    public void DoDashEffect(){
+        StartCoroutine(DashEffect());
+    }
     IEnumerator BlackEffect(){
         colorGrading.active = true;
         yield return null;
     }
     IEnumerator BlurEffect(){
+        Debug.Log(dof.active);
         dof.active = true;
+        Debug.Log(dof.active);
         while (dof.focusDistance > 0.2f){
             yield return new WaitForSeconds(0.1f);
             dof.focusDistance.value -= 0.2f;
@@ -71,7 +78,9 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
     }
 
     IEnumerator DashEffect(){
-
-        yield return null;
+        Debug.Log("DASH");
+        cha.active = true;
+        yield return new WaitForSeconds(0.7f);
+        cha.active = false;
     }
 }

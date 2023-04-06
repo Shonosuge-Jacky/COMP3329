@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     float verticalInput;
     Vector3 moveDirection;
     Rigidbody rb;
+    public GameObject PostProcessHandlerx;
 
     [HideInInspector] public TextMeshProUGUI text_speed;
 
@@ -70,6 +71,7 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             gos = GameObject.FindGameObjectsWithTag("Player"); 
             if (Input.GetKey("v") && dashed==false && gos.Length == 2)
             {
+                PostProcessHandlerx.GetComponent<PostProcessHandler>().DoDashEffect();
                 moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
                 rb.AddForce(moveDirection.normalized * moveSpeed * dashforce, ForceMode.Force);
                 dashed=true;
