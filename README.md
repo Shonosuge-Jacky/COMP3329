@@ -34,7 +34,7 @@
 43. [sound] red,yellow explosion sound effect (PUBG)
 44. [sound] green grenade gas emition sound effect (APEX/valorant/AOT)
 44. [sound] green grenade gas explode sound effect (APEX/valorant/AOT)
-46. [sound] inside water sound effect (AOT)
+46. [sound] die in water sound effect (AOT)
 48. [sound] remote grenade setting sound effect (BTOOM)
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
