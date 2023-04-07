@@ -18,7 +18,7 @@
 4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition (try photoView.IsMine)
 
 ### &nbsp;&nbsp;To-do-list :
-4. [End scene] Match result recording system
+1. [End scene] Match result recording system
 6. [End scene] press button to rename 
 20. [ // ] Player random spawing system 
 23. [Supply] Everything in supply sponding system excel 
@@ -27,8 +27,8 @@
 34. [ // ] Show choosen grenade
 
 ### &nbsp;&nbsp;To-do-store :
-38. [sound] Start scene music 
-39. [sound] End scene music 
+1. [sound] Start scene music 
+2. [sound] End scene music 
 40. [sound] supply spawing sound effect 
 41. [sound] player death sound effect
 42. [sound] background music
