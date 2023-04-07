@@ -24,8 +24,8 @@
 
 ### &nbsp;&nbsp;To-do-list :
 1. [End scene] Match result recording system (Jacky)
-6. [End scene] press button to rename (Kelvin)
 20. [ // ] Player random spawing system (Kelvin)
+6. [End scene] press button to rename (Kelvin)
 23. [Supply] Everything in supply sponding system excel (Amy)
 24. [Supply] Change different supply's color (Amy)
 25. [optional] change player skin (Bryan)
