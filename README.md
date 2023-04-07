@@ -10,7 +10,7 @@
 5. Github supplySpawnVersion : 1-151 + Supply logic rewrite(152) 
 5. Github GasVersion : 1-151 + 153-170
 5. Github ThreeAtOneVersion : 1-151 + 153-170 + Camera effect + Arean
-6. Camera effect : dash, barrier, blur, hit
+6. Camera effect : dash, barrier, blur, hit, death
 
 ### &nbsp;&nbsp;Common potential bugs :
 1. Should show in all players' view => only show to player who do it (try PunRPC)
@@ -18,43 +18,26 @@
 4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition (try photoView.IsMine)
 
 ### &nbsp;&nbsp;To-do-list :
-1. [End scene] blur camera after death 
-4. [End scene] show empty score board under win/lose ^
-6. [End scene] press button to restart ( WORKING ON )
-19. [Arena] build a simple island ( DONE )
-20. [ // ] Spawing Player on different location ^
-21. [Supply] All possible Supply spawing in 3 rounds ^^
-22. [Supply] Randomly ~~spawing part of them~~ (Spawning logic done, need to determine spawn points)^
-34. [Supply] Keep the opened supply box on the arean ^
-34. [Supply] destroy/close/reset all supply related stuffs after 3 second  ^
-23. [Supply] Change amount of grenade in different supply ^
-24. [Supply] Change different supply's color ^
-27. [Camera effect] Barrier camera effect ( yellow it )
-28. [Camera effect] Barrier decay camera effect ^ ( crack it (decay per second, wont break,  when hit get red screen) )
-29. [Camera effect] Dash camera effect ( DONE )
-30. [Camera effect] Death camera effect ( DONE )
-31. [Camera effect] Camera effect when get hitted ( can be done soon )
-32. [Camera effect] Camera effect when under water ( can be done soon (according to y-axis (lower than a value jau blue screen)) //take reference from games Subnautica )
-34. [ // ] Show choosen grenade 
-34. [Gas Grenade] grenade drag
+4. [End scene] Match result recording system
+6. [End scene] press button to rename 
+20. [ // ] Player random spawing system 
+23. [Supply] Everything in supply sponding system excel 
+24. [Supply] Change different supply's color
+25. [optional] change player skin  
+34. [ // ] Show choosen grenade
 
 ### &nbsp;&nbsp;To-do-store :
-1. [Arena] Check if arean have bug
-22. [ // ] Player random spawing system 
-24. [End scene] Match result recording system
-26. [End scene] Upadte End scene with match result recording system 
-28. [sound] Start scene music 
-29. [sound] End scene music 
-31. [sound] supply spawing sound effect 
-32. [sound] player death sound effect
-31. [sound] background music
-32. [sound] red,yellow grenade explosion sound effect
-33. [sound] green grenade gas emition sound effect 
-33. [sound] drop in water sound effect 
-33. [sound] inside water sound effect 
-33. [sound] ocean sound effect 
-33. [sound] remote grenade setting sound effect 
-37. [optional] change player skin 
+38. [sound] Start scene music 
+39. [sound] End scene music 
+40. [sound] supply spawing sound effect 
+41. [sound] player death sound effect
+42. [sound] background music
+43. [sound] red,yellow grenade explosion sound effect
+44. [sound] green grenade gas emition sound effect 
+45. [sound] drop in water sound effect 
+46. [sound] inside water sound effect 
+47. [sound] ocean sound effect 
+48. [sound] remote grenade setting sound effect 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**                <-solved 
