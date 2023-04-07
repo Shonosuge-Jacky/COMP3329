@@ -47,15 +47,17 @@
 40. [sound] supply spawing sound effect (???)
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
-1. Solve Explode effect retain **Bug**                <-solved 
-</br> - destory function should put inside the effect
-4. Solve Multiplayer delay(~0.25s) **Bug**
-6. Solve have error message when explode with barrier **Bug**
-9. dahs to other player **Bug** 
-11. player1 entered name will show on player2 screen **Bug** (have extrem high chance to broke the death message system when you try to fix it) (related script : jsonrw, deadReason)
-7. [ // ] Solve Player residual **Bug** ^
-8. Solve player-grenade no collision **Bug**
-8. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
+1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
+
+### &nbsp;&nbsp;Bugs that dont bother to solve:
+1. player1 entered name will clean player2 current text **Bug**
+2. player-grenade no collision **Bug**
+3. Multiplayer delay(~0.25s) **Bug**
+4. Player residual **Bug**
+
+### &nbsp;&nbsp;Bugs that not sure if it still exist:
+1. Solve Explode effect retain **Bug** (destory function should put inside the effect)
+2. dahs to other player **Bug**
 9. win/lose message sometime not showup **BUG**
 
 ### &nbsp;&nbsp;What had been done :
