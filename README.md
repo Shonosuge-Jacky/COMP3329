@@ -49,6 +49,8 @@
 
 ### &nbsp;&nbsp;(BUG) Temporary unsolvable bug :
 1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
+2. too fast no name **bug** 
+3. input space dissapear timing **bug** 
 
 ### &nbsp;&nbsp;(BUG) Bugs that not sure if it still exist:
 1. Solve Explode effect retain **Bug** (destory function should put inside the effect)
