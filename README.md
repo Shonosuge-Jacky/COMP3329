@@ -17,10 +17,10 @@
 4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition (try photoView.IsMine)
 
 ### &nbsp;&nbsp;Deliverables (30 April 23:59):
-1. Installation instructions and game instructions .doc readme file 
-2. 10 Pages .doc game report  
-3. 1 min .mp4 game trailer 
-4. A1 150dpi game poster 
+1. Installation instructions and game instructions .doc readme file (???)
+2. 10 Pages .doc game report (???)
+4. A1 150dpi game poster (Do it after the game is finished)
+3. 1 min .mp4 game trailer (Do it after the game is finished)
 
 ### &nbsp;&nbsp;To-do-list :
 1. [End scene] Match result recording system (Jacky)
