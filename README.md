@@ -6,10 +6,11 @@
 3. Hold "Tab" to open the control menu 
 4. InnoShow : change photon verser code
 5. Github MainVersion : 1-128 + Camera effect 
-5. Github GasVersion : 1-152 + 154-170
+5. Github GasVersion : 1-151 + 153-170
 5. Github subVersion : 1-128 + Arean 
 5. Github supplySpawnVersion : 1-151 + Supply logic rewrite(152) 
-5. Github ThreeAtOneVersion : 1-152 + 154-170 + Camera effect + Arean
+5. Github ThreeAtOneVersion : 1-151 + 153-170 + Camera effect + Arean
+6. Camera effect : dash, barrier, blur, hit
 
 ### &nbsp;&nbsp;Common potential bugs :
 1. Should show in all players' view => only show to player who do it (try PunRPC)
