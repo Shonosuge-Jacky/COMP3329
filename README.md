@@ -17,7 +17,7 @@
 4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition (try photoView.IsMine)
 
 ### &nbsp;&nbsp;To-do-list :
-1. [End scene] Match result recording system 
+1. [End scene] Match result recording system (Jacky)
 6. [End scene] press button to rename (Kelvin)
 20. [ // ] Player random spawing system (Kelvin)
 23. [Supply] Everything in supply sponding system excel (Amy)
