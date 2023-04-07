@@ -30,6 +30,7 @@
 24. [Supply] Change different supply's color (Amy)
 25. [optional] change player skin (Bryan)
 34. [ // ] Show choosen grenade (Bryan)
+34. [ // ] Test the game to adjust parameters (Do it after the game is finished)
 
 ### &nbsp;&nbsp;To-do-store :
 1. [sound] open supply box sound effect (Ghostrunner - when elevator's door open)
