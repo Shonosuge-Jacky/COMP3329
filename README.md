@@ -229,7 +229,7 @@
 16. [Restart System] solve restart twice no death message **Bug**
 16. [Restart System] solve restart twice no cut scene **Bug**
 16. [Restart System] transpot player when restart
-16. [Camera Effect] insert camera effect
+16. [Camera Effect] insert camera effects
 16. [Restart System] close dos after restart
 16. [Arean] insert arean
 16. [Arean] fix bridge cant jump **Bug**
