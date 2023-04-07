@@ -15,6 +15,7 @@
 1. Should show in all players' view => only show to player who do it (try PunRPC)
 3. Should only happen on Player A => happen on all Player (try photoView.IsMine)
 4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition (try photoView.IsMine)
+4. Should only happen once => happen multiple times (try if-else)
 
 ### &nbsp;&nbsp;Deliverables (30 April 23:59):
 1. Installation instructions and game instructions .doc readme file (???)
