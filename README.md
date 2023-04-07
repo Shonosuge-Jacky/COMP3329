@@ -36,7 +36,6 @@
 44. [sound] green grenade gas emition sound effect 
 45. [sound] drop in water sound effect 
 46. [sound] inside water sound effect 
-47. [sound] ocean sound effect 
 48. [sound] remote grenade setting sound effect 
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
