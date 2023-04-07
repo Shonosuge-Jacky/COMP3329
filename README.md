@@ -248,4 +248,5 @@
 20. [Camera Effect] change barrier duration
 20. [Restart System] reset barrier when restart
 20. [Restart System] fix gas grenade cant kill **Bug**
+20. [Gas Grenade] fix gas grenade vs barrier **Bug** [DestructibleP(300-310), gasdamage0(12, 36-42)]
 
