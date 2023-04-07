@@ -53,7 +53,6 @@
 33. [sound] ocean sound effect 
 33. [sound] remote grenade setting sound effect 
 37. [optional] change player skin 
-39. [Supply] Fade out effect when supply crate is interacted with
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**                <-solved 
