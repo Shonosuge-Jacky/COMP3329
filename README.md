@@ -229,8 +229,20 @@
 16. [Restart System] solve restart twice no death message **Bug**
 16. [Restart System] solve restart twice no cut scene **Bug**
 16. [Restart System] transpot player when restart
-
-
-
-
+16. [Camera Effect] insert camera effect
+16. [Restart System] close dos after restart
+16. [Arean] insert arean
+16. [Arean] fix bridge cant jump **Bug**
+16. [Restart System] fix drown restart **Bug**
+16. [Restart System] fix control menu **Bug**
+16. [Arean] add camera fliter to start and player
+16. [Arean] change sky box
+16. [Arean] edit water detail
+17. [Arean] edit light source position
+18. [Arean] edit island, start cam relative position
+19. [Arean] edit drown condition, spond and respond position
+20. [Arean] improve jumping condition
+20. [Camera Effect] change barrier duration
+20. [Restart System] reset barrier when restart
+20. [Restart System] fix gas grenade cant kill **Bug**
 
