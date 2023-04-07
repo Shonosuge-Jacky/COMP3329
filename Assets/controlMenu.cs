@@ -6,6 +6,7 @@ using Photon.Pun;
 public class controlMenu : MonoBehaviourPunCallbacks
 {
     public GameObject CtMenu;
+    public int stage=0;
     // Update is called once per frame
     void Update()
     {
@@ -16,8 +17,9 @@ public class controlMenu : MonoBehaviourPunCallbacks
         if(gos2.Length != 0)
         {
             CtMenu.active=false;
+            stage=0;
         }
-        else if (photonView.IsMine && gos.Length == 0)
+        else if (photonView.IsMine && gos.Length == 0 && stage==0)
         {
             if (Input.GetKey(KeyCode.Tab))
             {
@@ -31,6 +33,7 @@ public class controlMenu : MonoBehaviourPunCallbacks
         else if(gos.Length > 0)
         {
             CtMenu.active=false;
+            stage=1;
         }
     }
 }

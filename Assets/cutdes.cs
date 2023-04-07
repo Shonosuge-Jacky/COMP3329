@@ -58,13 +58,13 @@ public class cutdes : MonoBehaviourPunCallbacks
     public void tran1()
     {
         Rigidbody rb = playerr.GetComponent<Rigidbody>(); 
-        rb.position= new Vector3(14,2,31);
+        rb.position= new Vector3(-175,-5,75);
     }
 
     [PunRPC] 
     public void tran2()
     {
         Rigidbody rb = playerr.GetComponent<Rigidbody>(); 
-        rb.position= new Vector3(14,2,61);
+        rb.position= new Vector3(-128,-6,68);
     }
 }

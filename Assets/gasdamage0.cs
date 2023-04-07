@@ -8,12 +8,25 @@ using System;
 public class gasdamage0 : MonoBehaviourPunCallbacks
 {
     private int dead=0;
+    private int stagec=0;
     private float interactRange = 6f;
     public DestructibleP destP;
     // public startButton startButton;
 
     void Update()
     {
+        GameObject[] gosc;
+        gosc = GameObject.FindGameObjectsWithTag("cutscene");
+        if(gosc.Length == 2 && stagec==0)
+        {  
+            dead=0;
+			stagec=1;
+		}
+        if(gosc.Length == 0 && stagec==1)
+        {  
+			stagec=0;
+		}
+
         // Gas damage
         Collider[] colliderArray2 = Physics.OverlapSphere(transform.position, interactRange);
         foreach(Collider collider2 in colliderArray2)

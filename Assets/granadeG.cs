@@ -35,7 +35,8 @@ public class granadeG : MonoBehaviourPunCallbacks
     void Update()
     {
         // print(transform.position);
-        if(hasExploded==true && rb.velocity.x==0 && rb.velocity.y==0 && rb.velocity.z==0 && hasExploded2==false)
+        // if(hasExploded==true && rb.velocity.x==0 && rb.velocity.y==0 && rb.velocity.z==0 && hasExploded2==false)
+        if(hasExploded==true && hasExploded2==false)
         {
             Explode();
             hasExploded2=true;

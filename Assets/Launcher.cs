@@ -63,13 +63,13 @@ public class Launcher : MonoBehaviourPunCallbacks
         }
         if(joined==1 && player==0 && startButton.startGame==1 && gos1.Length == 0)
         {
-            PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,2,61), Quaternion.identity);
+            PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(-175,-5,75), Quaternion.identity);
             player=1;
             Crosshir.active = true; 
         }  
         if(joined==1 && player==0 && startButton.startGame==1 && gos1.Length == 1 && f1==1)
         {
-            PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(14,2,31), Quaternion.identity);
+            PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(-128,-6,68), Quaternion.identity);
             player=1;
             Crosshir.active = true; 
         }   

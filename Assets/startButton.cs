@@ -18,6 +18,7 @@ public class startButton : MonoBehaviourPunCallbacks
     public int killby=0;
     public int startGame=0;
     public int clean=0;
+    // public Canvas UI;
 
     public void Update()
     {
@@ -92,6 +93,7 @@ public class startButton : MonoBehaviourPunCallbacks
     public void closestart()
     {
         startScene.active=false;
+        // UI.enabled=false;
     }
 
 }
