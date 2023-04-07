@@ -16,6 +16,12 @@
 3. Should only happen on Player A => happen on all Player (try photoView.IsMine)
 4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition (try photoView.IsMine)
 
+### &nbsp;&nbsp;Deliverables :
+1. Installation instructions and game instructions .doc readme file 
+2. 10 Pages .doc game report  
+3. 1 min .mp4 game trailer 
+4. A1 150dpi game poster 
+
 ### &nbsp;&nbsp;To-do-list :
 1. [End scene] Match result recording system (Jacky)
 6. [End scene] press button to rename (Kelvin)
