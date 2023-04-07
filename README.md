@@ -22,7 +22,7 @@
 4. A1 150dpi game poster (Do it after the game is finished)
 3. 1 min .mp4 game trailer (Do it after the game is finished)
 
-### &nbsp;&nbsp;To-do-list :
+### &nbsp;&nbsp;To-do-list (24/27 April 1530-1720):
 1. [End scene] Match result recording system (Jacky)
 20. [ // ] Player random spawing system (Kelvin)
 6. [End scene] press button to rename (Kelvin)
@@ -32,7 +32,7 @@
 34. [ // ] Show choosen grenade (Bryan)
 34. [ // ] Test the game to adjust parameters (Do it after the game is finished)
 
-### &nbsp;&nbsp;To-do-store :
+### &nbsp;&nbsp;To-do-store (24/27 April 1530-1720):
 1. [sound] open supply box sound effect (Ghostrunner - when elevator's door open)
 41. [sound] player death sound effect (Elden ring - dead)
 43. [sound] red explosion sound effect (PUBG - Grenade)
