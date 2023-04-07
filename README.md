@@ -5,12 +5,11 @@
 2. If "Player Prefab" in Launcher is missing, put "Assets\Resources\User" in it
 3. Hold "Tab" to open the control menu 
 4. InnoShow : change photon verser code
-5. Github MainVersion : 1-128 + Camera effect 
+5. Github MainVersion : 1-128 + Camera effect(dash, barrier, blur, hit, death)
 5. Github subVersion : 1-128 + Arean 
 5. Github supplySpawnVersion : 1-151 + Supply logic rewrite(152) 
 5. Github GasVersion : 1-151 + 153-170
 5. Github ThreeAtOneVersion : 1-151 + 153-170 + Camera effect + Arean
-6. Camera effect : dash, barrier, blur, hit, death
 
 ### &nbsp;&nbsp;Common potential bugs :
 1. Should show in all players' view => only show to player who do it (try PunRPC)
@@ -29,9 +28,9 @@
 ### &nbsp;&nbsp;To-do-store :
 1. [sound] Start scene music 
 2. [sound] End scene music 
+42. [sound] background music (???)
 40. [sound] supply spawing sound effect 
-41. [sound] player death sound effect
-42. [sound] background music
+41. [sound] player death sound effect (elden ring)
 43. [sound] red,yellow grenade explosion sound effect
 44. [sound] green grenade gas emition sound effect 
 45. [sound] drop in water sound effect 
