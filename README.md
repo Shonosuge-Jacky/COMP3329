@@ -26,16 +26,16 @@
 34. [ // ] Show choosen grenade
 
 ### &nbsp;&nbsp;To-do-store :
-1. [sound] Start scene music 
-2. [sound] End scene music 
+1. [sound] Start scene music (???)
+2. [sound] End scene music (???)
 42. [sound] background music (???)
-40. [sound] supply spawing sound effect 
+40. [sound] supply spawing sound effect (???)
 41. [sound] player death sound effect (elden ring)
-43. [sound] red,yellow grenade explosion sound effect
-44. [sound] green grenade gas emition sound effect 
-45. [sound] drop in water sound effect 
-46. [sound] inside water sound effect 
-48. [sound] remote grenade setting sound effect 
+43. [sound] red,yellow explosion sound effect (PUBG)
+44. [sound] green grenade gas emition sound effect (APEX/valorant/AOT)
+44. [sound] green grenade gas explode sound effect (APEX/valorant/AOT)
+46. [sound] inside water sound effect (AOT)
+48. [sound] remote grenade setting sound effect (BTOOM)
 
 ### &nbsp;&nbsp;Temporary unsolvable bug :
 1. Solve Explode effect retain **Bug**                <-solved 
