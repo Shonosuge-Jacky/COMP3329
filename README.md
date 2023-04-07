@@ -49,16 +49,16 @@
 ### &nbsp;&nbsp;(BUG) Temporary unsolvable bug :
 1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
 
+### &nbsp;&nbsp;(BUG) Bugs that not sure if it still exist:
+1. Solve Explode effect retain **Bug** (destory function should put inside the effect)
+2. dahs to other player **Bug**
+9. win/lose message sometime not showup **BUG**
+
 ### &nbsp;&nbsp;(BUG) Bugs that dont bother to solve:
 1. player1 entered name will clean player2 current text **Bug**
 2. player-grenade no collision **Bug**
 3. Multiplayer delay(~0.25s) **Bug**
 4. Player residual **Bug**
-
-### &nbsp;&nbsp;(BUG) Bugs that not sure if it still exist:
-1. Solve Explode effect retain **Bug** (destory function should put inside the effect)
-2. dahs to other player **Bug**
-9. win/lose message sometime not showup **BUG**
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
