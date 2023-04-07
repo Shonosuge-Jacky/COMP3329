@@ -249,4 +249,6 @@
 20. [Restart System] reset barrier when restart
 20. [Restart System] fix gas grenade cant kill **Bug**
 20. [Gas Grenade] fix gas grenade vs barrier **Bug** (DestructibleP, gasdamage0)
+20. [Arean] fix grenade not same position **Bug** (granadeG, GrenadeY, GrenadeY2, GrenadeY3)
+
 
