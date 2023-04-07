@@ -18,12 +18,12 @@
 
 ### &nbsp;&nbsp;To-do-list :
 1. [End scene] Match result recording system 
-6. [End scene] press button to rename 
-20. [ // ] Player random spawing system 
-23. [Supply] Everything in supply sponding system excel 
-24. [Supply] Change different supply's color
-25. [optional] change player skin  
-34. [ // ] Show choosen grenade
+6. [End scene] press button to rename (Kelvin)
+20. [ // ] Player random spawing system (Kelvin)
+23. [Supply] Everything in supply sponding system excel (Amy)
+24. [Supply] Change different supply's color (Amy)
+25. [optional] change player skin (Bryan)
+34. [ // ] Show choosen grenade (Bryan)
 
 ### &nbsp;&nbsp;To-do-store :
 1. [sound] Start scene music (???)
