@@ -63,7 +63,6 @@
 1. player1 entered name will clean player2 current text **Bug**
 2. player-grenade no collision **Bug**
 3. Multiplayer delay(~0.25s) **Bug**
-4. fix yellow grenade not same position **Bug**
 
 ### &nbsp;&nbsp;What had been done :
 1. [Cracker Grenade] Throw Grenade 
