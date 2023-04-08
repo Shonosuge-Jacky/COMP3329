@@ -255,6 +255,8 @@
 20. [Arean] change remote and gas grenade into stick mode (granadeG, GrenadeY, GrenadeY2, GrenadeY3)
 20. [Arean] fix gas grenade not same position **Bug** (granadeG)
 21. [Gas Grenade] fix gas grenade damage retain **Bug** (gasdamage)
+21. [Arean] activate photon Synchronize for remote and gas grenade
+21. [Gas Grenade] change gas grenade into non stick mode
 
 
 
