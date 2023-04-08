@@ -259,6 +259,7 @@
 21. [Gas Grenade] fix gas grenade damage retain **Bug** (gasdamage)
 21. [Arean] activate photon Synchronize for remote and gas grenade
 21. [Gas Grenade] change gas grenade into non stick mode
+21. [Gas Grenade] effects destory
 
 
 
