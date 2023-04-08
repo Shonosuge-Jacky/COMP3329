@@ -77,6 +77,7 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
             yield return new WaitForSeconds(0.06f);
             dof.focusDistance.value -= 0.2f;
         }
+        Debug.Log("doEndScene");
         // EndSceneUI.SetActive(true);
         yield return null;
 
