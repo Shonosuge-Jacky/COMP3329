@@ -42,11 +42,12 @@
 46. [sound] die in water sound effect (AOT - Daz/FoundingYmir)
 4. [sound] Start scene music (Ghostrunner)
 42. [sound] background music (Ghostrunner)
-2. [sound] End scene music (Ghostrunner)
+2. [sound] lose scene music (Ghostrunner)
 44. [sound] green grenade gas emition sound effect (APEX/valorant/AOT?)
 44. [sound] green grenade gas explode sound effect (APEX/valorant/AOT?)
 48. [sound] remote grenade setting sound effect (APEX/valorant/AOT?)
 40. [sound] supply spawing sound effect (???)
+2. [sound] win scene music (???)
 
 ### &nbsp;&nbsp;(BUG) Temporary unsolvable bug :
 1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
