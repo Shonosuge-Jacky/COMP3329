@@ -27,8 +27,12 @@ public class deadReason : MonoBehaviourPunCallbacks
     private string hisname;
     public GameObject user;
     public ArrowMovement ArrowMovement;
+    public DataManager dm;
     
     // Update is called once per frame
+    private void Awake() {
+        dm = GameObject.Find("DataManager").GetComponent<DataManager>();
+    }
         
     public string LoadFromJson1()
     {
@@ -222,7 +226,9 @@ public class deadReason : MonoBehaviourPunCallbacks
                 ArrowMovement.lose();
                 ScoreText.text = myname+" is killed by "+hisname+"'s "+dieby;
                 done2=1;
-            }         
+            }    
+
+
         }  
     }
 }

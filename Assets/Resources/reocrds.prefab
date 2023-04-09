@@ -405,6 +405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7443879569200292519}
   - component: {fileID: 2714413514843213311}
+  - component: {fileID: 5849126787909443698}
   m_Layer: 5
   m_Name: reocrds
   m_TagString: Untagged
@@ -446,6 +447,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5002568856091687337}
   m_CullTransparentMesh: 1
+--- !u!114 &5849126787909443698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5002568856091687337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229235a056e992848960211a106abd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dm: {fileID: 0}
+  winnerName: {fileID: 5314688600195208219}
+  loserName: {fileID: 8676104346222291144}
+  deathReason: {fileID: 1586678807790056861}
+  date: {fileID: 1751307104850588139}
 --- !u!1 &7052817797838245729
 GameObject:
   m_ObjectHideFlags: 0

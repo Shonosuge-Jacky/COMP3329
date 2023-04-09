@@ -17,7 +17,10 @@ public class RecordSystem : MonoBehaviour
     }
     public void DisplayRecord(){
         for(int i = 0 ;i < dm.myRecordList.record.Count; i++){
-            
+            winnerName.text = dm.myRecordList.record[i].winnerName;
+            loserName.text = dm.myRecordList.record[i].loserName;
+            deathReason.text = dm.myRecordList.record[i].reason;
+            date.text = dm.myRecordList.record[i].date;
         }
         
     }
