@@ -269,6 +269,7 @@
 21. [Restart System] fix gas grnade restart **Bug** 
 21. [Camera Effect] change dash effect time 
 21. [Movement] change dash condition
+21. [Restart System] Player random spawing system
 
 
 
