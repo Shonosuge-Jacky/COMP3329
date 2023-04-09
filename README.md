@@ -36,19 +36,19 @@
 
 ### &nbsp;&nbsp;To-do-store (24/27 April 1530-1720):
 1. [sound] open supply box sound effect (Ghostrunner - when elevator's door open)
-41. [sound] player death sound effect (Elden ring - dead)
 43. [sound] red explosion sound effect (PUBG - Grenade)
 43. [sound] yellow explosion sound effect (Same as red, but around 65% louder)
 46. [sound] die in water sound effect (AOT4X21 - Ymir)
-44. [sound] green grenade gas emition sound effect (APEX/valorant/AOT?)
-44. [sound] green grenade gas explode sound effect (APEX/valorant/AOT?)
-48. [sound] remote grenade setting sound effect (APEX/valorant/AOT?)
-48. [sound] Start scene music (Ghostrunner)
-49. [sound] background music (Ghostrunner)
-50. [sound] lose scene music (Ghostrunner)
-51. [sound] supply spawing sound effect (???)
-52. [sound] win scene music (???)
-53. [sound] adjust all sound effect's loudness base on water sound (do it when all sound effect are done)
+41. [sound] player death sound effect (Elden ring - dead)
+48. [sound] green grenade gas emition sound effect (APEX/valorant/AOT?)
+49. [sound] green grenade gas explode sound effect (APEX/valorant/AOT?)
+50. [sound] remote grenade setting sound effect (APEX/valorant/AOT?)
+51. [sound] Start scene music (Ghostrunner)
+52. [sound] background music (Ghostrunner)
+53. [sound] lose scene music (Ghostrunner)
+54. [sound] supply spawing sound effect (???)
+55. [sound] win scene music (???)
+56. [sound] adjust all sound effect's loudness base on water sound (do it when all sound effect are done)
 
 ### &nbsp;&nbsp;(BUG) Temporary unsolvable bug :
 1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
