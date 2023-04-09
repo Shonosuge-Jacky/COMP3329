@@ -49,7 +49,7 @@
 50. [sound] lose scene music (Ghostrunner)
 51. [sound] supply spawing sound effect (???)
 52. [sound] win scene music (???)
-53. [sound] adjust all sound effect's loudness (do it when all sound effect are done)
+53. [sound] adjust all sound effect's loudness base on water sound (do it when all sound effect are done)
 
 ### &nbsp;&nbsp;(BUG) Temporary unsolvable bug :
 1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
