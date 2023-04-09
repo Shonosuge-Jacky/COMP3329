@@ -53,13 +53,13 @@
 ### &nbsp;&nbsp;(BUG) Bugs that not sure if it still exist:
 1. dahs to other player **Bug**
 9. win/lose message sometime not showup **BUG**
-10. 
+
 ### &nbsp;&nbsp;(BUG) Bugs that dont bother to solve 1 :
 1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
 2. too fast no name **bug** 
 3. input space dissapear timing **bug**
 4. player cant push other player **bug** 
-5. 
+
 ### &nbsp;&nbsp;(BUG) Bugs that dont bother to solve 2 :
 1. player1 entered name will clean player2 current text **Bug**
 2. player-grenade no collision **Bug**
