@@ -8,6 +8,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     public GameObject L;
     public GameObject R;
     public GameObject RW;
+    public GameObject recordList;
     public int count=0;
     public int stage=0;
     public int stagec=0;
@@ -18,7 +19,12 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     public GameObject WINNER;
     public GameObject LOSER;
     public GameObject cutscene;
+    public DataManager dm;
 
+
+    private void Awake() {
+        dm = GameObject.Find("DataManager").GetComponent<DataManager>();
+    }
     void Update()
     {		       
         GameObject[] gosc;
@@ -44,7 +50,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
         {
         }
         else
-        {
+        {   
             if(LRed==0)
             {
                 Invoke("closestart",3);
@@ -62,6 +68,19 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
             R.active=false;
             LRed=3;
         }
+
+    }
+    public void DisplayRecordList(){
+        recordList.SetActive(true);
+        GameObject content = recordList.transform.Find("Viewport").gameObject;
+        for(int i = dm.myRecordList.record.Count-1; i >=0 ; i--){
+            GameObject newRecord = Instantiate<GameObject>(Resources.Load("record") as GameObject);
+            newRecord.GetComponent<RecordSystem>().DisplayRecord(dm.myRecordList.record[i].winnerName,
+                                                                dm.myRecordList.record[i].loserName,
+                                                                dm.myRecordList.record[i].reason,
+                                                                dm.myRecordList.record[i].date);
+            newRecord.transform.parent = content.transform;
+        }
     }
 
     [PunRPC]
@@ -72,6 +91,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
 
     public void closestart()
     {
+        DisplayRecordList();
         L.active=true;
         R.active=true;
         LRed=2;
@@ -84,6 +104,8 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     {
         LOSER.active=true;
     } 
+
+
 }
 
 // if(count==0)

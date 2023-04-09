@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
+using System.Linq;
 
 public class DataManager : MonoBehaviour
 {
     public TextAsset textAssetData;
     public string filename = "";
+    public ArrowMovement arm;
 
     [System.Serializable]
     public class Record
@@ -15,7 +17,7 @@ public class DataManager : MonoBehaviour
         public string winnerName;
         public string loserName;
         public string reason;
-        public int duration;
+        // public int duration;
         public string date;
     }
 
@@ -27,38 +29,6 @@ public class DataManager : MonoBehaviour
 
     public RecordList myRecordList = new RecordList();
 
-    private void Update()
-    {
-        GameObject[] gosc;
-        gosc = GameObject.FindGameObjectsWithTag("cutscene");
-        if (gosc.Length > 0)
-        {
-            Debug.Log("cutScene");
-            UpdateRecordPanel();
-        }
-    }
-
-
-    public void UpdateRecordPanel()
-    {
-        GameObject[] record;
-        record = GameObject.FindGameObjectsWithTag("record");
-        if (myRecordList.record.Count < 4)
-        {
-            for(int j = 0;j < 2; j++){
-
-            }
-            for (int i = 0; i < myRecordList.record.Count; i++)
-            {
-                GameObject newRecord = Instantiate<GameObject>(Resources.Load("records") as GameObject);
-                newRecord.GetComponent<RecordSystem>().DisplayRecord(myRecordList.record[i].winnerName,
-                                                                    myRecordList.record[i].loserName,
-                                                                    myRecordList.record[i].reason,
-                                                                    myRecordList.record[i].date);
-                newRecord.transform.parent = gameObject.transform;
-            }
-        }
-    }
 
     void Start()
     {
@@ -76,11 +46,11 @@ public class DataManager : MonoBehaviour
         for (int i = 0; i < tableSize; i++)
         {
             myRecordList.record.Add(new Record());
-            myRecordList.record[i].winnerName = data[5 * (i + 1)];
-            myRecordList.record[i].loserName = data[5 * (i + 1) + 1];
-            myRecordList.record[i].reason = data[5 * (i + 1) + 2];
+            myRecordList.record[i].winnerName = data[4 * (i + 1)];
+            myRecordList.record[i].loserName = data[4 * (i + 1) + 1];
+            myRecordList.record[i].reason = data[4 * (i + 1) + 2];
             // myRecordList.record[i].duration = int.Parse(data[5*(i+1) +3]);
-            myRecordList.record[i].date = data[5 * (i + 1) + 4];
+            myRecordList.record[i].date = data[4 * (i + 1) + 3];
         }
 
     }

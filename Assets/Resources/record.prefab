@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 2714413514843213311}
   - component: {fileID: 5849126787909443698}
   m_Layer: 5
-  m_Name: reocrds
+  m_Name: record
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
