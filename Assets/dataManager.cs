@@ -34,8 +34,6 @@ public class DataManager : MonoBehaviour
     {
         ReadCSV();
         filename = Application.dataPath + "/Resources/TestCSV.csv";
-        AddRecord("Hi", "Bye", "grenade", "1/1/1");
-
     }
 
     public void ReadCSV()
@@ -57,6 +55,7 @@ public class DataManager : MonoBehaviour
 
     public void AddRecord(string winnerName, string loserName, string reasonOfDeath, string date)
     {
+        Debug.Log("ADDRESULT");
         Record newRecord = new Record();
         newRecord.winnerName = winnerName;
         newRecord.loserName = loserName;

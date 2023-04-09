@@ -64,6 +64,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
             {
                 photonView.RPC("changeD",RpcTarget.All);
             }
+            recordList.SetActive(false);
             RW.active=true;
             R.active=false;
             LRed=3;
@@ -73,6 +74,9 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     public void DisplayRecordList(){
         recordList.SetActive(true);
         GameObject content = recordList.transform.Find("Viewport").gameObject;
+        // foreach (Transform child in transform){
+        //     Destroy(child.gameObject);
+        // }
         for(int i = dm.myRecordList.record.Count-1; i >=0 ; i--){
             GameObject newRecord = Instantiate<GameObject>(Resources.Load("record") as GameObject);
             newRecord.GetComponent<RecordSystem>().DisplayRecord(dm.myRecordList.record[i].winnerName,

@@ -14,6 +14,7 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
     [SerializeField] private ChromaticAberration cha;
     public bool doDead = false;
     private int stage=0;
+    public Sprite barrierEffectSprite;
     // public GameObject EndSceneUI;
     // Start is called before the first frame update
     void Start()
@@ -84,9 +85,10 @@ public class PostProcessHandler : MonoBehaviourPunCallbacks
 	}
 
     IEnumerator GetHitEffect(){
-        vignette.active = true;
+        barrierEffectSprite = Resources.Load<Sprite>("b_red");
         yield return new WaitForSeconds(0.7f);
-        vignette.active = false;
+        barrierEffectSprite = Resources.Load<Sprite>("b_yellow");
+
     }
 
     IEnumerator WaterEffect(){
