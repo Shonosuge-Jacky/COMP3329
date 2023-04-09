@@ -26272,6 +26272,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 643d05a2041f00d47b912cbe7da7fad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textAssetData: {fileID: 4900000, guid: 90b6401a2d819cc4cab6e14de53d57fe, type: 3}
+  filename: 
+  myRecordList:
+    record: []
 --- !u!4 &1312771227
 Transform:
   m_ObjectHideFlags: 0
