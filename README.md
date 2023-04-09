@@ -48,6 +48,7 @@
 48. [sound] remote grenade setting sound effect (APEX/valorant/AOT?)
 40. [sound] supply spawing sound effect (???)
 2. [sound] win scene music (???)
+2. [sound] adjust all sound effect's loudness (do it when all sound effect are done)
 
 ### &nbsp;&nbsp;(BUG) Temporary unsolvable bug :
 1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
