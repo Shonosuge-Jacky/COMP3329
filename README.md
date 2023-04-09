@@ -28,7 +28,6 @@
 1. [End scene] Match result recording system (Jacky)
 1. [Camera effect] get hit effect (Jacky)
 6. [End scene] press button to rename (Kelvin)
-7. [Arean] yellow and green grnade position non-Synchronized **Bug** (check who throw the grnade, Synchronize position to thrower position)
 23. [Supply] Everything in supply sponding system excel (Amy)
 24. [Supply] Change different supply's color (differemt color supply box already exist)(Amy)
 25. [optional] change player skin (Bryan)
