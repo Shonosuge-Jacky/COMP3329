@@ -259,6 +259,14 @@
 21. [Arean] activate photon Synchronize for remote and gas grenade
 21. [Gas Grenade] change gas grenade into non stick mode
 21. [Gas Grenade] effects destory
+21. [Camera Effect] fix camera effect disappear **Bug** 
+21. [Camera Effect] fix player skin flashing **Bug** 
+21. [Restart System] fix remote grnade restart **Bug** 
+21. [Restart System] fix remote grnade icon restart **Bug** 
+21. [Restart System] fix gas grnade invoke **Bug** 
+21. [Restart System] fix gas grnade restart **Bug** 
+21. [Camera Effect] change dash effect time 
+21. [Movement] change dash condition
 
 
 
