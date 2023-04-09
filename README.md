@@ -39,7 +39,7 @@
 41. [sound] player death sound effect (Elden ring - dead)
 43. [sound] red explosion sound effect (PUBG - Grenade)
 43. [sound] yellow explosion sound effect (Same as red, but around 65% louder)
-46. [sound] die in water sound effect (AOT - Daz/FoundingYmir)
+46. [sound] die in water sound effect (AOT4X21 - Ymir)
 4. [sound] Start scene music (Ghostrunner)
 42. [sound] background music (Ghostrunner)
 2. [sound] lose scene music (Ghostrunner)
