@@ -18,12 +18,6 @@
 4. Only Player A can do it when Player A fullfil the condition => Player B can do it when Player A fullfil the condition (try photoView.IsMine)
 4. Should only happen once => happen multiple times (try if-else)
 
-### &nbsp;&nbsp;Deliverables (30 April 23:59):
-1. Installation instructions and game instructions .doc readme file (???)
-2. 10 Pages .doc game report (???)
-4. A1 150dpi game poster (Do it after the game is finished)
-3. 1 min .mp4 game trailer (Do it after the game is finished)
-
 ### &nbsp;&nbsp;To-do-list (24/27 April 1530-1720):
 1. [End scene] Match result recording system (Jacky)
 1. [Camera effect] get hit effect (Jacky)
@@ -50,6 +44,12 @@
 55. [sound] win scene music (???)
 56. [sound] adjust all sound effect's loudness base on water sound (do it when all sound effect are done)
 
+### &nbsp;&nbsp;Deliverables (30 April 23:59):
+1. Installation instructions and game instructions .doc readme file (???)
+2. 10 Pages .doc game report (???)
+4. A1 150dpi game poster (Do it after the game is finished)
+3. 1 min .mp4 game trailer (Do it after the game is finished)
+4. 
 ### &nbsp;&nbsp;(BUG) Temporary unsolvable bug :
 1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
 2. too fast no name **bug** 
