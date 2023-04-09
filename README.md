@@ -35,8 +35,7 @@
 34. [ // ] Test the game to adjust parameters (Do it after the game is finished)
 
 ### &nbsp;&nbsp;To-do-store (24/27 April 1530-1720):
-1. [sound] open supply box sound effect (Ghostrunner - when elevator's door open)
-43. [sound] red explosion sound effect (PUBG - Grenade)
+1. [sound] red explosion sound effect (PUBG - Grenade)
 43. [sound] yellow explosion sound effect (Same as red, but around 65% louder)
 46. [sound] die in water sound effect (AOT4X21 - Ymir)
 48. [sound] green grenade gas emition sound effect (APEX/valorant/AOT?)
@@ -45,6 +44,7 @@
 51. [sound] Start scene music (Ghostrunner)
 52. [sound] background music (Ghostrunner)
 53. [sound] lose scene music (Ghostrunner)
+3. [sound] open supply box sound effect (Ghostrunner - when elevator's door open)
 41. [sound] player death sound effect (???)
 54. [sound] supply spawing sound effect (???)
 55. [sound] win scene music (???)
