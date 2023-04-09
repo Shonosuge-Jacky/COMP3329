@@ -26,6 +26,7 @@
 
 ### &nbsp;&nbsp;To-do-list (24/27 April 1530-1720):
 1. [End scene] Match result recording system (Jacky)
+1. [Camera effect] get hit effect (Jacky)
 20. [ // ] Player random spawing system (Kelvin)
 6. [End scene] press button to rename (Kelvin)
 7. [Arean] yellow and green grnade position non-Synchronized **Bug** (check who throw the grnade, Synchronize position to thrower position)
