@@ -38,10 +38,10 @@
 41. [sound] player death sound effect (Done)
 48. [sound] green grenade gas emition sound effect (Done)
 50. [sound] remote grenade setting sound effect (APEX/valorant/AOT?)
+54. [sound] supply spawing sound effect (???)
 51. [sound] Start scene music (Ghostrunner)
 52. [sound] background music (Ghostrunner)
 53. [sound] lose scene music (Ghostrunner)
-54. [sound] supply spawing sound effect (???)
 55. [sound] win scene music (???)
 56. [sound] adjust all sound effect's loudness base on water sound (do it when all sound effect are done)
 
