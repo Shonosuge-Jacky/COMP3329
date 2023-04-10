@@ -36,7 +36,7 @@
 49. [sound] green grenade gas explode sound effect (Done)
 3. [sound] open supply box sound effect (Done)
 41. [sound] player death sound effect (Done)
-48. [sound] green grenade gas emition sound effect (APEX/valorant/AOT?)
+48. [sound] green grenade gas emition sound effect (Done)
 50. [sound] remote grenade setting sound effect (APEX/valorant/AOT?)
 51. [sound] Start scene music (Ghostrunner)
 52. [sound] background music (Ghostrunner)
