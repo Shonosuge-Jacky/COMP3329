@@ -47,6 +47,11 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             rb.freezeRotation = true;
             readyToJump = true;
         }
+        //link PlayerArmature pos and rotation to camera
+        Transform PlayermodelTransform = transform.Find("PlayerArmature");
+        Transform Camerarotation = transform.Find("CameraPos");
+        PlayermodelTransform.localPosition = new Vector3(0, 0, 0);
+        PlayermodelTransform.localRotation = Camerarotation.rotation;
     }
     // << 2 >>
     public GameObject dash;
