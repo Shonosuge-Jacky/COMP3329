@@ -38,9 +38,9 @@
 41. [sound] player death sound effect (Done)
 48. [sound] green grenade gas emition sound effect (Done)
 50. [sound] remote grenade setting sound effect (Done)
+55. [sound] winning music (LOL show rank)
 51. [sound] Start scene music (Ghostrunner)
 52. [sound] background music (Ghostrunner)
-55. [sound] winning music (LOL show rank)
 54. [sound] supply spawing sound effect (???)
 56. [sound] adjust all sound effect's loudness base on water sound (do it when all sound effect are done)
 
