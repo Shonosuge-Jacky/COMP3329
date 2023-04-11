@@ -97,8 +97,9 @@ namespace AnimeCharacter.PlayerControl
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
             // rotate cam and orientation
             _PlayerObject.transform.Rotate(xRotation, yRotation, 0);
-
-            }
+            Debug.Log(xRotation);
+            Debug.Log(yRotation);
+        }
         }
     }
 
