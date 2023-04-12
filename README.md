@@ -272,7 +272,7 @@
 21. [Restart System] Player random spawing system
 21. [Rename System] Rename system
 21. [Rename System] Rename system don’t show win/lose **Bug** 
-21. [Rename System] Rename system don’t show death message **Bug** 
+21. [Rename System] Rename system don’t show death message **Bug**
 21. [Rename System] add waiting scene
 21. [Rename System] waiting scene icon **Bug** 
 21. [Arean] object disappear **Bug** 
