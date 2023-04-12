@@ -11,6 +11,7 @@
 5. Github GasVersion : 1-151 + 153-170
 5. Github ThreeAtOneVersion : 1-151 + 153-186 + Camera effect + Arean
 5. Github AdvancedThreeAtOneVersion : 1-151 + 153-201 + Camera effect(missing-hit) + Arean
+5. Github RenameFailedVersion : 1-151 + 153-208 + Camera effect(missing-hit) + Arean
 
 ### &nbsp;&nbsp;Common potential bugs :
 1. Should show in all players' view => only show to player who do it (try PunRPC)
