@@ -6,6 +6,8 @@
 3. Hold "Tab" to open the control menu 
 4. InnoShow : change photon verser code
 4. InnoShow : build as full screen
+4. InnoShow : (rename) help old player press "a" to restart 
+4. InnoShow : (rename) stop player from entering name if not all player at the start scene
 5. Github MainVersion : 1-128 + Camera effect(dash, barrier, blur, hit, death)
 5. Github subVersion : 1-128 + Arean 
 5. Github supplySpawnVersion : 1-151 + Supply logic rewrite(152) 
