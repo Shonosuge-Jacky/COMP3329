@@ -277,6 +277,8 @@
 21. [Rename System] waiting scene icon **Bug** 
 21. [Arean] object disappear **Bug** 
 21. [Rename System] rename by restart
+21. [Arean] edit arean
+21. [Rename System] press restart effect
 
 
 
