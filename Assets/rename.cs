@@ -20,7 +20,20 @@ public class rename : MonoBehaviour
     void Update()
     {       
         GameObject[] gosc;
-        gosc = GameObject.FindGameObjectsWithTag("cutscene");
+        gosc = GameObject.FindGameObjectsWithTag("cutscene"); 
+        GameObject[] gosp;
+        gosp = GameObject.FindGameObjectsWithTag("Player");  
+        // if(gosc.Length == 2 && LRed==4)
+        // {
+        //     if(gosp[0].name=="player1"||gosp[1].name=="player1")
+        //     {
+        //         Invoke("rename0",3);
+        //     }
+        //     else
+        //     {
+        //         Invoke("rename0",2);
+        //     }
+        // }  
         if(gosc.Length == 2 && stagec==0)
         {  
             LRed=0;
@@ -45,24 +58,26 @@ public class rename : MonoBehaviour
             }
         }  
 
+        if (Input.GetKey("d") && LRed==2)
+        {
+        }    
         if (Input.GetKey("a") && LRed==2)
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            PhotonNetwork.Disconnect();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            // UImage.enabled=true;
-            // UIplace.active=true;
-            // startScene.active=true;
-            LRed=3;
-            // Cursor.lockState = CursorLockMode.None;
-            // Cursor.visible = true;
-        }      
+            rename0();
+            LRed=4;
+        }  
     }
     public void closestart()
     {
         LRed=2;
-    }   
+    } 
+    public void rename0()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }    
 
 
 }

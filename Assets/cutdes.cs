@@ -67,7 +67,7 @@ public class cutdes : MonoBehaviourPunCallbacks
         }
         else if(randomNumber==2)
         {
-            rb.position= new Vector3(-188.5f,-4,124);
+            rb.position= new Vector3(-183.7f,-4,120.6f);
         }
         else if(randomNumber==3)
         {

@@ -15,6 +15,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     public GameObject L;
     public GameObject R;
     public GameObject RW;
+    public GameObject LW;
     public int count=0;
     public int stage=0;
     public int stagec=0;
@@ -35,6 +36,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
         gosc = GameObject.FindGameObjectsWithTag("cutscene");
         if(gosc.Length == 2 && stagec==0)
         {  
+            LW.active=false;
             count=0;
             stage=0;
             canend=0;
@@ -76,14 +78,13 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
 
         if (Input.GetKey("a") && LRed==2)
         {
+            // if(photonView.IsMine)
+            // {
+            //     photonView.RPC("changeD",RpcTarget.All);
+            // }
+            // LW.active=true;
             // L.active=false;
-            // R.active=false;
-            // RW.active=false;
-            // WINNER.active=false;
-            // LOSER.active=false;
-            // cam.active=false;
-            // ScoreText.enabled=false;
-            // LRed=4;
+            // LRed=3;
         }
     }
 

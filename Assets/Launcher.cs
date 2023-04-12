@@ -72,7 +72,7 @@ public class Launcher : MonoBehaviourPunCallbacks
             }
             else if(randomNumber==2)
             {
-                PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(-188.5f,-4,124), Quaternion.identity);
+                PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(-183.7f,-4,120.6f), Quaternion.identity);
             }
             else if(randomNumber==3)
             {
