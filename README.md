@@ -5,6 +5,7 @@
 2. If "Player Prefab" in Launcher is missing, put "Assets\Resources\User" in it
 3. Hold "Tab" to open the control menu 
 4. InnoShow : change photon verser code
+4. InnoShow : build as full screen
 5. Github MainVersion : 1-128 + Camera effect(dash, barrier, blur, hit, death)
 5. Github subVersion : 1-128 + Arean 
 5. Github supplySpawnVersion : 1-151 + Supply logic rewrite(152) 
