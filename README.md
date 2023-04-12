@@ -276,6 +276,7 @@
 21. [Rename System] add waiting scene
 21. [Rename System] waiting scene icon **Bug** 
 21. [Arean] object disappear **Bug** 
+21. [Rename System] rename by restart
 
 
 
