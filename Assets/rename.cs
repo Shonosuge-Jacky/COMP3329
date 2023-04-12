@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using TMPro;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class rename : MonoBehaviour
 {
@@ -46,10 +47,14 @@ public class rename : MonoBehaviour
 
         if (Input.GetKey("a") && LRed==2)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            PhotonNetwork.Disconnect();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             // UImage.enabled=true;
             // UIplace.active=true;
             // startScene.active=true;
-            // LRed=3;
+            LRed=3;
             // Cursor.lockState = CursorLockMode.None;
             // Cursor.visible = true;
         }      

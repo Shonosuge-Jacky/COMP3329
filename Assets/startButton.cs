@@ -81,24 +81,6 @@ public class startButton : MonoBehaviourPunCallbacks
             gos = GameObject.FindGameObjectsWithTag("Player");  
             if(gos.Length > 2)
             {
-                // string filePath1 = Application.dataPath+"/Player1name.json";
-                // string filePath2 = Application.dataPath+"/Player2name.json";
-                // if(File.Exists(filePath1))
-                // {
-                //     print(playername.text+" "+LoadFromJson1()+" "+LoadFromJson2());
-                //     if(playername.text==LoadFromJson1()||playername.text==LoadFromJson2())
-                //     {
-                //         errortext.active=true;
-                //     }
-                //     else if(playername.text!=LoadFromJson1()&&playername.text!=LoadFromJson2())
-                //     {
-                //         errortext.active=false;
-                //         AL.GetComponent<AudioListener>().enabled = false;
-                //         Invoke("closestart",1f);
-                //         // closestart();
-                //         startGame=1;
-                //     }
-                // }
                 rename=1;
                 photonView.RPC("changeD",RpcTarget.All);
                 // UI.enabled=false;
