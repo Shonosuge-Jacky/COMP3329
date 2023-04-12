@@ -297,6 +297,17 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 			photonView.RPC("barrierend2",RpcTarget.All);
 		}		
 	}
+    public int gasbarrier() //#187
+    {
+		if(barriering==true)
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}		
+    }
     [PunRPC] 
     public void barrier()
     {

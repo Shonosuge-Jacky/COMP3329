@@ -35,7 +35,7 @@ public class smokeF2 : MonoBehaviour
 
     public void close()
     {
-        self.active=false;
+        Destroy(gameObject);
     }
 
     void Update()

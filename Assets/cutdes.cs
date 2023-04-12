@@ -15,6 +15,7 @@ public class cutdes : MonoBehaviourPunCallbacks
     public GameObject playerr;
     public int stage=0;
     public deadReason deadReason;
+    private System.Random random;
     // Update is called once per frame
     void Update()
     {        
@@ -58,13 +59,47 @@ public class cutdes : MonoBehaviourPunCallbacks
     public void tran1()
     {
         Rigidbody rb = playerr.GetComponent<Rigidbody>(); 
-        rb.position= new Vector3(-175,-5,75);
+        random = new System.Random((int)System.DateTime.Now.Ticks);
+        int randomNumber = random.Next(1, 5);
+        if(randomNumber==1)
+        {
+            rb.position= new Vector3(-175,-5,75);
+        }
+        else if(randomNumber==2)
+        {
+            rb.position= new Vector3(-188.5f,-4,124);
+        }
+        else if(randomNumber==3)
+        {
+            rb.position= new Vector3(-135, 10, 187);
+        }
+        else
+        {
+            rb.position= new Vector3(-168, 4, 159);
+        }
     }
 
     [PunRPC] 
     public void tran2()
     {
         Rigidbody rb = playerr.GetComponent<Rigidbody>(); 
-        rb.position= new Vector3(-128,-6,68);
+        random = new System.Random((int)System.DateTime.Now.Ticks);
+        int randomNumber = random.Next(1, 5);
+        if(randomNumber==1)
+        {
+            rb.position= new Vector3(-128,-6,68);
+        }
+        else if(randomNumber==2)
+        {
+            rb.position= new Vector3(-140,-5,105);
+        }
+        else if(randomNumber==3)
+        {
+            rb.position= new Vector3(-95.5f,8.5f,150);
+        }
+        else
+        {
+            rb.position= new Vector3(-102,1,117);
+        }
     }
 }

@@ -7,6 +7,8 @@ public class waiting : MonoBehaviour
 {
     public Text textcp;
     public GameObject loadgif;
+    public GameObject loadgif2;
+    public GameObject loadgif3;
     public int stage=0;
 
     void Start()
@@ -17,6 +19,8 @@ public class waiting : MonoBehaviour
     {
         textcp.enabled=true;
         loadgif.active=true;
+        loadgif2.active=true;
+        loadgif3.active=true;
     }
 
     void Update()
@@ -34,6 +38,8 @@ public class waiting : MonoBehaviour
         {
             textcp.enabled=false;
             loadgif.active=false;
+            loadgif2.active=false;
+            loadgif3.active=false;
         }
     }
 

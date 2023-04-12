@@ -5,10 +5,8 @@ using Photon.Pun;
 
 public class GrenadeY2 : MonoBehaviourPunCallbacks
 {
-    // public float delay = 3f;
     public float radius =  9f;
     public float explosionForce = 700f ;
-
     private int CanExplode=0;
     public GameObject explosionEffect;
     public grenadeNumberY yellowcount;
@@ -23,21 +21,11 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
     private int throwed=0;
     private int stagec=0;
     public DestructibleP DestructibleP;
-    // public startButton startButton;
-
-    // float countdown;
     bool hasExploded = false;
-
-    public void upthrowed()
-    {
-        throwed=0;
-    }
-    
+// =============================================================================  
     private void OnCollisionEnter(Collision collision)
     {
-        // Rigidbody rb = GetComponent<Rigidbody>();
-        // rb.constraints = RigidbodyConstraints.FreezeRotation;
-        // rb.constraints |= RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll; //#188
         if(throwed==0)
         {
             throwed=1;
@@ -46,7 +34,16 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
             Invoke("CanExplodef3",3);
         }
     }
-
+    private void ce3()
+    {
+        if(throwed==0)
+        {
+            throwed=1;
+            Invoke("CanExplodef1",1);
+            Invoke("CanExplodef2",2);
+            Invoke("CanExplodef3",3);
+        }
+    }
     private void CanExplodef1()
     {
         setting1.active=false;
@@ -63,35 +60,14 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
         box2.active=true;
         box3.active=true;
         boxnum.active=true;
-    }
-    private void ce3()
+    }    
+    public void upthrowed()
     {
-        if(throwed==0)
-        {
-            throwed=1;
-            Invoke("CanExplodef1",1);
-            Invoke("CanExplodef2",2);
-            Invoke("CanExplodef3",3);
-        }
+        throwed=0;
     }
-
-    // Update is called once per frame
+// =============================================================================
     void Update()
     {
-        GameObject[] gosc;
-        gosc = GameObject.FindGameObjectsWithTag("cutscene");
-        if(gosc.Length == 2 && stagec==0)
-        {  
-            CanExplode=0;
-            throwed=0;
-			stagec=1;
-		}
-        if(gosc.Length == 0 && stagec==1)
-        {  
-			stagec=0;
-		}
-
-        // bug1
         Invoke("ce3",12);
         if (Input.GetKey("2") && CanExplode==1 && DestructibleP.dead==0)
         {
@@ -103,6 +79,25 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
                 CanExplode=0;
             }
         }
+        GameObject[] gosc;
+        gosc = GameObject.FindGameObjectsWithTag("cutscene");
+        if(gosc.Length == 2 && stagec==0)
+        {  
+            hasExploded=false;
+            yellowcount.GetComponent<grenadeNumberY>().count=" 1";
+            CanExplode=0;
+            throwed=0;
+			stagec=1;
+            RemoteGrenade.active=false;
+            box1.active=false;
+            box2.active=false;
+            box3.active=false;
+            boxnum.active=false;
+		}
+        if(gosc.Length == 0 && stagec==1)
+        {  
+			stagec=0;
+		}
         // if(hasExploded==true)
         // {
         //     Destroy(gameObject);            
@@ -111,12 +106,14 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
         gos2 = GameObject.FindGameObjectsWithTag("endGame");  
         if(gos2.Length >= 1)
         {
-            Invoke("des",3);
+            Invoke("des",2.9f);
+            CancelInvoke("ce3");
         }
     }
 
     void ExplodeY()
     {
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None; //#188
         photonView.RPC("explosionEf",RpcTarget.All);
         // Get nearby ojects
         Collider[] collidersToDestroy = Physics.OverlapSphere(transform.position, radius);

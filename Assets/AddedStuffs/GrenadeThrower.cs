@@ -120,7 +120,16 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
         GameObject[] gosc;
         gosc = GameObject.FindGameObjectsWithTag("cutscene");
         if(gosc.Length == 2 && stage==0)
-        {  
+        {
+            setting1.active=false;
+            setting2.active=false;
+            setting3.active=false; 
+            setting12.active=false;
+            setting22.active=false;
+            setting32.active=false;  
+            setting13.active=false;
+            setting23.active=false;
+            setting33.active=false;   
 			currentGrenade=0;
             redcount.GetComponent<grenadeNumber>().count=5;
             yellowcount.GetComponent<grenadeNumberY>().count=" 1";

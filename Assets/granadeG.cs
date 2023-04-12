@@ -14,6 +14,7 @@ public class granadeG : MonoBehaviourPunCallbacks
     public GameObject explosionEffect0;
     public GameObject explosionEffect;
     public GameObject damageball;
+    public Transform Synchronize; //#189
     Rigidbody rb;
 
     // float countdown;
@@ -93,6 +94,15 @@ public class granadeG : MonoBehaviourPunCallbacks
         {
             rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         }
+        GameObject[] gosc;
+        gosc = GameObject.FindGameObjectsWithTag("cutscene");
+        if(gosc.Length == 2)
+        {  
+            CancelInvoke("gas0");
+            CancelInvoke("gas1");
+            CancelInvoke("gas");
+            Destroy(gameObject);
+		}
     }
 
     // bug – explode effect retain
@@ -105,6 +115,9 @@ public class granadeG : MonoBehaviourPunCallbacks
     {
         // Instantiate(explosionEffect0, transform.position+ Vector3.up * 2f, Quaternion.Euler(0f, 0f, 0f));
         Instantiate(explosionEffect0, new Vector3(transform.position.x, transform.position.y + 2f, transform.position.z + 0.4f), Quaternion.Euler(0f, 0f, 0f));
+        // GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll; //#188
+        Invoke("gas0",4);
+        Invoke("gas1",4.5f);
         Invoke("gas",5);
 
         Collider[] collidersToMove = Physics.OverlapSphere(transform.position, radius);
@@ -126,6 +139,32 @@ public class granadeG : MonoBehaviourPunCallbacks
                 }
             }
         }   
+    }
+
+    [PunRPC] //#189
+    public void tran()
+    {
+        Rigidbody rbt = gameObject.GetComponent<Rigidbody>(); 
+        rbt.position= Synchronize.position;
+    }
+    
+    public void gas0() //#193
+    {
+        GameObject[] gos; //#189
+        gos = GameObject.FindGameObjectsWithTag("Player"); //#189
+        if(gameObject.name==gos[0].name||gameObject.name==gos[1].name) //#189
+        {
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        }
+    }
+    public void gas1() //#193
+    {
+        GameObject[] gos; //#189
+        gos = GameObject.FindGameObjectsWithTag("Player"); //#189
+        if(gameObject.name==gos[0].name||gameObject.name==gos[1].name) //#189
+        {
+            photonView.RPC("tran",RpcTarget.All);
+        }
     }
 
     public void gas()

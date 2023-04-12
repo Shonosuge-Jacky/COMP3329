@@ -23,6 +23,15 @@ public class PlayerCam : MonoBehaviourPunCallbacks
         }
     }
 
+    private void OnEnable()
+    {
+        if (photonView.IsMine)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+    }
+
     private void Update()
     {
         if (photonView.IsMine)
@@ -39,25 +48,6 @@ public class PlayerCam : MonoBehaviourPunCallbacks
             // rotate cam and orientation
             transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
             orientation.rotation = Quaternion.Euler(0, yRotation, 0);
-            // print(transform.rotation);
-            // print(orientation.rotation);
         }
-    }
-
-    // public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    // {
-    //     if (stream.IsWriting)
-    //     {
-    //         //this is the local client
-    //         stream.SendNext(yRotation);
-    //         stream.SendNext(xRotation);
-    //     }
-    //     else
-    //     {
-    //         //this is the clone
-    //         yRotation = (float)stream.ReceiveNext();
-    //         xRotation = (float)stream.ReceiveNext();
-    //     }
-    // }
-    
+    }  
 }

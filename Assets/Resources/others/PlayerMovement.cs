@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             // << dash >>
             GameObject[] gos;
             gos = GameObject.FindGameObjectsWithTag("Player"); 
-            if (Input.GetKey("v") && dashed==false && gos.Length == 2)
+            if (Input.GetKey("v") && dashed==false && gos.Length == 2 && (verticalInput!=0||horizontalInput!=0))
             {
                 PostProcessHandlerx.GetComponent<PostProcessHandler>().DoDashEffect();
                 moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;

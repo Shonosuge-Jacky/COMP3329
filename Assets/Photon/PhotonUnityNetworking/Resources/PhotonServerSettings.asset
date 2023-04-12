@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppSettings:
-    AppIdRealtime: 9d637a65-b7e6-49b7-bb15-df2f2f71a35c
+    AppIdRealtime: 5556dd3b-c24e-4f1d-a82d-6bf87d58378a
     AppIdFusion: 
     AppIdChat: 
     AppIdVoice: 
@@ -78,6 +78,9 @@ MonoBehaviour:
   - borns3
   - borns4
   - killbyO
+  - tran
+  - RenamePlayer1
+  - RenamePlayer2
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

@@ -9,6 +9,7 @@ public class gasdamage0 : MonoBehaviourPunCallbacks
 {
     private int dead=0;
     private int stagec=0;
+    private int barriering=0; //#187
     private float interactRange = 6f;
     public DestructibleP destP;
     // public startButton startButton;
@@ -26,19 +27,19 @@ public class gasdamage0 : MonoBehaviourPunCallbacks
         {  
 			stagec=0;
 		}
-
         // Gas damage
         Collider[] colliderArray2 = Physics.OverlapSphere(transform.position, interactRange);
         foreach(Collider collider2 in colliderArray2)
         {
             if (collider2.TryGetComponent(out gasdamage gasdamage) )
             {
-                if (dead==0 && collider2.name=="player1")
+                barriering=destP.gasbarrier(); //#187
+                if (dead==0 && collider2.name=="player1" && barriering==0) //#187
                 {
                     dead=1;
                     destP.killbyG1();
                 }
-                else if (dead==0 && collider2.name=="player2")
+                else if (dead==0 && collider2.name=="player2" && barriering==0) //#187
                 {
                     dead=1;
                     destP.killbyG2();
