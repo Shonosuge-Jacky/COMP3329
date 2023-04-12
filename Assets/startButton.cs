@@ -24,6 +24,8 @@ public class startButton : MonoBehaviourPunCallbacks
     public int clean=0;
     public Canvas UI;
     public Canvas waitUI;
+    public Image UImage;
+    public GameObject UIplace;
 // ==========================================================================================
     public void Update()
     {
@@ -77,7 +79,7 @@ public class startButton : MonoBehaviourPunCallbacks
         {
             GameObject[] gos;
             gos = GameObject.FindGameObjectsWithTag("Player");  
-            if(gos.Length == 2)
+            if(gos.Length > 2)
             {
                 // string filePath1 = Application.dataPath+"/Player1name.json";
                 // string filePath2 = Application.dataPath+"/Player2name.json";
@@ -157,7 +159,9 @@ public class startButton : MonoBehaviourPunCallbacks
     }  
     public void closestart()
     {
-        UI.enabled=false;
+        UImage.enabled=false;
+        UIplace.active=false;
+        // UI.enabled=false;
         startScene.active=false;
     }
 

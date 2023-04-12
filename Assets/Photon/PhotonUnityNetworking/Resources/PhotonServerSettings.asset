@@ -81,6 +81,7 @@ MonoBehaviour:
   - tran
   - RenamePlayer1
   - RenamePlayer2
+  - renameObject
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

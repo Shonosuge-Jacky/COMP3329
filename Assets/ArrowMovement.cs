@@ -76,14 +76,14 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
 
         if (Input.GetKey("a") && LRed==2)
         {
-            L.active=false;
-            R.active=false;
-            RW.active=false;
-            WINNER.active=false;
-            LOSER.active=false;
-            cam.active=false;
-            ScoreText.enabled=false;
-            LRed=4;
+            // L.active=false;
+            // R.active=false;
+            // RW.active=false;
+            // WINNER.active=false;
+            // LOSER.active=false;
+            // cam.active=false;
+            // ScoreText.enabled=false;
+            // LRed=4;
         }
     }
 

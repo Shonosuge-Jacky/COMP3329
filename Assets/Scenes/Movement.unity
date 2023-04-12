@@ -10643,6 +10643,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LRed: 0
   UI: {fileID: 2133432367}
+  UImage: {fileID: 1062183377}
+  UIplace: {fileID: 1484156437}
   startScene: {fileID: 328258871}
   stagec: 0
 --- !u!4 &492413303
@@ -17073,6 +17075,8 @@ MonoBehaviour:
   clean: 0
   UI: {fileID: 2133432367}
   waitUI: {fileID: 259919328}
+  UImage: {fileID: 1062183377}
+  UIplace: {fileID: 1484156437}
 --- !u!114 &885071239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17132,18 +17136,6 @@ MonoBehaviour:
       - m_Target: {fileID: 2037221271}
         m_TargetAssemblyTypeName: jsonrw, Assembly-CSharp
         m_MethodName: Updatex
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2037221271}
-        m_TargetAssemblyTypeName: jsonrw, Assembly-CSharp
-        m_MethodName: Rename
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42058,6 +42050,7 @@ MonoBehaviour:
   donev1: 0
   donev2: 0
   pressPlayer: 0
+  rename: {fileID: 6943942591513317266, guid: 1c59e1b75578dc546b2ba24e296de67d, type: 3}
 --- !u!114 &2037221272
 MonoBehaviour:
   m_ObjectHideFlags: 0
