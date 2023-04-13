@@ -285,6 +285,10 @@
 41. [sound] insert player death sound effect 
 55. [sound] insert winning music 
 234. [sound] insert remote grenade setting sound effect
+234. [sound] edit sound 3d level ( // )
+234. [sound] insert Start scene music ( // )
+234. [sound] insert background music ( // )
+
 
 
 
