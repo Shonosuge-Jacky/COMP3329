@@ -34,10 +34,7 @@
 34. [ // ] Test the game to adjust parameters (Do it after the game is finished)
 
 ### &nbsp;&nbsp;To-do-store (24/27 April 1530-1720):
-1. [sound] die in water sound effect (Done)
-41. [sound] player death sound effect (Done)
-55. [sound] winning music (Done)
-50. [sound] remote grenade setting sound effect (Done)
+1. [sound] remote grenade setting sound effect (Done)
 3. [sound] open supply box sound effect (Done)
 51. [sound] Start scene music (Ghostrunner)
 52. [sound] background music (Ghostrunner)
@@ -281,6 +278,9 @@
 43. [sound] insert yellow explosion sound effect
 48. [sound] insert green grenade gas emition sound effect
 49. [sound] insert green grenade gas explode sound effect
+50. [sound] insert die in water sound effect 
+41. [sound] insert player death sound effect 
+55. [sound] insert winning music 
 
 
 
