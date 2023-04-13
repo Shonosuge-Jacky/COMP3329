@@ -20,8 +20,29 @@ public class GrenadeY : MonoBehaviourPunCallbacks
     public GameObject boxnum;
     private int throwed=0;
     private int stagec=0;
+    private int dead=0;
     public DestructibleP DestructibleP;
     bool hasExploded = false;
+    public GameObject setting1sound;
+    public GameObject setting2sound;
+    public GameObject setting3sound;
+    public Transform originTransform;
+    public Transform originTransformf;
+// =============================================================================
+    public void Awake()
+    {
+        hasExploded=false;
+        CanExplode=0;
+        throwed=0;
+        box1.active=false;
+        box2.active=false;
+        box3.active=false;
+        setting1sound.active=false;
+        setting2sound.active=false;
+        setting3sound.active=false;
+        boxnum.active=false;
+        dead=0;
+    }
 // =============================================================================
     private void OnCollisionEnter(Collision collision)
     {
@@ -47,14 +68,17 @@ public class GrenadeY : MonoBehaviourPunCallbacks
     private void CanExplodef1()
     {
         setting1.active=false;
+        setting1sound.active=true;
     }
     private void CanExplodef2()
     {
         setting2.active=false;
+        setting2sound.active=true;
     }
     private void CanExplodef3()
     {
         setting3.active=false;
+        setting3sound.active=true;
         CanExplode=1; 
         box1.active=true;
         box2.active=true;
@@ -69,9 +93,10 @@ public class GrenadeY : MonoBehaviourPunCallbacks
 // =============================================================================
     void Update()
     {   
-        Invoke("ce3",12);
+        // print(throwed);
+        Invoke("des",12);
         // ================================================================
-        if (Input.GetKey("1") && CanExplode==1 && DestructibleP.dead==0)
+        if (Input.GetKey("1") && CanExplode==1 && dead==0)
         {
             if(photonView.IsMine)
             {
@@ -86,24 +111,27 @@ public class GrenadeY : MonoBehaviourPunCallbacks
         gos2 = GameObject.FindGameObjectsWithTag("endGame");  
         if(gos2.Length >= 1)
         {
+            CancelInvoke("des");
             Invoke("des",2.9f);
-            CancelInvoke("ce3");
+            dead=1;
         }
 
         GameObject[] gosc;
         gosc = GameObject.FindGameObjectsWithTag("cutscene");
         if(gosc.Length == 2 && stagec==0)
         {  
+            ExplodeY();
             hasExploded=false;
             yellowcount.GetComponent<grenadeNumberY>().count=" 1";
             CanExplode=0;
             throwed=0;
 			stagec=1;
-            RemoteGrenade.active=false;
             box1.active=false;
             box2.active=false;
             box3.active=false;
             boxnum.active=false;
+            dead=0;
+            photonView.RPC("HideRG",RpcTarget.All);   
 		}
         if(gosc.Length == 0 && stagec==1)
         {  

@@ -120,7 +120,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
         GameObject[] gosc;
         gosc = GameObject.FindGameObjectsWithTag("cutscene");
         if(gosc.Length == 2 && stage==0)
-        {
+        {            
             setting1.active=false;
             setting2.active=false;
             setting3.active=false; 

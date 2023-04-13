@@ -22,7 +22,16 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
     private int stagec=0;
     public DestructibleP DestructibleP;
     bool hasExploded = false;
+    public GameObject setting1sound;
+    public GameObject setting2sound;
+    public GameObject setting3sound;
 // =============================================================================  
+    public void Awake()
+    {
+        setting1sound.active=false;
+        setting2sound.active=false;
+        setting3sound.active=false;
+    }
     private void OnCollisionEnter(Collision collision)
     {
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll; //#188
@@ -47,13 +56,16 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
     private void CanExplodef1()
     {
         setting1.active=false;
+        setting1sound.active=true;
     }
     private void CanExplodef2()
     {
         setting2.active=false;
+        setting2sound.active=true;
     }
     private void CanExplodef3()
     {
+        setting3sound.active=true;
         setting3.active=false;
         CanExplode=1; 
         box1.active=true;
