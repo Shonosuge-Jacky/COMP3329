@@ -281,7 +281,10 @@
 21. [Rename System] rename by restart
 21. [Arean] edit arean
 21. [Rename System] press restart effect
-
+21. [sound] insert red explosion sound effect
+43. [sound] insert yellow explosion sound effect
+48. [sound] insert green grenade gas emition sound effect
+49. [sound] insert green grenade gas explode sound effect
 
 
 
