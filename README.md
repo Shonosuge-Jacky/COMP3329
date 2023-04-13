@@ -12,8 +12,8 @@
 5. Github subVersion : 1-128 + Arean 
 5. Github supplySpawnVersion : 1-151 + Supply logic rewrite(152) 
 5. Github GasVersion : 1-151 + 153-170
-5. Github ThreeAtOneVersion : 1-151 + 153-186 + Camera effect + Arean
-5. Github AdvancedThreeAtOneVersion : 1-151 + 153-201 + Camera effect(missing-hit) + Arean
+5. Github ThreeAtOneVersion : 1-186 + Camera effect + Arean
+5. Github AdvancedThreeAtOneVersion **(missing assets folder)**: 1-151 + 153-201 + Camera effect(missing-hit) + Arean
 5. Github RenameFailedVersion : 1-151 + 153-208 + Camera effect(missing-hit) + Arean
 
 ### &nbsp;&nbsp;Common potential bugs :
