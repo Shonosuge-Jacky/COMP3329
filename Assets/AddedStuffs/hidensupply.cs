@@ -8,6 +8,8 @@ public class hidensupply : MonoBehaviourPunCallbacks
     private float spawnDelay; // Delay between spawns
     private int spawnCount; // Number of crates spawned
     private int spawnLimit;
+    private int[] prev;
+    private GameObject[] spawnedSupplies;
 
     // Array of spawn coordinates
     private Vector3[] spawnPoints =
@@ -143,28 +145,45 @@ public class hidensupply : MonoBehaviourPunCallbacks
     {
         spawnDelay = 0f;
         spawnCount = 0;
-        spawnLimit = 10;
+        spawnLimit = 3;
+        prev = new int[spawnLimit];
+        spawnedSupplies = new GameObject[spawnLimit];
     }
 
     void Update()
     {
-        if (spawnCount != spawnLimit)
+        GameObject[] gos2;
+        gos2 = GameObject.FindGameObjectsWithTag("cutscene");
+        if (gos2.Length == 2 && spawnCount != 0) // after cutscene, repeat the spawning by setting to spawncount as 0
+        {
+            spawnCount = 0;
+            for (int i = 0; i < prev.Length; i++) // Destroy spawned supplies in this round
+            {
+                PhotonNetwork.Destroy(spawnedSupplies[i]);
+            }
+            System.Array.Clear(prev, 0, prev.Length); // Clear prev (spawned) array
+        }
+        if (spawnCount < spawnLimit)
         {
             GameObject[] gos;
             gos = GameObject.FindGameObjectsWithTag("Player");
-            if (PhotonNetwork.IsMasterClient && gos.Length == 2)
+            if (PhotonNetwork.IsMasterClient && gos.Length == 2) // Only if master client: Spawn control
             {
-                Debug.Log("Master client and 2 players");
-            }
-            if (PhotonNetwork.IsMasterClient && gos.Length == 2 && spawnCount < spawnLimit) // Only if master client: Spawn control
-            {
-                PhotonNetwork.Instantiate(
-                    "supply",
-                    spawnPoints[spawnCount],
-                    Quaternion.Euler(spawnRotations[spawnCount]) //
-                );
-                Debug.Log("Spawned supply at " + spawnPoints[spawnCount]);
-                spawnCount++;
+                int spawnIndex = Random.Range(0, 10);
+                int pos = System.Array.IndexOf(prev, spawnIndex);
+                if (pos <= -1)
+                {
+                    spawnedSupplies[spawnCount] = PhotonNetwork.Instantiate(
+                        "supply",
+                        spawnPoints[spawnIndex],
+                        Quaternion.Euler(spawnRotations[spawnIndex])
+                    );
+                    Debug.Log(
+                        "Spawned supply at " + spawnPoints[spawnIndex] + "count: " + spawnCount
+                    );
+                    prev[spawnCount] = spawnIndex;
+                    spawnCount++;
+                }
             }
         }
     }
