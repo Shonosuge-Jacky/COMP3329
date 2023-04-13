@@ -29,8 +29,7 @@ public class Interactable01 : MonoBehaviourPunCallbacks
         {
             if (photonView.IsMine)
             {
-                PhotonNetwork.Destroy(this.gameObject);
-                Debug.Log("Coor: "+transform.position+" destroyed");
+                this.gameObject.SetActive(false);
                 opened = false;
             }
         }
