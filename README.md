@@ -36,10 +36,10 @@
 ### &nbsp;&nbsp;To-do-store (24/27 April 1530-1720):
 1. [sound] red explosion sound effect (Done)
 43. [sound] yellow explosion sound effect (Done)
-46. [sound] die in water sound effect (Done)
-49. [sound] green grenade gas explode sound effect (Done)
-41. [sound] player death sound effect (Done)
 48. [sound] green grenade gas emition sound effect (Done)
+49. [sound] green grenade gas explode sound effect (Done)
+46. [sound] die in water sound effect (Done)
+41. [sound] player death sound effect (Done)
 50. [sound] remote grenade setting sound effect (Done)
 55. [sound] winning music (Done)
 3. [sound] open supply box sound effect (Done)
