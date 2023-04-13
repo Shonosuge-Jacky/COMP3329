@@ -48,9 +48,12 @@
 4. A1 150dpi game poster (Do it after the game is finished)
 3. 1 min .mp4 game trailer (Do it after the game is finished)
 
+### &nbsp;&nbsp;(BUG) Bugs that better be solved:
+1. sponding poistion **Bug**
+2. rename wrong name **Bug** 
+
 ### &nbsp;&nbsp;(BUG) Bugs that not sure if it still exist:
 1. dahs to other player **Bug**
-9. win/lose message sometime not showup **BUG**
 
 ### &nbsp;&nbsp;(BUG) Bugs that dont bother to solve 1 :
 1. Dash towards gas, body will emit toward a direction with extrem high speed, and cant back to normall location when restart **bug**
