@@ -34,11 +34,7 @@
 34. [ // ] Test the game to adjust parameters (Do it after the game is finished)
 
 ### &nbsp;&nbsp;To-do-store (24/27 April 1530-1720):
-1. [sound] red explosion sound effect (Done) (inserted)
-43. [sound] yellow explosion sound effect (Done) (inserted)
-48. [sound] green grenade gas emition sound effect (Done) (inserted)
-49. [sound] green grenade gas explode sound effect (Done) (inserted)
-46. [sound] die in water sound effect (Done)
+1. [sound] die in water sound effect (Done)
 41. [sound] player death sound effect (Done)
 55. [sound] winning music (Done)
 50. [sound] remote grenade setting sound effect (Done)
