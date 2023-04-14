@@ -36,8 +36,6 @@
 
 ### &nbsp;&nbsp;To-do-store (24/27 April 1530-1720):
 1. [sound] open supply box sound effect (Done)
-51. [sound] Start scene music (Ghostrunner)
-52. [sound] background music (Ghostrunner)
 54. [sound] supply spawing sound effect (???)
 56. [sound] adjust all sound effect's loudness base on water sound (do it when all sound effect are done)
 
