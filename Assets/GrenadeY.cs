@@ -44,7 +44,7 @@ public class GrenadeY : MonoBehaviourPunCallbacks
         dead=0;
     }
 // =============================================================================
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision) //state0
     {
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll; //#188
         if(throwed==0)
@@ -65,17 +65,17 @@ public class GrenadeY : MonoBehaviourPunCallbacks
             Invoke("CanExplodef3",3);
         }
     }
-    private void CanExplodef1()
+    private void CanExplodef1() //state1
     {
         setting1.active=false;
         setting1sound.active=true;
     }
-    private void CanExplodef2()
+    private void CanExplodef2() //state2
     {
         setting2.active=false;
         setting2sound.active=true;
     }
-    private void CanExplodef3()
+    private void CanExplodef3() //state3
     {
         setting3.active=false;
         setting3sound.active=true;
@@ -96,11 +96,11 @@ public class GrenadeY : MonoBehaviourPunCallbacks
         // print(throwed);
         Invoke("des",12);
         // ================================================================
-        if (Input.GetKey("1") && CanExplode==1 && dead==0)
+        if (Input.GetKey("1") && CanExplode==1 && dead==0) //state4
         {
             if(photonView.IsMine)
             {
-                ExplodeY();
+                ExplodeY(); //state5
                 hasExploded=true;
                 yellowcount.GetComponent<grenadeNumberY>().count=" 0";
                 CanExplode=0;
@@ -120,7 +120,6 @@ public class GrenadeY : MonoBehaviourPunCallbacks
         gosc = GameObject.FindGameObjectsWithTag("cutscene");
         if(gosc.Length == 2 && stagec==0)
         {  
-            ExplodeY();
             hasExploded=false;
             yellowcount.GetComponent<grenadeNumberY>().count=" 1";
             CanExplode=0;
