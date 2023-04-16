@@ -16,6 +16,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     public GameObject R;
     public GameObject RW;
     public GameObject LW;
+    public GameObject recordList;
     public int count=0;
     public int stage=0;
     public int stagec=0;
@@ -28,8 +29,11 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     public GameObject cutscene;
     public GameObject cam;
     public Text ScoreText;
+    public DataManager dm;
 
-
+    private void Awake() {
+        dm = GameObject.Find("DataManager").GetComponent<DataManager>();
+    }
     void Update()
     {		       
         GameObject[] gosc;
@@ -71,6 +75,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
             {
                 photonView.RPC("changeD",RpcTarget.All);
             }
+            recordList.SetActive(true);
             RW.active=true;
             R.active=false;
             LRed=3;
@@ -96,6 +101,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
 
     public void closestart()
     {
+        DisplayRecordList();
         L.active=true;
         R.active=true;
         LRed=2;
@@ -108,4 +114,15 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     {
         LOSER.active=true;
     } 
+    public void DisplayRecordList(){
+        recordList.SetActive(true);
+        for(int i = dm.myRecordList.record.Count-1; i >=0 ; i--){
+            GameObject newRecord = Instantiate<GameObject>(Resources.Load("record") as GameObject);
+            newRecord.GetComponent<RecordSystem>().DisplayRecord(dm.myRecordList.record[i].winnerName,
+                                                                dm.myRecordList.record[i].loserName,
+                                                                dm.myRecordList.record[i].reason,
+                                                                dm.myRecordList.record[i].date);
+            newRecord.transform.parent = recordList.transform;
+        }
+    }
 }
