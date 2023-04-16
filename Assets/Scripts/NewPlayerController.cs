@@ -47,6 +47,7 @@ namespace AnimeCharacter.PlayerControl
             }
             else
             {
+                
                 _PlayerRigidbody = _PlayerObject.GetComponentInParent<Rigidbody>();
                 _inputManager = GetComponent<InputManager>();
 
@@ -96,9 +97,9 @@ namespace AnimeCharacter.PlayerControl
             xRotation -= mouseY;
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
             // rotate cam and orientation
-            _PlayerObject.transform.Rotate(xRotation, yRotation, 0);
-            Debug.Log(xRotation);
-            Debug.Log(yRotation);
+            transform.rotation = Quaternion.Euler(0, yRotation, 0);
+            //Debug.Log(xRotation);
+            //Debug.Log(yRotation);
         }
         }
     }

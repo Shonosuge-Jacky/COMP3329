@@ -36,6 +36,8 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     Rigidbody rb;
     public GameObject PostProcessHandlerx;
 
+    [Header("renderer")]
+    public GameObject model, handmodel;
     [HideInInspector] public TextMeshProUGUI text_speed;
 
     // << 1 >>
@@ -46,12 +48,19 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
             rb = GetComponent<Rigidbody>();
             rb.freezeRotation = true;
             readyToJump = true;
+            //render
+            model.GetComponent<Renderer>().enabled = false;
+            handmodel.GetComponent<Renderer>().enabled = true;
         }
+        else
+        {
+            model.GetComponent<Renderer>().enabled = true;
+            handmodel.GetComponent<Renderer>().enabled = false;
+        }
+        
         //link PlayerArmature pos and rotation to camera
         Transform PlayermodelTransform = transform.Find("PlayerArmature");
-        Transform Camerarotation = transform.Find("CameraPos");
         PlayermodelTransform.localPosition = new Vector3(0, 0, 0);
-        PlayermodelTransform.localRotation = Camerarotation.rotation;
     }
     // << 2 >>
     public GameObject dash;
