@@ -13,6 +13,7 @@ public class cutdes : MonoBehaviourPunCallbacks
     public GameObject EndUI4;
     public GameObject EndUI5;
     public GameObject playerr;
+    public GameObject EndUIRecord;
     public int stage=0;
     public deadReason deadReason;
     private System.Random random;
@@ -29,6 +30,7 @@ public class cutdes : MonoBehaviourPunCallbacks
             EndUI3.active=false;
             EndUI4.active=false;
             EndUI5.active=false;
+            EndUIRecord.active = false;
             int player = deadReason.replayer();
             if(player==1)
             {

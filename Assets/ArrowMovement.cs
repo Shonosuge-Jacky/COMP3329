@@ -116,13 +116,35 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     } 
     public void DisplayRecordList(){
         recordList.SetActive(true);
-        for(int i = dm.myRecordList.record.Count-1; i >=0 ; i--){
-            GameObject newRecord = Instantiate<GameObject>(Resources.Load("record") as GameObject);
-            newRecord.GetComponent<RecordSystem>().DisplayRecord(dm.myRecordList.record[i].winnerName,
-                                                                dm.myRecordList.record[i].loserName,
-                                                                dm.myRecordList.record[i].reason,
-                                                                dm.myRecordList.record[i].date);
-            newRecord.transform.parent = recordList.transform;
+        //what if only show the recent 6 record?
+
+        if(dm.myRecordList.record.Count >6){
+            for(int i = dm.myRecordList.record.Count-1; i >= dm.myRecordList.record.Count-6; i--){
+                GameObject newRecord = Instantiate<GameObject>(Resources.Load("record") as GameObject);
+                newRecord.GetComponent<RecordSystem>().DisplayRecord(dm.myRecordList.record[i].winnerName,
+                                                                    dm.myRecordList.record[i].loserName,
+                                                                    dm.myRecordList.record[i].reason,
+                                                                    dm.myRecordList.record[i].date);
+                newRecord.transform.parent = recordList.transform;
+            }
         }
+        else{
+            for(int i = dm.myRecordList.record.Count-1; i >=0 ; i--){
+                GameObject newRecord = Instantiate<GameObject>(Resources.Load("record") as GameObject);
+                newRecord.GetComponent<RecordSystem>().DisplayRecord(dm.myRecordList.record[i].winnerName,
+                                                                    dm.myRecordList.record[i].loserName,
+                                                                    dm.myRecordList.record[i].reason,
+                                                                    dm.myRecordList.record[i].date);
+                newRecord.transform.parent = recordList.transform;
+            }
+        }
+        // for(int i = dm.myRecordList.record.Count-1; i >=0 ; i--){
+        //     GameObject newRecord = Instantiate<GameObject>(Resources.Load("record") as GameObject);
+        //     newRecord.GetComponent<RecordSystem>().DisplayRecord(dm.myRecordList.record[i].winnerName,
+        //                                                         dm.myRecordList.record[i].loserName,
+        //                                                         dm.myRecordList.record[i].reason,
+        //                                                         dm.myRecordList.record[i].date);
+        //     newRecord.transform.parent = recordList.transform;
+        // }
     }
 }
