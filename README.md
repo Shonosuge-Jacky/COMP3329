@@ -44,7 +44,8 @@
 2. 10 Pages .doc game report (???)
 4. A1 150dpi game poster (Do it after the game is finished)
 3. 1 min .mp4 game trailer (Do it after the game is finished)
-<br/>(xxxx)
+<br/> (hide remote in gas) (pass through gas with barrier) (withstand cracker with barrier) (dash above river and use cracker to kill before drown) (supply vs remote)
+<br/> (barrier vs remote) (gas vs barrier) (dash vs slope) (dash vs slope vs cracker) (dash vs slope vs remote) (dash vs slope vs gas) (remote vs obstacle) (gas vs obstacle) 
 
 ### &nbsp;&nbsp;(BUG) Bugs that better be solved:
 1. sponding poistion **Bug**
