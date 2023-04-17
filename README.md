@@ -44,7 +44,7 @@
 2. 10 Pages .doc game report (???)
 4. A1 150dpi game poster (Do it after the game is finished)
 3. 1 min .mp4 game trailer (Do it after the game is finished)
-\n(xxxx)
+<br/>(xxxx)
 
 ### &nbsp;&nbsp;(BUG) Bugs that better be solved:
 1. sponding poistion **Bug**
