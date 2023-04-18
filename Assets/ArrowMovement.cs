@@ -117,6 +117,11 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     public void DisplayRecordList(){
         recordList.SetActive(true);
         //what if only show the recent 6 record?
+        Debug.Log("record num: " + dm.myRecordList.record.Count );
+        
+        foreach (Transform child in recordList.transform) {
+            GameObject.Destroy(child.gameObject);
+        }
 
         if(dm.myRecordList.record.Count >6){
             for(int i = dm.myRecordList.record.Count-1; i >= dm.myRecordList.record.Count-6; i--){
