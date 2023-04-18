@@ -29,7 +29,6 @@ public class Interactable01 : MonoBehaviourPunCallbacks
         {
             if (photonView.IsMine)
             {
-                this.gameObject.SetActive(false);
                 opened = false;
             }
         }

@@ -6,10 +6,14 @@ using Photon.Pun;
 public class hidensupply : MonoBehaviourPunCallbacks
 {
     private float spawnDelay; // Delay between spawns
-    private int spawnCount; // Number of crates spawned
+    private int spawnCount1; // Number of crates spawned
+    private int spawnCount2;
     private int spawnLimit;
     private int[] prev;
-    private GameObject[] spawnedSupplies;
+    private GameObject[] spawnedSupplies1;
+    private GameObject[] spawnedSupplies2;
+    private float countdown1;
+    private float countdown2;
 
     // Array of spawn coordinates
     private Vector3[] spawnPoints =
@@ -144,144 +148,113 @@ public class hidensupply : MonoBehaviourPunCallbacks
     void Start()
     {
         spawnDelay = 0f;
-        spawnCount = 0;
-        spawnLimit = 3;
+        spawnCount1 = 0;
+        spawnCount2 = 0;
+        spawnLimit = 10;
         prev = new int[spawnLimit];
-        spawnedSupplies = new GameObject[spawnLimit];
+        spawnedSupplies1 = new GameObject[spawnLimit];
+        spawnedSupplies2 = new GameObject[spawnLimit];
+        countdown1 = 0f;
+        countdown2 = 30f;
     }
 
     void Update()
     {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player");
+        if (gos.Length != 2 || (!PhotonNetwork.IsMasterClient))
+        {
+            return;
+        }
+
         GameObject[] gos2;
         gos2 = GameObject.FindGameObjectsWithTag("cutscene");
-        if (gos2.Length == 2 && spawnCount != 0) // after cutscene, repeat the spawning by setting to spawncount as 0
+        if (gos2.Length == 2) // after cutscene, repeat the spawning by resetting spawnCounts and countdowns
         {
-            spawnCount = 0;
-            for (int i = 0; i < prev.Length; i++) // Destroy spawned supplies in this round
+            spawnCount1 = 0;
+            spawnCount2 = 0;
+            countdown1 = 0f;
+            countdown2 = 30f;
+            for (int i = 0; i < 2; i++) // Destroy spawned supplies in this round, max = 4
             {
-                PhotonNetwork.Destroy(spawnedSupplies[i]);
+                PhotonNetwork.Destroy(spawnedSupplies1[i]);
+                PhotonNetwork.Destroy(spawnedSupplies2[i]);
             }
             System.Array.Clear(prev, 0, prev.Length); // Clear prev (spawned) array
+            return;
         }
-        if (spawnCount < spawnLimit)
+        countdown1 -= Time.deltaTime;
+        countdown2 -= Time.deltaTime;
+        if (countdown1 < 0)
         {
-            GameObject[] gos;
-            gos = GameObject.FindGameObjectsWithTag("Player");
-            if (PhotonNetwork.IsMasterClient && gos.Length == 2) // Only if master client: Spawn control
+            if (spawnCount1 == 0)
+            {
+                for (int i = 0; i < 2; i++) // Destroy spawned supplies two stages ago
+                {
+                    PhotonNetwork.Destroy(spawnedSupplies1[i]);
+                    prev[i] = -1;
+                }
+            }
+            if (spawnCount1 < 2) // yet to spawn 2 supplies
             {
                 int spawnIndex = Random.Range(0, 10);
                 int pos = System.Array.IndexOf(prev, spawnIndex);
                 if (pos <= -1)
                 {
-                    spawnedSupplies[spawnCount] = PhotonNetwork.Instantiate(
+                    spawnedSupplies1[spawnCount1] = PhotonNetwork.Instantiate(
                         "supply",
                         spawnPoints[spawnIndex],
                         Quaternion.Euler(spawnRotations[spawnIndex])
                     );
-                    Debug.Log(
-                        "Spawned supply at " + spawnPoints[spawnIndex] + "count: " + spawnCount
-                    );
-                    prev[spawnCount] = spawnIndex;
-                    spawnCount++;
+                    // Debug.Log(
+                    //     "Spawned supply at " + spawnPoints[spawnIndex] + "count: " + spawnCount1
+                    // );
+                    prev[spawnCount1] = spawnIndex;
+                    spawnCount1++;
                 }
+            }
+            else
+            {
+                countdown1 = 60f;
+                spawnCount1 = 0;
+            }
+        }
+        else if (countdown2 < 0)
+        {
+            if (spawnCount2 == 0)
+            {
+                for (int i = 0; i < 2; i++) // Destroy spawned supplies two stages ago
+                {
+                    PhotonNetwork.Destroy(spawnedSupplies2[i]);
+                    prev[i + 2] = -1;
+                }
+            }
+            if (spawnCount2 < 2)
+            {
+                int spawnIndex = Random.Range(0, 10);
+                int pos = System.Array.IndexOf(prev, spawnIndex);
+                if (pos <= -1)
+                {
+                    spawnedSupplies2[spawnCount2] = PhotonNetwork.Instantiate(
+                        "supply",
+                        spawnPoints[spawnIndex],
+                        Quaternion.Euler(spawnRotations[spawnIndex])
+                    );
+                    // Debug.Log(
+                    //     "2nd array Spawned supply at "
+                    //         + spawnPoints[spawnIndex]
+                    //         + "count: "
+                    //         + spawnCount2
+                    // );
+                    prev[spawnCount2 + 2] = spawnIndex;
+                    spawnCount2++;
+                }
+            }
+            else
+            {
+                countdown2 = 60f;
+                spawnCount2 = 0;
             }
         }
     }
-
-    // Keeping for reference on delaying spawns
-
-    // public float effectdelay01a = 0.5f;
-    // float effectcountdown01a;
-    // bool effectdelay01atf = false;
-
-    // public float effectdelay02a = 9.5f;
-    // float effectcountdown02a;
-    // bool effectdelay02atf = false;
-
-    // public float delay01 = 1f;
-    // float countdown01;
-    // bool hasspawned01 = false;
-
-    // public float delay02 = 10f;
-    // float countdown02;
-    // bool hasspawned02 = false;
-
-    // public float effectdelay01b = 15f;
-    // float effectcountdown;
-    // bool closeeffect = false;
-
-    // public float effectdelay02b = 20f;
-    // float effectcountdown02b;
-    // bool closeeffect02 = false;
-
-    // private int playernumber=0;
-    // public GameObject Supply01;
-    // public GameObject Supply02;
-    // public GameObject effect01;
-    // public GameObject effect02;
-    // // Start is called before the first frame update
-    // void Start()
-    // {
-    //     countdown01 = delay01;
-    //     countdown02 = delay02;
-    //     effectcountdown = effectdelay01b;
-    //     effectcountdown02a = effectdelay02a;
-    //     effectcountdown02b = effectdelay02b;
-    // }
-    // // Update is called once per frame
-    // void Update()
-    // {
-    //     GameObject[] gos;
-    //     gos = GameObject.FindGameObjectsWithTag("Player");
-    //     if(gos.Length == 2)
-    //     {
-    //         playernumber=2;
-    //     }
-
-    //     // if(1==1)
-    //     if(playernumber==2)
-    //     {
-    //         countdown01 -= Time.deltaTime;
-    //         countdown02 -= Time.deltaTime;
-    //         effectcountdown -= Time.deltaTime;
-    //         effectcountdown02b -= Time.deltaTime;
-    //         effectcountdown02a -= Time.deltaTime;
-    //         if(effectcountdown01a<=0f && effectdelay01atf==false)
-    //         // if(countdown<=0f && !hasExploded)
-    //         {
-    //             effect01.active = true;
-    //             effectdelay01atf=true;
-    //         }
-    //         if(effectcountdown02a<=0f && effectdelay02atf==false)
-    //         // if(countdown<=0f && !hasExploded)
-    //         {
-    //             effect02.active = true;
-    //             effectdelay02atf=true;
-    //         }
-    //         if(countdown01<=0f && hasspawned01==false)
-    //         // if(countdown<=0f && !hasExploded)
-    //         {
-    //             Supply01.active = true;
-    //             hasspawned01=true;
-    //         }
-    //         if(countdown02<=0f && hasspawned02==false)
-    //         // if(countdown<=0f && !hasExploded)
-    //         {
-    //             Supply02.active = true;
-    //             hasspawned02=true;
-    //         }
-    //         if(effectcountdown<=0f && closeeffect==false)
-    //         // if(countdown<=0f && !hasExploded)
-    //         {
-    //             effect01.active = false;
-    //             closeeffect=true;
-    //         }
-    //         if(effectcountdown02b<=0f && closeeffect02==false)
-    //         // if(countdown<=0f && !hasExploded)
-    //         {
-    //             effect02.active = false;
-    //             closeeffect02=true;
-    //         }
-    //     }
-    // }
 }
