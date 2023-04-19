@@ -14,6 +14,7 @@ public class hidensupply : MonoBehaviourPunCallbacks
     private GameObject[] spawnedSupplies2;
     private float countdown1;
     private float countdown2;
+    private int stage;
 
     // Array of spawn coordinates
     private Vector3[] spawnPoints =
@@ -156,6 +157,7 @@ public class hidensupply : MonoBehaviourPunCallbacks
         spawnedSupplies2 = new GameObject[spawnLimit];
         countdown1 = 0f;
         countdown2 = 30f;
+        stage = 1;
     }
 
     void Update()
@@ -175,6 +177,7 @@ public class hidensupply : MonoBehaviourPunCallbacks
             spawnCount2 = 0;
             countdown1 = 0f;
             countdown2 = 30f;
+            stage = 1;
             for (int i = 0; i < 2; i++) // Destroy spawned supplies in this round, max = 4
             {
                 PhotonNetwork.Destroy(spawnedSupplies1[i]);
@@ -183,8 +186,10 @@ public class hidensupply : MonoBehaviourPunCallbacks
             System.Array.Clear(prev, 0, prev.Length); // Clear prev (spawned) array
             return;
         }
+
         countdown1 -= Time.deltaTime;
         countdown2 -= Time.deltaTime;
+
         if (countdown1 < 0)
         {
             if (spawnCount1 == 0)
@@ -201,11 +206,31 @@ public class hidensupply : MonoBehaviourPunCallbacks
                 int pos = System.Array.IndexOf(prev, spawnIndex);
                 if (pos <= -1)
                 {
-                    spawnedSupplies1[spawnCount1] = PhotonNetwork.Instantiate(
-                        "supply",
-                        spawnPoints[spawnIndex],
-                        Quaternion.Euler(spawnRotations[spawnIndex])
-                    );
+                    if (stage == 1)
+                    {
+                        spawnedSupplies1[spawnCount1] = PhotonNetwork.Instantiate(
+                            "supply1",
+                            spawnPoints[spawnIndex],
+                            Quaternion.Euler(spawnRotations[spawnIndex])
+                        );
+                    }
+                    else if (stage == 3)
+                    {
+                        spawnedSupplies1[spawnCount1] = PhotonNetwork.Instantiate(
+                            "supply3",
+                            spawnPoints[spawnIndex],
+                            Quaternion.Euler(spawnRotations[spawnIndex])
+                        );
+                    }
+                    else
+                    {
+                        spawnedSupplies1[spawnCount1] = PhotonNetwork.Instantiate(
+                            "supply4",
+                            spawnPoints[spawnIndex],
+                            Quaternion.Euler(spawnRotations[spawnIndex])
+                        );
+                    }
+
                     // Debug.Log(
                     //     "Spawned supply at " + spawnPoints[spawnIndex] + "count: " + spawnCount1
                     // );
@@ -215,6 +240,7 @@ public class hidensupply : MonoBehaviourPunCallbacks
             }
             else
             {
+                stage++;
                 countdown1 = 60f;
                 spawnCount1 = 0;
             }
@@ -235,11 +261,22 @@ public class hidensupply : MonoBehaviourPunCallbacks
                 int pos = System.Array.IndexOf(prev, spawnIndex);
                 if (pos <= -1)
                 {
-                    spawnedSupplies2[spawnCount2] = PhotonNetwork.Instantiate(
-                        "supply",
-                        spawnPoints[spawnIndex],
-                        Quaternion.Euler(spawnRotations[spawnIndex])
-                    );
+                    if (stage == 2)
+                    {
+                        spawnedSupplies2[spawnCount2] = PhotonNetwork.Instantiate(
+                            "supply2",
+                            spawnPoints[spawnIndex],
+                            Quaternion.Euler(spawnRotations[spawnIndex])
+                        );
+                    }
+                    else
+                    {
+                        spawnedSupplies2[spawnCount2] = PhotonNetwork.Instantiate(
+                            "supply4",
+                            spawnPoints[spawnIndex],
+                            Quaternion.Euler(spawnRotations[spawnIndex])
+                        );
+                    }
                     // Debug.Log(
                     //     "2nd array Spawned supply at "
                     //         + spawnPoints[spawnIndex]
@@ -252,6 +289,7 @@ public class hidensupply : MonoBehaviourPunCallbacks
             }
             else
             {
+                stage++;
                 countdown2 = 60f;
                 spawnCount2 = 0;
             }
