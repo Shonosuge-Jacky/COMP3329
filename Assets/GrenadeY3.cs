@@ -28,9 +28,16 @@ public class GrenadeY3 : MonoBehaviourPunCallbacks
 
     public void Awake()
     {
+        hasExploded=false;
+        CanExplode=0;
+        throwed=0;
+        box1.active=false;
+        box2.active=false;
+        box3.active=false;
         setting1sound.active=false;
         setting2sound.active=false;
         setting3sound.active=false;
+        boxnum.active=false;
     }   
     private void OnCollisionEnter(Collision collision)
     {
@@ -56,13 +63,16 @@ public class GrenadeY3 : MonoBehaviourPunCallbacks
     private void CanExplodef1()
     {
         setting1.active=false;
+        setting1sound.active=true;
     }
     private void CanExplodef2()
     {
         setting2.active=false;
+        setting2sound.active=true;
     }
     private void CanExplodef3()
     {
+        setting3sound.active=true;
         setting3.active=false;
         CanExplode=1; 
         box1.active=true;
@@ -89,15 +99,6 @@ public class GrenadeY3 : MonoBehaviourPunCallbacks
                 CanExplode=0;
             }
         }
-
-        GameObject[] gos2;
-        gos2 = GameObject.FindGameObjectsWithTag("endGame");  
-        if(gos2.Length >= 1)
-        {
-            Invoke("des",2.9f);
-            CancelInvoke("ce3");
-        }
-
         GameObject[] gosc;
         gosc = GameObject.FindGameObjectsWithTag("cutscene");
         if(gosc.Length == 2 && stagec==0)
@@ -117,6 +118,13 @@ public class GrenadeY3 : MonoBehaviourPunCallbacks
         {  
 			stagec=0;
 		}
+        GameObject[] gos2;
+        gos2 = GameObject.FindGameObjectsWithTag("endGame");  
+        if(gos2.Length >= 1)
+        {
+            Invoke("des",2.9f);
+            CancelInvoke("ce3");
+        }
     }
 
     public void ExplodeY()

@@ -28,9 +28,16 @@ public class GrenadeY2 : MonoBehaviourPunCallbacks
 // =============================================================================  
     public void Awake()
     {
+        hasExploded=false;
+        CanExplode=0;
+        throwed=0;
+        box1.active=false;
+        box2.active=false;
+        box3.active=false;
         setting1sound.active=false;
         setting2sound.active=false;
         setting3sound.active=false;
+        boxnum.active=false;
     }
     private void OnCollisionEnter(Collision collision)
     {

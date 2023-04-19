@@ -20297,7 +20297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 6459298618296726149}
-  count: 10
+  count: 2
 --- !u!1 &8224065423369340461
 GameObject:
   m_ObjectHideFlags: 0

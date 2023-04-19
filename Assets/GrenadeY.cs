@@ -94,9 +94,10 @@ public class GrenadeY : MonoBehaviourPunCallbacks
     void Update()
     {   
         // print(throwed);
-        Invoke("des",12);
+        // Invoke("des",12);
+        Invoke("ce3",12);
         // ================================================================
-        if (Input.GetKey("1") && CanExplode==1 && dead==0)
+        if (Input.GetKey("1") && CanExplode==1 && DestructibleP.dead==0)
         {
             if(photonView.IsMine)
             {
@@ -107,6 +108,29 @@ public class GrenadeY : MonoBehaviourPunCallbacks
             }
         }
 
+        GameObject[] gosc;
+        gosc = GameObject.FindGameObjectsWithTag("cutscene");
+        if(gosc.Length == 2 && stagec==0)
+        {  
+            // ExplodeY();
+            hasExploded=false;
+            yellowcount.GetComponent<grenadeNumberY>().count=" 1";
+            CanExplode=0;
+            throwed=0;
+			stagec=1;
+            RemoteGrenade.active=false;
+            box1.active=false;
+            box2.active=false;
+            box3.active=false;
+            boxnum.active=false;
+            // dead=0;
+            // photonView.RPC("HideRG",RpcTarget.All);   
+		}
+        if(gosc.Length == 0 && stagec==1)
+        {  
+			stagec=0;
+		}
+
         GameObject[] gos2;
         gos2 = GameObject.FindGameObjectsWithTag("endGame");  
         if(gos2.Length >= 1)
@@ -115,28 +139,6 @@ public class GrenadeY : MonoBehaviourPunCallbacks
             Invoke("des",2.9f);
             dead=1;
         }
-
-        GameObject[] gosc;
-        gosc = GameObject.FindGameObjectsWithTag("cutscene");
-        if(gosc.Length == 2 && stagec==0)
-        {  
-            ExplodeY();
-            hasExploded=false;
-            yellowcount.GetComponent<grenadeNumberY>().count=" 1";
-            CanExplode=0;
-            throwed=0;
-			stagec=1;
-            box1.active=false;
-            box2.active=false;
-            box3.active=false;
-            boxnum.active=false;
-            dead=0;
-            photonView.RPC("HideRG",RpcTarget.All);   
-		}
-        if(gosc.Length == 0 && stagec==1)
-        {  
-			stagec=0;
-		}
     }
 
     public void ExplodeY()
