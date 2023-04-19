@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
-    bool grounded;
+    public bool grounded;
 
     bool dashed=false;
     public Transform orientation;

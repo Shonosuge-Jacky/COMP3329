@@ -35,6 +35,11 @@ public class IsMine : MonoBehaviourPunCallbacks
                 gameObject.name="player1";
             }   
         }
+        else 
+        {
+            Destroy(GetComponentInChildren<Rigidbody>());
+
+        }
     }
 
     void Update()

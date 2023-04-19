@@ -15,12 +15,20 @@ namespace AnimeCharacter.PlayerControl
         [SerializeField] private float bottomLimit = 70f;
         public Rigidbody _PlayerRigidbody;
         public GameObject _PlayerObject;
+        private PlayerMovement _playermovement;
+        private DestructibleP _destructibleP;
         private InputManager _inputManager;
         private Animator _animator;
         private bool _hasAnimator;
+        private bool _grounded;
         private int _xVelHash;
         private int _yVelHash;
+        private int _jumpHash;
+        private int _groundHash;
+        private int _fallingHash;
 
+        private int _AttackHash;
+        private int _deadHash; 
         public float sensX;
         public float sensY;
         float xRotation;
@@ -31,7 +39,7 @@ namespace AnimeCharacter.PlayerControl
         private Vector2 _currentVelocity;
 
         PhotonView PV;
-       
+
 
         void Awake()
         {
@@ -47,12 +55,19 @@ namespace AnimeCharacter.PlayerControl
             }
             else
             {
-                
+
                 _PlayerRigidbody = _PlayerObject.GetComponentInParent<Rigidbody>();
                 _inputManager = GetComponent<InputManager>();
 
+                _playermovement = GetComponentInParent<PlayerMovement>();
+                _destructibleP = GetComponentInParent<DestructibleP>();
                 _xVelHash = Animator.StringToHash("X_velocity");
                 _yVelHash = Animator.StringToHash("Y_velocity");
+                _jumpHash = Animator.StringToHash("Jump");
+                _groundHash = Animator.StringToHash("Grounded");
+                _fallingHash = Animator.StringToHash("Falling");
+                _AttackHash = Animator.StringToHash("IsAttacking");
+                _deadHash = Animator.StringToHash("Dead");
             }
 
             _hasAnimator = TryGetComponent<Animator>(out _animator);
@@ -64,7 +79,9 @@ namespace AnimeCharacter.PlayerControl
             if (!PV.IsMine)
                 return;
             Move();
-            Look();
+            HandleJump();
+            Attack();
+            Deadcheck();
         }
 
         private void Move()
@@ -101,6 +118,64 @@ namespace AnimeCharacter.PlayerControl
             //Debug.Log(xRotation);
             //Debug.Log(yRotation);
         }
+
+        private void HandleJump()
+        {
+            if (!_hasAnimator) return;
+            if (!_inputManager.Jump)
+            {
+                _animator.ResetTrigger(_jumpHash);
+                return;
+            }
+            _animator.SetTrigger(_jumpHash);
+            
+            
+        }
+
+        private void SampleGround()
+        {
+
+            if (!_hasAnimator) return;
+            if (_playermovement.grounded)
+            {
+                _grounded = true;
+                SetAnimationGrounding();
+
+                return;
+            }
+            _grounded = false;
+            SetAnimationGrounding();
+            return;
+        }
+
+        private void SetAnimationGrounding()
+        {
+            _animator.SetBool(_fallingHash, !_grounded);
+            _animator.SetBool(_groundHash, _grounded);
+        }
+
+        private void Attack()
+        {
+            if (!_hasAnimator) return;
+            if (!_inputManager.Attack)
+            {
+                _animator.ResetTrigger(_AttackHash);
+                return;
+            }
+            _animator.SetTrigger(_AttackHash);
+            
+        }
+
+        private void Deadcheck()
+        {
+            if (!_hasAnimator) return;
+            if (!_destructibleP.doDeadEffect)
+            {
+                _animator.SetBool(_deadHash, false);
+                return;
+            }
+            _animator.SetBool(_deadHash, true);
         }
     }
+}
 

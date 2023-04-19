@@ -35,7 +35,7 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 	private int gameended=0;
 	public int dead=0;
 	public int stage=0;
-	private bool doDeadEffect = false;
+	public bool doDeadEffect = false;
 	
 // ==================================================================================================
     public void killbyR1()
@@ -209,8 +209,12 @@ public class DestructibleP : MonoBehaviourPunCallbacks
 		}
 		else
 		{
-			Rigidbody rb = GetComponent<Rigidbody>();
-			rb.useGravity = true;
+            if (photonView.IsMine)
+            {
+				Rigidbody rb = GetComponent<Rigidbody>();
+				rb.useGravity = true;
+            }
+			
 		}
 		//=====================================================
         GameObject[] gos;
