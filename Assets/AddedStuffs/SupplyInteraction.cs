@@ -8,16 +8,11 @@ using UnityEngine.UI;
 
 public class SupplyInteraction : MonoBehaviourPunCallbacks
 {
-    private int SupplyState01 = 1;
-    private int SupplyState02 = 1;
-    private int dead = 0;
     public grenadeNumber redcount;
     public grenadeNumber yellowcount;
     public grenadeNumber yellowcount2;
     public grenadeNumber yellowcount3;
-    public GameObject s1;
-    public GameObject s2;
-    public GameObject s;
+    public grenadeNumber greencount;
 
     public GrenadeY GrenadeY;
     public GrenadeY2 GrenadeY2;
@@ -45,25 +40,86 @@ public class SupplyInteraction : MonoBehaviourPunCallbacks
                 {
                     if (Interactable01.opened == false) // First time accessing this crate
                     {
-                        Debug.Log("crate opened");
-
                         Interactable01.active();
-                        redcount.GetComponent<grenadeNumber>().count =
-                            redcount.GetComponent<grenadeNumber>().count + 10;
-                        if (yellowcount.GetComponent<grenadeNumberY>().count == " 0")
+                        if (Interactable01.stage == 1)
                         {
-                            GrenadeY.upthrowed();
-                            yellowcount.GetComponent<grenadeNumberY>().count = " 1";
+                            redcount.GetComponent<grenadeNumber>().count += 2;
+                            if (yellowcount.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY.upthrowed();
+                                yellowcount.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            if (yellowcount2.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY2.upthrowed();
+                                yellowcount2.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            if (yellowcount3.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY3.upthrowed();
+                                yellowcount3.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            greencount.GetComponent<grenadeNumber>().count += 1;
                         }
-                        if (yellowcount2.GetComponent<grenadeNumberY>().count == " 0")
+                        else if (Interactable01.stage == 2)
                         {
-                            GrenadeY2.upthrowed();
-                            yellowcount2.GetComponent<grenadeNumberY>().count = " 1";
+                            redcount.GetComponent<grenadeNumber>().count += 3;
+                            if (yellowcount.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY.upthrowed();
+                                yellowcount.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            if (yellowcount2.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY2.upthrowed();
+                                yellowcount2.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            if (yellowcount3.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY3.upthrowed();
+                                yellowcount3.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            greencount.GetComponent<grenadeNumber>().count += 1;
                         }
-                        if (yellowcount3.GetComponent<grenadeNumberY>().count == " 0")
+                        else if (Interactable01.stage == 3)
                         {
-                            GrenadeY3.upthrowed();
-                            yellowcount3.GetComponent<grenadeNumberY>().count = " 1";
+                            redcount.GetComponent<grenadeNumber>().count += 4;
+                            if (yellowcount.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY.upthrowed();
+                                yellowcount.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            if (yellowcount2.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY2.upthrowed();
+                                yellowcount2.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            if (yellowcount3.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY3.upthrowed();
+                                yellowcount3.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            greencount.GetComponent<grenadeNumber>().count += 2;
+                        }
+                        else if (Interactable01.stage == 4)
+                        {
+                            redcount.GetComponent<grenadeNumber>().count += 5;
+                            if (yellowcount.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY.upthrowed();
+                                yellowcount.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            if (yellowcount2.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY2.upthrowed();
+                                yellowcount2.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            if (yellowcount3.GetComponent<grenadeNumberY>().count == " 0")
+                            {
+                                GrenadeY3.upthrowed();
+                                yellowcount3.GetComponent<grenadeNumberY>().count = " 1";
+                            }
+                            greencount.GetComponent<grenadeNumber>().count += 2;
                         }
                     }
                 }

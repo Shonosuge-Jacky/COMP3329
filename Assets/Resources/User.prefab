@@ -3986,6 +3986,9 @@ MonoBehaviour:
   EndUI5: {fileID: 3102560757993483047}
   playerr: {fileID: 1376347667060728038}
   EndUIRecord: {fileID: 689225602313466090}
+  remote1: {fileID: 0}
+  remote2: {fileID: 0}
+  remote3: {fileID: 0}
   stage: 0
   deadReason: {fileID: 4840703652445440670}
 --- !u!1 &1376347667978745882
@@ -4449,6 +4452,7 @@ MonoBehaviour:
   yellowcount2: {fileID: 8643722376248221140}
   yellowcount3: {fileID: 7532331762997558918}
   greencount: {fileID: 6341150848771696700}
+  currentGrenade: 0
   originTransform: {fileID: 1376347666267538603}
   originTransformf: {fileID: 1376347666267538603}
   setting1: {fileID: 1649881669794727404}
@@ -23831,6 +23835,11 @@ PrefabInstance:
       propertyPath: theSupply
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7140484083255089789, guid: 1cb251938a0565a4a97a14b7c5568892,
+        type: 3}
+      propertyPath: greencount
+      value: 
+      objectReference: {fileID: 6341150848771696700}
     - target: {fileID: 7140484083255089789, guid: 1cb251938a0565a4a97a14b7c5568892,
         type: 3}
       propertyPath: theSupply2

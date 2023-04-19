@@ -8,6 +8,7 @@ public class Interactable01 : MonoBehaviourPunCallbacks
     public GameObject Object001;
     public GameObject effect001;
     public bool opened;
+    public int stage;
     private float effectCountdown; // For effect duration
 
     void Start()

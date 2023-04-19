@@ -275,6 +275,7 @@ MonoBehaviour:
   Object001: {fileID: 6445561651186534642}
   effect001: {fileID: 5819527896459864031}
   opened: 0
+  stage: 3
 --- !u!114 &6446162817678575232
 MonoBehaviour:
   m_ObjectHideFlags: 0
