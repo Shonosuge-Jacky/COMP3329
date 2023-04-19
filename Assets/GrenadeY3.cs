@@ -119,7 +119,7 @@ public class GrenadeY3 : MonoBehaviourPunCallbacks
 		}
     }
 
-    void ExplodeY()
+    public void ExplodeY()
     {
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None; //#188
         photonView.RPC("explosionEf",RpcTarget.All);
@@ -184,5 +184,23 @@ public class GrenadeY3 : MonoBehaviourPunCallbacks
     void des()
     {
         photonView.RPC("HideRG",RpcTarget.All); 
+    }
+    public void Reset(){
+        hasExploded=false;
+        CanExplode=0;
+        throwed=0;
+        box1.active=false;
+        box2.active=false;
+        box3.active=false;
+        setting1.active = false;
+        setting2.active = false;
+        setting3.active = false;
+        setting1sound.active=false;
+        setting2sound.active=false;
+        setting3sound.active=false;
+        boxnum.active=false;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        RemoteGrenade.active = false;
+
     }
 }

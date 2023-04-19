@@ -19,6 +19,7 @@ public class GrenadeThrower : MonoBehaviourPunCallbacks
     public grenadeNumberY yellowcount2;
     public grenadeNumberY yellowcount3;
     public grenadeNumber greencount;  
+    [SerializeField]
     private int currentGrenade=0;
     //====================================== 
     public Transform originTransform;
