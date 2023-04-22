@@ -26,14 +26,6 @@ public class Interactable01 : MonoBehaviourPunCallbacks
             effect001.active = false;
         }
 
-        if (opened && !this.gameObject.GetComponent<Animation>().IsPlaying("Crate_Open"))
-        {
-            if (photonView.IsMine)
-            {
-                opened = false;
-            }
-        }
-
         // --- For fading out crate ---
         // *** Have not found solution to rendering problem: if set material as transparent/fade, can see through
 
