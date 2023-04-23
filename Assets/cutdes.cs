@@ -55,9 +55,9 @@ public class cutdes : MonoBehaviourPunCallbacks
             }
             stage=1;
 
-            if(remote1.GetComponent<GrenadeY>().CanExplode == 1){
-                // remote1.GetComponent<GrenadeY>().RemoteGrenade.active=false;
-            }
+            // if(remote1.GetComponent<GrenadeY>().CanExplode == 1){
+            //     // remote1.GetComponent<GrenadeY>().RemoteGrenade.active=false;
+            // }
             remote1.GetComponent<GrenadeY>().Reset();
 
             remote2.GetComponent<GrenadeY2>().Reset();

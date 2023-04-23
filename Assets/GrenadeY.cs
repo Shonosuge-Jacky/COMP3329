@@ -7,7 +7,7 @@ public class GrenadeY : MonoBehaviourPunCallbacks
 {
     public float radius =  9f;
     public float explosionForce = 700f ;
-    public int CanExplode=0;
+    private int CanExplode=0;
     public GameObject explosionEffect;
     public grenadeNumberY yellowcount;
     public GameObject RemoteGrenade;
@@ -20,14 +20,11 @@ public class GrenadeY : MonoBehaviourPunCallbacks
     public GameObject boxnum;
     private int throwed=0;
     private int stagec=0;
-    private int dead=0;
     public DestructibleP DestructibleP;
     bool hasExploded = false;
     public GameObject setting1sound;
     public GameObject setting2sound;
     public GameObject setting3sound;
-    public Transform originTransform;
-    public Transform originTransformf;
 // =============================================================================
     public void Awake()
     {
@@ -41,9 +38,7 @@ public class GrenadeY : MonoBehaviourPunCallbacks
         setting2sound.active=false;
         setting3sound.active=false;
         boxnum.active=false;
-        dead=0;
     }
-// =============================================================================
     private void OnCollisionEnter(Collision collision)
     {
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll; //#188
@@ -85,7 +80,6 @@ public class GrenadeY : MonoBehaviourPunCallbacks
         box3.active=true;
         boxnum.active=true;
     }
-// =============================================================================
     public void upthrowed()
     {
         throwed=0;
@@ -93,10 +87,7 @@ public class GrenadeY : MonoBehaviourPunCallbacks
 // =============================================================================
     void Update()
     {   
-        // print(throwed);
-        // Invoke("des",12);
         Invoke("ce3",12);
-        // ================================================================
         if (Input.GetKey("1") && CanExplode==1 && DestructibleP.dead==0)
         {
             if(photonView.IsMine)
@@ -107,12 +98,10 @@ public class GrenadeY : MonoBehaviourPunCallbacks
                 CanExplode=0;
             }
         }
-
         GameObject[] gosc;
         gosc = GameObject.FindGameObjectsWithTag("cutscene");
         if(gosc.Length == 2 && stagec==0)
         {  
-            // ExplodeY();
             hasExploded=false;
             yellowcount.GetComponent<grenadeNumberY>().count=" 1";
             CanExplode=0;
@@ -122,22 +111,22 @@ public class GrenadeY : MonoBehaviourPunCallbacks
             box1.active=false;
             box2.active=false;
             box3.active=false;
-            boxnum.active=false;
-            // dead=0;
-            // photonView.RPC("HideRG",RpcTarget.All);   
+            boxnum.active=false;  
 		}
         if(gosc.Length == 0 && stagec==1)
         {  
 			stagec=0;
 		}
-
+        // if(hasExploded==true)
+        // {
+        //     Destroy(gameObject);            
+        // }
         GameObject[] gos2;
         gos2 = GameObject.FindGameObjectsWithTag("endGame");  
         if(gos2.Length >= 1)
         {
-            CancelInvoke("des");
             Invoke("des",2.9f);
-            dead=1;
+            CancelInvoke("ce3");
         }
     }
 
@@ -180,6 +169,8 @@ public class GrenadeY : MonoBehaviourPunCallbacks
                 }
             }
         }
+        
+        // Remove grenade
         photonView.RPC("HideRG",RpcTarget.All);   
     }
 
@@ -198,7 +189,6 @@ public class GrenadeY : MonoBehaviourPunCallbacks
     {
         photonView.RPC("HideRG",RpcTarget.All); 
     }
-
     public void Reset(){
         hasExploded=false;
         CanExplode=0;
@@ -213,7 +203,6 @@ public class GrenadeY : MonoBehaviourPunCallbacks
         setting2sound.active=false;
         setting3sound.active=false;
         boxnum.active=false;
-        dead=0;
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         RemoteGrenade.active = false;
     }
