@@ -16,7 +16,7 @@ public class brightenEffect : MonoBehaviourPunCallbacks
         if(gos.Length == 2)
         {
             endint=0;
-            transform.GetComponent<RectTransform>().localPosition = new Vector3(-880f, -434.9f, 10f);
+            transform.GetComponent<RectTransform>().localPosition = new Vector3(-878f, -470f, 10f);
         }
         GameObject[] gos2;
         gos2 = GameObject.FindGameObjectsWithTag("endGame");
@@ -30,23 +30,23 @@ public class brightenEffect : MonoBehaviourPunCallbacks
             {
                 if (Input.GetKey("q"))
                 {
-                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-880f, -434.9f, 10f);
+                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-878f, -470f, 10f);
                 }
                 if (Input.GetKey("1"))
                 {
-                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-780f, -434.9f, 10f);
+                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-778f, -470f, 10f);
                 }
                 if (Input.GetKey("2"))
                 {
-                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-680f, -434.9f, 10f);
+                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-678f, -470f, 10f);
                 }
                 if (Input.GetKey("3"))
                 {
-                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-580f, -434.9f, 10f);
+                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-578f, -470f, 10f);
                 }
                 if (Input.GetKey("e"))
                 {
-                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-480f, -434.9f, 10f);
+                    transform.GetComponent<RectTransform>().localPosition = new Vector3(-478f, -470f, 10f);
                 }
             }
         }
