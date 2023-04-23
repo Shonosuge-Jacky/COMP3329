@@ -50,6 +50,7 @@
 ### &nbsp;&nbsp;(BUG) Bugs that better be solved:
 1. sponding poistion **Bug**
 2. rename wrong name **Bug** 
+2. supply box will close after open **Bug** 
 
 ### &nbsp;&nbsp;(BUG) Bugs that not sure if it still exist:
 1. dahs to other player **Bug**
