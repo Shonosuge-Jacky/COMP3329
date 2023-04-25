@@ -16,7 +16,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
     public GameObject R;
     public GameObject RW;
     public GameObject LW;
-    public GameObject recordList;
+    // public GameObject recordList;
     public int count=0;
     public int stage=0;
     public int stagec=0;
@@ -75,7 +75,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
             {
                 photonView.RPC("changeD",RpcTarget.All);
             }
-            recordList.SetActive(true);
+            // recordList.SetActive(true);
             RW.active=true;
             R.active=false;
             LRed=3;
@@ -101,7 +101,7 @@ public class ArrowMovement : MonoBehaviourPunCallbacks
 
     public void closestart()
     {
-        DisplayRecordList();
+        // DisplayRecordList();
         L.active=true;
         R.active=true;
         LRed=2;

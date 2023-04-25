@@ -13,7 +13,7 @@ public class cutdes : MonoBehaviourPunCallbacks
     public GameObject EndUI4;
     public GameObject EndUI5;
     public GameObject playerr;
-    public GameObject EndUIRecord;
+    // public GameObject EndUIRecord;
     public GameObject remote1;
     public GameObject remote2;
     public GameObject remote3;
@@ -34,7 +34,7 @@ public class cutdes : MonoBehaviourPunCallbacks
             EndUI3.active=false;
             EndUI4.active=false;
             EndUI5.active=false;
-            EndUIRecord.active = false;
+            // EndUIRecord.active = false;
 
             int player = deadReason.replayer();
             if(player==1)

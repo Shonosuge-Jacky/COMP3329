@@ -30,7 +30,7 @@ public class deadReason : MonoBehaviourPunCallbacks
     public GameObject audioDrown;
     public GameObject audioDie;
     public GameObject audioWin;
-     public DataManager dm;
+    //  public DataManager dm;
 
     
     // Update is called once per frame
@@ -169,7 +169,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 ScoreText.text = myname+dieby;
                 done2=1;
 
-                dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
             }
             else if(dieby == " was drowned" && (gos3[0].name).ToString()=="player1" && player==2)
             {
@@ -179,7 +179,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
             }
             else if(dieby == " was drowned" && (gos3[0].name).ToString()=="player2" && player==2)
             {
@@ -189,7 +189,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
             }
             else if(dieby == " was drowned" && (gos3[0].name).ToString()=="player2" && player==1)
             {
@@ -199,7 +199,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
             }
             else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player1" && player==1)
             {
@@ -209,7 +209,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
             }
             else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player2" && player==1)
             {
@@ -219,7 +219,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
             }
             else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player2" && player==2)
             {
@@ -229,7 +229,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
             }
             else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player1" && player==2)
             {
@@ -239,7 +239,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
                                
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
             }
             else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player2" && player==1)
             {
@@ -249,7 +249,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
                                 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
             }   
             else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player1" && player==1)
             {
@@ -259,7 +259,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
                                 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
             }   
             else if((gos3[0].name).ToString()=="player1" && (gos4[0].name).ToString()=="player2" && player==2)
             {
@@ -269,7 +269,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
                                 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(myname, hisname, ScoreText.text, DateTime.Now.ToString());
             }   
             else if((gos3[0].name).ToString()=="player2" && (gos4[0].name).ToString()=="player1" && player==2)
             {
@@ -279,7 +279,7 @@ public class deadReason : MonoBehaviourPunCallbacks
                 done2=1;
                                 
                 Debug.Log(ScoreText.text);
-                dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
+                // dm.AddRecord(hisname, myname, ScoreText.text, DateTime.Now.ToString());
             }         
         }  
     }
